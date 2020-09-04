@@ -1,0 +1,105 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.085
+DICOM is short for Digital Imaging and Communications in Medicine,
+DICOM là viết tắt của Digital Imaging and Communications in Medicine,
+
+00:00:05.085 --> 00:00:08.010
+which is the standard for the communication and management
+đó là tiêu chuẩn cho giao tiếp và quản lý
+
+00:00:08.010 --> 00:00:11.085
+of medical imaging information and related data.
+thông tin hình ảnh y tế và dữ liệu liên quan.
+
+00:00:11.085 --> 00:00:15.510
+Throughout this course, I will refer to DICOM files a lot,
+Trong suốt khóa học này, tôi sẽ đề cập đến các tệp DICOM rất nhiều,
+
+00:00:15.510 --> 00:00:18.390
+and that just means a medical imaging file that is
+
+00:00:18.390 --> 00:00:21.705
+in the format that conforms to the DICOM standard.
+ở định dạng phù hợp với tiêu chuẩn DICOM.
+
+00:00:21.705 --> 00:00:27.375
+A DICOM file contains the information about the imaging acquisition method,
+Tệp DICOM chứa thông tin về phương pháp thu nhận hình ảnh,
+
+00:00:27.375 --> 00:00:32.835
+the actual medical images, and patient information.
+hình ảnh y tế thực tế và thông tin bệnh nhân.
+
+00:00:32.835 --> 00:00:35.140
+Remember how in the last lesson,
+Hãy nhớ cách làm trong bài học trước,
+
+00:00:35.140 --> 00:00:38.690
+we talked about how there was this storage system called PACS,
+
+00:00:38.690 --> 00:00:41.965
+where images went between the patient and the radiologist.
+nơi hình ảnh giữa bệnh nhân và bác sĩ X quang.
+
+00:00:41.965 --> 00:00:47.270
+Well, there's actually even more that happens before the image gets to the PACS.
+Chà, thậm chí còn nhiều điều hơn thế nữa xảy ra trước khi hình ảnh được đưa vào PACS.
+
+00:00:47.270 --> 00:00:50.030
+First, those radiation waves and
+Đầu tiên, những sóng bức xạ và
+
+00:00:50.030 --> 00:00:54.110
+their absorption levels from the x-ray are turned into an actual image,
+mức độ hấp thụ của chúng từ tia X được chuyển thành hình ảnh thực tế,
+
+00:00:54.110 --> 00:00:57.040
+by a medical imaging devices software.
+bằng một phần mềm thiết bị hình ảnh y tế.
+
+00:00:57.040 --> 00:01:04.045
+Next, a medical imaging tech inputs information about the patient, and finally,
+Tiếp theo, công nghệ hình ảnh y tế nhập thông tin về bệnh nhân và cuối cùng,
+
+00:01:04.045 --> 00:01:07.520
+the medical imaging system combines the imaging data,
+hệ thống hình ảnh y tế kết hợp dữ liệu hình ảnh,
+
+00:01:07.520 --> 00:01:10.760
+information about how the image was acquired and
+thông tin về cách hình ảnh được lấy và
+
+00:01:10.760 --> 00:01:15.550
+the data input by the tech into a single file format called DICOM.
+dữ liệu được công nghệ đầu vào thành một định dạng tệp duy nhất được gọi là DICOM.
+
+00:01:15.550 --> 00:01:19.270
+Why is DICOM important and why was it created?
+Tại sao DICOM lại quan trọng và tại sao nó được tạo ra?
+
+00:01:19.270 --> 00:01:24.300
+DICOM was developed by the American College of Radiologists in 1993,
+DICOM được phát triển bởi Trường Cao đẳng X quang Hoa Kỳ vào năm 1993,
+
+00:01:24.300 --> 00:01:27.380
+to allow for something called interoperability.
+để cho phép một thứ gọi là khả năng tương tác.
+
+00:01:27.380 --> 00:01:30.290
+What this means is that an image acquired at
+Điều này có nghĩa là một hình ảnh có được tại
+
+00:01:30.290 --> 00:01:35.420
+one hospital can be read by the systems at any other hospital.
+
+00:01:35.420 --> 00:01:37.490
+DICOM is considered to be one of
+DICOM được coi là một trong những
+
+00:01:37.490 --> 00:01:43.440
+the most successful implementations of an interoperable standard in all of healthcare.
+triển khai thành công nhất một tiêu chuẩn tương thích trong tất cả các dịch vụ chăm sóc sức khỏe.
+

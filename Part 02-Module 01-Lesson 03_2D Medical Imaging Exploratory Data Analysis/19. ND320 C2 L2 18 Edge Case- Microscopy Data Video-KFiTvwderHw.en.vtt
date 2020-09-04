@@ -1,0 +1,74 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.795
+In lesson 1, we touched briefly upon microscopy data,
+Trong bài học 1, chúng ta đã đề cập ngắn gọn đến dữ liệu kính hiển vi,
+
+00:00:03.795 --> 00:00:06.480
+a special type of 2D imaging data.
+một loại dữ liệu hình ảnh 2D đặc biệt.
+
+00:00:06.480 --> 00:00:08.415
+Now let's dive deeper.
+
+00:00:08.415 --> 00:00:12.300
+Not all 2D medical images are stored as DICOM.
+Không phải tất cả hình ảnh y tế 2D đều được lưu trữ dưới dạng DICOM.
+
+00:00:12.300 --> 00:00:17.340
+Microscopy images are not stored in DICOM since they do not come from a digital machine.
+Hình ảnh hiển vi không được lưu trữ trong DICOM vì chúng không đến từ máy kỹ thuật số.
+
+00:00:17.340 --> 00:00:20.520
+Instead, they are biological data and they come
+Thay vào đó, chúng là dữ liệu sinh học và chúng đến
+
+00:00:20.520 --> 00:00:24.135
+from smeared physical cells onto a slide from patients.
+từ các tế bào vật lý bị bôi bẩn lên một bản chiếu từ bệnh nhân.
+
+00:00:24.135 --> 00:00:26.510
+They often need to be transformed into
+Chúng thường cần được chuyển đổi thành
+
+00:00:26.510 --> 00:00:30.620
+digital mages using a camera before we can apply machine learning to them.
+
+00:00:30.620 --> 00:00:34.810
+This transformation technique is called digital pathology.
+Kỹ thuật chuyển đổi này được gọi là bệnh lý kỹ thuật số.
+
+00:00:34.810 --> 00:00:38.130
+The first step of transforming microscopy data to
+Bước đầu tiên của việc chuyển đổi dữ liệu kính hiển vi thành
+
+00:00:38.130 --> 00:00:41.595
+a digital image is to get the sample from the patient,
+hình ảnh kỹ thuật số là để lấy mẫu từ bệnh nhân,
+
+00:00:41.595 --> 00:00:46.175
+then cells are dyed into different colors based on their structure,
+sau đó các tế bào được nhuộm thành các màu khác nhau dựa trên cấu trúc của chúng,
+
+00:00:46.175 --> 00:00:48.140
+and viewed by a microscope.
+và được xem bằng kính hiển vi.
+
+00:00:48.140 --> 00:00:53.755
+The microscopy data is then captured by a camera to form a digital image.
+Dữ liệu kính hiển vi sau đó được máy ảnh ghi lại để tạo thành hình ảnh kỹ thuật số.
+
+00:00:53.755 --> 00:00:56.075
+Once images are digitized,
+Sau khi hình ảnh được số hóa,
+
+00:00:56.075 --> 00:00:58.790
+they can be processed with machine learning in the same way
+chúng có thể được xử lý bằng máy học theo cách tương tự
+
+00:00:58.790 --> 00:01:02.760
+as you would use the pixel data extracted from DICOMs.
+như bạn sẽ sử dụng dữ liệu pixel được trích xuất từ ​​DICOM.
+

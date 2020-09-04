@@ -1,0 +1,218 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.600
+So far we've learned how to read a DICOM,
+Cho đến nay, chúng tôi đã học cách đọc một DICOM,
+
+00:00:03.600 --> 00:00:07.769
+inspect images extracted from single DICOM series,
+kiểm tra hình ảnh được trích xuất từ ​​một loạt DICOM,
+
+00:00:07.769 --> 00:00:11.320
+and inspect header data from single DICOM files.
+và kiểm tra dữ liệu tiêu đề từ các tệp DICOM đơn lẻ.
+
+00:00:11.320 --> 00:00:13.470
+Now, let's zoom out.
+Bây giờ, hãy thu nhỏ.
+
+00:00:13.470 --> 00:00:16.755
+In the industry, it's quite common that you'll receive
+Trong ngành, việc bạn sẽ nhận được
+
+00:00:16.755 --> 00:00:20.670
+a large set of DICOM data that represent a population.
+một tập hợp lớn dữ liệu DICOM đại diện cho một tập hợp.
+
+00:00:20.670 --> 00:00:25.160
+Metadata is a set of data that describes the population.
+Siêu dữ liệu là một tập hợp dữ liệu mô tả tập hợp.
+
+00:00:25.160 --> 00:00:30.470
+Here an example of metadata would be average age of the population.
+Dưới đây là một ví dụ về siêu dữ liệu sẽ là độ tuổi trung bình của dân số.
+
+00:00:30.470 --> 00:00:36.275
+This type of metadata will be relevant for your particular algorithm or use case.
+Loại siêu dữ liệu này sẽ có liên quan đến thuật toán hoặc trường hợp sử dụng cụ thể của bạn.
+
+00:00:36.275 --> 00:00:40.490
+Now, unless you're running a study or have a lot of money
+Bây giờ, trừ khi bạn đang điều hành một nghiên cứu hoặc có nhiều tiền
+
+00:00:40.490 --> 00:00:43.940
+to collect and select a very specific data set,
+để thu thập và chọn một tập dữ liệu rất cụ thể,
+
+00:00:43.940 --> 00:00:49.080
+you'll likely be working with a data set with relevant and irrelevant data.
+bạn có thể sẽ làm việc với tập dữ liệu có dữ liệu có liên quan và không liên quan.
+
+00:00:49.080 --> 00:00:54.755
+It's your job as the data scientist to determine and select relevant subsets.
+Công việc của bạn là nhà khoa học dữ liệu là xác định và chọn các tập hợp con có liên quan.
+
+00:00:54.755 --> 00:01:00.755
+Some metadata may come from the DICOM headers of all of the studies in your data set.
+Một số siêu dữ liệu có thể đến từ tiêu đề DICOM của tất cả các nghiên cứu trong tập dữ liệu của bạn.
+
+00:01:00.755 --> 00:01:03.050
+For example, patient ID,
+Ví dụ: ID bệnh nhân,
+
+00:01:03.050 --> 00:01:06.190
+patient age, and sex can all be found here.
+tuổi bệnh nhân và giới tính đều có thể được tìm thấy ở đây.
+
+00:01:06.190 --> 00:01:09.980
+You will likely need to join this with another data source though,
+Tuy nhiên, bạn có thể sẽ cần kết hợp điều này với một nguồn dữ liệu khác,
+
+00:01:09.980 --> 00:01:11.495
+such as patient history,
+chẳng hạn như tiền sử bệnh nhân,
+
+00:01:11.495 --> 00:01:14.525
+to fully understand your patient population.
+để hiểu đầy đủ về dân số bệnh nhân của bạn.
+
+00:01:14.525 --> 00:01:17.305
+Finally, you need your image labels.
+Cuối cùng, bạn cần nhãn hình ảnh của mình.
+
+00:01:17.305 --> 00:01:19.650
+This must be part of your data set,
+Đây phải là một phần của tập dữ liệu của bạn,
+
+00:01:19.650 --> 00:01:21.650
+or else how will you know if you have
+hoặc nếu không làm thế nào bạn sẽ biết nếu bạn có
+
+00:01:21.650 --> 00:01:24.815
+enough positive and negative cases to train an algorithm?
+
+00:01:24.815 --> 00:01:27.170
+If you're looking for diagnostic labels,
+Nếu bạn đang tìm kiếm nhãn chẩn đoán,
+
+00:01:27.170 --> 00:01:31.100
+you'll often have to go into the actual radiology reports or
+bạn thường phải xem các báo cáo X quang thực tế hoặc
+
+00:01:31.100 --> 00:01:35.695
+get a new radiologist to come in and label them if you don't have the reports.
+nhờ một bác sĩ X quang mới đến và dán nhãn cho họ nếu bạn không có báo cáo.
+
+00:01:35.695 --> 00:01:38.405
+Before you can start training an algorithm,
+Trước khi bạn có thể bắt đầu đào tạo một thuật toán,
+
+00:01:38.405 --> 00:01:42.590
+you need to first explore the features of the data set to make sure that it's useful.
+trước tiên bạn cần khám phá các tính năng của tập dữ liệu để đảm bảo rằng nó hữu ích.
+
+00:01:42.590 --> 00:01:46.700
+For example, if you are trying to build something to detect breast cancer,
+Ví dụ: nếu bạn đang cố gắng xây dựng thứ gì đó để phát hiện ung thư vú,
+
+00:01:46.700 --> 00:01:48.800
+but there's no breast cancer in the data,
+nhưng không có ung thư vú trong dữ liệu,
+
+00:01:48.800 --> 00:01:51.175
+then the data set is useless.
+thì tập dữ liệu là vô ích.
+
+00:01:51.175 --> 00:01:54.110
+Histograms and scatterplots are
+Biểu đồ và biểu đồ phân tán là
+
+00:01:54.110 --> 00:01:58.100
+too powerful tools that can help us discover data features.
+các công cụ quá mạnh có thể giúp chúng tôi khám phá các tính năng dữ liệu.
+
+00:01:58.100 --> 00:02:03.095
+Histograms help us look at distributions of single variables.
+Biểu đồ giúp chúng ta xem xét sự phân bố của các biến đơn lẻ.
+
+00:02:03.095 --> 00:02:08.590
+Sometimes we only want to look at distributions within a single class of our data.
+Đôi khi chúng tôi chỉ muốn xem xét các phân phối trong một lớp dữ liệu của chúng tôi.
+
+00:02:08.590 --> 00:02:12.110
+For example, we can use histograms to explore
+Ví dụ: chúng ta có thể sử dụng biểu đồ để khám phá
+
+00:02:12.110 --> 00:02:16.639
+the age range across people with lung cancer or gender distribution,
+độ tuổi của những người bị ung thư phổi hoặc phân bố theo giới tính,
+
+00:02:16.639 --> 00:02:19.675
+specifically in patients with Type 2 diabetes.
+đặc biệt là ở bệnh nhân tiểu đường loại 2.
+
+00:02:19.675 --> 00:02:25.280
+Scatterplots are useful for assessing relationships between two variables.
+
+00:02:25.280 --> 00:02:28.190
+For example, we can use scatterplots to look
+Ví dụ: chúng ta có thể sử dụng biểu đồ phân tán để xem
+
+00:02:28.190 --> 00:02:31.415
+at the relationship between tumor size and age,
+mối quan hệ giữa kích thước khối u và tuổi tác,
+
+00:02:31.415 --> 00:02:36.775
+or the relationship between number of nodules and years of smoking history.
+hoặc mối quan hệ giữa số nốt và số năm hút thuốc.
+
+00:02:36.775 --> 00:02:42.890
+The Pearson correlation coefficient measures how two variables are linearly related.
+Hệ số tương quan Pearson đo lường mức độ liên quan tuyến tính của hai biến.
+
+00:02:42.890 --> 00:02:48.220
+The value of the Pearson correlation coefficient ranges from negative one to one.
+Giá trị của hệ số tương quan Pearson nằm trong khoảng từ âm một đến một.
+
+00:02:48.220 --> 00:02:54.410
+A value of one or negative one means that two variables are perfectly linearly related,
+Giá trị của một hoặc âm có nghĩa là hai biến có liên quan tuyến tính hoàn hảo,
+
+00:02:54.410 --> 00:02:59.600
+and a value of zero implies there is no linear relationship between the two variables.
+và giá trị bằng không có nghĩa là không có mối quan hệ tuyến tính giữa hai biến.
+
+00:02:59.600 --> 00:03:03.635
+Finally, another useful tool is the co-occurrence matrix,
+Cuối cùng, một công cụ hữu ích khác là ma trận đồng xuất hiện,
+
+00:03:03.635 --> 00:03:08.675
+which is useful for assessing how frequently different classifications co-occur together.
+điều này rất hữu ích để đánh giá tần suất các phân loại khác nhau cùng xảy ra.
+
+00:03:08.675 --> 00:03:12.140
+For example, if we want to explore the frequency of
+Ví dụ: nếu chúng ta muốn khám phá tần suất của
+
+00:03:12.140 --> 00:03:14.660
+heart disease co-occurrence in the data set
+bệnh tim cùng xuất hiện trong tập dữ liệu
+
+00:03:14.660 --> 00:03:17.945
+with many other diseases like Type 2 diabetes,
+với nhiều bệnh khác như bệnh tiểu đường loại 2,
+
+00:03:17.945 --> 00:03:19.595
+obesity, and lung cancer,
+béo phì và ung thư phổi,
+
+00:03:19.595 --> 00:03:21.980
+we can plot a co-occurrence matrix.
+chúng ta có thể vẽ một ma trận đồng xuất hiện.
+
+00:03:21.980 --> 00:03:28.260
+A higher value indicates that two diseases are more likely to co-occur together.
+Giá trị cao hơn cho thấy hai bệnh có nhiều khả năng đồng xảy ra cùng nhau.
+

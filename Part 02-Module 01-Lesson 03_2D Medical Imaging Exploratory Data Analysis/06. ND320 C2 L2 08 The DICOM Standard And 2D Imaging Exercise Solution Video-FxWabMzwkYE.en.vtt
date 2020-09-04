@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.535
+What did you guys think about [inaudible] situation?
+Các bạn đã nghĩ gì về tình huống [không nghe được]?
+
+00:00:02.535 --> 00:00:04.875
+I know I'm glad that I'm not him.
+Tôi biết tôi rất vui vì tôi không phải là anh ấy.
+
+00:00:04.875 --> 00:00:08.580
+Let's think about the questions that were asked in this exercise.
+Hãy suy nghĩ về các câu hỏi được đặt ra trong bài tập này.
+
+00:00:08.580 --> 00:00:13.050
+First, did Hospital B know about [inaudible] broken foot?
+Đầu tiên, bệnh viện B có biết về bàn chân bị gãy [không nghe được] không?
+
+00:00:13.050 --> 00:00:15.345
+The answer here is yes.
+Câu trả lời ở đây là có.
+
+00:00:15.345 --> 00:00:18.960
+Hospital B received [inaudible] DICOM study while he was
+Bệnh viện B đã nhận được nghiên cứu DICOM [không nghe được] khi anh ấy
+
+00:00:18.960 --> 00:00:22.770
+on the way and the radiology report from hospital A.
+trên đường đi và báo cáo chụp X quang từ bệnh viện A.
+
+00:00:22.770 --> 00:00:25.590
+What this means is that the radiologist,
+Điều này có nghĩa là bác sĩ X quang,
+
+00:00:25.590 --> 00:00:28.590
+along with the orthopedic surgeon at Hospital B,
+cùng với bác sĩ phẫu thuật chỉnh hình tại Bệnh viện B,
+
+00:00:28.590 --> 00:00:31.800
+could simply just look at [inaudible] x-ray images
+có thể đơn giản chỉ cần nhìn vào hình ảnh tia x [không nghe được]
+
+00:00:31.800 --> 00:00:35.520
+in his DICOM study and determine if he had a broken foot,
+trong nghiên cứu DICOM của anh ấy và xác định xem anh ấy có bị gãy chân hay không,
+
+00:00:35.520 --> 00:00:38.540
+or they could also just read the radiology report
+
+00:00:38.540 --> 00:00:41.555
+that they got from the radiologists at hospital A.
+mà họ nhận được từ các bác sĩ X quang ở bệnh viện A.
+
+00:00:41.555 --> 00:00:44.390
+So what about the test results?
+Vậy kết quả kiểm tra thì sao?
+
+00:00:44.390 --> 00:00:48.010
+Did Hospital B know about the results of [inaudible] bloodwork?
+Bệnh viện B có biết về kết quả xét nghiệm máu [không nghe được] không?
+
+00:00:48.010 --> 00:00:49.845
+No, they did not.
+Không họ đã không.
+
+00:00:49.845 --> 00:00:54.335
+This information is lab work and falls under the category of clinical data,
+Thông tin này là công việc trong phòng thí nghiệm và thuộc loại dữ liệu lâm sàng,
+
+00:00:54.335 --> 00:00:57.470
+which is stored in the EMR and it's not part of the DICOM.
+được lưu trữ trong EMR và nó không phải là một phần của DICOM.
+
+00:00:57.470 --> 00:01:02.030
+Third, did Hospital B know about [inaudible] low blood pressure?
+Thứ ba, Bệnh viện B có biết về bệnh huyết áp thấp [không nghe được] không?
+
+00:01:02.030 --> 00:01:04.190
+They answer here is also no.
+Họ trả lời ở đây cũng là không.
+
+00:01:04.190 --> 00:01:06.980
+This is [inaudible] medical history that is also
+Đây là bệnh sử [không nghe được] cũng là
+
+00:01:06.980 --> 00:01:10.920
+stored in the EMR and it's not part of the DICOM.
+được lưu trữ trong EMR và nó không phải là một phần của DICOM.
+

@@ -1,0 +1,30 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.265
+Hi, everyone. Welcome to lesson 2.
+Chào mọi người. Chào mừng đến với bài học 2.
+
+00:00:02.265 --> 00:00:03.465
+In our last lesson,
+
+00:00:03.465 --> 00:00:06.945
+we learned a lot about clinical applications of 2D imaging,
+chúng tôi đã học được rất nhiều về các ứng dụng lâm sàng của hình ảnh 2D,
+
+00:00:06.945 --> 00:00:09.285
+some key stakeholders in the space,
+
+00:00:09.285 --> 00:00:12.480
+and we started to think about how he can apply machine learning.
+và chúng tôi bắt đầu nghĩ về cách anh ấy có thể áp dụng học máy.
+
+00:00:12.480 --> 00:00:17.355
+Today, we're going to learn about something called the DICOM standard in medical imaging,
+Hôm nay, chúng ta sẽ tìm hiểu về một thứ gọi là tiêu chuẩn DICOM trong hình ảnh y tế,
+
+00:00:17.355 --> 00:00:22.900
+and how we can explore medical imaging data as we prepare it for machine learning.
+và cách chúng tôi có thể khám phá dữ liệu hình ảnh y tế khi chúng tôi chuẩn bị cho việc học máy.
+

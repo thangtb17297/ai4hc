@@ -1,0 +1,206 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.600
+Recall that a DICOM file contains a header which stores
+Nhớ lại rằng tệp DICOM chứa tiêu đề lưu trữ
+
+00:00:03.600 --> 00:00:08.940
+all non-image attributes and an image component that have image attributes.
+tất cả các thuộc tính không phải hình ảnh và một thành phần hình ảnh có thuộc tính hình ảnh.
+
+00:00:08.940 --> 00:00:14.010
+Now that we know how to look at the image component of our DICOM files, in this video,
+Bây giờ chúng ta đã biết cách xem xét thành phần hình ảnh của tệp DICOM, trong video này,
+
+00:00:14.010 --> 00:00:17.565
+we will talk about how to extract non-image information,
+chúng ta sẽ nói về cách trích xuất thông tin không phải hình ảnh,
+
+00:00:17.565 --> 00:00:21.105
+i.e the header component from our DICOM files.
+tức là thành phần tiêu đề từ các tệp DICOM của chúng tôi.
+
+00:00:21.105 --> 00:00:26.925
+Recall that when we read DICOM attributes using the pydicom dcm read command,
+Nhớ lại rằng khi chúng ta đọc các thuộc tính DICOM bằng lệnh đọc dcm pydicom,
+
+00:00:26.925 --> 00:00:32.625
+we can look at all of the other useful header data that comes with the DICOM file.
+chúng ta có thể xem xét tất cả dữ liệu tiêu đề hữu ích khác đi kèm với tệp DICOM.
+
+00:00:32.625 --> 00:00:34.400
+As you may know,
+Như bạn có thể biết,
+
+00:00:34.400 --> 00:00:36.980
+there's usually a lot of data in a data set that
+thường có rất nhiều dữ liệu trong một tập dữ liệu
+
+00:00:36.980 --> 00:00:39.815
+we might use when training our machine learning model.
+chúng tôi có thể sử dụng khi đào tạo mô hình học máy của mình.
+
+00:00:39.815 --> 00:00:45.380
+It's really not efficient to access DICOM headers for every image every time.
+Thực sự không hiệu quả khi truy cập các tiêu đề DICOM cho mọi hình ảnh mọi lúc.
+
+00:00:45.380 --> 00:00:51.335
+Instead, we want fast access to useful information across the entire data set.
+Thay vào đó, chúng tôi muốn truy cập nhanh vào thông tin hữu ích trên toàn bộ tập dữ liệu.
+
+00:00:51.335 --> 00:00:54.530
+The best way to do this is to extract all data from
+Cách tốt nhất để làm điều này là trích xuất tất cả dữ liệu từ
+
+00:00:54.530 --> 00:00:57.805
+DICOM headers into a dataframe in advance.
+DICOM tiêu đề trước vào khung dữ liệu.
+
+00:00:57.805 --> 00:01:03.125
+So what are the key attributes in a header that are useful to train our model?
+Vậy các thuộc tính chính trong tiêu đề hữu ích để đào tạo mô hình của chúng ta là gì?
+
+00:01:03.125 --> 00:01:05.360
+Well, of course, it depends on your model,
+Tất nhiên, nó phụ thuộc vào mô hình của bạn,
+
+00:01:05.360 --> 00:01:08.225
+but here's a few that can get you started.
+nhưng đây là một số điều có thể giúp bạn bắt đầu.
+
+00:01:08.225 --> 00:01:12.035
+Patient ID will uniquely identify each patient,
+ID bệnh nhân sẽ nhận dạng duy nhất từng bệnh nhân,
+
+00:01:12.035 --> 00:01:14.825
+which is critical for algorithm training set up.
+rất quan trọng cho việc thiết lập đào tạo thuật toán.
+
+00:01:14.825 --> 00:01:20.050
+You never want to include the same patient in both the training and the validation sets.
+Bạn không bao giờ muốn đưa cùng một bệnh nhân vào cả tập huấn luyện và tập xác nhận.
+
+00:01:20.050 --> 00:01:23.600
+Patient sex is also probably important for algorithm training,
+Tình dục của bệnh nhân có lẽ cũng rất quan trọng đối với việc đào tạo thuật toán,
+
+00:01:23.600 --> 00:01:26.180
+as you probably want to make sure that your training and
+vì bạn có thể muốn đảm bảo rằng đào tạo của bạn và
+
+00:01:26.180 --> 00:01:30.580
+validating on data that has equal male, female proportions.
+xác thực trên dữ liệu có tỷ lệ nam và nữ bằng nhau.
+
+00:01:30.580 --> 00:01:34.700
+Patient age is also probably important for algorithm training,
+Tuổi của bệnh nhân có lẽ cũng rất quan trọng đối với việc đào tạo thuật toán,
+
+00:01:34.700 --> 00:01:37.370
+as you probably want to make sure that your training in
+vì bạn có thể muốn đảm bảo rằng đào tạo của bạn trong
+
+00:01:37.370 --> 00:01:41.425
+validating on data sets that have equal age distributions.
+xác thực trên các tập dữ liệu có phân bố độ tuổi bằng nhau.
+
+00:01:41.425 --> 00:01:46.880
+You may have multiple studies per patient and within each study, multiple series.
+Bạn có thể có nhiều nghiên cứu cho mỗi bệnh nhân và trong mỗi nghiên cứu, nhiều chuỗi.
+
+00:01:46.880 --> 00:01:49.370
+Similar to the case where we want to make sure we're
+Tương tự như trường hợp chúng tôi muốn đảm bảo rằng chúng tôi
+
+00:01:49.370 --> 00:01:52.085
+not training and validating on the same patient,
+không đào tạo và xác nhận trên cùng một bệnh nhân,
+
+00:01:52.085 --> 00:01:57.230
+we also want to make sure that we're not over training on repeated study in series.
+chúng tôi cũng muốn đảm bảo rằng chúng tôi không đào tạo quá mức về nghiên cứu lặp đi lặp lại hàng loạt.
+
+00:01:57.230 --> 00:02:01.940
+The DICOM header has some other applications besides just training models.
+Tiêu đề DICOM có một số ứng dụng khác ngoài các mô hình huấn luyện.
+
+00:02:01.940 --> 00:02:03.560
+As we learned in Lesson 1,
+Như chúng ta đã học trong Bài 1,
+
+00:02:03.560 --> 00:02:06.650
+the FDA is concerned with device safety and making
+FDA quan tâm đến sự an toàn của thiết bị và
+
+00:02:06.650 --> 00:02:10.345
+sure that your device is used the way it's labeled for intended use.
+đảm bảo rằng thiết bị của bạn được sử dụng theo cách được gắn nhãn cho mục đích sử dụng.
+
+00:02:10.345 --> 00:02:15.215
+We can mitigate some risks of the algorithm from using just the DICOM header.
+Chúng tôi có thể giảm thiểu một số rủi ro của thuật toán khi chỉ sử dụng tiêu đề DICOM.
+
+00:02:15.215 --> 00:02:18.320
+For example, you may want to screen the header for
+Ví dụ: bạn có thể muốn sàng lọc tiêu đề cho
+
+00:02:18.320 --> 00:02:23.590
+patient age to make sure that this patient is appropriate for use with this algorithm.
+tuổi của bệnh nhân để đảm bảo rằng bệnh nhân này thích hợp để sử dụng với thuật toán này.
+
+00:02:23.590 --> 00:02:28.490
+The DICOM header can also be used to optimize the image processing.
+
+00:02:28.490 --> 00:02:32.270
+One example would be to use the series data in the header to
+Một ví dụ sẽ là sử dụng dữ liệu chuỗi trong tiêu đề để
+
+00:02:32.270 --> 00:02:36.415
+pre-select images for interest in processing by your algorithm.
+chọn trước hình ảnh để quan tâm trong việc xử lý bằng thuật toán của bạn.
+
+00:02:36.415 --> 00:02:40.975
+Remember how we talked about how a patient study contains many series?
+
+00:02:40.975 --> 00:02:44.615
+Well, often only part of that study will be relevant.
+Thường thì chỉ một phần của nghiên cứu đó sẽ có liên quan.
+
+00:02:44.615 --> 00:02:48.170
+For example, the part of the body that you may be interested
+Ví dụ, phần cơ thể mà bạn có thể quan tâm
+
+00:02:48.170 --> 00:02:52.070
+in for your algorithm may only be visible in one series.
+cho thuật toán của bạn chỉ có thể hiển thị trong một chuỗi.
+
+00:02:52.070 --> 00:02:54.560
+In this case, how will your algorithm be
+Trong trường hợp này, thuật toán của bạn sẽ như thế nào
+
+00:02:54.560 --> 00:02:57.695
+smart enough to know which images it should process?
+đủ thông minh để biết nó nên xử lý những hình ảnh nào?
+
+00:02:57.695 --> 00:03:01.655
+Of course, you could take the brute force approach of running the algorithm on
+Tất nhiên, bạn có thể áp dụng cách tiếp cận bạo lực khi chạy thuật toán trên
+
+00:03:01.655 --> 00:03:05.745
+every image in the study but that doesn't really make much sense.
+mọi hình ảnh trong nghiên cứu nhưng điều đó không thực sự có nhiều ý nghĩa.
+
+00:03:05.745 --> 00:03:08.420
+Alternatively, and a much better way,
+Ngoài ra, và một cách tốt hơn nhiều,
+
+00:03:08.420 --> 00:03:11.030
+would be to use the DICOM header data to
+sẽ sử dụng dữ liệu tiêu đề DICOM để
+
+00:03:11.030 --> 00:03:16.020
+pre-select images using the DICOM header that need to be processed.
+chọn trước hình ảnh bằng cách sử dụng tiêu đề DICOM cần được xử lý.
+

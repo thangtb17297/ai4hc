@@ -1,0 +1,120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.695
+Congratulations.
+Xin chúc mừng.
+
+00:00:01.695 --> 00:00:04.395
+You've just finished the second lesson of this course.
+Bạn vừa hoàn thành bài học thứ hai của khóa học này.
+
+00:00:04.395 --> 00:00:07.140
+Now let's summarize what we've learned.
+Bây giờ chúng ta hãy tóm tắt những gì chúng ta đã học được.
+
+00:00:07.140 --> 00:00:11.670
+First, we talked about the DICOM standard and what a DICOM file is.
+Đầu tiên, chúng ta đã nói về tiêu chuẩn DICOM và tệp DICOM là gì.
+
+00:00:11.670 --> 00:00:15.285
+Then we talked about what the patient study is and a series.
+Sau đó, chúng tôi nói về nghiên cứu bệnh nhân là gì và một loạt.
+
+00:00:15.285 --> 00:00:17.640
+After that, we learned that a DICOM file
+Sau đó, chúng tôi biết rằng một tệp DICOM
+
+00:00:17.640 --> 00:00:20.295
+consists of attributes about patient information,
+bao gồm các thuộc tính về thông tin bệnh nhân,
+
+00:00:20.295 --> 00:00:22.080
+patient study, and series,
+nghiên cứu bệnh nhân và hàng loạt,
+
+00:00:22.080 --> 00:00:24.180
+as well as the images themselves.
+cũng như hình ảnh của chính họ.
+
+00:00:24.180 --> 00:00:25.815
+In the second section,
+Trong phần thứ hai,
+
+00:00:25.815 --> 00:00:29.235
+we mainly talked about the image attributes in a DICOM file;
+chúng tôi chủ yếu nói về các thuộc tính hình ảnh trong tệp DICOM;
+
+00:00:29.235 --> 00:00:33.209
+how to read and extract images using the pyDICOM package,
+cách đọc và trích xuất hình ảnh bằng gói pyDICOM,
+
+00:00:33.209 --> 00:00:35.850
+what we should pay attention to when we look at an image,
+những gì chúng ta nên chú ý khi xem một hình ảnh,
+
+00:00:35.850 --> 00:00:40.375
+and how to explore image intensity profiles at the pixel level.
+và cách khám phá cấu hình cường độ hình ảnh ở cấp pixel.
+
+00:00:40.375 --> 00:00:42.425
+In the third section,
+Trong phần thứ ba,
+
+00:00:42.425 --> 00:00:46.025
+we discussed how to prepare non-image data for machine learning
+chúng tôi đã thảo luận về cách chuẩn bị dữ liệu không phải hình ảnh cho học máy
+
+00:00:46.025 --> 00:00:50.440
+using the DICOM header that contains all of the non-image attributes.
+sử dụng tiêu đề DICOM có chứa tất cả các thuộc tính không phải hình ảnh.
+
+00:00:50.440 --> 00:00:54.440
+The DICOM header has a wealth of information such as patient data,
+Tiêu đề DICOM có nhiều thông tin như dữ liệu bệnh nhân,
+
+00:00:54.440 --> 00:00:56.990
+series and study and we have to explore
+loạt bài và nghiên cứu và chúng ta phải khám phá
+
+00:00:56.990 --> 00:01:00.410
+the DICOM header carefully before developing our algorithm.
+tiêu đề DICOM cẩn thận trước khi phát triển thuật toán của chúng tôi.
+
+00:01:00.410 --> 00:01:05.635
+We also looked at some examples where DICOM headers provide us important information.
+Chúng tôi cũng đã xem xét một số ví dụ trong đó tiêu đề DICOM cung cấp cho chúng tôi thông tin quan trọng.
+
+00:01:05.635 --> 00:01:07.430
+In the last section,
+Trong phần cuối cùng,
+
+00:01:07.430 --> 00:01:10.750
+we talked about metadata that represents a population.
+chúng tôi đã nói về siêu dữ liệu đại diện cho một tập hợp.
+
+00:01:10.750 --> 00:01:13.485
+Metadata can come from several sources;
+Siêu dữ liệu có thể đến từ một số nguồn;
+
+00:01:13.485 --> 00:01:16.710
+DICOM header, patient history, and image labels.
+Tiêu đề DICOM, lịch sử bệnh nhân và nhãn hình ảnh.
+
+00:01:16.710 --> 00:01:19.460
+We need to extract data features before we train
+Chúng tôi cần trích xuất các tính năng dữ liệu trước khi đào tạo
+
+00:01:19.460 --> 00:01:22.265
+the model and some useful tools for that are histograms,
+mô hình và một số công cụ hữu ích cho đó là biểu đồ,
+
+00:01:22.265 --> 00:01:27.110
+scatter plots, Pearson correlation coefficient, and co-occurrence matrices.
+đồ thị phân tán, hệ số tương quan Pearson và ma trận đồng xuất hiện.
+
+00:01:27.110 --> 00:01:31.710
+Congratulations on completing this lesson and I'll see you in the next one.
+Chúc mừng bạn đã hoàn thành bài học này và hẹn gặp lại bạn trong bài tiếp theo.
+

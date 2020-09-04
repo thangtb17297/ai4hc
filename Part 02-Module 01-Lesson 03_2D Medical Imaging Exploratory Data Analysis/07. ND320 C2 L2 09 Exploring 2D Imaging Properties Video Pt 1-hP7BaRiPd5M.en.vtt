@@ -1,0 +1,224 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.180
+There are probably many file types that you're familiar with
+Có thể có nhiều loại tệp mà bạn quen thuộc
+
+00:00:03.180 --> 00:00:06.405
+working with as a data scientist or software engineer;
+làm việc với tư cách là nhà khoa học dữ liệu hoặc kỹ sư phần mềm;
+
+00:00:06.405 --> 00:00:12.555
+XML, JSON, and CSV are some common ones.
+XML, JSON và CSV là một số phổ biến.
+
+00:00:12.555 --> 00:00:17.055
+In this lesson, we're just going to add DICOM right to that list.
+Trong bài học này, chúng ta sẽ thêm ngay DICOM vào danh sách đó.
+
+00:00:17.055 --> 00:00:20.820
+So now that you know what a DICOM is and why it's important,
+Vì vậy, bây giờ bạn đã biết DICOM là gì và tại sao nó lại quan trọng,
+
+00:00:20.820 --> 00:00:23.910
+we'll learn about how to extract relevant information
+chúng ta sẽ tìm hiểu về cách trích xuất thông tin liên quan
+
+00:00:23.910 --> 00:00:27.300
+from a DICOM image and then explore different components of it.
+từ hình ảnh DICOM và sau đó khám phá các thành phần khác nhau của nó.
+
+00:00:27.300 --> 00:00:32.475
+There are many different libraries to work with DICOM in different programming languages.
+Có nhiều thư viện khác nhau để làm việc với DICOM trong các ngôn ngữ lập trình khác nhau.
+
+00:00:32.475 --> 00:00:35.190
+Since this course will be completely in Python,
+Vì khóa học này sẽ hoàn toàn bằng Python,
+
+00:00:35.190 --> 00:00:39.165
+we'll employ something called the Pydicom package.
+chúng tôi sẽ sử dụng một thứ gọi là gói Pydicom.
+
+00:00:39.165 --> 00:00:41.490
+With the Pydicom package,
+Với gói Pydicom,
+
+00:00:41.490 --> 00:00:46.090
+dcmread command is used to read in a DICOM file.
+
+00:00:46.090 --> 00:00:50.420
+If we read a DICOM file into this variable called my_dicom,
+Nếu chúng tôi đọc tệp DICOM vào biến này có tên là my_dicom,
+
+00:00:50.420 --> 00:00:56.570
+we now have all of the DICOM attributes stored in a single variable called my_dicom.
+
+00:00:56.570 --> 00:01:01.460
+You can see here that my DICOM has an attribute called pixel
+Bạn có thể thấy ở đây rằng DICOM của tôi có một thuộc tính gọi là pixel
+
+00:01:01.460 --> 00:01:06.170
+data that contains an array of pixels representing the medical image.
+dữ liệu chứa một mảng pixel đại diện cho hình ảnh y tế.
+
+00:01:06.170 --> 00:01:09.080
+We can access the actual pixel data of
+Chúng tôi có thể truy cập dữ liệu pixel thực tế của
+
+00:01:09.080 --> 00:01:12.940
+the image through this DICOM's pixel data attribute.
+
+00:01:12.940 --> 00:01:17.135
+See how this is returned as a standard 2D NumPy array?
+Hãy xem cách này được trả về như một mảng NumPy 2D chuẩn?
+
+00:01:17.135 --> 00:01:21.880
+That's great because we already know how to work with this as data scientists.
+Điều đó thật tuyệt vì chúng tôi đã biết cách làm việc với tư cách là nhà khoa học dữ liệu.
+
+00:01:21.880 --> 00:01:24.255
+So we can use something like
+Vì vậy, chúng ta có thể sử dụng một cái gì đó như
+
+00:01:24.255 --> 00:01:27.410
+matplotlib's imshow library to easily
+thư viện imshow của matplotlib để dễ dàng
+
+00:01:27.410 --> 00:01:31.225
+plot the pixel data from this DICOM in just a single line.
+vẽ đồ thị dữ liệu pixel từ DICOM này chỉ trong một dòng.
+
+00:01:31.225 --> 00:01:34.850
+There. We just went from a DICOM file to an image that you
+Đây. Chúng tôi vừa chuyển từ tệp DICOM sang hình ảnh mà bạn
+
+00:01:34.850 --> 00:01:39.160
+can see and manipulate in a Jupyter Notebook in only three steps.
+có thể xem và thao tác trong Máy tính xách tay Jupyter chỉ trong ba bước.
+
+00:01:39.160 --> 00:01:43.175
+Imshow tells us the width and height of the image also,
+Imshow cũng cho chúng ta biết chiều rộng và chiều cao của hình ảnh,
+
+00:01:43.175 --> 00:01:47.600
+which we can see is a square of 1024 by 1024 pixels.
+
+00:01:47.600 --> 00:01:52.900
+This dimension information was actually also stored somewhere else in the DICOM header.
+
+00:01:52.900 --> 00:01:57.710
+Going back, you can see these DICOM attributes called rows and
+Quay lại, bạn có thể thấy các thuộc tính DICOM này được gọi là hàng và
+
+00:01:57.710 --> 00:02:03.235
+columns tell you that this image has a shape of 1024 by 1024.
+cột cho bạn biết rằng hình ảnh này có hình dạng là 1024 x 1024.
+
+00:02:03.235 --> 00:02:06.455
+So let's start looking at some of our images.
+Vì vậy, chúng ta hãy bắt đầu xem xét một số hình ảnh của chúng tôi.
+
+00:02:06.455 --> 00:02:11.215
+Good practice when working with a new set of images is to actually look at them.
+Thực hành tốt khi làm việc với một nhóm hình ảnh mới là thực sự nhìn vào chúng.
+
+00:02:11.215 --> 00:02:15.940
+Usually, we can't do this for all of our images because our data sets are large,
+
+00:02:15.940 --> 00:02:18.920
+so one technique you can use is to perform
+vì vậy một kỹ thuật bạn có thể sử dụng là thực hiện
+
+00:02:18.920 --> 00:02:24.440
+random spot checks of your data by choosing several random images and visualizing them.
+kiểm tra vị trí ngẫu nhiên dữ liệu của bạn bằng cách chọn một số hình ảnh ngẫu nhiên và trực quan hóa chúng.
+
+00:02:24.440 --> 00:02:29.630
+Some important things to look for in this process regarding abnormalities are;
+Một số điều quan trọng cần tìm trong quá trình này liên quan đến các bất thường là;
+
+00:02:29.630 --> 00:02:33.310
+foreign object artifacts and motion.
+vật thể lạ và chuyển động.
+
+00:02:33.310 --> 00:02:34.880
+In the left image here,
+
+00:02:34.880 --> 00:02:38.045
+you can see lots of wires in this patient's chest,
+
+00:02:38.045 --> 00:02:41.350
+which we would refer to as a foreign body in an image.
+mà chúng tôi muốn gọi là một cơ thể nước ngoài trong một hình ảnh.
+
+00:02:41.350 --> 00:02:46.565
+You can also see a set of vertical lines that look like a grid running through the image,
+Bạn cũng có thể thấy một tập hợp các đường thẳng đứng trông giống như một lưới chạy qua hình ảnh,
+
+00:02:46.565 --> 00:02:50.915
+which actually occur when the X-ray machine is not calibrated properly.
+
+00:02:50.915 --> 00:02:52.580
+In the image on the right,
+Trong hình ảnh bên phải,
+
+00:02:52.580 --> 00:02:54.890
+you can see that the spine looks very blurry
+
+00:02:54.890 --> 00:02:57.650
+because the patient moved while the X-ray was taken.
+
+00:02:57.650 --> 00:03:00.500
+Depending on how frequently you see artifacts
+
+00:03:00.500 --> 00:03:03.335
+like this in your images and how consistent they are,
+
+00:03:03.335 --> 00:03:04.820
+you may choose to develop
+
+00:03:04.820 --> 00:03:09.535
+preprocessing algorithms to remove images with certain types of artifacts.
+tiền xử lý các thuật toán để loại bỏ hình ảnh với một số loại hiện vật.
+
+00:03:09.535 --> 00:03:11.150
+After the first check,
+Sau lần kiểm tra đầu tiên,
+
+00:03:11.150 --> 00:03:14.330
+we want to dive deep and get a general sense of
+chúng tôi muốn đi sâu và có được cảm nhận chung về
+
+00:03:14.330 --> 00:03:18.245
+what this type of medical imaging in our data set looks like.
+loại hình ảnh y tế này trong tập dữ liệu của chúng tôi trông như thế nào.
+
+00:03:18.245 --> 00:03:21.725
+Here are the questions that I would usually ask myself.
+Đây là những câu hỏi mà tôi thường tự hỏi mình.
+
+00:03:21.725 --> 00:03:25.935
+First, is it a grayscale or RGB image?
+Đầu tiên, đó là hình ảnh màu xám hay RGB?
+
+00:03:25.935 --> 00:03:31.420
+Next, generally what parts of the body are present in the images?
+Tiếp theo, nhìn chung những bộ phận nào của cơ thể hiện diện trong các hình ảnh?
+
+00:03:31.420 --> 00:03:36.200
+Do images from different classes look particularly different?
+
+00:03:36.200 --> 00:03:40.885
+Finally, what's the intensity range of the images?
+
+00:03:40.885 --> 00:03:42.935
+As we've learned before,
+Như chúng ta đã học trước đây,
+
+00:03:42.935 --> 00:03:48.300
+remember that each image consists of pixels with all different intensities.
+hãy nhớ rằng mỗi hình ảnh bao gồm các pixel với tất cả các cường độ khác nhau.
+

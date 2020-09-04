@@ -1,0 +1,159 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.670
+So now let's expand our usage of intensity beyond looking at just individual images.
+Vì vậy, bây giờ chúng ta hãy mở rộng việc sử dụng cường độ ngoài việc chỉ nhìn vào các hình ảnh riêng lẻ.
+
+00:00:05.670 --> 00:00:11.745
+We can ask, do all images with the same label have the same intensity profiles?
+Chúng ta có thể hỏi, có phải tất cả các hình ảnh có cùng nhãn đều có cấu hình cường độ giống nhau không?
+
+00:00:11.745 --> 00:00:14.400
+In other words, is there something inherent to
+Nói cách khác, có điều gì đó vốn có để
+
+00:00:14.400 --> 00:00:17.535
+an image label in its intensity distribution?
+một nhãn hình ảnh trong phân bố cường độ của nó?
+
+00:00:17.535 --> 00:00:19.125
+You can see here,
+
+00:00:19.125 --> 00:00:22.050
+all of these images of healthy lungs have the label
+
+00:00:22.050 --> 00:00:26.685
+No Finding and the intensity distributions are below for the images.
+Không tìm thấy và phân bố cường độ là bên dưới cho các hình ảnh.
+
+00:00:26.685 --> 00:00:30.345
+At first glance, we may think that they look nothing alike,
+
+00:00:30.345 --> 00:00:32.430
+but let's take a closer look.
+nhưng chúng ta hãy xem xét kỹ hơn.
+
+00:00:32.430 --> 00:00:35.190
+Do you see that the peak intensity,
+Bạn có thấy rằng cường độ cao nhất,
+
+00:00:35.190 --> 00:00:36.390
+aside from the background,
+ngoài nền,
+
+00:00:36.390 --> 00:00:42.100
+which is zero, is around 160-180 on the x-axis for each image?
+là 0, khoảng 160-180 trên trục x cho mỗi hình ảnh?
+
+00:00:42.100 --> 00:00:43.625
+In addition to that,
+Thêm vào đó,
+
+00:00:43.625 --> 00:00:45.840
+each image has another small peak,
+mỗi hình ảnh có một đỉnh nhỏ khác,
+
+00:00:45.840 --> 00:00:49.045
+somewhere between 200 and 225.
+
+00:00:49.045 --> 00:00:54.580
+One final thing to note is that the distributions seem to have very different heights,
+Một điều cuối cùng cần lưu ý là các phân bố dường như có độ cao rất khác nhau,
+
+00:00:54.580 --> 00:00:57.290
+but when you look more closely at the y-axis,
+nhưng khi bạn nhìn kỹ hơn vào trục y,
+
+00:00:57.290 --> 00:00:59.930
+you'll notice that the peaks of each, again,
+bạn sẽ nhận thấy rằng các đỉnh của mỗi
+
+00:00:59.930 --> 00:01:05.795
+around 160-180, are actually all about 1,100-1,800 pixels.
+khoảng 160-180, thực tế là tất cả khoảng 1.100-1.800 pixel.
+
+00:01:05.795 --> 00:01:09.370
+The plot on the right is the one that's the most misleading here
+Cốt truyện bên phải là âm mưu gây hiểu lầm nhất ở đây
+
+00:01:09.370 --> 00:01:13.135
+and that's because of the huge spike at intensity zero.
+và đó là do mức tăng đột biến lớn ở cường độ 0.
+
+00:01:13.135 --> 00:01:14.850
+Where is this coming from?
+Điều này đến từ đâu?
+
+00:01:14.850 --> 00:01:16.880
+If we go back to the image,
+Nếu chúng ta quay lại hình ảnh,
+
+00:01:16.880 --> 00:01:20.645
+we see that the image on the right has a black border around it.
+chúng ta thấy rằng hình bên phải có viền đen xung quanh.
+
+00:01:20.645 --> 00:01:22.355
+This may seem small,
+Điều này có vẻ nhỏ,
+
+00:01:22.355 --> 00:01:24.470
+but all of those pixels add up.
+nhưng tất cả các pixel đó cộng lại.
+
+00:01:24.470 --> 00:01:26.765
+Since the image backgrounds are black,
+
+00:01:26.765 --> 00:01:30.230
+all images have some spike around intensity zero.
+tất cả các hình ảnh có một số tăng đột biến xung quanh cường độ 0.
+
+00:01:30.230 --> 00:01:33.020
+But the border on the right one is making the number of pixels
+Nhưng đường viền bên phải tạo ra số lượng pixel
+
+00:01:33.020 --> 00:01:36.400
+much higher and causing that spike at zero.
+cao hơn nhiều và gây ra mức tăng đột biến đó bằng 0.
+
+00:01:36.400 --> 00:01:40.115
+There are some other things that you can do to play with intensity.
+Có một số điều khác mà bạn có thể làm để chơi với cường độ cao.
+
+00:01:40.115 --> 00:01:44.390
+You can compare intensity profiles of images with different labels.
+Bạn có thể so sánh cấu hình cường độ của hình ảnh với các nhãn khác nhau.
+
+00:01:44.390 --> 00:01:47.500
+So for example, disease versus no disease.
+Vì vậy, ví dụ, bệnh so với không bệnh.
+
+00:01:47.500 --> 00:01:51.605
+You can compare intensity profiles of different sections of an image,
+Bạn có thể so sánh cấu hình cường độ của các phần khác nhau của hình ảnh,
+
+00:01:51.605 --> 00:01:55.160
+such as the center pixels versus a different part of the image,
+chẳng hạn như các pixel trung tâm so với một phần khác của hình ảnh,
+
+00:01:55.160 --> 00:01:56.330
+like the lower third,
+như phần ba dưới,
+
+00:01:56.330 --> 00:02:01.990
+and you can also normalize images to bring their intensity values closer to zero.
+và bạn cũng có thể chuẩn hóa hình ảnh để đưa giá trị cường độ của chúng về gần 0.
+
+00:02:01.990 --> 00:02:05.510
+This just means subtracting the image mean from
+Điều này chỉ có nghĩa là trừ đi trung bình của hình ảnh
+
+00:02:05.510 --> 00:02:10.490
+every pixel and dividing every pixel by the pixel standard intensity value.
+mọi pixel và chia mọi pixel cho giá trị cường độ tiêu chuẩn pixel.
+
+00:02:10.490 --> 00:02:15.390
+In Lesson 3, we will cover more about preprocessing images.
+Trong Bài 3, chúng tôi sẽ trình bày chi tiết hơn về tiền xử lý hình ảnh.
+

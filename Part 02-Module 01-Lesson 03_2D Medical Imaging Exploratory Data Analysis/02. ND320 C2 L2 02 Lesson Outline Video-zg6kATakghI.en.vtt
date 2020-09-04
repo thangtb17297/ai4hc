@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.710
+In this lesson, we will first learn about what the DICOM standard is.
+Trong bài học này, trước tiên chúng ta sẽ tìm hiểu về tiêu chuẩn DICOM là gì.
+
+00:00:04.710 --> 00:00:09.435
+Then we'll talk about how to read images and different image properties.
+Sau đó, chúng ta sẽ nói về cách đọc hình ảnh và các thuộc tính hình ảnh khác nhau.
+
+00:00:09.435 --> 00:00:12.075
+Next, we'll talk about how to prepare
+Tiếp theo, chúng ta sẽ nói về cách chuẩn bị
+
+00:00:12.075 --> 00:00:16.845
+non-image data and extract information for training machine learning models.
+dữ liệu phi hình ảnh và trích xuất thông tin để đào tạo mô hình học máy.
+
+00:00:16.845 --> 00:00:20.790
+Finally, we'll talk about exploring medical metadata.
+Cuối cùng, chúng ta sẽ nói về việc khám phá siêu dữ liệu y tế.
+
+00:00:20.790 --> 00:00:22.395
+At the end of this lesson,
+Vào cuối bài học này,
+
+00:00:22.395 --> 00:00:25.245
+you'll be a pro at dissecting medical images,
+bạn sẽ là người chuyên nghiệp trong việc mổ xẻ các hình ảnh y tế,
+
+00:00:25.245 --> 00:00:28.590
+starting with the standard file formats that they're stored in,
+bắt đầu với các định dạng tệp tiêu chuẩn mà chúng được lưu trữ,
+
+00:00:28.590 --> 00:00:33.610
+all the way down to the pixel-level data that comprises the image itself.
+tất cả các dữ liệu cấp pixel bao gồm chính hình ảnh.
+

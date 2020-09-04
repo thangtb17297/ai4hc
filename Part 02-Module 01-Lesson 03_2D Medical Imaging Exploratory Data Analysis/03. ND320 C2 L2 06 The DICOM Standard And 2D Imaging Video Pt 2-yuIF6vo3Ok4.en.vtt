@@ -1,0 +1,346 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.445
+DICOM's can be arranged into a hierarchy of series and studies.
+DICOM có thể được sắp xếp thành một hệ thống phân cấp của chuỗi và nghiên cứu.
+
+00:00:05.445 --> 00:00:12.930
+With 2D imaging, a single 2D image like in X-ray is also known as a single DICOM series.
+Với hình ảnh 2D, một hình ảnh 2D đơn lẻ như trong X-quang còn được gọi là một loạt DICOM duy nhất.
+
+00:00:12.930 --> 00:00:16.215
+Usually though, a radiologist wants to acquire
+Tuy nhiên, thông thường, một bác sĩ X quang muốn có được
+
+00:00:16.215 --> 00:00:20.355
+several X-ray images of a patient to view them at different angles.
+một số hình ảnh X-quang của một bệnh nhân để xem họ ở các góc độ khác nhau.
+
+00:00:20.355 --> 00:00:25.904
+This results in a collection of 2D images or a collection of series.
+Điều này dẫn đến một bộ sưu tập các hình ảnh 2D hoặc một bộ sưu tập các chuỗi.
+
+00:00:25.904 --> 00:00:30.545
+All of these image series combined comprise a study of the patient,
+Tất cả những chuỗi hình ảnh này kết hợp lại bao gồm một nghiên cứu về bệnh nhân,
+
+00:00:30.545 --> 00:00:33.130
+also known as a DICOM study.
+còn được gọi là nghiên cứu DICOM.
+
+00:00:33.130 --> 00:00:38.180
+A DICOM file has a header that contains every piece
+Tệp DICOM có tiêu đề chứa mọi phần
+
+00:00:38.180 --> 00:00:43.130
+of information about the acquired image organized into a set of attributes.
+thông tin về hình ảnh thu được được sắp xếp thành một tập hợp các thuộc tính.
+
+00:00:43.130 --> 00:00:46.010
+These attributes are bits of information about
+Các thuộc tính này là các bit thông tin về
+
+00:00:46.010 --> 00:00:49.060
+the image and the series and steady that it belongs to.
+hình ảnh và chuỗi và ổn định mà nó thuộc về.
+
+00:00:49.060 --> 00:00:52.745
+We'll talk about some specific attributes in a few minutes.
+Chúng ta sẽ nói về một số thuộc tính cụ thể sau vài phút.
+
+00:00:52.745 --> 00:00:54.530
+In addition to the header though,
+Ngoài tiêu đề,
+
+00:00:54.530 --> 00:00:57.860
+DICOM files also contain an image that is
+Tệp DICOM cũng chứa một hình ảnh
+
+00:00:57.860 --> 00:01:01.895
+a set of pixel data representing the actual image.
+một tập hợp dữ liệu pixel đại diện cho hình ảnh thực tế.
+
+00:01:01.895 --> 00:01:07.490
+Some of the key attributes contained in that DICOM header are the patient information,
+
+00:01:07.490 --> 00:01:09.095
+such as name, ID,
+chẳng hạn như tên, ID,
+
+00:01:09.095 --> 00:01:10.975
+birth date, and sex.
+ngày sinh và giới tính.
+
+00:01:10.975 --> 00:01:14.315
+Before we discuss anymore attributes though,
+Trước khi chúng ta thảo luận về các thuộc tính nữa,
+
+00:01:14.315 --> 00:01:20.285
+let's take a pause and talk about something called Protected Health Information or PHI.
+chúng ta hãy tạm dừng và nói về điều gì đó được gọi là Thông tin Y tế được Bảo vệ hoặc PHI.
+
+00:01:20.285 --> 00:01:25.745
+PHI refers to any information that can be used to identify an individual,
+PHI đề cập đến bất kỳ thông tin nào có thể được sử dụng để xác định một cá nhân,
+
+00:01:25.745 --> 00:01:28.910
+like patient name, age, and sex.
+như tên, tuổi và giới tính của bệnh nhân.
+
+00:01:28.910 --> 00:01:31.730
+This type of information is very sensitive,
+Loại thông tin này rất nhạy cảm,
+
+00:01:31.730 --> 00:01:35.300
+and it's protected under specific types of health care laws.
+
+00:01:35.300 --> 00:01:36.935
+As we just saw,
+Như chúng ta vừa thấy,
+
+00:01:36.935 --> 00:01:39.860
+non-image data such as patient name, age,
+dữ liệu không phải hình ảnh như tên bệnh nhân, tuổi,
+
+00:01:39.860 --> 00:01:43.430
+etc are all stored in the DICOM header and are tied to
+vv tất cả đều được lưu trữ trong tiêu đề DICOM và được gắn với
+
+00:01:43.430 --> 00:01:48.220
+the patient's medical record and can then be read by the reading radiologist.
+bệnh án của bệnh nhân và sau đó bác sĩ X quang có thể đọc.
+
+00:01:48.220 --> 00:01:53.650
+You may be be surprised that the images themselves can also contain PHI.
+Bạn có thể ngạc nhiên rằng bản thân các hình ảnh cũng có thể chứa PHI.
+
+00:01:53.650 --> 00:01:58.730
+For example, 3D header images are considered to contain PHI,
+Ví dụ: hình ảnh tiêu đề 3D được coi là chứa PHI,
+
+00:01:58.730 --> 00:02:00.590
+because you can actually reconstruct
+bởi vì bạn thực sự có thể tái tạo lại
+
+00:02:00.590 --> 00:02:04.715
+a somebody's space from one of those images with computer vision,
+không gian của ai đó từ một trong những hình ảnh đó với tầm nhìn máy tính,
+
+00:02:04.715 --> 00:02:09.655
+keeping information confidential is very important in the medical industry.
+giữ bí mật thông tin là rất quan trọng trong ngành y tế.
+
+00:02:09.655 --> 00:02:11.645
+Because as an industry partner,
+Vì là một đối tác trong ngành,
+
+00:02:11.645 --> 00:02:16.310
+your algorithm will have access to individually identifiable health information.
+thuật toán của bạn sẽ có quyền truy cập vào thông tin sức khỏe có thể nhận dạng riêng.
+
+00:02:16.310 --> 00:02:18.740
+You have to make sure that you do not hold
+Bạn phải đảm bảo rằng bạn không giữ
+
+00:02:18.740 --> 00:02:22.240
+that information outside of legal medical usage.
+thông tin đó ngoài việc sử dụng y tế hợp pháp.
+
+00:02:22.240 --> 00:02:25.985
+Let's go back to our DICOM header and its attributes.
+Hãy quay lại tiêu đề DICOM và các thuộc tính của nó.
+
+00:02:25.985 --> 00:02:28.700
+In addition to the patient header information,
+Ngoài thông tin tiêu đề bệnh nhân,
+
+00:02:28.700 --> 00:02:31.355
+DICOM headers also contained the data needed
+Tiêu đề DICOM cũng chứa dữ liệu cần thiết
+
+00:02:31.355 --> 00:02:35.135
+to tie them back to the study that they belong to.
+để buộc họ trở lại nghiên cứu mà họ thuộc về.
+
+00:02:35.135 --> 00:02:39.740
+Following from that, since each image is its own series,
+Sau đó, vì mỗi hình ảnh là một chuỗi riêng,
+
+00:02:39.740 --> 00:02:42.500
+the DICOM header also contains information that
+tiêu đề DICOM cũng chứa thông tin
+
+00:02:42.500 --> 00:02:46.240
+uniquely identifies it as a standalone series.
+xác định duy nhất nó là một chuỗi độc lập.
+
+00:02:46.240 --> 00:02:49.340
+Next, DICOM files also contain
+Tiếp theo, các tệp DICOM cũng chứa
+
+00:02:49.340 --> 00:02:53.270
+information about the equipment that was used to acquire the image.
+thông tin về thiết bị đã được sử dụng để thu được hình ảnh.
+
+00:02:53.270 --> 00:02:56.630
+The DICOM header then contains a lot of
+Sau đó, tiêu đề DICOM chứa rất nhiều
+
+00:02:56.630 --> 00:03:00.110
+information about the image itself and how it was acquired.
+thông tin về bản thân hình ảnh và cách nó được lấy.
+
+00:03:00.110 --> 00:03:04.985
+Some of these attributes describe the settings on the device that acquired the image,
+Một số thuộc tính này mô tả các cài đặt trên thiết bị thu được hình ảnh,
+
+00:03:04.985 --> 00:03:06.980
+and some described the image itself,
+và một số mô tả chính hình ảnh,
+
+00:03:06.980 --> 00:03:09.170
+like its size and resolution.
+như kích thước và độ phân giải của nó.
+
+00:03:09.170 --> 00:03:12.920
+This final attribute down here, called pixel data,
+Thuộc tính cuối cùng này ở đây, được gọi là dữ liệu pixel,
+
+00:03:12.920 --> 00:03:17.360
+contains the actual pixel data that represents the image itself.
+chứa dữ liệu pixel thực tế đại diện cho chính hình ảnh.
+
+00:03:17.360 --> 00:03:20.095
+This is not part of the DICOM header.
+Đây không phải là một phần của tiêu đề DICOM.
+
+00:03:20.095 --> 00:03:24.785
+All of the items listed in the DICOM files are attributes,
+Tất cả các mục được liệt kê trong tệp DICOM là thuộc tính,
+
+00:03:24.785 --> 00:03:29.150
+and the blocks of different types of attributes such as patient study,
+và các khối thuộc các loại thuộc tính khác nhau như nghiên cứu bệnh nhân,
+
+00:03:29.150 --> 00:03:32.335
+image, or information entities.
+hình ảnh hoặc các thực thể thông tin.
+
+00:03:32.335 --> 00:03:35.115
+So what's not part of the DICOM?
+Vì vậy, những gì không phải là một phần của DICOM?
+
+00:03:35.115 --> 00:03:38.070
+Clinical data is not part of the DICOM.
+Dữ liệu lâm sàng không phải là một phần của DICOM.
+
+00:03:38.070 --> 00:03:40.920
+Clinical diagnoses are not stored here.
+Các chẩn đoán lâm sàng không được lưu trữ ở đây.
+
+00:03:40.920 --> 00:03:44.150
+When your algorithm opens a DICOM file for a patient,
+Khi thuật toán của bạn mở tệp DICOM cho một bệnh nhân,
+
+00:03:44.150 --> 00:03:49.345
+none of the patient's current or past diagnoses are listed in the DICOM file.
+không có chẩn đoán hiện tại hoặc trước đây của bệnh nhân được liệt kê trong tệp DICOM.
+
+00:03:49.345 --> 00:03:53.980
+In addition, DICOM also does not contain the patient's medical history.
+Ngoài ra, DICOM cũng không chứa bệnh sử của bệnh nhân.
+
+00:03:53.980 --> 00:03:56.000
+So symptoms, lab results,
+Vì vậy, các triệu chứng, kết quả phòng thí nghiệm,
+
+00:03:56.000 --> 00:04:01.655
+and other types of medical history are all stored in the EMR separate from imaging data.
+và các loại bệnh sử khác đều được lưu trữ trong EMR tách biệt với dữ liệu hình ảnh.
+
+00:04:01.655 --> 00:04:06.365
+This presents a unique challenge for medical imaging algorithm developers.
+Điều này đặt ra một thách thức duy nhất cho các nhà phát triển thuật toán hình ảnh y tế.
+
+00:04:06.365 --> 00:04:11.165
+In the real-world, clinicians rely on all of this contextual information.
+Trong thế giới thực, bác sĩ lâm sàng dựa vào tất cả thông tin theo ngữ cảnh này.
+
+00:04:11.165 --> 00:04:15.410
+For clinicians, an image is really only a piece of clinical decision-making.
+Đối với các bác sĩ lâm sàng, một hình ảnh thực sự chỉ là một phần của việc ra quyết định lâm sàng.
+
+00:04:15.410 --> 00:04:18.620
+A medical imaging algorithm however,
+Tuy nhiên, một thuật toán hình ảnh y tế,
+
+00:04:18.620 --> 00:04:21.530
+usually has to make decisions based exclusively on
+thường phải đưa ra quyết định hoàn toàn dựa trên
+
+00:04:21.530 --> 00:04:26.830
+the medical imaging data alone without the benefit of the patient's clinical information.
+dữ liệu hình ảnh y tế đơn thuần mà không mang lại lợi ích cho thông tin lâm sàng của bệnh nhân.
+
+00:04:26.830 --> 00:04:31.055
+Remember in our clinical workflow how we said that after looking at an image,
+Hãy nhớ trong quy trình làm việc lâm sàng của chúng tôi, chúng tôi đã nói như thế nào sau khi xem hình ảnh,
+
+00:04:31.055 --> 00:04:33.635
+the radiologists generates a report.
+các bác sĩ X quang tạo ra một báo cáo.
+
+00:04:33.635 --> 00:04:37.085
+This report is stored in the packs and the EMR usually,
+Báo cáo này được lưu trữ trong các gói và EMR thường,
+
+00:04:37.085 --> 00:04:39.890
+but it's also not part of the DICOM.
+nhưng nó cũng không phải là một phần của DICOM.
+
+00:04:39.890 --> 00:04:44.420
+Let's take a closer look though at what is in a standard radiologist's report,
+Hãy xem xét kỹ hơn những gì có trong báo cáo của bác sĩ X quang tiêu chuẩn,
+
+00:04:44.420 --> 00:04:47.190
+because they are a great resource of information if you can
+bởi vì chúng là một nguồn thông tin tuyệt vời nếu bạn có thể
+
+00:04:47.190 --> 00:04:50.905
+obtain them as part of your dataset from a clinical partner.
+lấy chúng như một phần của tập dữ liệu của bạn từ một đối tác lâm sàng.
+
+00:04:50.905 --> 00:04:54.530
+First, the report contains basic information about
+Đầu tiên, báo cáo chứa thông tin cơ bản về
+
+00:04:54.530 --> 00:04:58.310
+where the image was taken and who the physician and radiologist are.
+nơi chụp ảnh và bác sĩ và bác sĩ X quang là ai.
+
+00:04:58.310 --> 00:05:02.180
+It then tells you what parts of the body are included in the study.
+Sau đó, nó cho bạn biết những bộ phận nào của cơ thể được đưa vào nghiên cứu.
+
+00:05:02.180 --> 00:05:05.390
+The radiologists then goes through every structure
+Sau đó, các bác sĩ X quang đi qua mọi cấu trúc
+
+00:05:05.390 --> 00:05:08.840
+visible in the image and report their findings about them.
+hiển thị trong hình ảnh và báo cáo phát hiện của họ về chúng.
+
+00:05:08.840 --> 00:05:12.080
+Finally, they write what's called an impression,
+Cuối cùng, họ viết thứ được gọi là ấn tượng,
+
+00:05:12.080 --> 00:05:14.600
+which summarizes all of the findings into
+trong đó tóm tắt tất cả các phát hiện vào
+
+00:05:14.600 --> 00:05:20.460
+a coherent story that suggests a diagnosis for the diagnosing clinician.
+một câu chuyện mạch lạc gợi ý chẩn đoán cho bác sĩ lâm sàng chẩn đoán.
+
