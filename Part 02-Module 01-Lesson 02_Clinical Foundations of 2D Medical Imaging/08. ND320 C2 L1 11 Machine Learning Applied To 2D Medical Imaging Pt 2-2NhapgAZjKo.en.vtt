@@ -1,0 +1,188 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.310
+Now that you've learned a little more about
+Bây giờ bạn đã học thêm một chút về
+
+00:00:02.310 --> 00:00:05.700
+the imaging workflow and where machine learning can fit in.
+quy trình công việc hình ảnh và nơi học máy có thể phù hợp.
+
+00:00:05.700 --> 00:00:09.855
+Let's talk about the main types of machine learning algorithms that can be developed,
+
+00:00:09.855 --> 00:00:12.765
+and for what clinical indications they might be applied.
+và chúng có thể được áp dụng cho những chỉ định lâm sàng nào.
+
+00:00:12.765 --> 00:00:16.920
+Machine learning can be used for many different reasons as 2D imaging.
+Máy học có thể được sử dụng cho nhiều lý do khác nhau như hình ảnh 2D.
+
+00:00:16.920 --> 00:00:21.015
+You may want to determine whether or not a structure in an image is healthy,
+Bạn có thể muốn xác định xem cấu trúc trong hình ảnh có lành mạnh hay không,
+
+00:00:21.015 --> 00:00:25.545
+where an abnormality in an image is or the area of a tumor.
+nơi có bất thường trong hình ảnh hoặc khu vực của khối u.
+
+00:00:25.545 --> 00:00:28.815
+These require all different types of algorithms.
+Chúng yêu cầu tất cả các loại thuật toán khác nhau.
+
+00:00:28.815 --> 00:00:33.660
+The first type of machine learning algorithm we will talk about here is classification.
+
+00:00:33.660 --> 00:00:37.530
+Classification algorithms assess a whole image and return
+
+00:00:37.530 --> 00:00:42.405
+an output stating whether or not a disease or a finding exists in the image.
+một đầu ra cho biết có hay không một căn bệnh hoặc một phát hiện tồn tại trong hình ảnh.
+
+00:00:42.405 --> 00:00:47.930
+For example, an algorithm intended to diagnose images for lung nodules
+Ví dụ: một thuật toán nhằm chẩn đoán hình ảnh cho các nốt phổi
+
+00:00:47.930 --> 00:00:53.719
+would read this image and return one of two outputs nodules or no nodules.
+sẽ đọc hình ảnh này và trả về một trong hai đầu ra có nốt hoặc không có nốt.
+
+00:00:53.719 --> 00:00:55.520
+If the algorithm is accurate,
+Nếu thuật toán chính xác,
+
+00:00:55.520 --> 00:01:00.625
+it would output the results of nodules sense there is a nodule in the image.
+nó sẽ xuất ra kết quả về các nốt sần cho thấy có một nốt sần trong hình ảnh.
+
+00:01:00.625 --> 00:01:06.260
+Classification algorithms can be used for binary or multi-class classification or
+Các thuật toán phân loại có thể được sử dụng để phân loại nhị phân hoặc nhiều lớp hoặc
+
+00:01:06.260 --> 00:01:09.020
+a single algorithm can classify for the presence or
+một thuật toán duy nhất có thể phân loại cho sự hiện diện hoặc
+
+00:01:09.020 --> 00:01:12.455
+absence of multiple types of findings or diseases.
+không có nhiều loại phát hiện hoặc bệnh tật.
+
+00:01:12.455 --> 00:01:14.900
+Note that the radiologist or
+
+00:01:14.900 --> 00:01:19.370
+the diagnosing clinician could be the end user of a classification algorithm.
+bác sĩ chẩn đoán có thể là người sử dụng cuối cùng của một thuật toán phân loại.
+
+00:01:19.370 --> 00:01:22.190
+If we create an algorithm that is so good at
+Nếu chúng tôi tạo ra một thuật toán rất tốt
+
+00:01:22.190 --> 00:01:26.150
+diagnosing based on an image that we no longer need a radiologist,
+chẩn đoán dựa trên một hình ảnh mà chúng tôi không cần bác sĩ X quang nữa,
+
+00:01:26.150 --> 00:01:29.600
+then the diagnosing clinician could be our only end-user.
+thì bác sĩ chẩn đoán có thể là người dùng cuối duy nhất của chúng tôi.
+
+00:01:29.600 --> 00:01:32.200
+But in 2020, we're not there yet,
+Nhưng vào năm 2020, chúng ta vẫn chưa đến đó,
+
+00:01:32.200 --> 00:01:36.619
+and so the radiologist is usually going to be your primary end-user.
+và vì vậy bác sĩ X quang thường sẽ là người dùng cuối chính của bạn.
+
+00:01:36.619 --> 00:01:39.380
+The second type of machine learning algorithm that
+Loại thuật toán học máy thứ hai
+
+00:01:39.380 --> 00:01:41.930
+we are going to talk about is segmentation.
+
+00:01:41.930 --> 00:01:45.530
+Segmentation algorithms identify specific pixels
+Các thuật toán phân đoạn xác định các pixel cụ thể
+
+00:01:45.530 --> 00:01:48.835
+in an image that contain a structure or a finding.
+
+00:01:48.835 --> 00:01:54.080
+For example, a segmentation algorithm intended to identify nodules in
+Ví dụ: một thuật toán phân đoạn nhằm xác định các nốt sần trong
+
+00:01:54.080 --> 00:01:59.945
+this image would return a set of colored pixels that contain the presence of the nodule.
+hình ảnh này sẽ trả về một tập hợp các pixel màu có chứa sự hiện diện của nốt sần.
+
+00:01:59.945 --> 00:02:05.755
+This algorithm creates a border around the nodule that allows us to calculate its area.
+Thuật toán này tạo ra một đường viền xung quanh nốt sần cho phép chúng ta tính diện tích của nó.
+
+00:02:05.755 --> 00:02:11.210
+Segmentation algorithms are typically used to measure the size of a particular finding,
+Các thuật toán phân đoạn thường được sử dụng để đo kích thước của một phát hiện cụ thể,
+
+00:02:11.210 --> 00:02:14.195
+or its a count, the number of findings in an image.
+hoặc là số đếm, số lượng phát hiện trong một hình ảnh.
+
+00:02:14.195 --> 00:02:18.650
+For example, they are often used to count cells in microscopy data,
+Ví dụ, chúng thường được sử dụng để đếm tế bào trong dữ liệu kính hiển vi,
+
+00:02:18.650 --> 00:02:22.280
+where each cell in an image is segmented individually.
+trong đó mỗi ô trong một hình ảnh được phân đoạn riêng lẻ.
+
+00:02:22.280 --> 00:02:28.190
+Again, radiologists are most likely the end-user of segmentation algorithms.
+Một lần nữa, các bác sĩ X quang rất có thể là người dùng cuối của các thuật toán phân đoạn.
+
+00:02:28.190 --> 00:02:33.455
+The last type of machine learning algorithm we'll talk about here is localization.
+
+00:02:33.455 --> 00:02:36.800
+Localization algorithms identify the area
+Các thuật toán bản địa hóa xác định khu vực
+
+00:02:36.800 --> 00:02:39.725
+of an image that contain a structure or a finding.
+của một hình ảnh có chứa một cấu trúc hoặc một phát hiện.
+
+00:02:39.725 --> 00:02:44.800
+They output a set of coordinates that create a bounding box around that finding.
+Họ xuất ra một tập hợp các tọa độ tạo ra một hộp giới hạn xung quanh phát hiện đó.
+
+00:02:44.800 --> 00:02:48.650
+For example, a localization algorithm intended to aid
+
+00:02:48.650 --> 00:02:53.250
+radiologists in determining where the nodule is in this image,
+bác sĩ X quang trong việc xác định vị trí nốt sần trong hình ảnh này
+
+00:02:53.250 --> 00:02:56.500
+would output a box around the nodule.
+sẽ xuất ra một hộp xung quanh nốt sần.
+
+00:02:56.500 --> 00:03:00.830
+These localization algorithms can be very useful for drawing
+Các thuật toán bản địa hóa này có thể rất hữu ích cho việc vẽ
+
+00:03:00.830 --> 00:03:03.110
+radiologists attention to certain types of
+bác sĩ X quang chú ý đến một số loại
+
+00:03:03.110 --> 00:03:05.570
+findings that are difficult to see on an image.
+những phát hiện khó thấy trên hình ảnh.
+
+00:03:05.570 --> 00:03:11.430
+Again, radiologists will be your end-user for localization algorithms.
+Một lần nữa, bác sĩ X quang sẽ là người dùng cuối của bạn cho các thuật toán bản địa hóa.
+

@@ -1,0 +1,66 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.495
+You can view my whole solution notebook for this exercise,
+Bạn có thể xem toàn bộ sổ tay giải của tôi cho bài tập này,
+
+00:00:03.495 --> 00:00:05.535
+but I'll walk you through a piece of it.
+
+00:00:05.535 --> 00:00:09.700
+You can see that I added some columns to my original data frame.
+Bạn có thể thấy rằng tôi đã thêm một số cột vào khung dữ liệu ban đầu của mình.
+
+00:00:09.700 --> 00:00:12.735
+I created this max_prob column,
+Tôi đã tạo cột max_prob này,
+
+00:00:12.735 --> 00:00:16.485
+which takes the max of either brain bleed probability,
+
+00:00:16.485 --> 00:00:19.135
+or aortic dissection probability.
+hoặc xác suất bóc tách động mạch chủ.
+
+00:00:19.135 --> 00:00:23.150
+I then reordered my data frame according to this max_prob.
+Sau đó, tôi đã sắp xếp lại thứ tự khung dữ liệu của mình theo max_prob này.
+
+00:00:23.150 --> 00:00:27.185
+So the images with larger probabilities were put to the top of the queue.
+Vì vậy, những hình ảnh có xác suất lớn hơn đã được đưa lên đầu hàng đợi.
+
+00:00:27.185 --> 00:00:31.580
+Next, I created a time to read prioritized column,
+Tiếp theo, tôi đã tạo thời gian để đọc cột ưu tiên,
+
+00:00:31.580 --> 00:00:35.375
+that was simply values incremented by six minutes per row.
+đó chỉ đơn giản là các giá trị tăng thêm sáu phút mỗi hàng.
+
+00:00:35.375 --> 00:00:39.890
+This is the new reading time based on the reordered queue.
+Đây là thời gian đọc mới dựa trên hàng đợi được sắp xếp lại.
+
+00:00:39.890 --> 00:00:44.015
+Finally, I calculated a timedelta column.
+Cuối cùng, tôi tính toán một cột thời gian.
+
+00:00:44.015 --> 00:00:48.665
+This is time to read minus time to read prioritized,
+Đây là thời gian để đọc trừ đi thời gian ưu tiên đọc,
+
+00:00:48.665 --> 00:00:53.830
+so that I could get a sense of how much time was saved from the original order.
+để tôi có thể biết được lượng thời gian đã được tiết kiệm so với đơn hàng ban đầu.
+
+00:00:53.830 --> 00:00:56.750
+Here I'm showing all of the scans,
+Ở đây tôi đang hiển thị tất cả các bản quét,
+
+00:00:56.750 --> 00:01:00.900
+where at least 30 minutes were saved on head CTs.
+trong đó ít nhất 30 phút đã được lưu trên CT đầu.
+

@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.485
+Before we move on though,
+Trước khi chúng ta tiếp tục,
+
+00:00:01.485 --> 00:00:05.340
+another very specific type of 2D imaging is called fundal
+một loại hình ảnh 2D rất cụ thể khác được gọi là cơ bản
+
+00:00:05.340 --> 00:00:10.110
+imaging and it looks at the integrity of the tiny vessels in the eye.
+hình ảnh và nó xem xét tính toàn vẹn của các mạch nhỏ trong mắt.
+
+00:00:10.110 --> 00:00:13.485
+The fundus is the interior surface of the eye,
+Cơ sở là bề mặt bên trong của mắt,
+
+00:00:13.485 --> 00:00:17.880
+and images of it can be taken to diagnose diabetic retinopathy.
+và hình ảnh của nó có thể được thực hiện để chẩn đoán bệnh võng mạc tiểu đường.
+
+00:00:17.880 --> 00:00:22.440
+In this condition, blood vessels at the back of the eye become damaged.
+Trong tình trạng này, các mạch máu ở phía sau của mắt bị tổn thương.
+
+00:00:22.440 --> 00:00:26.260
+We won't be covering this type of 2D imaging in this course,
+Chúng tôi sẽ không đề cập đến loại hình ảnh 2D này trong khóa học này,
+
+00:00:26.260 --> 00:00:28.925
+but it is important to know because there are many
+nhưng điều quan trọng là phải biết vì có nhiều
+
+00:00:28.925 --> 00:00:32.390
+open-source fundal imaging data sets available for
+bộ dữ liệu hình ảnh cơ bản nguồn mở có sẵn cho
+
+00:00:32.390 --> 00:00:35.360
+machine learning imaging researchers and there are also
+các nhà nghiên cứu hình ảnh học máy và cũng có
+
+00:00:35.360 --> 00:00:39.215
+many academic and industry groups that are working in this space.
+nhiều nhóm học thuật và công nghiệp đang làm việc trong không gian này.
+
+00:00:39.215 --> 00:00:42.620
+There's still one more entirely different branch of
+Vẫn còn một nhánh hoàn toàn khác của
+
+00:00:42.620 --> 00:00:46.100
+2D medical imaging that we won't cover much in this course.
+Hình ảnh y tế 2D mà chúng tôi sẽ không đề cập nhiều trong khóa học này.
+
+00:00:46.100 --> 00:00:48.410
+But it's worth mentioning as there is
+Nhưng điều đáng nói là có
+
+00:00:48.410 --> 00:00:52.390
+a big area in the worlds of applying AI to microscopy.
+một lĩnh vực lớn trong thế giới ứng dụng AI vào kính hiển vi.
+
+00:00:52.390 --> 00:00:56.855
+Microscopy refers to physical slides of biological material
+Kính hiển vi đề cập đến các slide vật lý của vật liệu sinh học
+
+00:00:56.855 --> 00:01:01.715
+taken from a patient that can be viewed at the cell level through a microscope.
+được lấy từ một bệnh nhân có thể quan sát được ở cấp độ tế bào qua kính hiển vi.
+
+00:01:01.715 --> 00:01:04.880
+These slides often have a stain applied to them that
+Các slide này thường có một vết bẩn được bôi lên
+
+00:01:04.880 --> 00:01:08.765
+causes different cell structures to appear in different colors.
+khiến các cấu trúc tế bào khác nhau xuất hiện với các màu khác nhau.
+
+00:01:08.765 --> 00:01:11.620
+These stains help pathologists tell the difference
+Những vết bẩn này giúp các nhà nghiên cứu bệnh học phân biệt được
+
+00:01:11.620 --> 00:01:15.330
+between normal cell structures and pathological structures.
+giữa cấu trúc tế bào bình thường và cấu trúc bệnh lý.
+
+00:01:15.330 --> 00:01:19.060
+Since these images are not acquired with a digital machine,
+Vì những hình ảnh này không thu được bằng máy kỹ thuật số,
+
+00:01:19.060 --> 00:01:22.615
+they are not inherently digital like X-rays are.
+chúng vốn dĩ không phải là kỹ thuật số như tia X.
+
+00:01:22.615 --> 00:01:25.810
+As a result, an additional step of digitizing
+Kết quả là, một bước số hóa bổ sung
+
+00:01:25.810 --> 00:01:29.465
+these images is required before applying AI.
+những hình ảnh này là bắt buộc trước khi áp dụng AI.
+
+00:01:29.465 --> 00:01:34.810
+One thing that's important to note with digital pathology is that it is not interpreted
+Một điều quan trọng cần lưu ý với bệnh lý kỹ thuật số là nó không được diễn giải
+
+00:01:34.810 --> 00:01:40.195
+by a radiologist as other 2D images are in the previous workflow we introduced.
+bởi một bác sĩ X quang vì các hình ảnh 2D khác nằm trong quy trình làm việc trước đây mà chúng tôi đã giới thiệu.
+
+00:01:40.195 --> 00:01:44.885
+With microscopy, a cell sample is first taken from the patient,
+Với kính hiển vi, một mẫu tế bào đầu tiên được lấy từ bệnh nhân,
+
+00:01:44.885 --> 00:01:49.555
+it is then interpreted by a pathologist, not a radiologist,
+sau đó nó được giải thích bởi một nhà bệnh lý học, không phải một bác sĩ X quang,
+
+00:01:49.555 --> 00:01:55.720
+who generates a report that is then read and ingested by the diagnosing and care team.
+người tạo ra một báo cáo sau đó được nhóm chẩn đoán và chăm sóc đọc và nhập vào.
+
+00:01:55.720 --> 00:01:58.940
+Note that the digitization process is not
+Lưu ý rằng quá trình số hóa không
+
+00:01:58.940 --> 00:02:02.215
+necessary for this interpretation by a pathologist.
+cần thiết cho sự giải thích này của một nhà bệnh lý học.
+
+00:02:02.215 --> 00:02:05.060
+The efforts in this area to digitize are
+Những nỗ lực trong lĩnh vực này để số hóa là
+
+00:02:05.060 --> 00:02:07.895
+being made specifically to increase the potential for
+được thực hiện đặc biệt để tăng tiềm năng cho
+
+00:02:07.895 --> 00:02:14.340
+AI for medical imaging in this space and also for better microscopy sample archiving.
+AI cho hình ảnh y tế trong không gian này và cũng để lưu trữ mẫu kính hiển vi tốt hơn.
+

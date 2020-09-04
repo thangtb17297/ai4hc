@@ -1,0 +1,234 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.050 --> 00:00:05.160
+Before we dive into how we can apply machine learning to medical imaging,
+Trước khi đi sâu vào cách chúng ta có thể áp dụng máy học vào hình ảnh y tế,
+Trước khi đi sâu vào cách chúng ta có thể áp dụng máy học vào hình ảnh y tế,
+
+00:00:05.160 --> 00:00:09.960
+let's learn some basics about clinical workflows that involve 2D imaging.
+chúng ta hãy tìm hiểu một số điều cơ bản về quy trình công việc lâm sàng liên quan đến hình ảnh 2D.
+chúng ta hãy tìm hiểu một số điều cơ bản về quy trình công việc lâm sàng liên quan đến hình ảnh 2D.
+
+00:00:09.960 --> 00:00:12.885
+Here again, we'll focus on x-rays.
+Ở đây một lần nữa, chúng tôi sẽ tập trung vào tia X.
+Ở đây một lần nữa, chúng tôi sẽ tập trung vào tia X.
+
+00:00:12.885 --> 00:00:18.170
+Previously, we learned about this medical imaging workflow that starts with the patient,
+Trước đây, chúng tôi đã tìm hiểu về quy trình hình ảnh y tế này bắt đầu với bệnh nhân,
+Trước đây, chúng tôi đã tìm hiểu về quy trình hình ảnh y tế này bắt đầu với bệnh nhân,
+
+00:00:18.170 --> 00:00:20.540
+moves to the radiologist who produces
+chuyển đến bác sĩ X quang, người sản xuất
+chuyển đến bác sĩ X quang, người sản xuất
+
+00:00:20.540 --> 00:00:24.455
+a report which is then read by a diagnosing clinician.
+một báo cáo sau đó được đọc bởi một bác sĩ chẩn đoán.
+một báo cáo sau đó được đọc bởi một bác sĩ chẩn đoán.
+
+00:00:24.455 --> 00:00:28.085
+Before we dive into how we can apply machine learning to this,
+Trước khi đi sâu vào cách chúng ta có thể áp dụng công nghệ máy học vào việc này,
+Trước khi đi sâu vào cách chúng ta có thể áp dụng công nghệ máy học vào việc này,
+
+00:00:28.085 --> 00:00:31.715
+let's learn some basics in the process that involved 2D imaging.
+chúng ta hãy tìm hiểu một số điều cơ bản trong quy trình liên quan đến hình ảnh 2D.
+chúng ta hãy tìm hiểu một số điều cơ bản trong quy trình liên quan đến hình ảnh 2D.
+
+00:00:31.715 --> 00:00:37.280
+Machine learning is mainly involved before the images arrive at the radiologist.
+Máy học chủ yếu tham gia trước khi hình ảnh đến tay bác sĩ X quang.
+Máy học chủ yếu tham gia trước khi hình ảnh đến tay bác sĩ X quang.
+
+00:00:37.280 --> 00:00:40.260
+Before images get to a radiologist's hands,
+Trước khi hình ảnh đến tay bác sĩ X quang,
+Trước khi hình ảnh đến tay bác sĩ X quang,
+
+00:00:40.260 --> 00:00:44.340
+they are stored in a Picture Archiving and Communication System.
+chúng được lưu trữ trong Hệ thống Lưu trữ và Truyền thông Ảnh.
+chúng được lưu trữ trong Hệ thống Lưu trữ và Truyền thông Ảnh.
+
+00:00:44.340 --> 00:00:47.915
+Every imaging center and hospital has a PACS.
+Mọi trung tâm hình ảnh và bệnh viện đều có PACS.
+Mọi trung tâm hình ảnh và bệnh viện đều có PACS.
+
+00:00:47.915 --> 00:00:51.260
+These systems allow all medical images to be stored in
+Các hệ thống này cho phép tất cả các hình ảnh y tế được lưu trữ trong
+Các hệ thống này cho phép tất cả các hình ảnh y tế được lưu trữ trong
+
+00:00:51.260 --> 00:00:55.875
+the hospital's servers and transferred to different departments throughout the hospital.
+máy chủ của bệnh viện và được chuyển đến các khoa khác nhau trong toàn bệnh viện.
+máy chủ của bệnh viện và được chuyển đến các khoa khác nhau trong toàn bệnh viện.
+
+00:00:55.875 --> 00:00:57.790
+In the clinical workflow,
+Trong quy trình làm việc lâm sàng,
+Trong quy trình làm việc lâm sàng,
+
+00:00:57.790 --> 00:01:03.610
+we can broadly bucket imaging into two categories, diagnostic and screening.
+rộng rãi chúng ta có thể gộp hình ảnh thành hai loại, chẩn đoán và sàng lọc.
+rộng rãi chúng ta có thể gộp hình ảnh thành hai loại, chẩn đoán và sàng lọc.
+
+00:01:03.610 --> 00:01:07.570
+Diagnostic imaging happens when a clinician believes that there
+Chẩn đoán hình ảnh xảy ra khi bác sĩ lâm sàng tin rằng có
+Chẩn đoán hình ảnh xảy ra khi bác sĩ lâm sàng tin rằng có
+
+00:01:07.570 --> 00:01:11.350
+may be something wrong with the patient and they need imaging to verify.
+bệnh nhân có thể có vấn đề gì đó và họ cần hình ảnh để xác minh.
+bệnh nhân có thể có vấn đề gì đó và họ cần hình ảnh để xác minh.
+
+00:01:11.350 --> 00:01:14.230
+An example of diagnostic imaging
+Một ví dụ về chẩn đoán hình ảnh
+Một ví dụ về chẩn đoán hình ảnh
+
+00:01:14.230 --> 00:01:18.505
+is in a patient's brain to verify if he has a brain tumor.
+nằm trong não của bệnh nhân để xác minh xem anh ta có bị u não hay không.
+nằm trong não của bệnh nhân để xác minh xem anh ta có bị u não hay không.
+
+00:01:18.505 --> 00:01:24.970
+Diagnostic imaging can happen in emergency settings as well as non-emergency settings.
+Chẩn đoán hình ảnh có thể xảy ra trong cài đặt khẩn cấp cũng như cài đặt không khẩn cấp.
+Chẩn đoán hình ảnh có thể xảy ra trong cài đặt khẩn cấp cũng như cài đặt không khẩn cấp.
+
+00:01:24.970 --> 00:01:28.254
+Screening imaging happens when a clinician
+Hình ảnh sàng lọc xảy ra khi bác sĩ
+Hình ảnh sàng lọc xảy ra khi bác sĩ
+
+00:01:28.254 --> 00:01:31.705
+doesn't necessarily believe there's something wrong with the patient,
+không nhất thiết phải tin rằng có điều gì đó không ổn với bệnh nhân,
+không nhất thiết phải tin rằng có điều gì đó không ổn với bệnh nhân,
+
+00:01:31.705 --> 00:01:34.810
+but the patient falls into a high risk category
+nhưng bệnh nhân thuộc nhóm nguy cơ cao
+nhưng bệnh nhân thuộc nhóm nguy cơ cao
+
+00:01:34.810 --> 00:01:38.310
+and needs to be scanned regularly for early detection.
+và cần được quét thường xuyên để phát hiện sớm.
+và cần được quét thường xuyên để phát hiện sớm.
+
+00:01:38.310 --> 00:01:41.810
+For example, individuals over a certain age with
+Ví dụ: các cá nhân trên một độ tuổi nhất định với
+Ví dụ: các cá nhân trên một độ tuổi nhất định với
+
+00:01:41.810 --> 00:01:46.600
+a family history of colon cancer are given annual screening colonoscopies.
+tiền sử gia đình bị ung thư ruột kết được làm nội soi kiểm tra hàng năm.
+tiền sử gia đình bị ung thư ruột kết được làm nội soi kiểm tra hàng năm.
+
+00:01:46.600 --> 00:01:48.665
+In these types of imaging studies,
+Trong các loại nghiên cứu hình ảnh này,
+Trong các loại nghiên cứu hình ảnh này,
+
+00:01:48.665 --> 00:01:51.605
+the majority of patients have negative results.
+đa số bệnh nhân có kết quả âm tính.
+đa số bệnh nhân có kết quả âm tính.
+
+00:01:51.605 --> 00:01:55.655
+Screening usually happens in non-emergency settings.
+Việc sàng lọc thường xảy ra ở những cơ sở không khẩn cấp.
+Việc sàng lọc thường xảy ra ở những cơ sở không khẩn cấp.
+
+00:01:55.655 --> 00:01:59.630
+Let's talk more about diagnostic imaging in the workflow.
+Hãy nói thêm về chẩn đoán hình ảnh trong quy trình làm việc.
+Hãy nói thêm về chẩn đoán hình ảnh trong quy trình làm việc.
+
+00:01:59.630 --> 00:02:04.174
+In emergency situations, a diagnosis may be very time sensitive.
+Trong các tình huống khẩn cấp, chẩn đoán có thể rất nhạy cảm về thời gian.
+Trong các tình huống khẩn cấp, chẩn đoán có thể rất nhạy cảm về thời gian.
+
+00:02:04.174 --> 00:02:09.770
+For example, surgeons need to verify if a patient in the OR has a bleed in their brain.
+Ví dụ, bác sĩ phẫu thuật cần xác minh xem một bệnh nhân trong OR có bị chảy máu não hay không.
+Ví dụ, bác sĩ phẫu thuật cần xác minh xem một bệnh nhân trong OR có bị chảy máu não hay không.
+
+00:02:09.770 --> 00:02:14.555
+So a machine learning algorithm in this situation would be used very early
+Vì vậy, một thuật toán học máy trong tình huống này sẽ được sử dụng rất sớm
+Vì vậy, một thuật toán học máy trong tình huống này sẽ được sử dụng rất sớm
+
+00:02:14.555 --> 00:02:16.820
+on in the imaging workflow in order to
+trong quy trình hình ảnh để
+trong quy trình hình ảnh để
+
+00:02:16.820 --> 00:02:20.150
+obtain insights from the image as fast as possible.
+có được thông tin chi tiết từ hình ảnh càng nhanh càng tốt.
+có được thông tin chi tiết từ hình ảnh càng nhanh càng tốt.
+
+00:02:20.150 --> 00:02:23.990
+In non-emergency situations where the radiologist may
+Trong các tình huống không khẩn cấp, bác sĩ X quang có thể
+Trong các tình huống không khẩn cấp, bác sĩ X quang có thể
+
+00:02:23.990 --> 00:02:27.215
+not need to read an image right away, for example,
+không cần phải đọc hình ảnh ngay lập tức, chẳng hạn như
+không cần phải đọc hình ảnh ngay lập tức, chẳng hạn như
+
+00:02:27.215 --> 00:02:30.470
+assessing tumor growth of a pre-existing cancerous tumor in
+đánh giá sự phát triển khối u của một khối u ung thư đã có từ trước ở
+đánh giá sự phát triển khối u của một khối u ung thư đã có từ trước ở
+
+00:02:30.470 --> 00:02:35.355
+the lungs or a patient waiting for results of potential bone fracture in their arm.
+phổi hoặc một bệnh nhân đang chờ kết quả về khả năng gãy xương ở cánh tay của họ.
+phổi hoặc một bệnh nhân đang chờ kết quả về khả năng gãy xương ở cánh tay của họ.
+
+00:02:35.355 --> 00:02:38.660
+In these cases, it's okay if your algorithm doesn't run
+Trong những trường hợp này, sẽ không sao nếu thuật toán của bạn không chạy
+Trong những trường hợp này, sẽ không sao nếu thuật toán của bạn không chạy
+
+00:02:38.660 --> 00:02:43.460
+immediately and it may not be necessary until later in the workflow.
+ngay lập tức và có thể không cần thiết cho đến sau này trong quy trình làm việc.
+ngay lập tức và có thể không cần thiết cho đến sau này trong quy trình làm việc.
+
+00:02:43.460 --> 00:02:47.450
+In screening imaging, it's almost always the case that
+Trong hình ảnh sàng lọc, hầu như luôn luôn xảy ra trường hợp
+Trong hình ảnh sàng lọc, hầu như luôn luôn xảy ra trường hợp
+
+00:02:47.450 --> 00:02:50.990
+your algorithm does not need to be run immediately in the workflow,
+thuật toán của bạn không cần phải chạy ngay lập tức trong quy trình làm việc,
+thuật toán của bạn không cần phải chạy ngay lập tức trong quy trình làm việc,
+
+00:02:50.990 --> 00:02:53.390
+as these types of studies are never urgent.
+vì những loại nghiên cứu này không bao giờ cấp thiết.
+vì những loại nghiên cứu này không bao giờ cấp thiết.
+
+00:02:53.390 --> 00:02:58.979
+For example, a six year-old smoker routinely has lung cancer screenings.
+Ví dụ, một đứa trẻ sáu tuổi hút thuốc thường xuyên phải kiểm tra ung thư phổi.
+Ví dụ, một đứa trẻ sáu tuổi hút thuốc thường xuyên phải kiểm tra ung thư phổi.
+

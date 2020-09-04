@@ -1,0 +1,303 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.405
+Finally, let's talk about regulatory stakeholders.
+Cuối cùng, hãy nói về các bên liên quan theo quy định.
+
+00:00:03.405 --> 00:00:05.490
+The main regulatory stakeholder in
+Bên liên quan quản lý chính trong
+
+00:00:05.490 --> 00:00:10.305
+the medical imaging world is the Food and Drug Administration, or the FDA.
+thế giới hình ảnh y tế là Cơ quan Quản lý Thực phẩm và Dược phẩm, hoặc FDA.
+
+00:00:10.305 --> 00:00:16.125
+Note that in Europe, the equivalent to FDA approval is to get something called a CE mark,
+Lưu ý rằng ở Châu Âu, tương đương với sự chấp thuận của FDA là có được một thứ gọi là dấu CE,
+
+00:00:16.125 --> 00:00:20.865
+which many US companies also pursue as there tend to be more lenient guidelines.
+mà nhiều công ty Hoa Kỳ cũng theo đuổi vì có xu hướng có nhiều hướng dẫn khoan dung hơn.
+
+00:00:20.865 --> 00:00:24.300
+We will not be talking about CE marking in this course.
+
+00:00:24.300 --> 00:00:29.025
+There will also be a lot that we can't cover in this course about the FDA process,
+Cũng sẽ có rất nhiều điều mà chúng tôi không thể trình bày trong khóa học này về quy trình FDA,
+
+00:00:29.025 --> 00:00:31.575
+but by the end of this course in your project,
+nhưng vào cuối khóa học này trong dự án của bạn,
+
+00:00:31.575 --> 00:00:34.650
+you will have a good grasp on the components that are most relevant
+bạn sẽ nắm rõ các thành phần có liên quan nhất
+
+00:00:34.650 --> 00:00:38.365
+to the data scientist who develops the AI algorithms.
+cho nhà khoa học dữ liệu, người phát triển các thuật toán AI.
+
+00:00:38.365 --> 00:00:41.840
+The main concern from the FDA is patient safety
+Mối quan tâm chính của FDA là sự an toàn của bệnh nhân
+
+00:00:41.840 --> 00:00:45.410
+and protecting patients from all unnecessary risks.
+và bảo vệ bệnh nhân khỏi mọi rủi ro không đáng có.
+
+00:00:45.410 --> 00:00:48.800
+The FDA also ensures that the algorithm is labeled
+FDA cũng đảm bảo rằng thuật toán được gắn nhãn
+
+00:00:48.800 --> 00:00:52.075
+and marketed and used appropriately in clinical settings.
+và được tiếp thị và sử dụng thích hợp trong các cơ sở lâm sàng.
+
+00:00:52.075 --> 00:00:56.810
+Labeling is something that we will cover in much more depth in Lesson 4,
+Dán nhãn là thứ mà chúng ta sẽ đề cập sâu hơn trong Bài 4,
+
+00:00:56.810 --> 00:01:01.220
+but it is tied to how you define your algorithms intended use and informs
+nhưng nó gắn liền với cách bạn xác định mục đích sử dụng của thuật toán và thông báo
+
+00:01:01.220 --> 00:01:06.110
+your end users of what your algorithm is designed to do in very simple terms.
+người dùng cuối của bạn về những gì thuật toán của bạn được thiết kế để thực hiện theo các thuật ngữ rất đơn giản.
+
+00:01:06.110 --> 00:01:10.190
+For example, an algorithm that's labeled to be used for the detection of
+Ví dụ: một thuật toán được gắn nhãn được sử dụng để phát hiện
+
+00:01:10.190 --> 00:01:14.935
+bone fractures on X-ray should not be used on a CT image.
+gãy xương trên X-quang không nên sử dụng hình ảnh CT.
+
+00:01:14.935 --> 00:01:20.600
+The FDA treats AI for 2D medical imaging just like medical devices,
+FDA xử lý AI cho hình ảnh y tế 2D giống như các thiết bị y tế,
+
+00:01:20.600 --> 00:01:23.510
+this means that they use the guidelines for assessing
+điều này có nghĩa là họ sử dụng các nguyên tắc để đánh giá
+
+00:01:23.510 --> 00:01:27.865
+medical devices to also assess AI algorithms.
+thiết bị y tế cũng để đánh giá các thuật toán AI.
+
+00:01:27.865 --> 00:01:34.780
+Medical devices are broken down into three classes by the FDA: Class I, II, and III.
+Thiết bị y tế được FDA chia thành ba loại: Loại I, II và III.
+
+00:01:34.780 --> 00:01:39.860
+Devices fall into one of these three classes based on the potential risk that they
+Các thiết bị thuộc một trong ba loại này dựa trên nguy cơ tiềm ẩn mà chúng
+
+00:01:39.860 --> 00:01:46.000
+present to the patient and whether it is low, medium, or high.
+trình bày cho bệnh nhân và cho dù nó là thấp, trung bình hoặc cao.
+
+00:01:46.000 --> 00:01:49.250
+Hospital beds have a low risk to patients,
+Giường bệnh có ít rủi ro cho bệnh nhân,
+
+00:01:49.250 --> 00:01:54.035
+so they are classified as a Class I medical device by the FDA.
+vì vậy chúng được FDA phân loại là thiết bị y tế loại I.
+
+00:01:54.035 --> 00:01:57.710
+Medical equipment such as a blood pressure cuff and
+Thiết bị y tế như máy đo huyết áp và
+
+00:01:57.710 --> 00:02:01.205
+absorbable sutures may have some potential risks to patients,
+chỉ khâu hấp thụ có thể có một số rủi ro tiềm ẩn cho bệnh nhân,
+
+00:02:01.205 --> 00:02:03.020
+but they're not so high.
+nhưng chúng không quá cao.
+
+00:02:03.020 --> 00:02:05.365
+So they are classified as Class II.
+Vì vậy chúng được xếp vào loại II.
+
+00:02:05.365 --> 00:02:09.290
+Implantable pacemakers and coronary stents can cause
+Máy tạo nhịp tim cấy ghép và stent mạch vành có thể gây ra
+
+00:02:09.290 --> 00:02:14.420
+huge damage to a patient's body if they are not used correctly or by a trained expert.
+thiệt hại rất lớn cho cơ thể của bệnh nhân nếu chúng không được sử dụng đúng cách hoặc bởi một chuyên gia được đào tạo.
+
+00:02:14.420 --> 00:02:18.935
+So they are listed as an FDA Class III medical device.
+Vì vậy chúng được xếp vào danh sách các thiết bị y tế loại III của FDA.
+
+00:02:18.935 --> 00:02:23.990
+A device or algorithms class dictates the safety controls that
+Lớp thiết bị hoặc thuật toán ra lệnh cho các điều khiển an toàn
+
+00:02:23.990 --> 00:02:25.460
+the device manufacturer or
+nhà sản xuất thiết bị hoặc
+
+00:02:25.460 --> 00:02:29.525
+algorithm developer must put into place in bringing their product to market.
+nhà phát triển thuật toán phải đưa sản phẩm của họ ra thị trường.
+
+00:02:29.525 --> 00:02:33.110
+Safety controls mean the measures that the manufacturer puts
+Kiểm soát an toàn có nghĩa là các biện pháp mà nhà sản xuất đưa ra
+
+00:02:33.110 --> 00:02:37.000
+into place to try to mitigate as much risk as possible.
+vào vị trí để cố gắng giảm thiểu rủi ro nhiều nhất có thể.
+
+00:02:37.000 --> 00:02:41.060
+Class I devices only require general controls.
+Thiết bị loại I chỉ yêu cầu các điều khiển chung.
+
+00:02:41.060 --> 00:02:46.190
+This means that putting enough plain English guidelines and special labeling on
+Điều này có nghĩa là đưa đủ các hướng dẫn tiếng Anh đơn giản và dán nhãn đặc biệt
+
+00:02:46.190 --> 00:02:48.200
+your medical device is sufficient for
+
+00:02:48.200 --> 00:02:51.965
+the FDA to mitigate risks associated with the device.
+FDA để giảm thiểu rủi ro liên quan đến thiết bị.
+
+00:02:51.965 --> 00:02:57.335
+Class II devices require both general controls and special controls,
+
+00:02:57.335 --> 00:03:00.470
+which means that more risk mitigation steps need to be
+có nghĩa là cần có nhiều bước giảm thiểu rủi ro hơn
+
+00:03:00.470 --> 00:03:04.660
+taken than just including special labeling to be considered safe.
+được thực hiện hơn là chỉ ghi nhãn đặc biệt để được coi là an toàn.
+
+00:03:04.660 --> 00:03:08.315
+In addition to general controls and special controls,
+Ngoài các điều khiển chung và điều khiển đặc biệt,
+
+00:03:08.315 --> 00:03:13.960
+devices with the highest risk require premarket authorization from the FDA.
+thiết bị có rủi ro cao nhất cần được FDA cho phép.
+
+00:03:13.960 --> 00:03:17.870
+The risk categories and safety controls in turn dictate
+Các loại rủi ro và kiểm soát an toàn lần lượt ra lệnh
+
+00:03:17.870 --> 00:03:22.495
+which regulatory pathway the devices or algorithm must go down.
+con đường quy định nào mà các thiết bị hoặc thuật toán phải đi xuống.
+
+00:03:22.495 --> 00:03:29.840
+The two main regulatory pathways for medical devices are 510(k) and premarket approval,
+Hai con đường quy định chính cho thiết bị y tế là 510 (k) và phê duyệt trước khi bán,
+
+00:03:29.840 --> 00:03:32.555
+also known as PMA.
+còn được gọi là PMA.
+
+00:03:32.555 --> 00:03:37.760
+510(k) is the regulatory pathway for low and medium-risk devices.
+510 (k) là lộ trình quy định cho các thiết bị có rủi ro thấp và trung bình.
+
+00:03:37.760 --> 00:03:40.055
+Medical device manufacturers and
+
+00:03:40.055 --> 00:03:44.075
+algorithm developers need to show the FDA evidence that their device
+các nhà phát triển thuật toán cần đưa ra bằng chứng FDA rằng thiết bị của họ
+
+00:03:44.075 --> 00:03:47.060
+is substantially equivalent to a predicate device
+về cơ bản tương đương với một thiết bị vị ngữ
+
+00:03:47.060 --> 00:03:50.680
+that has already been approved for marketing by the FDA.
+đã được FDA chấp thuận để tiếp thị.
+
+00:03:50.680 --> 00:03:57.115
+With 510(k), human testing is not required as part of the regulatory pathway.
+Với 510 (k), không cần thử nghiệm trên người như một phần của quy trình quy định.
+
+00:03:57.115 --> 00:04:02.045
+Once all documentation is compiled and submitted to the FDA,
+Sau khi tất cả tài liệu được biên soạn và nộp cho FDA,
+
+00:04:02.045 --> 00:04:08.530
+510(k) submissions take only 30-90 days to be approved or rejected by the FDA.
+510 (k) đệ trình chỉ mất 30-90 ngày để được FDA chấp thuận hoặc từ chối.
+
+00:04:08.530 --> 00:04:11.930
+Higher-risk devices and algorithms must go through
+Các thiết bị và thuật toán có rủi ro cao hơn phải trải qua
+
+00:04:11.930 --> 00:04:15.575
+a more rigorous process called premarket approval.
+một quy trình nghiêm ngặt hơn được gọi là phê duyệt trước thị trường.
+
+00:04:15.575 --> 00:04:21.235
+PMA is used to prove that a new device is safe and effective for the end user.
+
+00:04:21.235 --> 00:04:24.860
+As a result, this process is much more in depth than the
+Kết quả là, quá trình này có chiều sâu hơn nhiều so với
+
+00:04:24.860 --> 00:04:28.925
+510(k) process and typically requires clinical trials.
+Quy trình 510 (k) và thường yêu cầu thử nghiệm lâm sàng.
+
+00:04:28.925 --> 00:04:34.465
+It also takes a lot longer for the FDA to approve or reject to the application.
+Cũng mất nhiều thời gian hơn để FDA chấp thuận hoặc từ chối đơn đăng ký.
+
+00:04:34.465 --> 00:04:37.535
+To summarize the FDA regulatory process,
+Để tóm tắt quy trình quản lý của FDA,
+
+00:04:37.535 --> 00:04:39.140
+medical devices fall into
+thiết bị y tế rơi vào
+
+00:04:39.140 --> 00:04:43.915
+three FDA classes based on the potential risk that they present to the patient.
+ba loại FDA dựa trên nguy cơ tiềm ẩn mà chúng gây ra cho bệnh nhân.
+
+00:04:43.915 --> 00:04:47.960
+Lower risk devices fall into Classes I and II and usually
+Các thiết bị có rủi ro thấp hơn thuộc loại I và II và thường
+
+00:04:47.960 --> 00:04:52.040
+self-regulate or take a 510(k) submission pathway.
+tự điều chỉnh hoặc thực hiện con đường phục tùng 510 (k).
+
+00:04:52.040 --> 00:04:53.735
+If a device is exempt,
+Nếu một thiết bị được miễn,
+
+00:04:53.735 --> 00:04:55.745
+it means it's registered with the FDA,
+nó có nghĩa là nó đã được đăng ký với FDA,
+
+00:04:55.745 --> 00:04:59.300
+but the FDA is not continuously monitoring it for safety.
+nhưng FDA không liên tục giám sát nó về độ an toàn.
+
+00:04:59.300 --> 00:05:02.900
+High-risk devices can take the 510(k) pathway,
+Các thiết bị rủi ro cao có thể đi theo con đường 510 (k),
+
+00:05:02.900 --> 00:05:07.129
+but they usually require the premarket approval process.
+nhưng họ thường yêu cầu quy trình phê duyệt trước khi mua.
+

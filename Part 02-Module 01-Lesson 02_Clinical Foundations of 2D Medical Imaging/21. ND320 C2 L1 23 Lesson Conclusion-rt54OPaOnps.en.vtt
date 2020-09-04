@@ -1,0 +1,87 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.325
+We have reached the end of our first lesson.
+Chúng ta đã kết thúc bài học đầu tiên.
+
+00:00:02.325 --> 00:00:05.775
+Great work. Now let's review what we've learned.
+
+00:00:05.775 --> 00:00:09.150
+First, we talked about the different types of 2D imaging,
+Đầu tiên, chúng ta đã nói về các loại hình ảnh 2D khác nhau,
+
+00:00:09.150 --> 00:00:11.865
+including MRI, CT, and X-ray.
+bao gồm MRI, CT và X-quang.
+
+00:00:11.865 --> 00:00:16.980
+We mainly focused on x-ray since it's the most commonly used 2D imaging technique.
+
+00:00:16.980 --> 00:00:18.615
+In the second section,
+Trong phần thứ hai,
+
+00:00:18.615 --> 00:00:21.480
+we discussed that machine learning algorithms are applied at
+
+00:00:21.480 --> 00:00:25.200
+different places in the medical imaging workflow based on the use case.
+các vị trí khác nhau trong quy trình công việc hình ảnh y tế dựa trên trường hợp sử dụng.
+
+00:00:25.200 --> 00:00:27.480
+We've also learned that clinical uses of
+Chúng tôi cũng đã biết rằng việc sử dụng lâm sàng của
+
+00:00:27.480 --> 00:00:31.605
+machine learning algorithms can be divided into diagnostic and screening,
+
+00:00:31.605 --> 00:00:34.830
+and that there are three main types of machine learning algorithms;
+và có ba loại thuật toán học máy chính;
+
+00:00:34.830 --> 00:00:37.975
+classification, segmentation, and localization.
+
+00:00:37.975 --> 00:00:41.030
+Remember, machine learning is applied for a reason.
+Hãy nhớ rằng, học máy được áp dụng là có lý do.
+
+00:00:41.030 --> 00:00:42.320
+At the end of this section,
+Ở cuối phần này,
+
+00:00:42.320 --> 00:00:44.210
+we talked about a few applications where
+chúng tôi đã nói về một số ứng dụng trong đó
+
+00:00:44.210 --> 00:00:47.585
+machine learning can have a positive clinical impact.
+máy học có thể có tác động tích cực đến lâm sàng.
+
+00:00:47.585 --> 00:00:49.205
+In the third section,
+Trong phần thứ ba,
+
+00:00:49.205 --> 00:00:53.165
+we learned different ways to gather labels and what some of the challenges are.
+
+00:00:53.165 --> 00:00:57.605
+We also learned to evaluate the algorithm's performance using specificity,
+
+00:00:57.605 --> 00:00:59.975
+sensitivity, and the dice coefficient.
+độ nhạy và hệ số xúc xắc.
+
+00:00:59.975 --> 00:01:03.410
+In the end, we talked about different stakeholders involved in
+Cuối cùng, chúng tôi đã nói về các bên liên quan khác nhau liên quan đến
+
+00:01:03.410 --> 00:01:06.800
+developing 2D image algorithm and bringing it to the market.
+
+00:01:06.800 --> 00:01:10.350
+I hope you enjoyed the lesson and I'll see you soon.
+

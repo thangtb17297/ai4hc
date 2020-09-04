@@ -1,0 +1,116 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:04.380
+I really asked you to stretch your mind with this exercise.
+Tôi thực sự yêu cầu bạn kéo dài tâm trí của bạn với bài tập này.
+
+00:00:04.380 --> 00:00:08.400
+I wanted you to synthesize your understanding so far of medical imaging,
+Tôi muốn bạn tổng hợp những hiểu biết của bạn cho đến nay về hình ảnh y tế,
+
+00:00:08.400 --> 00:00:11.865
+clinical settings, stakeholders, and the FDA.
+
+00:00:11.865 --> 00:00:14.880
+There isn't necessarily a right or a wrong answer here,
+Ở đây không nhất thiết phải có câu trả lời đúng hay sai,
+
+00:00:14.880 --> 00:00:16.680
+but I'm going to give you an example of something
+
+00:00:16.680 --> 00:00:18.930
+that I might have said for this exercise.
+mà tôi có thể đã nói cho bài tập này.
+
+00:00:18.930 --> 00:00:23.175
+So my hypothetical algorithm would use digital pathology,
+Vì vậy, thuật toán giả định của tôi sẽ sử dụng bệnh lý kỹ thuật số,
+
+00:00:23.175 --> 00:00:26.310
+and it would be a segmentation algorithm used to
+và nó sẽ là một thuật toán phân đoạn được sử dụng để
+
+00:00:26.310 --> 00:00:30.400
+segment and count red versus white blood cells in a blood smear.
+phân đoạn và đếm tế bào máu đỏ so với bạch cầu trong phết máu.
+
+00:00:30.400 --> 00:00:35.480
+This would have to occur in the workflow after the microscopy data was digitized.
+
+00:00:35.480 --> 00:00:37.895
+But before I got to the pathologist,
+Nhưng trước khi tôi đến gặp bác sĩ bệnh lý,
+
+00:00:37.895 --> 00:00:41.210
+I would use this to help pathologists quickly count
+Tôi sẽ sử dụng điều này để giúp các nhà bệnh lý học nhanh chóng đếm
+
+00:00:41.210 --> 00:00:45.409
+the number of red and white blood cells to compute the exact ratio.
+số lượng hồng cầu và bạch cầu để tính tỷ lệ chính xác.
+
+00:00:45.409 --> 00:00:48.125
+If the value is high of red to white,
+Nếu giá trị từ đỏ đến trắng cao,
+
+00:00:48.125 --> 00:00:50.545
+this could indicate leukemia.
+điều này có thể chỉ ra bệnh bạch cầu.
+
+00:00:50.545 --> 00:00:53.795
+Since my algorithm would give an exact ratio,
+Vì thuật toán của tôi sẽ đưa ra một tỷ lệ chính xác,
+
+00:00:53.795 --> 00:00:57.425
+I think that this might be beneficial to a pathologist because
+Tôi nghĩ rằng điều này có thể có lợi cho một nhà bệnh lý học vì
+
+00:00:57.425 --> 00:01:01.370
+it's better than them just estimating the ratio by looking at it.
+tốt hơn là họ chỉ ước tính tỷ lệ bằng cách nhìn vào nó.
+
+00:01:01.370 --> 00:01:04.070
+If that worked, this could be a good tool,
+Nếu điều đó hiệu quả, đây có thể là một công cụ tốt,
+
+00:01:04.070 --> 00:01:08.840
+maybe for early detection of leukemia or other types of infections.
+có thể để phát hiện sớm bệnh bạch cầu hoặc các loại nhiễm trùng khác.
+
+00:01:08.840 --> 00:01:12.679
+Since I haven't learned that much yet about risk scores,
+Vì tôi chưa học nhiều về điểm rủi ro,
+
+00:01:12.679 --> 00:01:15.020
+I'm going to guess that in the eyes of the FDA,
+Tôi sẽ đoán rằng dưới con mắt của FDA,
+
+00:01:15.020 --> 00:01:18.425
+this would be a class 1 or a class 2 device,
+đây sẽ là thiết bị lớp 1 hoặc lớp 2,
+
+00:01:18.425 --> 00:01:20.810
+because I don't think that something like this would be
+bởi vì tôi không nghĩ rằng một cái gì đó như thế này sẽ là
+
+00:01:20.810 --> 00:01:23.915
+high risk and be considered class 3.
+rủi ro cao và được coi là loại 3.
+
+00:01:23.915 --> 00:01:25.805
+If my algorithm is wrong,
+
+00:01:25.805 --> 00:01:29.555
+the pathologist is still going to look at the blood smear anyways,
+nhà nghiên cứu bệnh học vẫn sẽ xem xét vết máu,
+
+00:01:29.555 --> 00:01:31.835
+so they would be able to correct anything
+vì vậy họ sẽ có thể sửa bất cứ điều gì
+
+00:01:31.835 --> 00:01:36.390
+incorrect and the patient wouldn't really be at high risk.
+không chính xác và bệnh nhân sẽ không thực sự có nguy cơ cao.
+

@@ -1,0 +1,186 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.440
+Once you understand the types of machine learning algorithms for 2D imaging,
+Sau khi bạn hiểu các loại thuật toán học máy cho hình ảnh 2D,
+
+00:00:04.440 --> 00:00:07.230
+you can start to get creative with how you apply them.
+bạn có thể bắt đầu sáng tạo với cách bạn áp dụng chúng.
+
+00:00:07.230 --> 00:00:10.740
+Keep in mind that not every algorithm is useful.
+
+00:00:10.740 --> 00:00:14.640
+AI for 2D imaging is most effective when it can be
+AI cho hình ảnh 2D hiệu quả nhất khi nó có thể
+
+00:00:14.640 --> 00:00:18.570
+applied to helping radiologists to read critical studies faster,
+được áp dụng để giúp các bác sĩ X quang đọc các nghiên cứu quan trọng nhanh hơn,
+
+00:00:18.570 --> 00:00:20.880
+reduce their burnout and reading fatigue,
+giảm sự kiệt sức và mệt mỏi khi đọc,
+
+00:00:20.880 --> 00:00:23.665
+and help them make more accurate assessments.
+và giúp họ đưa ra những đánh giá chính xác hơn.
+
+00:00:23.665 --> 00:00:26.390
+Let's go over several different applications where
+Hãy xem xét một số ứng dụng khác nhau, nơi
+
+00:00:26.390 --> 00:00:29.509
+machine learning could have a positive clinical impact.
+máy học có thể có tác động tích cực về mặt lâm sàng.
+
+00:00:29.509 --> 00:00:31.220
+First, let's look at how
+Trước tiên, hãy xem cách
+
+00:00:31.220 --> 00:00:35.200
+a machine-learning algorithm could help reduce radiologists burnout.
+một thuật toán học máy có thể giúp giảm thiểu tình trạng kiệt sức của các nhà nghiên cứu X quang.
+
+00:00:35.200 --> 00:00:40.545
+Do you know that millions of mammographies are taken each year in the US?
+Bạn có biết rằng hàng triệu người chụp nhũ ảnh được thực hiện mỗi năm ở Mỹ?
+
+00:00:40.545 --> 00:00:43.055
+Each image actually, by law,
+Mỗi hình ảnh thực sự, theo luật,
+
+00:00:43.055 --> 00:00:45.710
+requires two radiologists to read it,
+yêu cầu hai bác sĩ X quang đọc nó,
+
+00:00:45.710 --> 00:00:48.740
+but about 85 percent of them are normal.
+nhưng khoảng 85 phần trăm trong số đó là bình thường.
+
+00:00:48.740 --> 00:00:53.135
+What this means is that highly skilled radiologists are spending
+Điều này có nghĩa là các bác sĩ X quang có tay nghề cao đang chi tiêu
+
+00:00:53.135 --> 00:00:58.415
+a lot of time just reading normal studies which can lead to burnout.
+
+00:00:58.415 --> 00:01:02.150
+Having a machine learning classification algorithm to serve
+Có thuật toán phân loại học máy để phân phát
+
+00:01:02.150 --> 00:01:06.045
+as a second reader could reduce radiologists burnout.
+như một đầu đọc thứ hai có thể làm giảm tình trạng kiệt sức của các bác sĩ X quang.
+
+00:01:06.045 --> 00:01:10.690
+We discussed earlier that algorithms can't yet replace radiologists.
+Chúng ta đã thảo luận trước đó rằng các thuật toán vẫn chưa thể thay thế các bác sĩ X quang.
+
+00:01:10.690 --> 00:01:12.715
+But in this situation,
+
+00:01:12.715 --> 00:01:15.475
+since there would still be a second human reader,
+vì vẫn sẽ có người đọc thứ hai,
+
+00:01:15.475 --> 00:01:19.570
+it could be a special case where AI could be used in a way that
+nó có thể là một trường hợp đặc biệt trong đó AI có thể được sử dụng theo cách
+
+00:01:19.570 --> 00:01:24.785
+technically replaces a radiologist in the workflow if its accuracy is high enough.
+về mặt kỹ thuật thay thế một bác sĩ X quang trong quy trình làm việc nếu độ chính xác của nó đủ cao.
+
+00:01:24.785 --> 00:01:27.940
+The second machine-learning application would be
+Ứng dụng học máy thứ hai sẽ là
+
+00:01:27.940 --> 00:01:32.105
+the optimization of image reading workflows in the emergency room.
+tối ưu hóa quy trình công việc đọc hình ảnh trong phòng cấp cứu.
+
+00:01:32.105 --> 00:01:36.745
+Radiologists read images in a first-in-first-out queue,
+
+00:01:36.745 --> 00:01:39.325
+which means that images delivered to them first
+có nghĩa là hình ảnh được gửi đến họ trước tiên
+
+00:01:39.325 --> 00:01:42.350
+will be read first under all circumstances.
+sẽ được đọc đầu tiên trong mọi trường hợp.
+
+00:01:42.350 --> 00:01:45.010
+However, emergency cases such as
+Tuy nhiên, những trường hợp khẩn cấp như
+
+00:01:45.010 --> 00:01:48.340
+brain bleeds are fatal and they need to be discovered quickly,
+chảy máu não gây tử vong và chúng cần được phát hiện nhanh chóng,
+
+00:01:48.340 --> 00:01:52.420
+otherwise, patients could die before their images even get read.
+nếu không, bệnh nhân có thể chết trước khi hình ảnh của họ được đọc.
+
+00:01:52.420 --> 00:01:54.380
+In order to avoid this,
+Để tránh điều này,
+
+00:01:54.380 --> 00:01:58.040
+we could have a classification algorithm that reads the image as
+chúng tôi có thể có một thuật toán phân loại đọc hình ảnh dưới dạng
+
+00:01:58.040 --> 00:02:02.305
+soon as it is acquired and pushes critical cases to the top of the queue.
+ngay sau khi nó được mua và đẩy các trường hợp quan trọng lên đầu hàng đợi.
+
+00:02:02.305 --> 00:02:05.405
+In the exercise that you do at the end of this lesson,
+
+00:02:05.405 --> 00:02:09.560
+you will actually reorder a radiologist queue based on results from
+bạn sẽ thực sự sắp xếp lại hàng đợi bác sĩ X quang dựa trên kết quả từ
+
+00:02:09.560 --> 00:02:12.170
+classification algorithms and you will see how
+thuật toán phân loại và bạn sẽ thấy cách
+
+00:02:12.170 --> 00:02:15.940
+machine learning makes a difference in optimizing clinical workflows.
+máy học tạo ra sự khác biệt trong việc tối ưu hóa quy trình làm việc lâm sàng.
+
+00:02:15.940 --> 00:02:19.340
+Another great area where machine learning algorithms can have
+Một lĩnh vực tuyệt vời khác mà các thuật toán học máy có thể có
+
+00:02:19.340 --> 00:02:24.050
+a clinical impact is in helping to assess tumor growth over time.
+một tác động lâm sàng giúp đánh giá sự phát triển của khối u theo thời gian.
+
+00:02:24.050 --> 00:02:26.120
+Patients who have lung cancer,
+Bệnh nhân ung thư phổi,
+
+00:02:26.120 --> 00:02:29.465
+often undergo chemotherapy to kill lung tumors.
+thường xuyên hóa trị để tiêu diệt khối u phổi.
+
+00:02:29.465 --> 00:02:31.205
+If the therapy is working,
+Nếu liệu pháp đang hoạt động,
+
+00:02:31.205 --> 00:02:36.215
+we expect that the tumor will shrink and the number of lung nodules will decrease.
+chúng tôi hy vọng rằng khối u sẽ thu nhỏ và số lượng nốt phổi sẽ giảm.
+
+00:02:36.215 --> 00:02:40.460
+Segmentation algorithms can assist radiologists in calculating
+Các thuật toán phân đoạn có thể hỗ trợ các bác sĩ X quang tính toán
+
+00:02:40.460 --> 00:02:45.389
+the area of tumors and counting the number of lung nodules overtime.
+
