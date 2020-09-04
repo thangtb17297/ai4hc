@@ -1,0 +1,71 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.595
+If you think just about classic machine learning,
+
+00:00:02.595 --> 00:00:06.270
+we've actually been using AI for medical imaging for quite a while.
+
+00:00:06.270 --> 00:00:10.110
+It's probably one of the areas of medicine where AI first appeared.
+
+00:00:10.110 --> 00:00:15.345
+But there have been so many advances lately that bring deep learning to the cutting edge.
+Nhưng gần đây đã có rất nhiều tiến bộ giúp đưa việc học sâu lên thành một đỉnh cao.
+
+00:00:15.345 --> 00:00:17.460
+So let's take a look at some history.
+Vì vậy, chúng ta hãy nhìn lại một số lịch sử.
+
+00:00:17.460 --> 00:00:23.085
+Logistic and statistical pattern recognition was first applied in medicine in the 1960s,
+
+00:00:23.085 --> 00:00:24.900
+but not for medical imaging.
+nhưng không dùng cho hình ảnh y tế.
+
+00:00:24.900 --> 00:00:26.880
+In fact, in the 1980s,
+
+00:00:26.880 --> 00:00:30.345
+computers were really becoming more prevalent and they changed our life
+
+00:00:30.345 --> 00:00:34.530
+everyday in how a doctor would approach medical imaging problems.
+
+00:00:34.530 --> 00:00:40.195
+Even more relevant, MRI was not first applied clinically until 1980.
+
+00:00:40.195 --> 00:00:42.620
+Many classic machine learning models,
+
+00:00:42.620 --> 00:00:44.990
+like support vector machines and random forests
+
+00:00:44.990 --> 00:00:47.490
+were not even invented until the mid to late '90s,
+
+00:00:47.490 --> 00:00:49.805
+but they quickly made their way into health care
+
+00:00:49.805 --> 00:00:52.735
+with some specific use cases for medical imaging.
+
+00:00:52.735 --> 00:00:57.815
+2012 saw the real promise for deep learning in general imaging problems however,
+
+00:00:57.815 --> 00:01:00.655
+with the win of deep learning on the ImageNet Challenge.
+
+00:01:00.655 --> 00:01:03.140
+From there, it only took five years for
+
+00:01:03.140 --> 00:01:07.040
+the first deep learning algorithm to be FDA cleared for medical imaging.
+thuật toán học sâu đầu tiên được FDA công nhận đối với hình ảnh y tế.
+
+00:01:07.040 --> 00:01:13.110
+Now in 2020, we bring you the first Udacity course in AI for 2D medical imaging.
+

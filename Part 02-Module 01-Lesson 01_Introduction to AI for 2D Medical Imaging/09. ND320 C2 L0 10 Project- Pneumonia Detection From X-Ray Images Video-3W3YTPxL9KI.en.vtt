@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.070
+In the project at the end of this course,
+Trong dự án ở cuối khóa học này,
+
+00:00:02.070 --> 00:00:04.725
+you are going to apply the skills that you have acquired
+bạn sẽ áp dụng các kỹ năng mà bạn đã có được
+
+00:00:04.725 --> 00:00:07.950
+in this 2D Medical Imaging course to analyze data from
+trong khóa học Hình ảnh Y học 2D này để phân tích dữ liệu từ
+
+00:00:07.950 --> 00:00:11.910
+the NIH chest X-ray dataset and train a CNN to
+
+00:00:11.910 --> 00:00:16.260
+classify a given chest X-ray for the presence or absence of pneumonia.
+phân loại X-quang ngực nhất định để biết có hay không có viêm phổi.
+
+00:00:16.260 --> 00:00:17.790
+I'm going to warn you now,
+Tôi sẽ cảnh báo bạn bây giờ,
+
+00:00:17.790 --> 00:00:19.920
+this is a really hard task.
+đây là một nhiệm vụ thực sự khó khăn.
+
+00:00:19.920 --> 00:00:22.500
+You'll be provided with the medical images with
+Bạn sẽ được cung cấp các hình ảnh y tế với
+
+00:00:22.500 --> 00:00:25.890
+clinical labels extracted from radiologists reports.
+nhãn lâm sàng trích từ báo cáo của bác sĩ X quang.
+
+00:00:25.890 --> 00:00:29.430
+In the project, you will first do some initial analyses
+Trong dự án, trước tiên bạn sẽ thực hiện một số phân tích ban đầu
+
+00:00:29.430 --> 00:00:33.195
+on the data using some techniques we will learn in the next lesson.
+trên dữ liệu bằng cách sử dụng một số kỹ thuật mà chúng ta sẽ học trong bài học tiếp theo.
+
+00:00:33.195 --> 00:00:36.590
+Then, you can build and train your model on them.
+Sau đó, bạn có thể xây dựng và đào tạo mô hình của mình trên chúng.
+
+00:00:36.590 --> 00:00:39.890
+Next, you will write some code to transform data from
+Tiếp theo, bạn sẽ viết một số mã để chuyển đổi dữ liệu từ
+
+00:00:39.890 --> 00:00:43.400
+a file called DICOM to imaging data you are familiar with,
+một tệp có tên DICOM tới dữ liệu hình ảnh mà bạn quen thuộc,
+
+00:00:43.400 --> 00:00:46.015
+and feed them into the model that you've trained.
+và đưa chúng vào mô hình mà bạn đã đào tạo.
+
+00:00:46.015 --> 00:00:47.675
+Last but not least,
+Cuối cùng nhưng không kém phần quan trọng,
+
+00:00:47.675 --> 00:00:52.790
+you will write documentation for your algorithm and submit it to the FDA for clearance.
+bạn sẽ viết tài liệu cho thuật toán của mình và gửi cho FDA để được thông qua.
+
+00:00:52.790 --> 00:00:55.370
+I want to take a minute to tie the relevance of
+Tôi muốn dành một phút để xác định mức độ liên quan của
+
+00:00:55.370 --> 00:00:59.090
+this project to what's currently going on in our world with COVID-19.
+dự án này cho những gì hiện đang diễn ra trong thế giới của chúng ta với COVID-19.
+
+00:00:59.090 --> 00:01:01.955
+In our project, we're going to make a classifier
+Trong dự án của chúng tôi, chúng tôi sẽ tạo một bộ phân loại
+
+00:01:01.955 --> 00:01:04.595
+for detecting pneumonia from X-ray images.
+để phát hiện viêm phổi từ hình ảnh X-quang.
+
+00:01:04.595 --> 00:01:07.445
+You've probably been hearing on the news quite a bit
+Bạn có thể đã nghe tin tức về một chút
+
+00:01:07.445 --> 00:01:10.645
+about how there's a shortage of test kits for COVID-19.
+về việc thiếu bộ dụng cụ kiểm tra COVID-19 như thế nào.
+
+00:01:10.645 --> 00:01:13.085
+Well, in just the past month,
+Chà, chỉ trong tháng qua,
+
+00:01:13.085 --> 00:01:15.710
+there have already been researchers working to figure out,
+đã có các nhà nghiên cứu làm việc để tìm ra,
+
+00:01:15.710 --> 00:01:21.530
+if they can create deep learning algorithms to diagnose COVID-19 from chest X-rays.
+nếu họ có thể tạo ra các thuật toán học sâu để chẩn đoán COVID-19 từ chụp X-quang ngực.
+
+00:01:21.530 --> 00:01:25.790
+They're using the exact same principles that you are going to be learning in this course,
+Họ đang sử dụng chính xác các nguyên tắc mà bạn sẽ học trong khóa học này,
+
+00:01:25.790 --> 00:01:28.730
+and implementing in your project with pneumonia.
+và thực hiện trong dự án của bạn với bệnh viêm phổi.
+
+00:01:28.730 --> 00:01:33.320
+Given that almost every hospital in America has an X-ray scanner,
+Vì hầu hết mọi bệnh viện ở Mỹ đều có máy quét tia X,
+
+00:01:33.320 --> 00:01:37.040
+imagine how much more accessible deep learning could make
+tưởng tượng học sâu có thể tiếp cận nhiều hơn
+
+00:01:37.040 --> 00:01:41.640
+COVID-19 testing if we use it for deep learning with X-rays
+Thử nghiệm COVID-19 nếu chúng tôi sử dụng nó để học sâu với tia X
+

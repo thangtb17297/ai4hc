@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.375
+In this course, I'm going to take you on a journey that starts with
+Trong khóa học này, tôi sẽ đưa bạn vào một cuộc hành trình bắt đầu với
+
+00:00:03.375 --> 00:00:06.690
+understanding what a 2D medical image is,
+hiểu hình ảnh y tế 2D là gì,
+
+00:00:06.690 --> 00:00:10.345
+how it fits into medicine and the health care system today,
+cách nó phù hợp với y học và hệ thống chăm sóc sức khỏe ngày nay,
+
+00:00:10.345 --> 00:00:14.624
+how we can use AI to solve interesting 2D imaging problems,
+cách chúng ta có thể sử dụng AI để giải quyết các vấn đề hình ảnh 2D thú vị,
+
+00:00:14.624 --> 00:00:17.520
+and how we can finally take that AI from bench to
+và cuối cùng chúng ta có thể đưa AI đó từ băng ghế dự bị sang
+
+00:00:17.520 --> 00:00:21.735
+bedside to actually be used by doctors to improve patient lives.
+giường để thực sự được sử dụng bởi các bác sĩ để cải thiện cuộc sống của bệnh nhân.
+
+00:00:21.735 --> 00:00:25.410
+I think that this course is really special, and here's why.
+Tôi nghĩ rằng khóa học này thực sự đặc biệt, và đây là lý do tại sao.
+
+00:00:25.410 --> 00:00:28.590
+Throughout my career, I've taken a lot of courses on
+Trong suốt sự nghiệp của mình, tôi đã tham gia rất nhiều khóa học về
+
+00:00:28.590 --> 00:00:32.880
+the technical aspects of medical imaging and of machine and deep learning.
+các khía cạnh kỹ thuật của hình ảnh y tế và máy học và học sâu.
+
+00:00:32.880 --> 00:00:38.280
+In my PhD, these were the areas that myself and my colleagues were primarily focused on.
+Trong chương trình tiến sĩ của tôi, đây là những lĩnh vực mà tôi và các đồng nghiệp của tôi chủ yếu tập trung vào.
+
+00:00:38.280 --> 00:00:41.285
+Once I stepped outside of academia, however,
+Tuy nhiên, khi tôi bước ra ngoài học viện,
+
+00:00:41.285 --> 00:00:44.990
+I learned that there are so many more moving pieces to the health care and
+Tôi biết được rằng có rất nhiều mảng hoạt động khác trong lĩnh vực chăm sóc sức khỏe và
+
+00:00:44.990 --> 00:00:50.455
+regulatory systems that had a significant impact on how translational my research was.
+hệ thống quản lý có tác động đáng kể đến mức độ dịch thuật của nghiên cứu của tôi.
+
+00:00:50.455 --> 00:00:53.750
+Without understanding this space holistically,
+Nếu không hiểu không gian này một cách tổng thể,
+
+00:00:53.750 --> 00:00:56.770
+it's difficult to build things that truly make an impact.
+rất khó để xây dựng những thứ thực sự tạo ra tác động.
+
+00:00:56.770 --> 00:01:00.485
+This course is intended to give you that holistic understanding,
+Khóa học này nhằm cung cấp cho bạn sự hiểu biết toàn diện,
+
+00:01:00.485 --> 00:01:03.750
+and I truly believe that it's one of the first of its kind out there.
+và tôi thực sự tin rằng đó là một trong những chiếc đầu tiên thuộc loại này.
+
+00:01:03.750 --> 00:01:06.900
+I'm really excited to get going with you.
+Tôi thực sự vui mừng được đi cùng bạn.
+

@@ -1,0 +1,50 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.190
+Academics have been developing algorithms to analyze medical images for a long time,
+Các học giả đã phát triển các thuật toán để phân tích hình ảnh y tế trong một thời gian dài,
+
+00:00:05.190 --> 00:00:08.040
+particularly computer and data scientists.
+đặc biệt là các nhà khoa học máy tính và dữ liệu.
+
+00:00:08.040 --> 00:00:10.470
+Once large enough data set started to become
+Khi tập dữ liệu đủ lớn bắt đầu trở thành
+
+00:00:10.470 --> 00:00:13.110
+available for training deep learning algorithms,
+có sẵn để đào tạo các thuật toán học sâu,
+
+00:00:13.110 --> 00:00:16.575
+and we saw that some algorithms could outperform human experts,
+và chúng tôi thấy rằng một số thuật toán có thể làm tốt hơn các chuyên gia con người,
+
+00:00:16.575 --> 00:00:19.425
+more stakeholders emerged onto the scene.
+nhiều bên liên quan xuất hiện tại hiện trường.
+
+00:00:19.425 --> 00:00:23.625
+The major stakeholders in this space are clinical stakeholders,
+
+00:00:23.625 --> 00:00:27.135
+who include radiologists, primary care physicians,
+bao gồm bác sĩ X quang, bác sĩ chăm sóc chính,
+
+00:00:27.135 --> 00:00:29.895
+ER doctors, and patients.
+Bác sĩ ER và bệnh nhân.
+
+00:00:29.895 --> 00:00:34.665
+Industry stakeholders, healthcare companies such as Watson Health,
+Các bên liên quan trong ngành, các công ty chăm sóc sức khỏe như Watson Health,
+
+00:00:34.665 --> 00:00:38.684
+medical device companies like Butterfly and Siemens,
+
+00:00:38.684 --> 00:00:42.820
+and regulatory stakeholders like the FDA.
+và các bên liên quan quản lý như FDA.
+

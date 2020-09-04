@@ -1,0 +1,104 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.970
+Hi, I'm Emily and I'm going to be your instructor for
+Xin chào, tôi là Emily và tôi sẽ là người hướng dẫn cho bạn
+
+00:00:02.970 --> 00:00:06.105
+this part of the AI Nanodegree in Health Care.
+phần này của Chế độ nano AI trong Chăm sóc sức khỏe.
+
+00:00:06.105 --> 00:00:09.840
+We're going to be focusing on 2D medical imaging, specifically.
+Đặc biệt, chúng tôi sẽ tập trung vào hình ảnh y tế 2D.
+
+00:00:09.840 --> 00:00:14.835
+I have about a decade of experience working with 2D imaging as well as 3D imaging,
+Tôi có khoảng một thập kỷ kinh nghiệm làm việc với hình ảnh 2D cũng như hình ảnh 3D,
+
+00:00:14.835 --> 00:00:17.910
+both from the academic and the industry sides.
+cả từ khía cạnh học thuật và công nghiệp.
+
+00:00:17.910 --> 00:00:20.370
+I did my PhD in a program between
+Tôi đã làm tiến sĩ của mình trong một chương trình giữa
+
+00:00:20.370 --> 00:00:24.900
+Harvard Medical School and MIT called Health Sciences and Technology,
+Trường Y Harvard và MIT gọi là Khoa học và Công nghệ Y tế,
+
+00:00:24.900 --> 00:00:28.125
+and my research dissertation focused on neuroimaging,
+và luận văn nghiên cứu của tôi tập trung vào hình ảnh thần kinh,
+
+00:00:28.125 --> 00:00:32.475
+specifically of the aging human brain and of Alzheimer's disease.
+đặc biệt là não người già và bệnh Alzheimer.
+
+00:00:32.475 --> 00:00:34.725
+After that, I left academia.
+Sau đó, tôi rời khỏi học viện.
+
+00:00:34.725 --> 00:00:35.850
+I went to industry,
+Tôi đã đến ngành công nghiệp,
+
+00:00:35.850 --> 00:00:38.710
+and I spent several years working at different companies,
+và tôi đã dành vài năm làm việc tại các công ty khác nhau,
+
+00:00:38.710 --> 00:00:40.655
+both focused in medical imaging.
+cả hai đều tập trung vào hình ảnh y tế.
+
+00:00:40.655 --> 00:00:43.145
+One was a tiny startup,
+Một là một công ty khởi nghiệp nhỏ,
+
+00:00:43.145 --> 00:00:47.660
+and another was a giant technology company breaking into the health care space.
+và một công ty công nghệ khổng lồ khác đang thâm nhập vào lĩnh vực chăm sóc sức khỏe.
+
+00:00:47.660 --> 00:00:49.130
+In both of those roles,
+Trong cả hai vai trò đó,
+
+00:00:49.130 --> 00:00:54.655
+I was a data scientist creating algorithms for both 3D and 2D medical imaging.
+Tôi là một nhà khoa học dữ liệu tạo ra các thuật toán cho cả hình ảnh y tế 3D và 2D.
+
+00:00:54.655 --> 00:00:56.735
+In both of those experiences,
+Trong cả hai trải nghiệm đó,
+
+00:00:56.735 --> 00:00:59.675
+I got to help bring my tools from bench to bedside
+Tôi phải giúp mang dụng cụ của tôi từ băng ghế đến đầu giường
+
+00:00:59.675 --> 00:01:03.205
+through the FDA 5 10 K regulatory process.
+thông qua quy trình quản lý của FDA 5 10 K.
+
+00:01:03.205 --> 00:01:07.219
+One other personal reason why I think imaging is so cool,
+Một lý do cá nhân khác khiến tôi nghĩ hình ảnh rất tuyệt,
+
+00:01:07.219 --> 00:01:09.770
+is that I'm currently eight months pregnant and
+hiện tại tôi đang mang thai 8 tháng và
+
+00:01:09.770 --> 00:01:12.845
+medical imaging lets me see pictures of my baby.
+hình ảnh y tế cho phép tôi xem hình ảnh của con tôi.
+
+00:01:12.845 --> 00:01:15.365
+I'm really excited to do this course with you guys,
+Tôi thực sự hào hứng tham gia khóa học này với các bạn,
+
+00:01:15.365 --> 00:01:17.520
+and I hope you enjoy it.
+và tôi hy vọng bạn sẽ thích nó.
+

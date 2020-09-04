@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.740
+We are living in an age where data is being produced faster than it can be consumed,
+
+00:00:04.740 --> 00:00:07.320
+and this is all too true in health care.
+
+00:00:07.320 --> 00:00:12.780
+Physician burnout is a major topic of conversation in healthcare these days and much of
+
+00:00:12.780 --> 00:00:15.630
+the burnout is due to the increased data that physicians are
+
+00:00:15.630 --> 00:00:19.170
+required to input and consume about their patients.
+
+00:00:19.170 --> 00:00:21.255
+We expect doctors to see,
+Chúng tôi mong các bác sĩ nhìn thấy,
+
+00:00:21.255 --> 00:00:25.785
+diagnose and treat more patients in less time every year.
+chẩn đoán và điều trị nhiều bệnh nhân hơn trong thời gian ít hơn mỗi năm.
+
+00:00:25.785 --> 00:00:27.765
+This causes fatigue for them and
+Điều này gây ra mệt mỏi cho họ và
+
+00:00:27.765 --> 00:00:32.205
+also potential mistakes on their part that can be dangerous to the patient.
+
+00:00:32.205 --> 00:00:37.515
+The specific world of medical imaging is no different from the entirety of medicine.
+
+00:00:37.515 --> 00:00:40.610
+Radiologists are the type of clinician who read
+Bác sĩ X quang là loại bác sĩ lâm sàng đọc
+
+00:00:40.610 --> 00:00:44.870
+medical images and over the past several years their turnaround time,
+
+00:00:44.870 --> 00:00:48.680
+which is the maximum time they are supposed to spend or reading each image,
+đó là thời gian tối đa họ phải dành hoặc đọc mỗi hình ảnh,
+
+00:00:48.680 --> 00:00:53.795
+has decreased significantly due to increasing demands on the healthcare system.
+
+00:00:53.795 --> 00:00:55.655
+While this presents burnout,
+
+00:00:55.655 --> 00:00:58.550
+it presents large challenges for radiologists.
+nó đưa ra những thách thức lớn đối với các nhà X quang.
+
+00:00:58.550 --> 00:01:01.700
+It also presents great opportunities for AI,
+Nó cũng mang lại những cơ hội tuyệt vời cho AI,
+
+00:01:01.700 --> 00:01:04.040
+because AI can enhance efficiency,
+bởi vì AI có thể nâng cao hiệu quả,
+
+00:01:04.040 --> 00:01:08.660
+reduce human errors and achieve goals with minimal human operation.
+giảm thiểu sai sót của con người và đạt được mục tiêu với hoạt động tối thiểu của con người.
+
+00:01:08.660 --> 00:01:11.630
+In 2020, there are a lot of applications of
+
+00:01:11.630 --> 00:01:15.175
+machine learning and deep learning that exists in medical imaging.
+học máy và học sâu tồn tại trong hình ảnh y học.
+
+00:01:15.175 --> 00:01:17.780
+A lot of these applications are something that fall into
+Rất nhiều ứng dụng này là thứ rơi vào
+
+00:01:17.780 --> 00:01:22.375
+a category called CADx or computer assisted diagnostics.
+một danh mục được gọi là CADx hoặc chẩn đoán được máy tính hỗ trợ.
+
+00:01:22.375 --> 00:01:27.560
+They are tools that help commissions more easily find suspicious areas of medical images.
+
+00:01:27.560 --> 00:01:30.800
+For example, identifying a region of a chest x-ray,
+Ví dụ: xác định một khu vực chụp X-quang phổi,
+
+00:01:30.800 --> 00:01:32.650
+where there may be lung nodules.
+nơi có thể có nốt phổi.
+
+00:01:32.650 --> 00:01:36.290
+Other applications of machine learning and deep learning include
+Các ứng dụng khác của học máy và học sâu bao gồm
+
+00:01:36.290 --> 00:01:41.944
+reprioritization of clinical workflows so that needier patients are seen faster,
+sắp xếp lại quy trình công việc lâm sàng để những bệnh nhân cần được khám nhanh hơn,
+
+00:01:41.944 --> 00:01:43.700
+and even more cutting edge,
+và thậm chí còn vượt trội hơn,
+
+00:01:43.700 --> 00:01:46.130
+are applications for personalized medicine,
+là các ứng dụng cho thuốc được cá nhân hóa,
+
+00:01:46.130 --> 00:01:48.350
+where deep learning can be used to search
+nơi học sâu có thể được sử dụng để tìm kiếm
+
+00:01:48.350 --> 00:01:52.430
+incredibly large databases to find patients who are similar to one
+cơ sở dữ liệu cực kỳ lớn để tìm những bệnh nhân tương tự như một
+
+00:01:52.430 --> 00:01:55.760
+another and suggest specific treatment plans based
+khác và đề xuất các kế hoạch điều trị cụ thể dựa trên
+
+00:01:55.760 --> 00:02:00.150
+on treatments that were successful for patients who are more similar to them.
+về các phương pháp điều trị thành công cho những bệnh nhân giống họ hơn.
+

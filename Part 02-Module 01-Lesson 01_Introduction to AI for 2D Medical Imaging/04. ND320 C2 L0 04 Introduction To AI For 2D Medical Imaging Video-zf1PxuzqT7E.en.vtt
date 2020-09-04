@@ -1,0 +1,66 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.010
+Medical imaging is an extremely exciting and critical component of modern medicine.
+Hình ảnh y học là một thành phần cực kỳ thú vị và quan trọng của y học hiện đại.
+
+00:00:05.010 --> 00:00:08.339
+It allows us to see the organs inside the body,
+Nó cho phép chúng ta nhìn thấy các cơ quan bên trong cơ thể,
+
+00:00:08.339 --> 00:00:12.120
+and even look at the cell level for things that might be going wrong.
+và thậm chí xem xét cấp độ ô để biết những điều có thể xảy ra.
+
+00:00:12.120 --> 00:00:17.580
+Devices that are used to acquire medical images are constantly becoming more advanced.
+Các thiết bị được sử dụng để thu nhận hình ảnh y tế không ngừng trở nên tiên tiến hơn.
+
+00:00:17.580 --> 00:00:21.050
+They're becoming cheaper, faster,
+Chúng ngày càng rẻ hơn, nhanh hơn,
+
+00:00:21.050 --> 00:00:24.725
+more accurate, and safer.
+chính xác hơn và an toàn hơn.
+
+00:00:24.725 --> 00:00:28.370
+With those advances, come new capabilities for seeing
+Với những tiến bộ đó, hãy đưa ra những khả năng mới để xem
+
+00:00:28.370 --> 00:00:31.445
+inside of the human body with even greater precision,
+
+00:00:31.445 --> 00:00:33.460
+and in greater volumes.
+và với khối lượng lớn hơn.
+
+00:00:33.460 --> 00:00:36.220
+Since AI is fueled by Big Data,
+Vì AI được thúc đẩy bởi Dữ liệu lớn,
+
+00:00:36.220 --> 00:00:41.210
+each of these advances also presents new opportunities for AI to enhance medicine.
+mỗi tiến bộ này cũng mang đến những cơ hội mới cho AI để nâng cao y học.
+
+00:00:41.210 --> 00:00:44.825
+As you probably know from any previous exposure to deep learning,
+Như bạn có thể biết từ bất kỳ tiếp xúc nào trước đây với học sâu,
+
+00:00:44.825 --> 00:00:48.430
+you need a lot of data to train deep learning models.
+
+00:00:48.430 --> 00:00:51.110
+All of the recent advances in medical imaging have
+Tất cả những tiến bộ gần đây trong hình ảnh y tế đều có
+
+00:00:51.110 --> 00:00:55.090
+created larger and larger repositories of medical data to learn from,
+đã tạo ra các kho dữ liệu y tế lớn hơn và lớn hơn để học hỏi,
+
+00:00:55.090 --> 00:00:59.430
+so it's prime time for AI applications in this space.
+vì vậy đây là thời gian quan trọng cho các ứng dụng AI trong không gian này.
+

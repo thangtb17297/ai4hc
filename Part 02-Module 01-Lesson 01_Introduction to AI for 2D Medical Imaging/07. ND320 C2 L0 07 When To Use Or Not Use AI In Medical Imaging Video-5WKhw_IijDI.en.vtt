@@ -1,0 +1,83 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.545
+There's a key point that I want to make sure I make before we start this course together.
+Có một điểm chính mà tôi muốn đảm bảo trước khi chúng ta bắt đầu khóa học này cùng nhau.
+
+00:00:04.545 --> 00:00:07.905
+Radiologists are really good at their jobs.
+Các bác sĩ X quang thực sự giỏi trong công việc của họ.
+
+00:00:07.905 --> 00:00:11.160
+They're trained for years to be able to accurately assess
+Họ được đào tạo trong nhiều năm để có thể đánh giá chính xác
+
+00:00:11.160 --> 00:00:15.315
+images from all different types of imaging modalities that assess
+hình ảnh từ tất cả các loại phương thức hình ảnh khác nhau để đánh giá
+
+00:00:15.315 --> 00:00:18.810
+every cubic inch of the human body so that they can
+mỗi inch khối của cơ thể con người để họ có thể
+
+00:00:18.810 --> 00:00:23.265
+rapidly diagnose tens of thousands of diseases and disorders.
+chẩn đoán nhanh chóng hàng chục nghìn bệnh và rối loạn.
+
+00:00:23.265 --> 00:00:27.900
+It is truly remarkable to watch a trained radiologist in action.
+Thực sự đáng chú ý khi xem một bác sĩ X quang được đào tạo trong hành động.
+
+00:00:27.900 --> 00:00:31.530
+To this end, what I want to make clear is that AI should
+
+00:00:31.530 --> 00:00:36.090
+not be thought of something that should be used to replace the radiologist,
+không được nghĩ đến thứ gì đó nên được sử dụng để thay thế bác sĩ X quang,
+
+00:00:36.090 --> 00:00:38.610
+at least not in 2020.
+ít nhất là không phải vào năm 2020.
+
+00:00:38.610 --> 00:00:41.930
+You may be able to develop an algorithm that performs
+Bạn có thể phát triển một thuật toán thực hiện
+
+00:00:41.930 --> 00:00:45.455
+better than a radiologist in a very specific setting,
+tốt hơn một bác sĩ X quang trong một môi trường rất cụ thể,
+
+00:00:45.455 --> 00:00:47.615
+but as you will learn throughout this course,
+nhưng khi bạn sẽ học trong suốt khóa học này,
+
+00:00:47.615 --> 00:00:51.380
+your algorithm needs to perform well on lots of different data sets,
+thuật toán của bạn cần hoạt động tốt trên nhiều tập dữ liệu khác nhau,
+
+00:00:51.380 --> 00:00:54.530
+in lots of different settings to really stand the test
+trong nhiều cài đặt khác nhau để thực sự vượt qua thử nghiệm
+
+00:00:54.530 --> 00:00:58.220
+of becoming a tool that can be deployed into a clinical setting.
+trở thành một công cụ có thể được triển khai vào môi trường lâm sàng.
+
+00:00:58.220 --> 00:01:00.980
+To that end, you should think of AI as
+Để đạt được điều đó, bạn nên nghĩ về AI là
+
+00:01:00.980 --> 00:01:03.965
+something that you create to make the lives of radiologists and
+thứ mà bạn tạo ra để tạo nên cuộc sống của các bác sĩ X quang và
+
+00:01:03.965 --> 00:01:07.220
+other clinicians involved better and more
+các bác sĩ lâm sàng khác tham gia tốt hơn và hơn thế nữa
+
+00:01:07.220 --> 00:01:11.550
+able to do their jobs rather than something to replace them.
+có thể làm công việc của họ hơn là một cái gì đó để thay thế họ.
+
