@@ -1,0 +1,189 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.505
+So let us talk about some of the historical contexts for
+Vì vậy, chúng ta hãy nói về một số bối cảnh lịch sử cho
+
+00:00:02.505 --> 00:00:05.895
+AI and 3D medical imaging and medical imaging in general.
+AI và hình ảnh y tế 3D và hình ảnh y tế nói chung.
+
+00:00:05.895 --> 00:00:09.150
+So a very quick refresher on what's had been
+
+00:00:09.150 --> 00:00:12.255
+happening in AI throughout the course of modern human history.
+xảy ra trong AI trong suốt lịch sử loài người hiện đại.
+
+00:00:12.255 --> 00:00:13.965
+So as we've discussed,
+
+00:00:13.965 --> 00:00:17.055
+AI term was first coined in the '50s,
+
+00:00:17.055 --> 00:00:20.850
+and that's when people started talking about information theory and Turing tests.
+và đó là khi mọi người bắt đầu nói về lý thuyết thông tin và các bài kiểm tra Turing.
+
+00:00:20.850 --> 00:00:23.760
+There has been a lot of research in the space,
+Đã có rất nhiều nghiên cứu trong không gian,
+
+00:00:23.760 --> 00:00:27.260
+and there was a little bit of a disappointment, if you will,
+và có một chút thất vọng, nếu bạn muốn,
+
+00:00:27.260 --> 00:00:31.235
+about what the AI is capable of and we entered this era of AI winter.
+về khả năng của AI và chúng ta đã bước vào kỷ nguyên mùa đông AI này.
+
+00:00:31.235 --> 00:00:33.770
+In the '70s, there was another boom when
+Vào những năm 70, có một sự bùng nổ khác khi
+
+00:00:33.770 --> 00:00:36.620
+computers became smarter and more personal then again,
+máy tính lại trở nên thông minh hơn và cá nhân hơn,
+
+00:00:36.620 --> 00:00:38.015
+we had another IA winter.
+chúng tôi đã có một mùa đông IA khác.
+
+00:00:38.015 --> 00:00:40.475
+Where we are now, as you're probably well aware,
+Hiện tại chúng tôi đang ở đâu, như bạn có thể biết rõ,
+
+00:00:40.475 --> 00:00:42.530
+we're in this age of deep learning revolution.
+
+00:00:42.530 --> 00:00:45.095
+So we have larger computers right now,
+Vì vậy, chúng tôi có máy tính lớn hơn ngay bây giờ,
+
+00:00:45.095 --> 00:00:47.010
+we have better networks,
+chúng tôi có mạng lưới tốt hơn,
+
+00:00:47.010 --> 00:00:51.935
+we have very good capabilities for doing distributed computing,
+chúng tôi có khả năng rất tốt để thực hiện tính toán phân tán,
+
+00:00:51.935 --> 00:00:53.975
+and we have seen what's possible with
+và chúng tôi đã thấy những gì có thể xảy ra với
+
+00:00:53.975 --> 00:00:56.990
+applying deep learning to various computer vision tasks,
+
+00:00:56.990 --> 00:01:00.005
+like just recognizing humans from a camera videos,
+giống như chỉ nhận ra con người từ video camera,
+
+00:01:00.005 --> 00:01:03.680
+or labeling your photo collections or taking people in the photos.
+hoặc gắn nhãn bộ sưu tập ảnh của bạn hoặc đưa mọi người vào ảnh.
+
+00:01:03.680 --> 00:01:09.710
+This is where we are now and this is what the medical industry is looking at.
+
+00:01:09.710 --> 00:01:12.950
+Medical industry is excited about thinking of what is possible with
+
+00:01:12.950 --> 00:01:16.325
+this deep learning when it's applied to solve the key problems of health care.
+học sâu này khi nó được áp dụng để giải quyết các vấn đề chính của chăm sóc sức khỏe.
+
+00:01:16.325 --> 00:01:19.520
+So let's look specific as what has been happening in
+Vì vậy, hãy xem xét cụ thể những gì đã xảy ra trong
+
+00:01:19.520 --> 00:01:23.690
+the field of radiology over the past century.
+lĩnh vực X quang trong thế kỷ qua.
+
+00:01:23.690 --> 00:01:26.360
+Since its inception, radiology has undergone
+
+00:01:26.360 --> 00:01:29.675
+several paradigm shifts with respect to the way images are viewed.
+
+00:01:29.675 --> 00:01:31.325
+During the field's infancy,
+Trong thời kỳ sơ khai của lĩnh vực này,
+
+00:01:31.325 --> 00:01:33.770
+images were hung up and reviewed at the light box.
+
+00:01:33.770 --> 00:01:35.555
+Films that needed an emergent read,
+Những bộ phim cần đọc trước,
+
+00:01:35.555 --> 00:01:37.580
+where sometimes hung up while they were still drawing from
+nơi đôi khi bị treo khi họ vẫn đang vẽ từ
+
+00:01:37.580 --> 00:01:41.000
+the development process giving rise to the term wet read,
+quá trình phát triển dẫn đến thuật ngữ đọc ướt,
+
+00:01:41.000 --> 00:01:45.470
+a phrase that's still used today to describe an emergent preliminary interpretation.
+một cụm từ vẫn được sử dụng ngày nay để mô tả một cách diễn giải sơ bộ mới nổi.
+
+00:01:45.470 --> 00:01:49.010
+The advent of digital image storage and viewing systems represented
+Sự ra đời của hệ thống xem và lưu trữ hình ảnh kỹ thuật số
+
+00:01:49.010 --> 00:01:50.900
+a fundamental departure from the manner in
+một sự khác biệt cơ bản từ cách thức trong
+
+00:01:50.900 --> 00:01:53.165
+which images were viewed and who could view them.
+những hình ảnh nào đã được xem và ai có thể xem chúng.
+
+00:01:53.165 --> 00:01:56.990
+No longer were images locally isolated to the radiologist reading room,
+Hình ảnh không còn bị cô lập cục bộ trong phòng đọc của bác sĩ X quang,
+
+00:01:56.990 --> 00:02:00.875
+but could be transmitted across the hospital or even across different sites.
+nhưng có thể được truyền qua bệnh viện hoặc thậm chí qua các địa điểm khác nhau.
+
+00:02:00.875 --> 00:02:03.290
+Moreover, computer peripherals allowed for
+Hơn nữa, các thiết bị ngoại vi máy tính cho phép
+
+00:02:03.290 --> 00:02:05.705
+a more substantive interaction with imaging data,
+tương tác thực chất hơn với dữ liệu hình ảnh,
+
+00:02:05.705 --> 00:02:08.315
+further refining diagnostic capabilities.
+tinh chỉnh thêm khả năng chẩn đoán.
+
+00:02:08.315 --> 00:02:11.465
+Currently, there's a promise of yet another transition,
+
+00:02:11.465 --> 00:02:15.500
+the adoption of AI-driven applications in day-to-day workflow to facilitate
+việc áp dụng các ứng dụng do AI điều khiển trong quy trình làm việc hàng ngày để tạo điều kiện
+
+00:02:15.500 --> 00:02:17.780
+more efficient and accurate interpretation and
+giải thích hiệu quả và chính xác hơn và
+
+00:02:17.780 --> 00:02:20.695
+potentially unlock new imaging research possibilities.
+có khả năng mở khóa các khả năng nghiên cứu hình ảnh mới.
+
+00:02:20.695 --> 00:02:22.475
+So we've gone over the history,
+Vì vậy, chúng tôi đã xem qua lịch sử,
+
+00:02:22.475 --> 00:02:27.210
+now let's see what the current state is in AI for medical imaging.
+bây giờ chúng ta hãy xem trạng thái hiện tại của AI cho hình ảnh y tế.
+

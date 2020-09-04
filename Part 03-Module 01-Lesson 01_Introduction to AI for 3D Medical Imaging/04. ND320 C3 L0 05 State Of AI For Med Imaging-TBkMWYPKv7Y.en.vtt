@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.720
+So let's look at the current state of affairs in AI for medical imaging.
+Vì vậy, chúng ta hãy xem xét tình hình hiện tại của AI cho hình ảnh y tế.
+
+00:00:03.720 --> 00:00:09.420
+So you have no shortage of conflicting messages about the need in radiologists right now.
+Vì vậy, bạn không thiếu những thông điệp trái chiều về nhu cầu cần có bác sĩ X quang ngay bây giờ.
+
+00:00:09.420 --> 00:00:14.100
+On one hand, you have messages about a shortage of doctors across nations and
+Một mặt, bạn có thông điệp về tình trạng thiếu bác sĩ trên khắp các quốc gia và
+
+00:00:14.100 --> 00:00:16.500
+about how radiologists are pressed to read
+về cách các bác sĩ X quang bị ép đọc
+
+00:00:16.500 --> 00:00:19.335
+even more images and have even less time to do that.
+thậm chí nhiều hình ảnh hơn và thậm chí có ít thời gian hơn để làm điều đó.
+
+00:00:19.335 --> 00:00:23.130
+On another hand, you have a world renowned computer experts saying that we should stop
+Mặt khác, bạn có một chuyên gia máy tính nổi tiếng thế giới nói rằng chúng ta nên dừng
+
+00:00:23.130 --> 00:00:27.325
+training radiologists because AI systems will be better anyway.
+đào tạo bác sĩ X quang vì dù sao thì hệ thống AI cũng sẽ tốt hơn.
+
+00:00:27.325 --> 00:00:33.215
+One thing is certain, that the amount of 3D images and overall medical images is growing,
+Một điều chắc chắn rằng số lượng hình ảnh 3D và hình ảnh y tế tổng thể đang ngày càng tăng,
+
+00:00:33.215 --> 00:00:34.640
+amount of procedures is growing,
+
+00:00:34.640 --> 00:00:36.620
+the technology is becoming more accessible,
+công nghệ đang trở nên dễ tiếp cận hơn,
+
+00:00:36.620 --> 00:00:38.930
+and we are facing the aging population.
+và chúng ta đang phải đối mặt với tình trạng dân số già.
+
+00:00:38.930 --> 00:00:46.460
+It is clear that hospital systems will value any types of technology that will allow them
+Rõ ràng là các hệ thống bệnh viện sẽ coi trọng bất kỳ loại công nghệ nào cho phép họ
+
+00:00:46.460 --> 00:00:49.970
+to be more efficient and will allow them to be more precise
+hiệu quả hơn và sẽ cho phép chúng chính xác hơn
+
+00:00:49.970 --> 00:00:54.340
+in bringing diagnostic and medical technology to the patients.
+trong việc đưa công nghệ chẩn đoán và y tế đến với bệnh nhân.
+
+00:00:54.340 --> 00:00:57.095
+Let's look at it from the business side of things.
+Hãy xem xét nó từ khía cạnh kinh doanh của mọi thứ.
+
+00:00:57.095 --> 00:00:59.060
+So in the charts to the right here,
+Vì vậy, trong biểu đồ ở bên phải đây,
+
+00:00:59.060 --> 00:01:04.430
+you see the FDA approvals of AI algorithms over the past several years.
+bạn thấy sự chấp thuận của FDA đối với các thuật toán AI trong vài năm qua.
+
+00:01:04.430 --> 00:01:07.910
+FDA is the regulatory agency that regulates in
+FDA là cơ quan quản lý quy định
+
+00:01:07.910 --> 00:01:13.235
+the US the technology that is being brought to the market and sold to hospitals.
+Mỹ công nghệ đang được đưa ra thị trường và bán cho các bệnh viện.
+
+00:01:13.235 --> 00:01:16.760
+There has been increasing flow in startups and
+Ngày càng có nhiều dòng chảy trong các công ty khởi nghiệp và
+
+00:01:16.760 --> 00:01:20.330
+various other companies pushing their products through this market.
+nhiều công ty khác đẩy sản phẩm của họ qua thị trường này.
+
+00:01:20.330 --> 00:01:22.700
+You can see how radiology takes a sizable chunk in
+Bạn có thể thấy cách X quang chiếm một phần khá lớn trong
+
+00:01:22.700 --> 00:01:26.210
+all the types of algorithms that are being developed.
+tất cả các loại thuật toán đang được phát triển.
+
+00:01:26.210 --> 00:01:29.570
+Overall funding for health care startups in 2018 alone,
+Tài trợ tổng thể cho các công ty khởi nghiệp chăm sóc sức khỏe chỉ tính riêng trong năm 2018
+
+00:01:29.570 --> 00:01:31.220
+it hit about 26 billion.
+nó đạt khoảng 26 tỷ.
+
+00:01:31.220 --> 00:01:34.790
+This is looking across all the fields including Pharma and
+Điều này đang xem xét trên tất cả các lĩnh vực bao gồm Dược phẩm và
+
+00:01:34.790 --> 00:01:38.675
+including more established startups which are not even using AI.
+bao gồm nhiều công ty khởi nghiệp đã thành lập thậm chí không sử dụng AI.
+
+00:01:38.675 --> 00:01:41.120
+Specifically, radiological AI startups,
+
+00:01:41.120 --> 00:01:43.595
+they hit about half a billion dollar in funding
+họ đạt được khoảng nửa tỷ đô la tài trợ
+
+00:01:43.595 --> 00:01:46.640
+total in 2018 and this number keeps growing.
+tổng cộng vào năm 2018 và con số này không ngừng tăng lên.
+
+00:01:46.640 --> 00:01:48.570
+Who is interested in all of these technologies?
+Ai quan tâm đến tất cả các công nghệ này?
+
+00:01:48.570 --> 00:01:52.200
+Who are the people who would be hiring experts in medical image analysis?
+Những người sẽ thuê các chuyên gia phân tích hình ảnh y tế là ai?
+
+00:01:52.200 --> 00:01:54.790
+So there's several different environments that you're going
+Vì vậy, có một số môi trường khác nhau mà bạn sẽ
+
+00:01:54.790 --> 00:01:57.365
+to see these applications being integrated.
+để xem các ứng dụng này đang được tích hợp.
+
+00:01:57.365 --> 00:02:00.040
+In one scenario, there are large hospital systems and
+Trong một kịch bản, có hệ thống bệnh viện lớn và
+
+00:02:00.040 --> 00:02:02.590
+academic centers that are on the forefront of cutting
+trung tâm học thuật đi đầu trong việc cắt giảm
+
+00:02:02.590 --> 00:02:08.245
+edge research and will want to see how AI can fuel new research possibilities.
+nghiên cứu cạnh và sẽ muốn xem làm thế nào AI có thể thúc đẩy các khả năng nghiên cứu mới.
+
+00:02:08.245 --> 00:02:10.600
+There are startups who may be focusing on
+Có những công ty khởi nghiệp có thể đang tập trung vào
+
+00:02:10.600 --> 00:02:14.495
+one or two disease state that have a really high impact.
+một hoặc hai trạng thái bệnh có tác động thực sự cao.
+
+00:02:14.495 --> 00:02:17.440
+Of course, there are larger companies that are
+Tất nhiên, có những công ty lớn hơn
+
+00:02:17.440 --> 00:02:20.485
+already embedded in the day-to-day workflow clinically,
+đã được nhúng vào quy trình làm việc hàng ngày trên lâm sàng,
+
+00:02:20.485 --> 00:02:25.615
+who want to use AI to increase their current softwares efficiency,
+những người muốn sử dụng AI để tăng hiệu quả phần mềm hiện tại của họ,
+
+00:02:25.615 --> 00:02:28.540
+accuracy, and possibly, unlock new possibilities.
+độ chính xác và có thể mở khóa các khả năng mới.
+
+00:02:28.540 --> 00:02:34.370
+We can see from this graphic here that this spans all of radiology subspecialties.
+Chúng ta có thể thấy từ hình này ở đây rằng điều này trải dài tất cả các chuyên ngành phụ X quang.
+

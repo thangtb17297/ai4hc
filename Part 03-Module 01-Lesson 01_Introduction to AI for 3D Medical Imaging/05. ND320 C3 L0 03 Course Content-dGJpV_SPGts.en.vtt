@@ -1,0 +1,511 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.690
+So now, let's talk a little bit about the course content.
+Vì vậy, bây giờ, chúng ta hãy nói một chút về nội dung khóa học.
+
+00:00:03.690 --> 00:00:06.210
+What did we decide to include into this course?
+Chúng tôi đã quyết định đưa những gì vào khóa học này?
+
+00:00:06.210 --> 00:00:09.690
+So first, let's talk about what this course is not.
+Vì vậy, trước tiên, hãy nói về những gì khóa học này không.
+
+00:00:09.690 --> 00:00:11.685
+This course is not a course on deep learning.
+
+00:00:11.685 --> 00:00:14.040
+We will touch on some of the concepts of deep learning.
+Chúng ta sẽ đề cập đến một số khái niệm về học sâu.
+
+00:00:14.040 --> 00:00:16.185
+You might learn something new about deep learning,
+Bạn có thể học được điều gì đó mới về học sâu,
+
+00:00:16.185 --> 00:00:18.540
+but we do not have the objective of teaching you
+nhưng chúng tôi không có mục tiêu dạy bạn
+
+00:00:18.540 --> 00:00:21.495
+how deep learning works and how to build deep learning networks.
+cách hoạt động của học sâu và cách xây dựng mạng học sâu.
+
+00:00:21.495 --> 00:00:25.470
+This is not a course on PyTorch or any other specific libraries.
+Đây không phải là một khóa học trên PyTorch hoặc bất kỳ thư viện cụ thể nào khác.
+
+00:00:25.470 --> 00:00:27.450
+We will be using PyTorch quite a bit.
+Chúng tôi sẽ sử dụng PyTorch một chút.
+
+00:00:27.450 --> 00:00:29.505
+We assume that you have some basic knowledge.
+Chúng tôi giả định rằng bạn có một số kiến ​​thức cơ bản.
+
+00:00:29.505 --> 00:00:31.770
+Really, if you take the tutorial course on PyTorch,
+Thực sự, nếu bạn tham gia khóa học hướng dẫn trên PyTorch,
+
+00:00:31.770 --> 00:00:35.170
+you will be well set up to be successful in this project,
+bạn sẽ được thiết lập tốt để thành công trong dự án này,
+
+00:00:35.170 --> 00:00:40.190
+but we do not intend to teach you how PyTorch works and how it does its magic.
+nhưng chúng tôi không có ý định dạy bạn cách hoạt động của PyTorch và cách nó thực hiện điều kỳ diệu.
+
+00:00:40.190 --> 00:00:42.455
+This is not a course on high performance computing.
+Đây không phải là một khóa học về máy tính hiệu suất cao.
+
+00:00:42.455 --> 00:00:45.500
+You might think that we are dealing with large data sets that
+Bạn có thể nghĩ rằng chúng tôi đang xử lý các tập dữ liệu lớn
+
+00:00:45.500 --> 00:00:48.575
+take a lot of memory and needs a large scale computing.
+chiếm nhiều bộ nhớ và cần tính toán quy mô lớn.
+
+00:00:48.575 --> 00:00:51.350
+We will talk about some of the tricks and optimizations that
+Chúng tôi sẽ nói về một số thủ thuật và tối ưu hóa
+
+00:00:51.350 --> 00:00:53.990
+could be used to leverage distributed systems
+có thể được sử dụng để tận dụng các hệ thống phân tán
+
+00:00:53.990 --> 00:00:56.750
+but we will not go into much detail about that and we'll post
+nhưng chúng tôi sẽ không đi vào chi tiết nhiều về điều đó và chúng tôi sẽ đăng
+
+00:00:56.750 --> 00:00:59.675
+some links if you would like to research that further and lastly,
+một số liên kết nếu bạn muốn nghiên cứu sâu hơn và cuối cùng,
+
+00:00:59.675 --> 00:01:02.195
+this is not a course on diagnostic medical imaging.
+đây không phải là một khóa học về chẩn đoán hình ảnh y tế.
+
+00:01:02.195 --> 00:01:06.170
+Mazen here will talk a little bit about how radiologists think and how radiologists
+Ở đây Mazen sẽ nói một chút về cách các bác sĩ X quang nghĩ và cách các bác sĩ X quang
+
+00:01:06.170 --> 00:01:10.130
+approach diagnosing from the 3D medical volumes but at the same time,
+tiếp cận chẩn đoán từ các tập y tế 3D nhưng đồng thời,
+
+00:01:10.130 --> 00:01:11.300
+this is not a clinical course,
+đây không phải là một khóa học lâm sàng,
+
+00:01:11.300 --> 00:01:15.755
+so we're not planning to teach you how to read a CT scan.
+vì vậy chúng tôi không định dạy bạn cách đọc ảnh chụp CT.
+
+00:01:15.755 --> 00:01:18.260
+Which brings us to what is this course?
+Điều gì đưa chúng ta đến với khóa học này là gì?
+
+00:01:18.260 --> 00:01:21.005
+What is this about? Mazen, would you tell us?
+Về việc này là gì? Mazen, bạn có cho chúng tôi biết không?
+
+00:01:21.005 --> 00:01:22.925
+Yes. I'll tell you a little bit about that.
+Đúng. Tôi sẽ cho bạn biết một chút về điều đó.
+
+00:01:22.925 --> 00:01:25.220
+So we're going to be introducing you to
+Vì vậy, chúng tôi sẽ giới thiệu cho bạn
+
+00:01:25.220 --> 00:01:28.775
+biomedical imaging for software engineers and data scientists,
+hình ảnh y sinh cho các kỹ sư phần mềm và nhà khoa học dữ liệu,
+
+00:01:28.775 --> 00:01:30.370
+complete with a clinical motivation
+hoàn thành với một động lực lâm sàng
+
+00:01:30.370 --> 00:01:32.005
+and that's something that I'm going to take you through,
+
+00:01:32.005 --> 00:01:33.895
+giving you the clinical background.
+
+00:01:33.895 --> 00:01:36.650
+We'll also introduce some of the applications of
+Chúng tôi cũng sẽ giới thiệu một số ứng dụng của
+
+00:01:36.650 --> 00:01:40.445
+machine learning techniques to 3D medical imaging data.
+kỹ thuật máy học để dữ liệu hình ảnh y tế 3D.
+
+00:01:40.445 --> 00:01:45.530
+You'll also get a perspective on end-to-end design of medical imaging AI systems.
+Bạn cũng sẽ có cái nhìn về thiết kế đầu cuối của hệ thống AI hình ảnh y tế.
+
+00:01:45.530 --> 00:01:47.825
+It's not only important to develop algorithms,
+Điều quan trọng không chỉ là phát triển các thuật toán,
+
+00:01:47.825 --> 00:01:50.930
+but you'd be able to integrate them in a real world scenario.
+nhưng bạn có thể tích hợp chúng trong một kịch bản thế giới thực.
+
+00:01:50.930 --> 00:01:54.200
+So let's talk a little bit about the structure of this course.
+Vì vậy, chúng ta hãy nói một chút về cấu trúc của khóa học này.
+
+00:01:54.200 --> 00:01:56.180
+How did we decide to set it up?
+Làm thế nào chúng tôi quyết định thiết lập nó?
+
+00:01:56.180 --> 00:01:59.600
+This course has four lessons in addition to this one,
+Khóa học này có bốn bài học ngoài bài học này,
+
+00:01:59.600 --> 00:02:01.820
+which is the introduction and the final project.
+đó là phần giới thiệu và dự án cuối cùng.
+
+00:02:01.820 --> 00:02:03.560
+In the first lesson, we will talk about
+
+00:02:03.560 --> 00:02:07.100
+the clinical background and some of the physics of medical imaging.
+nền tảng lâm sàng và một số vật lý của hình ảnh y tế.
+
+00:02:07.100 --> 00:02:11.210
+In the second lessons, we will dive a little bit into the exploratory data analysis for
+Trong bài học thứ hai, chúng ta sẽ đi sâu vào phân tích dữ liệu khám phá cho
+
+00:02:11.210 --> 00:02:14.000
+3D medical imaging data sets and we will talk about
+
+00:02:14.000 --> 00:02:17.900
+the formats which are used to store and transmit medical imaging data.
+các định dạng được sử dụng để lưu trữ và truyền dữ liệu hình ảnh y tế.
+
+00:02:17.900 --> 00:02:19.370
+In the next lesson,
+Trong bài học tiếp theo,
+
+00:02:19.370 --> 00:02:21.560
+we will dive a little bit into the topic of
+
+00:02:21.560 --> 00:02:24.725
+machine learning and we will look at some of the machine learning algorithms.
+học máy và chúng ta sẽ xem xét một số thuật toán học máy.
+
+00:02:24.725 --> 00:02:29.000
+We will train a little simple neural network and we will talk little bit
+Chúng ta sẽ đào tạo một mạng nơ-ron đơn giản và chúng ta sẽ nói một chút
+
+00:02:29.000 --> 00:02:33.320
+about some computer vision concepts like convolutions and in the next lesson,
+về một số khái niệm thị giác máy tính như chập và trong bài học tiếp theo,
+
+00:02:33.320 --> 00:02:36.390
+we will talk about deploying machine learning algorithms in the real world.
+chúng ta sẽ nói về việc triển khai các thuật toán học máy trong thế giới thực.
+
+00:02:36.390 --> 00:02:40.010
+We'll talk about some of the tools that radiologists use and some
+Chúng ta sẽ nói về một số công cụ mà bác sĩ X quang sử dụng và một số
+
+00:02:40.010 --> 00:02:43.700
+of the tools that you could use to emulate a clinical environment
+trong số các công cụ mà bạn có thể sử dụng để mô phỏng môi trường lâm sàng
+
+00:02:43.700 --> 00:02:48.410
+in your testing scenario and we will also talk about some of
+trong kịch bản thử nghiệm của bạn và chúng tôi cũng sẽ nói về một số
+
+00:02:48.410 --> 00:02:51.530
+the regulatory aspects of bringing
+các khía cạnh quy định của việc đưa
+
+00:02:51.530 --> 00:02:56.165
+your machine learning models and AI tools into the real world.
+mô hình học máy và công cụ AI của bạn vào thế giới thực.
+
+00:02:56.165 --> 00:02:59.540
+Lastly, we will have an awesome final project for you to try
+Cuối cùng, chúng tôi sẽ có một dự án cuối cùng tuyệt vời để bạn thử
+
+00:02:59.540 --> 00:03:02.960
+out all the skills that you will have gained from the previous lessons.
+tất cả các kỹ năng mà bạn sẽ đạt được từ các bài học trước.
+
+00:03:02.960 --> 00:03:06.695
+So let's go into a little bit more detail on each one of those.
+Vì vậy, chúng ta hãy đi vào chi tiết hơn một chút về từng cái đó.
+
+00:03:06.695 --> 00:03:08.225
+So in the first lesson,
+Vì vậy, trong bài học đầu tiên,
+
+00:03:08.225 --> 00:03:10.595
+we'll be going over some clinical fundamentals.
+chúng ta sẽ xem xét một số nguyên tắc cơ bản về lâm sàng.
+
+00:03:10.595 --> 00:03:13.550
+We'll be talking about what are 3D medical images,?
+Chúng ta sẽ nói về hình ảnh y tế 3D là gì?
+
+00:03:13.550 --> 00:03:16.340
+Who are the people that use them and why?
+Những người sử dụng chúng là ai và tại sao?
+
+00:03:16.340 --> 00:03:19.300
+How do CT and MR scanners work?
+Máy quét CT và MR hoạt động như thế nào?
+
+00:03:19.300 --> 00:03:23.375
+We'll also see some common tasks related to 3D medical images.
+Chúng ta cũng sẽ thấy một số tác vụ phổ biến liên quan đến hình ảnh y tế 3D.
+
+00:03:23.375 --> 00:03:25.910
+For example, reconstruction of images,
+Ví dụ: tái tạo hình ảnh,
+
+00:03:25.910 --> 00:03:28.880
+volumetric rendering, and registration.
+kết xuất thể tích và đăng ký.
+
+00:03:28.880 --> 00:03:30.440
+So in the next lesson,
+Vì vậy, trong bài học tiếp theo,
+
+00:03:30.440 --> 00:03:32.090
+we will talk little bit about
+chúng ta sẽ nói một chút về
+
+00:03:32.090 --> 00:03:36.800
+the 3D medical imaging data formats and the analysis of 3D medical imaging data sets.
+các định dạng dữ liệu hình ảnh y tế 3D và phân tích các tập dữ liệu hình ảnh y tế 3D.
+
+00:03:36.800 --> 00:03:39.905
+We will talk about how 3D medical images are represented.
+Chúng ta sẽ nói về cách hình ảnh y tế 3D được thể hiện.
+
+00:03:39.905 --> 00:03:45.110
+What are the digital file formats which are used to store and transmit 3D medical images.
+Các định dạng tệp kỹ thuật số được sử dụng để lưu trữ và truyền hình ảnh y tế 3D là gì.
+
+00:03:45.110 --> 00:03:48.680
+Specifically, we will talk about two of the most common ones,
+Cụ thể, chúng ta sẽ nói về hai trong số những cái phổ biến nhất,
+
+00:03:48.680 --> 00:03:50.060
+which is the DICOM format,
+đó là định dạng DICOM,
+
+00:03:50.060 --> 00:03:52.460
+which is ubiquitous and used by any 3D medical imaging
+phổ biến và được sử dụng bởi bất kỳ hình ảnh y tế 3D nào
+
+00:03:52.460 --> 00:03:55.340
+modality and we will talk about NIFTI file format,
+phương thức và chúng ta sẽ nói về định dạng tệp NIFTI,
+
+00:03:55.340 --> 00:03:57.620
+which is more pervasive on the research side of things.
+phổ biến hơn ở khía cạnh nghiên cứu của sự vật.
+
+00:03:57.620 --> 00:04:00.440
+We'll look at how do you load and how to analyze
+Chúng tôi sẽ xem xét cách bạn tải và cách phân tích
+
+00:04:00.440 --> 00:04:04.910
+a 3D medical volume and how to analyze this 3D medical imaging data set.
+một khối lượng y tế 3D và cách phân tích tập dữ liệu hình ảnh y tế 3D này.
+
+00:04:04.910 --> 00:04:07.370
+We will write some Python code and we will look at
+Chúng tôi sẽ viết một số mã Python và chúng tôi sẽ xem xét
+
+00:04:07.370 --> 00:04:10.660
+some Python libraries that will help you accomplish this task.
+một số thư viện Python sẽ giúp bạn hoàn thành nhiệm vụ này.
+
+00:04:10.660 --> 00:04:13.130
+Following that, you'll begin to learn how to
+Sau đó, bạn sẽ bắt đầu học cách
+
+00:04:13.130 --> 00:04:15.650
+apply machine learning for 3D medical imaging,
+áp dụng máy học cho hình ảnh y tế 3D,
+
+00:04:15.650 --> 00:04:18.545
+covering segmentation and classification tasks.
+bao gồm các nhiệm vụ phân đoạn và phân loại.
+
+00:04:18.545 --> 00:04:22.640
+You learn about a radiologist perspective on classification and segmentation problems.
+Bạn tìm hiểu về quan điểm của bác sĩ X quang về các vấn đề phân loại và phân đoạn.
+
+00:04:22.640 --> 00:04:25.850
+I'll be providing you with some real world use cases.
+Tôi sẽ cung cấp cho bạn một số trường hợp sử dụng trong thế giới thực.
+
+00:04:25.850 --> 00:04:27.890
+You'll learn about convolutional filters for
+Bạn sẽ tìm hiểu về bộ lọc phức hợp cho
+
+00:04:27.890 --> 00:04:31.750
+3D medical images and get hands-on with U-net,
+Hình ảnh y tế 3D và thực hành với U-net,
+
+00:04:31.750 --> 00:04:36.845
+an algorithm that's well-known for its ability to perform well in segmentation tasks.
+một thuật toán nổi tiếng với khả năng thực hiện tốt các tác vụ phân đoạn.
+
+00:04:36.845 --> 00:04:40.850
+You'll also learn how to evaluate the performance of your algorithms and identify
+
+00:04:40.850 --> 00:04:42.410
+ways to accurately communicate
+cách giao tiếp chính xác
+
+00:04:42.410 --> 00:04:45.505
+that information to the people who will be using the algorithms.
+thông tin đó cho những người sẽ sử dụng các thuật toán.
+
+00:04:45.505 --> 00:04:47.750
+Lastly, in the final lesson of the course,
+Cuối cùng, trong bài học cuối cùng của khóa học,
+
+00:04:47.750 --> 00:04:51.245
+we will talk about deployment of machine learning algorithms in the real world.
+chúng ta sẽ nói về việc triển khai các thuật toán học máy trong thế giới thực.
+
+00:04:51.245 --> 00:04:55.340
+So we will get an introduction into clinical networks and how do they operate,
+Vì vậy, chúng tôi sẽ giới thiệu về các mạng lưới lâm sàng và cách chúng hoạt động,
+
+00:04:55.340 --> 00:04:59.090
+how do all the imaging modalities that take those images in the clinic,
+làm thế nào để tất cả các phương thức hình ảnh chụp những hình ảnh đó trong phòng khám,
+
+00:04:59.090 --> 00:05:00.680
+how do they talk to each other and where
+họ nói chuyện với nhau như thế nào và ở đâu
+
+00:05:00.680 --> 00:05:03.080
+the images stored and what are the archives and actors
+các hình ảnh được lưu trữ và các tài liệu lưu trữ và tác nhân là gì
+
+00:05:03.080 --> 00:05:07.295
+involved in the process of transmitting data across the system.
+tham gia vào quá trình truyền dữ liệu trên toàn hệ thống.
+
+00:05:07.295 --> 00:05:09.980
+We will talk about what are the good places to integrate
+
+00:05:09.980 --> 00:05:13.220
+AI algorithms into these complex systems and how would you do that.
+Các thuật toán AI vào các hệ thống phức tạp này và bạn sẽ làm điều đó như thế nào.
+
+00:05:13.220 --> 00:05:17.120
+We will talk about some of the tools which are used to emulate and debug
+Chúng ta sẽ nói về một số công cụ được sử dụng để mô phỏng và gỡ lỗi
+
+00:05:17.120 --> 00:05:21.020
+such systems and how can you model such a system in your local environment?
+hệ thống như vậy và làm thế nào bạn có thể mô hình một hệ thống như vậy trong môi trường địa phương của bạn?
+
+00:05:21.020 --> 00:05:24.245
+How can you try out the algorithm without actually
+Làm thế nào bạn có thể thử thuật toán mà không thực sự
+
+00:05:24.245 --> 00:05:27.740
+go into the clinic and disrupting any workflows and then we will
+đi vào phòng khám và làm gián đoạn mọi quy trình làm việc và sau đó chúng tôi sẽ
+
+00:05:27.740 --> 00:05:32.210
+close by covering regulatory landscape and we will talk about how FDA
+kết thúc bằng cách bao quát toàn cảnh quy định và chúng ta sẽ nói về cách FDA
+
+00:05:32.210 --> 00:05:36.800
+and other medical device regulators operates and we will talk about the privacy law,
+
+00:05:36.800 --> 00:05:39.740
+specifically HIPAA in the US and there is a GDPR law
+cụ thể là HIPAA ở Hoa Kỳ và có luật GDPR
+
+00:05:39.740 --> 00:05:42.935
+in the European Union and many similar other laws across the world.
+ở Liên minh Châu Âu và nhiều luật tương tự khác trên toàn thế giới.
+
+00:05:42.935 --> 00:05:46.550
+We will talk about what do those mean for you, as an AI engineer,
+Chúng tôi sẽ nói về những điều đó có ý nghĩa gì đối với bạn, với tư cách là một kỹ sư AI,
+
+00:05:46.550 --> 00:05:49.250
+when you are starting to work with medical data and we will
+
+00:05:49.250 --> 00:05:52.220
+talk about the important points of anonymizing data set.
+nói về những điểm quan trọng của tập dữ liệu ẩn danh.
+
+00:05:52.220 --> 00:05:56.995
+What does anonymization mean and how would you do that with the medical imaging data set?
+Ẩn danh nghĩa là gì và bạn sẽ thực hiện điều đó như thế nào với tập dữ liệu hình ảnh y tế?
+
+00:05:56.995 --> 00:05:58.635
+In the final project,
+Trong dự án cuối cùng,
+
+00:05:58.635 --> 00:06:00.170
+you're going to try your hands out on
+bạn sẽ thử sức mình
+
+00:06:00.170 --> 00:06:03.365
+a real world clinical problem and that's an Alzheimer's dementia,
+một vấn đề lâm sàng trong thế giới thực và đó là bệnh mất trí nhớ Alzheimer,
+
+00:06:03.365 --> 00:06:05.015
+the most common dementia,
+chứng mất trí nhớ phổ biến nhất,
+
+00:06:05.015 --> 00:06:08.090
+a situation where there's accelerated memory loss.
+tình trạng mất trí nhớ nhanh.
+
+00:06:08.090 --> 00:06:09.320
+You'll do this by training
+Bạn sẽ làm được điều này bằng cách đào tạo
+
+00:06:09.320 --> 00:06:12.650
+a segmentation model that's going to measure hippocampal volume,
+một mô hình phân đoạn sẽ đo thể tích hồi hải mã,
+
+00:06:12.650 --> 00:06:14.885
+a structure implicated in this disease.
+một cấu trúc liên quan đến căn bệnh này.
+
+00:06:14.885 --> 00:06:16.955
+Once you have your algorithm tuned up,
+Khi bạn đã điều chỉnh thuật toán của mình,
+
+00:06:16.955 --> 00:06:20.030
+you'll learn how to integrate it into a clinical viewer system,
+bạn sẽ học cách tích hợp nó vào hệ thống xem lâm sàng,
+
+00:06:20.030 --> 00:06:22.280
+much as would be used in the real world.
+
+00:06:22.280 --> 00:06:25.100
+Yeah, so we had a lot of fun building this course.
+
+00:06:25.100 --> 00:06:27.665
+We hope you enjoy it and will learn a lot from it.
+
+00:06:27.665 --> 00:06:31.080
+So let's get onto it.
+Vì vậy, chúng ta hãy bắt đầu nó.
+

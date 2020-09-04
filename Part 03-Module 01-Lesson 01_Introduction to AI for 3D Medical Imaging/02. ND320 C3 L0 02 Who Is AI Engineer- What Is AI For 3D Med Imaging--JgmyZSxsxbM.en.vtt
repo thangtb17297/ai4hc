@@ -1,0 +1,253 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.330
+So this course is called AI for 3D medical imaging.
+Vì vậy, khóa học này được gọi là AI cho hình ảnh y tế 3D.
+
+00:00:03.330 --> 00:00:07.485
+Let's level set by discussing who is an AI engineer,
+Hãy đặt cấp độ bằng cách thảo luận xem ai là kỹ sư AI,
+
+00:00:07.485 --> 00:00:09.690
+and what is AI for 3D medical imaging,
+và AI cho hình ảnh y tế 3D là gì,
+
+00:00:09.690 --> 00:00:11.355
+and what is AI?
+và AI là gì?
+
+00:00:11.355 --> 00:00:15.030
+The first definition of AI is considered to be this one,
+Định nghĩa đầu tiên về AI được coi là định nghĩa này,
+
+00:00:15.030 --> 00:00:18.495
+which was coined in 1956 where a group of very smart people
+được đặt ra vào năm 1956, nơi một nhóm người rất thông minh
+
+00:00:18.495 --> 00:00:21.960
+who are thought to be the fathers of the modern information theory got together and
+những người được cho là cha đẻ của lý thuyết thông tin hiện đại đã cùng nhau và
+
+00:00:21.960 --> 00:00:24.510
+thought about what should we do and how should we think about
+nghĩ về những gì chúng ta nên làm và làm thế nào chúng ta nên nghĩ về
+
+00:00:24.510 --> 00:00:29.820
+this emerging capability of teaching computers to make decisions.
+khả năng dạy máy tính ra quyết định mới nổi này.
+
+00:00:29.820 --> 00:00:32.950
+The definition that they came up with was as follows,
+Định nghĩa mà họ đưa ra như sau,
+
+00:00:32.950 --> 00:00:36.245
+"An attempt will be made to find how to make machines use language,
+
+00:00:36.245 --> 00:00:38.060
+form abstractions and concepts,
+hình thành các khái niệm và trừu tượng,
+
+00:00:38.060 --> 00:00:41.975
+solve kinds of problems now reserved for humans, and improve themselves.
+giải quyết các loại vấn đề hiện dành cho con người và cải thiện bản thân.
+
+00:00:41.975 --> 00:00:43.280
+For the present purpose,
+Đối với mục đích hiện tại,
+
+00:00:43.280 --> 00:00:47.060
+the artificial intelligence problem is taken to be that of making a machine
+vấn đề trí tuệ nhân tạo được coi là chế tạo máy
+
+00:00:47.060 --> 00:00:51.970
+behave in a way that would be called intelligent if a human was so behaving."
+hành xử theo cách được gọi là thông minh nếu con người cư xử như vậy. "
+
+00:00:51.970 --> 00:00:57.370
+So this understanding of definition of AI has evolved through the years.
+Vì vậy, sự hiểu biết về định nghĩa của AI này đã phát triển qua nhiều năm.
+
+00:00:57.370 --> 00:00:58.970
+We have seen the explosion of
+Chúng tôi đã thấy sự bùng nổ của
+
+00:00:58.970 --> 00:01:02.795
+various machine learning techniques in the past several years.
+
+00:01:02.795 --> 00:01:05.930
+I think when we think about AI in this course,
+Tôi nghĩ khi chúng ta nghĩ về AI trong khóa học này,
+
+00:01:05.930 --> 00:01:08.260
+this is the definition that we could adopt.
+đây là định nghĩa mà chúng tôi có thể áp dụng.
+
+00:01:08.260 --> 00:01:13.070
+AI is an application of machine learning techniques to a real-world problem,
+AI là một ứng dụng của các kỹ thuật máy học vào một vấn đề trong thế giới thực,
+
+00:01:13.070 --> 00:01:16.120
+improving human productivity and capability.
+nâng cao năng suất và năng lực của con người.
+
+00:01:16.120 --> 00:01:19.790
+The reason why we decide to take this definition is that,
+Lý do tại sao chúng tôi quyết định sử dụng định nghĩa này là,
+
+00:01:19.790 --> 00:01:26.210
+originally AI is all about making machines behave so that they are very human-like.
+AI ban đầu là tất cả về việc làm cho máy móc hoạt động để chúng rất giống con người.
+
+00:01:26.210 --> 00:01:29.795
+So it is not only about developing better algorithms,
+
+00:01:29.795 --> 00:01:32.420
+it is not only about writing better code,
+nó không chỉ là viết mã tốt hơn,
+
+00:01:32.420 --> 00:01:35.900
+it is about building systems which integrate end to end,
+
+00:01:35.900 --> 00:01:37.615
+and can make humans better.
+và có thể làm cho con người tốt hơn.
+
+00:01:37.615 --> 00:01:42.635
+A few important things to note here is that machine learning,
+Một số điều quan trọng cần lưu ý ở đây là máy học,
+
+00:01:42.635 --> 00:01:44.910
+we think of it as a smaller field than AI.
+chúng tôi nghĩ về nó như một lĩnh vực nhỏ hơn AI.
+
+00:01:44.910 --> 00:01:51.065
+Machine learning is about building algorithms that do not need to be coded explicitly,
+Học máy là về việc xây dựng các thuật toán không cần mã hóa rõ ràng,
+
+00:01:51.065 --> 00:01:55.960
+but can improve themselves from the data that's being supplied to them.
+
+00:01:55.960 --> 00:01:57.825
+Which brings us to the question of,
+Điều này đưa chúng ta đến câu hỏi,
+
+00:01:57.825 --> 00:01:59.790
+who is an AI engineer?
+kỹ sư AI là ai?
+
+00:01:59.790 --> 00:02:02.555
+So who are we building this course for?
+Vậy chúng tôi xây dựng khóa học này cho ai?
+
+00:02:02.555 --> 00:02:06.395
+I would like to draw a parallel to a concept of full-stack web developer.
+
+00:02:06.395 --> 00:02:09.830
+If you have been in the software engineering world the past 10 years,
+Nếu bạn đã tham gia vào thế giới kỹ thuật phần mềm trong 10 năm qua,
+
+00:02:09.830 --> 00:02:14.135
+all the craze in web development has been about being the full-stack web developer.
+tất cả cơn sốt trong phát triển web là về việc trở thành nhà phát triển web toàn diện.
+
+00:02:14.135 --> 00:02:17.690
+Unlike the olden days where you had people who would focus on back end,
+
+00:02:17.690 --> 00:02:19.670
+and you'd have people who would focus on business logic,
+và bạn sẽ có những người tập trung vào logic kinh doanh,
+
+00:02:19.670 --> 00:02:22.280
+and you'd have people who would focus on front-end.
+và bạn sẽ có những người tập trung vào giao diện người dùng.
+
+00:02:22.280 --> 00:02:25.780
+The concept of full-stack web developer emerged not so long ago,
+Khái niệm về nhà phát triển web full-stack xuất hiện cách đây không lâu,
+
+00:02:25.780 --> 00:02:29.730
+and the idea was that we need to people who actually understand systems end to end,
+và ý tưởng là chúng tôi cần những người thực sự hiểu hệ thống từ đầu đến cuối,
+
+00:02:29.730 --> 00:02:30.930
+who know how to build front-end,
+người biết cách xây dựng giao diện người dùng,
+
+00:02:30.930 --> 00:02:32.510
+who knows how to build back-end,
+ai biết cách xây dựng back-end,
+
+00:02:32.510 --> 00:02:34.580
+and who can bring these things together.
+
+00:02:34.580 --> 00:02:37.640
+I'd like to make a case that AI engineer is very similar
+Tôi muốn đưa ra một trường hợp kỹ sư AI rất giống
+
+00:02:37.640 --> 00:02:40.760
+to this concept of full-stack web developer.
+về khái niệm này của nhà phát triển web đầy đủ.
+
+00:02:40.760 --> 00:02:42.740
+AI engineer needs to know the data tier,
+Kỹ sư AI cần phải biết cấp dữ liệu,
+
+00:02:42.740 --> 00:02:43.985
+needs to understand data,
+
+00:02:43.985 --> 00:02:45.860
+need to understand what it takes to curate
+cần hiểu những gì cần thiết để quản lý
+
+00:02:45.860 --> 00:02:50.165
+good datasets and label good datasets for particular machine learning problems.
+
+00:02:50.165 --> 00:02:53.200
+AI engineer needs to understand this business logic tier,
+
+00:02:53.200 --> 00:02:56.420
+which is all about applying machine learning algorithms to
+đó là tất cả về việc áp dụng các thuật toán học máy để
+
+00:02:56.420 --> 00:03:00.800
+a particular clinical problem and applying them in a way that's actually meaningful,
+một vấn đề lâm sàng cụ thể và áp dụng chúng theo cách thực sự có ý nghĩa,
+
+00:03:00.800 --> 00:03:04.175
+that yields results which make clinicians better.
+
+00:03:04.175 --> 00:03:06.650
+AI engineer needs to know the front end,
+Kỹ sư AI cần biết giao diện người dùng,
+
+00:03:06.650 --> 00:03:08.945
+which is deployment of those AI algorithms.
+triển khai các thuật toán AI đó.
+
+00:03:08.945 --> 00:03:11.150
+Where will they work? What will be the environment?
+Họ sẽ làm việc ở đâu? Môi trường sẽ là gì?
+
+00:03:11.150 --> 00:03:13.100
+What will be the performance characteristics?
+
+00:03:13.100 --> 00:03:15.860
+Because this is important to understanding what trade-offs
+
+00:03:15.860 --> 00:03:18.724
+they need to make when developing your algorithms.
+họ cần thực hiện khi phát triển các thuật toán của bạn.
+
+00:03:18.724 --> 00:03:19.895
+So all in all,
+
+00:03:19.895 --> 00:03:22.670
+an AI engineer needs to be able to see systems end to
+một kỹ sư AI cần có khả năng nhìn thấy các hệ thống kết thúc với
+
+00:03:22.670 --> 00:03:26.700
+end to bring the best results to the end users.
+kết thúc để mang lại kết quả tốt nhất cho người dùng cuối.
+

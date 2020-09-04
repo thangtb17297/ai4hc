@@ -1,0 +1,371 @@
+<!-- udacimak v1.6.6 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pneumonia Detection From Chest X-Rays</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Project: Pneumonia Detection from Chest X-Rays</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Project Overview.html">01. Project Overview</a>
+    </li>
+    <li class="">
+      <a href="02. Starting the project.html">02. Starting the project</a>
+    </li>
+    <li class="">
+      <a href="03. Submitting the project.html">03. Submitting the project</a>
+    </li>
+    <li class="">
+      <a href="04. Jupyter GPU Workspace.html">04. Jupyter GPU Workspace</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Pneumonia Detection From Chest X-Rays.html">Project Description - Pneumonia Detection From Chest X-Rays</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Pneumonia Detection From Chest X-Rays.html">Project Rubric - Pneumonia Detection From Chest X-Rays</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">Pneumonia Detection From Chest X-Rays</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            
+      <div>
+        <h2><p>Exploratory Data Analysis</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>The student can create visualizations of the metadata that inform model training</p>
+        </td>
+        <td>
+          <ul>
+<li>Students create distributions of diseases and comorbidities in their dataset</li>
+<li>Students create distributions of basic demographics of the patients who make up their datasets (such as age, gender, patient position,etc.)</li>
+<li>Students can use the above distributions to draw conclusions about how they will need to set up their model training</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>The student can visualize relevant properties of pixel-level data</p>
+        </td>
+        <td>
+          <ul>
+<li>Students use python’s imshow to visualize medical images during EDA </li>
+<li>Students create distributions of intensity values of the pixel-level data within images and compare them both <strong>within and across</strong> diagnoses</li>
+<li>Students use both of these methods of inspecting images to draw meaningful conclusions about what their model will train on</li>
+</ul>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>Model Building &amp; Training</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>The student creates an appropriate train-test split of the data</p>
+        </td>
+        <td>
+          <ul>
+<li>Students create a set of training data and a set of validation data that each have the appropriate proportions of positive and negative cases for their intended use (training and validation)</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>The student implements appropriate data augmentation to their training data</p>
+        </td>
+        <td>
+          <ul>
+<li>Student implements a class such as ImageDataGenerator from Keras to augment their training data only </li>
+<li>Student <strong>should not</strong> augment testing/validation data</li>
+<li>Student uses types of augmentation that are appropriate for medical imaging. There are no required types of augmentation</li>
+<li>Students should normalize the imaging data so the model weights do not go to infinity.</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>The student evaluates the performance of their model using the appropriate statistics</p>
+        </td>
+        <td>
+          <ul>
+<li>Student monitors the training progress of their model using log loss</li>
+<li>Student changes training parameters to avoid overfitting and compares performances of different training paradigms.</li>
+<li>Student trains enough epochs until the loss is “stable”</li>
+<li>After training, student uses precision, recall, and F1 score to actually evaluate the utility of their model.</li>
+<li>Find a threshold to classify if an image is pneumonia or not.</li>
+<li>Students should show precision-recall curve and a curve of F1-score vs. threshold</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>The student can integrate their model with real-world medical imaging data</p>
+        </td>
+        <td>
+          <ul>
+<li>Student can check DICOM header for <strong>image position, image type and body part</strong> on ALL .dcm files to check validity for their model using the pydicom python package.</li>
+<li>Student can read imaging data in from a .dcm file, preprocess the image and feed it into their model using the pydicom python package.</li>
+</ul>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>FDA Description and Validation Plan</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>The student can describe the intended population and the clinical impact of their model</p>
+        </td>
+        <td>
+          <ul>
+<li>Student should provide an intended use statement</li>
+<li>Student should point to data from their EDA to describe who their algorithm is indicated for and what the clinical setting is in which their algorithm would be used </li>
+<li>Student should describe limitations of their algorithm and how false positives or false negatives might affect a patient</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>The student can describe how their model was designed and trained</p>
+        </td>
+        <td>
+          <ul>
+<li>Students provide a flowchart or architecture diagram of their model</li>
+<li>Students should describe the DICOM checks they use before sending an image through their algorithm</li>
+<li>Students should describe the preprocessing steps they use.</li>
+<li>Students  should describe the architecture of the classifier </li>
+<li>Students should describe augmentation and its parameters used </li>
+<li>Students describe the parameters used for training</li>
+<li>Students should show the behavior of training and validating loss</li>
+<li>Students should describe the performance statistics and threshold used in final validation</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>The student can describe the dataset used to train the algorithm and how the ground truth was created</p>
+        </td>
+        <td>
+          <ul>
+<li>Students should provide information for the training set</li>
+<li>Students should provide information for the validating set</li>
+<li>Students should describe how the ground truth of the NIH dataset is created, the benefit and limitations.</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>The student describes how they would create a FDA Validation set, ground truth, and what performance metric they would hold their algorithm to for FDA validation of their model. </p>
+        </td>
+        <td>
+          <ul>
+<li>Students should describe the <strong>ideal</strong> dataset that they would receive from a clinical partner for their FDA Validation Dataset</li>
+<li>Students should describe how they would <strong>ideally</strong> create ground truth for this FDA Validation Dataset</li>
+<li>Students should describe the performance metric and <strong>the metic value</strong> that they would hold their algorithm to, supported by literature</li>
+</ul>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div class="jumbotron">
+        <h3>Tips to make your project standout:</h3>
+        <p><ul>
+<li>Create some of your own custom image augmentation (such as different image filtering techniques) rather than solely using those predefined by Keras’ ImageDataGenerator.</li>
+<li>Try creating two ‘nested’ models to specifically predict pneumonia. One that predicts pneumonia and/or infiltrates at the top level, and then a second model that specifically predicts pneumonia from the positive cases returned by the first model. </li>
+<li>Have your model output a class activation map in addition to a single binary prediction of pneumonia. This map will help a clinician to understand what the model is detecting as probable pneumonia in each image. </li>
+</ul></p>
+      </div>
+    
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.6.6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('Pneumonia Detection From Chest X-Rays')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

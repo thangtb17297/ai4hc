@@ -1,0 +1,117 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.570
+So let us look at some of the tools and applications that you will get
+
+00:00:03.570 --> 00:00:07.515
+familiar or maybe you already know that we'll be using throughout this course.
+quen thuộc hoặc có thể bạn đã biết rằng chúng tôi sẽ sử dụng trong suốt khóa học này.
+
+00:00:07.515 --> 00:00:11.760
+So first, we will be using some of the tools which are in the standards,
+
+00:00:11.760 --> 00:00:14.235
+as you would say, toolbox of a Machine Learning Engineer.
+như bạn sẽ nói, hộp công cụ của một Kỹ sư học máy.
+
+00:00:14.235 --> 00:00:18.285
+We will be working with Python version 3.7 and Jupyter notebooks.
+Chúng tôi sẽ làm việc với phiên bản Python 3.7 và sổ ghi chép Jupyter.
+
+00:00:18.285 --> 00:00:20.775
+We'll be working with PyTorch version 1.3.
+Chúng tôi sẽ làm việc với PyTorch phiên bản 1.3.
+
+00:00:20.775 --> 00:00:27.315
+We'll be working with NumPy as of early 2020 version 1.18 is the latest one.
+Chúng tôi sẽ làm việc với NumPy kể từ đầu năm 2020, phiên bản 1.18 là phiên bản mới nhất.
+
+00:00:27.315 --> 00:00:30.900
+You'll get exposure into some of the imaging tools which are specific
+Bạn sẽ được tiếp xúc với một số công cụ hình ảnh cụ thể
+
+00:00:30.900 --> 00:00:34.825
+to medical imaging workflows and 3D medical imaging workflows.
+quy trình công việc hình ảnh y tế và quy trình hình ảnh y tế 3D.
+
+00:00:34.825 --> 00:00:38.665
+This would be a variety of different viewers such as MicroDicom,
+Đây sẽ là nhiều loại người xem khác nhau, chẳng hạn như MicroDicom,
+
+00:00:38.665 --> 00:00:40.260
+RadiAnt, and 3D Slicer.
+RadiAnt và 3D Slicer.
+
+00:00:40.260 --> 00:00:43.280
+3D Slicer is a large software package show which is very popular in
+3D Slicer là một chương trình gói phần mềm lớn rất phổ biến trong
+
+00:00:43.280 --> 00:00:49.055
+biomedical research and advanced thing and you'll get a glimpse into what it's like.
+nghiên cứu y sinh và những thứ tiên tiến và bạn sẽ có cái nhìn thoáng qua về nó như thế nào.
+
+00:00:49.055 --> 00:00:51.410
+We will look at some of the tools which are used
+
+00:00:51.410 --> 00:00:54.185
+to simulate clinical network environments.
+để mô phỏng môi trường mạng lâm sàng.
+
+00:00:54.185 --> 00:00:57.470
+These would be tools like software for
+Đây sẽ là những công cụ giống như phần mềm cho
+
+00:00:57.470 --> 00:01:01.465
+medical database or packs simulation called Orthang.
+cơ sở dữ liệu y tế hoặc mô phỏng gói được gọi là Orthang.
+
+00:01:01.465 --> 00:01:04.520
+This would be tools for simulating the medical imaging
+Đây sẽ là công cụ để mô phỏng hình ảnh y tế
+
+00:01:04.520 --> 00:01:09.425
+web-based or zero footprint as they're called, viewers called OHIF.
+
+00:01:09.425 --> 00:01:12.590
+We will look at the Swiss army knife of
+Chúng ta sẽ xem xét con dao quân đội Thụy Sĩ của
+
+00:01:12.590 --> 00:01:17.630
+a medical image network administrator called DCMTK.
+quản trị viên mạng hình ảnh y tế được gọi là DCMTK.
+
+00:01:17.630 --> 00:01:20.595
+So this is the tool set that you'll be working with
+Vì vậy, đây là bộ công cụ mà bạn sẽ làm việc với
+
+00:01:20.595 --> 00:01:24.485
+and this brings us to the close of the introductory lesson.
+
+00:01:24.485 --> 00:01:27.080
+Again, we're excited to have you here and we
+Một lần nữa, chúng tôi rất vui khi có bạn ở đây và chúng tôi
+
+00:01:27.080 --> 00:01:29.965
+hope that you will learn a lot from going through this course.
+
+00:01:29.965 --> 00:01:32.450
+There's a real need for people who are able to
+
+00:01:32.450 --> 00:01:36.275
+cross-specialties and have a knowledge of both the medical side of things,
+đa chuyên khoa và có kiến ​​thức về cả khía cạnh y tế của mọi thứ,
+
+00:01:36.275 --> 00:01:37.565
+and the technical know-how,
+và bí quyết kỹ thuật,
+
+00:01:37.565 --> 00:01:39.860
+and be able to communicate with cross-disciplinary groups.
+và có thể giao tiếp với các nhóm đa ngành.
+
+00:01:39.860 --> 00:01:44.130
+So we're excited to share this information with you. Let's get started.
+Vì vậy, chúng tôi rất vui được chia sẻ thông tin này với bạn. Bắt đầu nào.
+
