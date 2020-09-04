@@ -1,0 +1,240 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.580
+In all of the previous exercises and lessons,
+Trong tất cả các bài tập và bài học trước,
+
+00:00:02.580 --> 00:00:05.730
+you've been given a label for a given image that gives you
+bạn đã được gắn nhãn cho một hình ảnh nhất định cung cấp cho bạn
+
+00:00:05.730 --> 00:00:10.035
+some sort of classification of the image such as disease or no disease.
+một số loại phân loại của hình ảnh chẳng hạn như bệnh hoặc không bệnh.
+
+00:00:10.035 --> 00:00:12.015
+But where do these labels come from,
+Nhưng những nhãn này đến từ đâu,
+
+00:00:12.015 --> 00:00:13.635
+and how accurate are they?
+và độ chính xác của chúng như thế nào?
+
+00:00:13.635 --> 00:00:16.740
+These are two very important questions to answer in
+Đây là hai câu hỏi rất quan trọng cần trả lời trong
+
+00:00:16.740 --> 00:00:20.040
+order to evaluate how good your algorithm actually is,
+để đánh giá thuật toán của bạn thực sự tốt như thế nào,
+
+00:00:20.040 --> 00:00:21.750
+and to explain to the FDA how
+và giải thích cho FDA về cách
+
+00:00:21.750 --> 00:00:26.235
+your algorithm's performance looks next to the best available solution.
+hiệu suất thuật toán của bạn trông giống với giải pháp tốt nhất hiện có.
+
+00:00:26.235 --> 00:00:30.200
+The gold standard for a particular type of data refers to
+Tiêu chuẩn vàng cho một loại dữ liệu cụ thể đề cập đến
+
+00:00:30.200 --> 00:00:34.715
+the method that detects disease with the highest sensitivity and accuracy.
+phương pháp phát hiện bệnh với độ nhạy và độ chính xác cao nhất.
+
+00:00:34.715 --> 00:00:37.730
+This method is different for different diseases.
+Phương pháp này khác nhau đối với các bệnh khác nhau.
+
+00:00:37.730 --> 00:00:41.145
+Any new method that is developed, for example,
+Bất kỳ phương pháp mới nào được phát triển, ví dụ,
+
+00:00:41.145 --> 00:00:42.655
+a deep learning algorithm,
+một thuật toán học sâu,
+
+00:00:42.655 --> 00:00:46.355
+can then be compared to this to determine its performance.
+sau đó có thể được so sánh với điều này để xác định hiệu suất của nó.
+
+00:00:46.355 --> 00:00:49.240
+Let's take pneumonia as an example.
+Hãy lấy viêm phổi làm ví dụ.
+
+00:00:49.240 --> 00:00:53.145
+The gold standard for pneumonia detection is a biopsy.
+Tiêu chuẩn vàng để phát hiện viêm phổi là sinh thiết.
+
+00:00:53.145 --> 00:00:58.370
+This however, can take a really long time to come back from the lab,
+Tuy nhiên, điều này có thể mất một thời gian dài để quay lại từ phòng thí nghiệm,
+
+00:00:58.370 --> 00:01:02.675
+and patients usually need to be started on antibiotics asap.
+và bệnh nhân thường cần được bắt đầu dùng kháng sinh càng sớm càng tốt.
+
+00:01:02.675 --> 00:01:07.340
+Because of this, we often just rely on the radiologist interpretation
+Do đó, chúng tôi thường chỉ dựa vào giải thích của bác sĩ X quang
+
+00:01:07.340 --> 00:01:09.590
+clinically so that patients can start on
+lâm sàng để bệnh nhân có thể bắt đầu
+
+00:01:09.590 --> 00:01:13.315
+a treatment and then get a confirmation later from the lab.
+điều trị và sau đó nhận được xác nhận sau đó từ phòng thí nghiệm.
+
+00:01:13.315 --> 00:01:15.915
+Now let's take a look at mammography.
+Bây giờ chúng ta hãy nhìn vào chụp nhũ ảnh.
+
+00:01:15.915 --> 00:01:18.120
+In a typical mammography screen,
+Trong một màn hình chụp nhũ ảnh điển hình,
+
+00:01:18.120 --> 00:01:20.255
+radiologists are looking to evaluate
+bác sĩ X quang đang tìm cách đánh giá
+
+00:01:20.255 --> 00:01:24.355
+breast density as well as to look for any suspicious findings.
+mật độ vú cũng như để tìm bất kỳ phát hiện đáng ngờ nào.
+
+00:01:24.355 --> 00:01:29.695
+The gold standard for determining breast density is a radiologists read.
+Tiêu chuẩn vàng để xác định mật độ vú là một bác sĩ X quang đọc.
+
+00:01:29.695 --> 00:01:32.670
+If however, a mass is found,
+Tuy nhiên, nếu một khối lượng được tìm thấy,
+
+00:01:32.670 --> 00:01:37.985
+the gold standard for determining if a mass is malignant or benign is a biopsy,
+tiêu chuẩn vàng để xác định xem một khối là ác tính hay lành tính là sinh thiết,
+
+00:01:37.985 --> 00:01:42.175
+because you can't tell from an image what type of mass something is.
+bởi vì bạn không thể biết từ một hình ảnh loại khối lượng nào đó là.
+
+00:01:42.175 --> 00:01:44.335
+This, like with pneumonia,
+Điều này, giống như với bệnh viêm phổi,
+
+00:01:44.335 --> 00:01:46.670
+takes time to come back from the lab.
+cần thời gian để quay lại phòng thí nghiệm.
+
+00:01:46.670 --> 00:01:50.690
+For this reason, if a woman shows a mass on her biopsy,
+Vì lý do này, nếu một phụ nữ cho thấy một khối trên sinh thiết của mình,
+
+00:01:50.690 --> 00:01:55.399
+the clinical approach is to contact her informing her of a suspicious mass,
+phương pháp tiếp cận lâm sàng là liên hệ với cô ấy để thông báo cho cô ấy về một khối lượng đáng ngờ,
+
+00:01:55.399 --> 00:02:00.265
+but not making a diagnosis of malignancy until the biopsy results come back.
+nhưng không chẩn đoán là ác tính cho đến khi có kết quả sinh thiết.
+
+00:02:00.265 --> 00:02:05.960
+If a deep learning algorithm could determine malignant versus benign from an image,
+Nếu thuật toán học sâu có thể xác định ác tính so với lành tính từ một hình ảnh,
+
+00:02:05.960 --> 00:02:08.960
+imagine how much emotional turmoil this could remove from
+hãy tưởng tượng điều này có thể loại bỏ bao nhiêu xáo trộn cảm xúc
+
+00:02:08.960 --> 00:02:12.790
+all of the women who have to wait to find out their biopsy results.
+tất cả những người phụ nữ phải chờ đợi để biết kết quả sinh thiết của họ.
+
+00:02:12.790 --> 00:02:17.629
+Often times, the gold standard is unattainable for the algorithm developer.
+Thông thường, tiêu chuẩn vàng là không thể đạt được đối với nhà phát triển thuật toán.
+
+00:02:17.629 --> 00:02:19.130
+More often than not,
+Thường xuyên hơn không,
+
+00:02:19.130 --> 00:02:21.725
+you will only get a large set of DICOMs.
+bạn sẽ chỉ nhận được một tập hợp lớn các DICOM.
+
+00:02:21.725 --> 00:02:26.270
+While these DICOMs will have some information about the studies and the patients,
+Trong khi các DICOM này sẽ có một số thông tin về các nghiên cứu và bệnh nhân,
+
+00:02:26.270 --> 00:02:29.299
+a lot of information is not available from DICOMs,
+nhiều thông tin không có sẵn từ các DICOM,
+
+00:02:29.299 --> 00:02:34.345
+for example, radiologists reports which can often be the gold standard.
+ví dụ, các bác sĩ X quang báo cáo thường có thể là tiêu chuẩn vàng.
+
+00:02:34.345 --> 00:02:38.260
+Even if you can find accompanying radiologists reports,
+Ngay cả khi bạn có thể tìm thấy các báo cáo của bác sĩ X quang đi kèm
+
+00:02:38.260 --> 00:02:41.000
+what happens if you have one million studies?
+điều gì xảy ra nếu bạn có một triệu nghiên cứu?
+
+00:02:41.000 --> 00:02:43.775
+It probably isn't feasible for you to parse through
+Nó có thể không khả thi để bạn phân tích cú pháp
+
+00:02:43.775 --> 00:02:47.155
+each one manually to extract the diagnosis.
+mỗi người một cách thủ công để trích xuất chẩn đoán.
+
+00:02:47.155 --> 00:02:48.895
+As we just mentioned,
+Như chúng tôi vừa đề cập,
+
+00:02:48.895 --> 00:02:52.205
+biopsy is another common type of golden standard,
+sinh thiết là một loại tiêu chuẩn vàng phổ biến khác,
+
+00:02:52.205 --> 00:02:55.850
+but the information is stored outside of the PACS,
+nhưng thông tin được lưu trữ bên ngoài PACS,
+
+00:02:55.850 --> 00:02:59.240
+and often you only get data that's been transferred from the PACS,
+và thường thì bạn chỉ nhận được dữ liệu được chuyển từ PACS,
+
+00:02:59.240 --> 00:03:00.950
+and not the full EMR,
+và không phải EMR đầy đủ,
+
+00:03:00.950 --> 00:03:02.974
+which doesn't contain biopsy.
+mà không chứa sinh thiết.
+
+00:03:02.974 --> 00:03:05.690
+So you still need to establish
+Vì vậy, bạn vẫn cần thiết lập
+
+00:03:05.690 --> 00:03:09.485
+some ground-truth that you can use to compare your algorithm to,
+một số chân lý cơ bản mà bạn có thể sử dụng để so sánh thuật toán của mình với,
+
+00:03:09.485 --> 00:03:12.485
+and it should be pretty close to the gold standard.
+và nó phải khá gần với tiêu chuẩn vàng.
+
+00:03:12.485 --> 00:03:15.685
+In ways that your ground-truth is sub-par,
+Theo những cách mà chân lý cơ bản của bạn là phụ,
+
+00:03:15.685 --> 00:03:20.640
+you will have to caveat your approach to the FDA and other stakeholders.
+bạn sẽ phải báo trước cách tiếp cận của mình với FDA và các bên liên quan khác.
+

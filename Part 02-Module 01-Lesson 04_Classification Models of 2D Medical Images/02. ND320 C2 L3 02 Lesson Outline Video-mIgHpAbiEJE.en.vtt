@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.375
+Today, we'll start with learning about different types of models,
+Hôm nay, chúng ta sẽ bắt đầu với việc tìm hiểu về các loại mô hình khác nhau,
+
+00:00:03.375 --> 00:00:07.305
+both from a classic machine learning and a deep learning perspective.
+cả từ quan điểm học máy cổ điển và học tập sâu.
+
+00:00:07.305 --> 00:00:10.350
+Next, we'll talk about how to appropriately split
+Tiếp theo, chúng ta sẽ nói về cách phân chia hợp lý
+
+00:00:10.350 --> 00:00:13.650
+up your data into training and validation sets.
+nâng cấp dữ liệu của bạn vào các tập hợp đào tạo và xác nhận.
+
+00:00:13.650 --> 00:00:16.890
+A big challenge in the medical industry is in
+Một thách thức lớn trong ngành y tế là
+
+00:00:16.890 --> 00:00:19.965
+obtaining a gold standard label for our datasets.
+đạt được nhãn tiêu chuẩn vàng cho bộ dữ liệu của chúng tôi.
+
+00:00:19.965 --> 00:00:22.710
+So we'll dive deep here next.
+Vì vậy, chúng ta sẽ đi sâu ở đây tiếp theo.
+
+00:00:22.710 --> 00:00:27.005
+Following from what you learned about image properties in lessons 1 and 2,
+Sau những gì bạn đã học về thuộc tính hình ảnh trong bài học 1 và 2,
+
+00:00:27.005 --> 00:00:30.695
+we'll then talk about image pre-processing for deep learning.
+sau đó chúng ta sẽ nói về xử lý trước hình ảnh để học sâu.
+
+00:00:30.695 --> 00:00:33.560
+Next, we'll talk about how to fine tune
+Tiếp theo, chúng ta sẽ nói về cách tinh chỉnh
+
+00:00:33.560 --> 00:00:37.490
+existing CNN architectures for medical imaging tasks.
+
+00:00:37.490 --> 00:00:41.885
+Finally, we'll learn about how to evaluate our models while they train.
+Cuối cùng, chúng ta sẽ tìm hiểu về cách đánh giá các mô hình của chúng tôi khi họ đào tạo.
+
+00:00:41.885 --> 00:00:43.665
+Note that in this lesson,
+Lưu ý rằng trong bài học này,
+
+00:00:43.665 --> 00:00:47.405
+we are going to focus on CNNs for classification tasks.
+chúng tôi sẽ tập trung vào CNN cho các nhiệm vụ phân loại.
+
+00:00:47.405 --> 00:00:51.215
+We won't talk too much about segmentation and localization,
+Chúng tôi sẽ không nói quá nhiều về phân khúc và bản địa hóa,
+
+00:00:51.215 --> 00:00:53.960
+but we'll lay a lot of the foundational work for you to be
+nhưng chúng tôi sẽ đặt rất nhiều công việc nền tảng để bạn trở thành
+
+00:00:53.960 --> 00:00:57.960
+able to tackle those on your own outside of this course.
+

@@ -1,0 +1,203 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.710
+A few minutes ago, we discussed how classic machine-learning involves the development of
+
+00:00:04.710 --> 00:00:07.800
+specific features that an algorithm developer deems
+các tính năng cụ thể mà nhà phát triển thuật toán cho là
+
+00:00:07.800 --> 00:00:11.310
+important for classifying images of certain classes.
+quan trọng để phân loại hình ảnh của các lớp nhất định.
+
+00:00:11.310 --> 00:00:15.810
+We discussed how radiologists are sometimes brought into the mix because they can offer
+Chúng tôi đã thảo luận về cách các bác sĩ X quang đôi khi được đưa vào hỗn hợp vì họ có thể cung cấp
+
+00:00:15.810 --> 00:00:18.075
+their expertise of what they know is important
+chuyên môn của họ về những gì họ biết là quan trọng
+
+00:00:18.075 --> 00:00:20.920
+from looking at tens of thousands of images.
+từ việc xem xét hàng chục nghìn hình ảnh.
+
+00:00:20.920 --> 00:00:25.700
+The creation of the convolutional neural network architecture was inspired by
+Việc tạo ra kiến ​​trúc mạng nơ ron phức hợp được lấy cảm hứng từ
+
+00:00:25.700 --> 00:00:28.640
+this idea that humans learn complex features
+ý tưởng rằng con người học các tính năng phức tạp
+
+00:00:28.640 --> 00:00:31.670
+of images by being exposed to thousands of examples.
+hình ảnh bằng cách tiếp xúc với hàng nghìn ví dụ.
+
+00:00:31.670 --> 00:00:37.175
+So its architecture was designed to mirror the human visual cortex in the brain.
+Vì vậy, kiến ​​trúc của nó được thiết kế để phản chiếu vỏ não thị giác của con người trong não.
+
+00:00:37.175 --> 00:00:42.485
+The boxes labeled in the figure each represent a layer of the visual cortex.
+Mỗi hộp có nhãn trong hình đại diện cho một lớp của vỏ não thị giác.
+
+00:00:42.485 --> 00:00:45.035
+Cells in the first layer, V1,
+Các tế bào trong lớp đầu tiên, V1,
+
+00:00:45.035 --> 00:00:50.015
+have receptive fields that correspond to very small areas of the physical world.
+có các trường tiếp nhận tương ứng với các khu vực rất nhỏ của thế giới vật chất.
+
+00:00:50.015 --> 00:00:54.230
+Several of these cells then feed into a single V2 cell,
+Một số ô trong số này sau đó được cấp vào một ô V2 duy nhất,
+
+00:00:54.230 --> 00:00:59.240
+which in turn has information from a slightly larger area of the physical world.
+do đó có thông tin từ một khu vực lớn hơn một chút của thế giới vật chất.
+
+00:00:59.240 --> 00:01:02.735
+As receptive fields get larger and higher layers,
+Khi các trường tiếp nhận ngày càng lớn hơn và các lớp cao hơn,
+
+00:01:02.735 --> 00:01:05.210
+each layer becomes responsible for detecting
+mỗi lớp trở nên chịu trách nhiệm phát hiện
+
+00:01:05.210 --> 00:01:10.520
+more complex features about the visual world until finally at the last layer,
+các tính năng phức tạp hơn về thế giới hình ảnh cho đến cuối cùng ở lớp cuối cùng,
+
+00:01:10.520 --> 00:01:13.825
+distinct faces and objects can be recognized.
+có thể nhận ra các khuôn mặt và đối tượng riêng biệt
+
+00:01:13.825 --> 00:01:17.550
+This figure shows a typical CNN architecture.
+Hình này cho thấy một kiến ​​trúc CNN điển hình.
+
+00:01:17.550 --> 00:01:21.740
+First, there's an actual image that is fed into the network.
+Đầu tiên, có một hình ảnh thực tế được đưa vào mạng.
+
+00:01:21.740 --> 00:01:25.190
+There is then a set of convolutional layers in
+Sau đó, có một tập hợp các lớp phức hợp trong
+
+00:01:25.190 --> 00:01:29.720
+black that can be likened to those of V1 cells in the human brain.
+màu đen có thể được ví như của các tế bào V1 trong não người.
+
+00:01:29.720 --> 00:01:34.505
+They are made up of a set of filters that are looking for very simple features,
+Chúng được tạo thành từ một tập hợp các bộ lọc tìm kiếm các tính năng rất đơn giản,
+
+00:01:34.505 --> 00:01:36.635
+such as a directional line.
+chẳng hạn như một đường định hướng.
+
+00:01:36.635 --> 00:01:40.370
+Note that the input image here has a size of 224 by
+Lưu ý rằng hình ảnh đầu vào ở đây có kích thước 224 x
+
+00:01:40.370 --> 00:01:44.790
+224 that matches the first set of convolutional layers.
+224 phù hợp với tập hợp các lớp tích chập đầu tiên.
+
+00:01:44.790 --> 00:01:47.980
+This first set of filter layers is then down
+Tập hợp các lớp bộ lọc đầu tiên này sau đó sẽ bị giảm
+
+00:01:47.980 --> 00:01:51.460
+sampled so that filters in the second set of convolutional layers
+được lấy mẫu để bộ lọc trong tập hợp các lớp phức hợp thứ hai
+
+00:01:51.460 --> 00:01:54.220
+have a larger receptive fields and can
+có một trường tiếp nhận lớn hơn và có thể
+
+00:01:54.220 --> 00:01:58.195
+therefore distinguish more complex features like shapes.
+do đó phân biệt các tính năng phức tạp hơn như hình dạng.
+
+00:01:58.195 --> 00:02:01.120
+This continues as sets of layers which are
+Điều này tiếp tục như một tập hợp các lớp
+
+00:02:01.120 --> 00:02:03.970
+down-sampled and fed into higher level layers that can
+được lấy mẫu xuống và đưa vào các lớp cấp cao hơn có thể
+
+00:02:03.970 --> 00:02:10.030
+detect more complex features such as objects and finally specific faces.
+phát hiện các tính năng phức tạp hơn như các đối tượng và cuối cùng là các khuôn mặt cụ thể.
+
+00:02:10.030 --> 00:02:11.905
+When we train a CNN,
+Khi chúng tôi đào tạo CNN,
+
+00:02:11.905 --> 00:02:15.505
+we are training the parameters of each filter in each layer
+chúng tôi đang đào tạo các thông số của từng bộ lọc trong mỗi lớp
+
+00:02:15.505 --> 00:02:19.390
+to recognize what's important about the images that we are interested in.
+để nhận ra điều gì quan trọng về hình ảnh mà chúng tôi quan tâm.
+
+00:02:19.390 --> 00:02:23.270
+We'll talk about these layers in more depth later in the lesson.
+Chúng ta sẽ nói sâu hơn về các lớp này ở phần sau của bài học.
+
+00:02:23.270 --> 00:02:27.750
+Unlike classification algorithms that typically employ a CNN,
+Không giống như các thuật toán phân loại thường sử dụng CNN,
+
+00:02:27.750 --> 00:02:31.745
+one of the most common architectures for segmentation is a UNet.
+một trong những kiến ​​trúc phổ biến nhất để phân đoạn là UNet.
+
+00:02:31.745 --> 00:02:34.880
+You will learn more about these in the 3D imaging course.
+Bạn sẽ tìm hiểu thêm về những điều này trong khóa học hình ảnh 3D.
+
+00:02:34.880 --> 00:02:37.430
+It's important to note though that a limitation of
+Điều quan trọng cần lưu ý là mặc dù hạn chế của
+
+00:02:37.430 --> 00:02:41.765
+2D imaging is the inability to measure the volume of structures,
+Hình ảnh 2D là không có khả năng đo thể tích của cấu trúc,
+
+00:02:41.765 --> 00:02:45.155
+which is often more clinically relevant than the area.
+thường liên quan đến lâm sàng hơn là khu vực.
+
+00:02:45.155 --> 00:02:46.610
+If you think about it,
+Nếu bạn nghĩ về nó,
+
+00:02:46.610 --> 00:02:48.665
+when a patient gets an x-ray taken,
+khi một bệnh nhân được chụp X-quang,
+
+00:02:48.665 --> 00:02:53.300
+the angle at which their body is positioned with respect to the x-ray machine can have
+góc mà cơ thể của họ được định vị so với máy x-quang có thể có
+
+00:02:53.300 --> 00:02:58.615
+a big impact on how the area of a given structure appears in a 2D image.
+ảnh hưởng lớn đến cách diện tích của một cấu trúc nhất định xuất hiện trong hình ảnh 2D.
+
+00:02:58.615 --> 00:03:01.910
+Using the area in 2D medical imaging as
+Sử dụng khu vực trong hình ảnh y tế 2D như
+
+00:03:01.910 --> 00:03:06.540
+a reliable clinical measure may be limited in its utility.
+một biện pháp lâm sàng đáng tin cậy có thể bị hạn chế về công dụng của nó.
+

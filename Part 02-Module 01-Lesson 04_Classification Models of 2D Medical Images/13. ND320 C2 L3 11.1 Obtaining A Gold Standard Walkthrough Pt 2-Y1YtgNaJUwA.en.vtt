@@ -1,0 +1,304 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+The ground truth of a dataset represents the set of
+Sự thật cơ bản của tập dữ liệu đại diện cho tập hợp
+
+00:00:03.390 --> 00:00:07.350
+labels that determine which class each data element belongs to.
+nhãn xác định lớp mà mỗi phần tử dữ liệu thuộc về.
+
+00:00:07.350 --> 00:00:13.110
+Bounding boxes that designate the area of a finding for localization tasks or actual
+Các hộp giới hạn chỉ định khu vực phát hiện cho các nhiệm vụ bản địa hóa hoặc thực tế
+
+00:00:13.110 --> 00:00:15.120
+pixel level image masks that show
+mặt nạ hình ảnh cấp pixel hiển thị
+
+00:00:15.120 --> 00:00:19.170
+the exact pixels that contain a finding for segmentation.
+các pixel chính xác chứa một phát hiện để phân đoạn.
+
+00:00:19.170 --> 00:00:22.560
+Ground truths can be created in many different ways,
+Sự thật cơ bản có thể được tạo ra theo nhiều cách khác nhau,
+
+00:00:22.560 --> 00:00:26.890
+and these depend on the resources that are available to the algorithm developer.
+và những điều này phụ thuộc vào các tài nguyên có sẵn cho nhà phát triển thuật toán.
+
+00:00:26.890 --> 00:00:29.210
+The method by which they're created, however,
+Tuy nhiên, phương pháp mà chúng được tạo ra,
+
+00:00:29.210 --> 00:00:32.450
+can have a significant impact on the overall accuracy of
+có thể có tác động đáng kể đến độ chính xác tổng thể của
+
+00:00:32.450 --> 00:00:36.260
+the algorithm and also its reliability in a clinical setting.
+thuật toán và cả độ tin cậy của nó trong môi trường lâm sàng.
+
+00:00:36.260 --> 00:00:40.689
+Typical sources of ground truth are biopsy based labeling,
+Các nguồn thông tin cơ bản điển hình là ghi nhãn dựa trên sinh thiết,
+
+00:00:40.689 --> 00:00:47.485
+NLP extraction, expert labeling and labeling by another state of the art algorithm.
+Khai thác NLP, ghi nhãn chuyên gia và gắn nhãn bằng một thuật toán hiện đại khác.
+
+00:00:47.485 --> 00:00:51.315
+There are a lot of challenges in obtaining ground truth.
+Có rất nhiều thách thức trong việc đạt được sự thật cơ bản.
+
+00:00:51.315 --> 00:00:53.570
+As we mentioned, if you are looking to use
+Như chúng tôi đã đề cập, nếu bạn đang muốn sử dụng
+
+00:00:53.570 --> 00:00:56.705
+biopsy data as your ground truth for training an algorithm,
+dữ liệu sinh thiết là chân lý cơ bản để đào tạo thuật toán,
+
+00:00:56.705 --> 00:00:59.360
+it will require that you get data from more than
+nó sẽ yêu cầu bạn lấy dữ liệu từ hơn
+
+00:00:59.360 --> 00:01:02.660
+just the packs from your clinical partner since biopsy data
+chỉ là các gói từ đối tác lâm sàng của bạn kể từ khi dữ liệu sinh thiết
+
+00:01:02.660 --> 00:01:04.940
+is stored elsewhere and that can often be
+được lưu trữ ở nơi khác và thường có thể
+
+00:01:04.940 --> 00:01:09.150
+difficult and more expensive to obtain from your clinical partner.
+khó và đắt hơn để nhận được từ đối tác lâm sàng của bạn.
+
+00:01:09.150 --> 00:01:11.570
+If you have radiology reports,
+Nếu bạn có báo cáo X quang,
+
+00:01:11.570 --> 00:01:14.210
+one option that many researchers take is using
+một lựa chọn mà nhiều nhà nghiên cứu thực hiện là sử dụng
+
+00:01:14.210 --> 00:01:18.545
+a natural language processing tool to extract diagnosis from.
+một công cụ xử lý ngôn ngữ tự nhiên để trích xuất chẩn đoán từ.
+
+00:01:18.545 --> 00:01:21.575
+One challenge here is that you either need to have
+Một thách thức ở đây là bạn cần phải có
+
+00:01:21.575 --> 00:01:25.339
+access to that tool or you will need to build it yourself.
+truy cập vào công cụ đó hoặc bạn sẽ cần phải tự xây dựng nó.
+
+00:01:25.339 --> 00:01:28.550
+Another challenge here is that your NLP tool will
+Một thách thức khác ở đây là công cụ NLP của bạn sẽ
+
+00:01:28.550 --> 00:01:32.750
+probably not be 100 percent accurate in extracting diagnoses.
+có thể không chính xác 100 phần trăm trong việc trích xuất chẩn đoán.
+
+00:01:32.750 --> 00:01:34.930
+Let's take the following examples.
+Hãy lấy các ví dụ sau đây.
+
+00:01:34.930 --> 00:01:36.735
+A report may say,
+Một báo cáo có thể nói,
+
+00:01:36.735 --> 00:01:39.135
+image does not contain pneumonia.
+hình ảnh không có viêm phổi.
+
+00:01:39.135 --> 00:01:41.630
+It would be relatively easy to make sure that
+Sẽ tương đối dễ dàng để đảm bảo rằng
+
+00:01:41.630 --> 00:01:45.800
+your NLP tool understands this type of negation and picks up on,
+công cụ NLP của bạn hiểu loại phủ định này và tiếp tục,
+
+00:01:45.800 --> 00:01:51.460
+not contain pneumonia as there not being a diagnosis of pneumonia in the image.
+không chứa viêm phổi vì không có chẩn đoán viêm phổi trên hình ảnh.
+
+00:01:51.460 --> 00:01:53.805
+But what about this example?
+Nhưng còn ví dụ này thì sao?
+
+00:01:53.805 --> 00:01:56.810
+It is unlikely, given the findings in the report,
+Điều đó khó xảy ra, với những phát hiện trong báo cáo,
+
+00:01:56.810 --> 00:01:59.375
+that pneumonia is present in this study.
+rằng bệnh viêm phổi có trong nghiên cứu này.
+
+00:01:59.375 --> 00:02:02.210
+NLP has a harder time understanding
+NLP khó hiểu hơn
+
+00:02:02.210 --> 00:02:07.165
+complicated negations like this that are separate by a lot of contextual language.
+những phủ định phức tạp như thế này được tách biệt bởi rất nhiều ngôn ngữ theo ngữ cảnh.
+
+00:02:07.165 --> 00:02:10.730
+In fact, the dataset that you use in your final project
+Trên thực tế, tập dữ liệu mà bạn sử dụng trong dự án cuối cùng của mình
+
+00:02:10.730 --> 00:02:14.210
+uses NLP extracted labels from radiology reports.
+sử dụng các nhãn được trích xuất NLP từ các báo cáo X quang.
+
+00:02:14.210 --> 00:02:17.270
+The authors of the dataset indicate that they believe
+Các tác giả của tập dữ liệu chỉ ra rằng họ tin rằng
+
+00:02:17.270 --> 00:02:21.475
+the labels to be a little bit more than 90 percent accurate.
+nhãn chính xác hơn 90% một chút.
+
+00:02:21.475 --> 00:02:26.665
+What happens if you're given a dataset of only DICOM and X-rays?
+Điều gì xảy ra nếu bạn được cung cấp một tập dữ liệu chỉ có DICOM và tia X?
+
+00:02:26.665 --> 00:02:28.420
+This can happen sometimes,
+Điều này đôi khi có thể xảy ra,
+
+00:02:28.420 --> 00:02:32.719
+and it's one of the most difficult situations to be in as an algorithm developer.
+và đó là một trong những tình huống khó khăn nhất đối với tư cách là nhà phát triển thuật toán.
+
+00:02:32.719 --> 00:02:37.685
+Having a set of one million X-rays can feel like you're sitting on a pile of gold,
+Có một bộ một triệu tia X có thể cảm thấy như bạn đang ngồi trên một đống vàng,
+
+00:02:37.685 --> 00:02:41.960
+but they're actually pretty useless if you don't have labels to go with them.
+nhưng chúng thực sự khá vô dụng nếu bạn không có nhãn đi kèm.
+
+00:02:41.960 --> 00:02:44.180
+In situations like these,
+Trong những tình huống như thế này,
+
+00:02:44.180 --> 00:02:47.495
+if you work for a well-funded company or research organization,
+nếu bạn làm việc cho một công ty hoặc tổ chức nghiên cứu được tài trợ tốt,
+
+00:02:47.495 --> 00:02:50.000
+the tactic that is usually taken is to hire
+chiến thuật thường được thực hiện là thuê
+
+00:02:50.000 --> 00:02:55.450
+a radiologist or team of radiologists to go through each image and label them.
+một bác sĩ X quang hoặc một nhóm bác sĩ X quang để xem xét từng hình ảnh và dán nhãn cho chúng.
+
+00:02:55.450 --> 00:03:01.450
+This, however, is really expensive and also requires a lot of time on your part.
+Tuy nhiên, điều này thực sự tốn kém và cũng đòi hỏi nhiều thời gian từ phía bạn.
+
+00:03:01.450 --> 00:03:04.010
+You will have to come up with a labeling protocol for
+Bạn sẽ phải đưa ra một giao thức ghi nhãn cho
+
+00:03:04.010 --> 00:03:09.140
+the radiologist and spend a lot of time communicating with them throughout the process.
+bác sĩ X quang và dành nhiều thời gian giao tiếp với họ trong suốt quá trình.
+
+00:03:09.140 --> 00:03:13.700
+Similar to using NLP to extract diagnoses from reports,
+Tương tự như việc sử dụng NLP để trích xuất chẩn đoán từ các báo cáo,
+
+00:03:13.700 --> 00:03:17.450
+researchers are also starting to take the approach of using a state of
+các nhà nghiên cứu cũng đang bắt đầu áp dụng phương pháp sử dụng trạng thái
+
+00:03:17.450 --> 00:03:21.550
+the art image based algorithm to create ground truth labels.
+thuật toán dựa trên hình ảnh nghệ thuật để tạo các nhãn chân thực.
+
+00:03:21.550 --> 00:03:24.205
+Just like in the NLP solution, however,
+Cũng giống như trong giải pháp NLP,
+
+00:03:24.205 --> 00:03:26.975
+you won't have perfect accuracy with the solution,
+bạn sẽ không có độ chính xác hoàn hảo với giải pháp,
+
+00:03:26.975 --> 00:03:28.700
+at least not in 2020.
+ít nhất là không phải vào năm 2020.
+
+00:03:28.700 --> 00:03:30.620
+Coming back to our example,
+Quay lại ví dụ của chúng tôi,
+
+00:03:30.620 --> 00:03:33.320
+where an organization hires a radiologist to
+nơi một tổ chức thuê một bác sĩ X quang để
+
+00:03:33.320 --> 00:03:36.755
+label a bunch of images specifically for a project,
+gắn nhãn một loạt hình ảnh cụ thể cho một dự án,
+
+00:03:36.755 --> 00:03:40.300
+how do we make sure that we don't have the problem of inaccuracy?
+làm thế nào để chúng tôi đảm bảo rằng chúng tôi không gặp vấn đề về sự không chính xác?
+
+00:03:40.300 --> 00:03:43.410
+Radiologists are human beings and they make mistakes.
+Bác sĩ X quang là con người và họ mắc sai lầm.
+
+00:03:43.410 --> 00:03:47.975
+Additionally, some diseases are really hard to detect on imaging alone,
+Ngoài ra, một số bệnh thực sự khó phát hiện chỉ trên hình ảnh,
+
+00:03:47.975 --> 00:03:50.375
+like we showed earlier with pneumonia and with
+như chúng tôi đã trình bày trước đó với bệnh viêm phổi và với
+
+00:03:50.375 --> 00:03:53.320
+determining if a breast tumor was malignant.
+xác định xem một khối u vú có phải là ác tính hay không.
+
+00:03:53.320 --> 00:03:58.115
+So there is a technique called creating a silver standard,
+Vì vậy, có một kỹ thuật được gọi là tạo tiêu chuẩn bạc,
+
+00:03:58.115 --> 00:04:01.490
+that a lot of organizations who have the resources use.
+mà rất nhiều tổ chức có tài nguyên sử dụng.
+
+00:04:01.490 --> 00:04:03.650
+This technique involves hiring
+Kỹ thuật này liên quan đến việc thuê
+
+00:04:03.650 --> 00:04:07.975
+several radiologists to each make their own diagnosis of an image.
+một số bác sĩ X quang mỗi người đưa ra chẩn đoán hình ảnh của riêng họ.
+
+00:04:07.975 --> 00:04:10.685
+The final diagnosis is then determined by
+Chẩn đoán cuối cùng sau đó được xác định bởi
+
+00:04:10.685 --> 00:04:15.415
+a voting system across all of the radiologists labels for each image.
+một hệ thống bình chọn trên tất cả các nhãn bác sĩ X quang cho mỗi hình ảnh.
+
+00:04:15.415 --> 00:04:19.130
+Note that sometimes radiologists experience levels are taken
+Lưu ý rằng đôi khi bác sĩ X quang có kinh nghiệm cấp
+
+00:04:19.130 --> 00:04:23.730
+into account and votes are weighted by years of experience.
+vào tài khoản và các phiếu bầu được tính theo năm kinh nghiệm.
+

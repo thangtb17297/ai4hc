@@ -1,0 +1,254 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.865
+Here we get to actually building our model.
+Ở đây chúng tôi thực sự xây dựng mô hình của mình.
+
+00:00:02.865 --> 00:00:05.310
+While you can build CNNs from scratch,
+Mặc dù bạn có thể tạo CNN từ đầu,
+
+00:00:05.310 --> 00:00:07.650
+pre-trained models can be fine-tuned to
+các mô hình được đào tạo trước có thể được tinh chỉnh để
+
+00:00:07.650 --> 00:00:10.965
+perform really well for medical imaging applications,
+hoạt động thực sự tốt cho các ứng dụng hình ảnh y tế,
+
+00:00:10.965 --> 00:00:14.040
+and this requires less training time and computing power.
+
+00:00:14.040 --> 00:00:16.110
+So that's what we'll focus on here.
+Vì vậy, đó là những gì chúng tôi sẽ tập trung vào ở đây.
+
+00:00:16.110 --> 00:00:18.570
+Recall from earlier in this lesson when we
+Nhớ lại từ trước trong bài học này khi chúng ta
+
+00:00:18.570 --> 00:00:21.100
+learned about the basic architecture of the CNN,
+đã học về kiến ​​trúc cơ bản của CNN,
+
+00:00:21.100 --> 00:00:24.615
+and how it has a series of convolutional layers that feed
+và cách nó có một loạt các lớp phức hợp cung cấp
+
+00:00:24.615 --> 00:00:29.115
+into each other to identify more complex features about an image.
+vào nhau để xác định các đặc điểm phức tạp hơn về hình ảnh.
+
+00:00:29.115 --> 00:00:31.830
+We drew a parallel between these layers,
+Chúng tôi đã vẽ một song song giữa các lớp này,
+
+00:00:31.830 --> 00:00:35.630
+and the layers of the human visual cortex whose cells recognize
+và các lớp của vỏ não thị giác của con người có các tế bào nhận biết
+
+00:00:35.630 --> 00:00:41.015
+more and more complex features about the visual world as they feed into one another.
+ngày càng có nhiều tính năng phức tạp hơn về thế giới hình ảnh khi chúng liên kết với nhau.
+
+00:00:41.015 --> 00:00:44.735
+Let's take a deeper dive into one of these layers.
+Hãy đi sâu hơn vào một trong những lớp này.
+
+00:00:44.735 --> 00:00:48.245
+This layer is made up of 128 filters,
+Lớp này được tạo thành từ 128 bộ lọc,
+
+00:00:48.245 --> 00:00:51.400
+each with a size of 112 by 112.
+mỗi kích thước 112 x 112.
+
+00:00:51.400 --> 00:00:56.120
+It has been downsampled from the layer before that was 224 by 224,
+Nó đã được lấy mẫu từ lớp trước đó là 224 x 224,
+
+00:00:56.120 --> 00:00:58.685
+using a technique called Max pooling,
+sử dụng một kỹ thuật được gọi là Tổng hợp tối đa,
+
+00:00:58.685 --> 00:01:01.600
+which we won't go into depth about in this course.
+mà chúng ta sẽ không đi sâu vào trong khóa học này.
+
+00:01:01.600 --> 00:01:05.480
+Each filter, we'll learn how to discriminate one simple feature,
+Mỗi bộ lọc, chúng ta sẽ học cách phân biệt một tính năng đơn giản,
+
+00:01:05.480 --> 00:01:07.450
+such as a basic line or shape,
+chẳng hạn như một đường hoặc hình dạng cơ bản,
+
+00:01:07.450 --> 00:01:10.835
+and 128 filters mean that at this level,
+
+00:01:10.835 --> 00:01:16.625
+the network is learning how to discriminate between 128 unique types of features.
+mạng đang học cách phân biệt giữa 128 loại tính năng độc đáo.
+
+00:01:16.625 --> 00:01:20.635
+So let's take a closer look at what some of those filters might look like.
+Vì vậy, hãy xem xét kỹ hơn một số bộ lọc đó có thể trông như thế nào.
+
+00:01:20.635 --> 00:01:25.915
+Each box in this image represents a single filter from a convolutional layer.
+Mỗi hộp trong hình ảnh này đại diện cho một bộ lọc duy nhất từ ​​một lớp phức hợp.
+
+00:01:25.915 --> 00:01:30.350
+For example, this filter recognizes areas of an image where there are
+Ví dụ: bộ lọc này nhận ra các khu vực của hình ảnh nơi có
+
+00:01:30.350 --> 00:01:34.760
+several sets of lines oriented at roughly a 45-degree angle.
+một số tập hợp các đường được định hướng ở một góc gần 45 độ.
+
+00:01:34.760 --> 00:01:38.270
+This filter becomes activated anytime a series
+Bộ lọc này được kích hoạt bất cứ lúc nào một chuỗi
+
+00:01:38.270 --> 00:01:42.245
+of lines at a 45-degree angle is seen in an image.
+của các đường ở góc 45 độ được nhìn thấy trong một hình ảnh.
+
+00:01:42.245 --> 00:01:48.020
+This filter recognizes areas of an image that have pink in the lower left quadrant,
+Bộ lọc này nhận dạng các vùng của hình ảnh có màu hồng ở góc phần tư phía dưới bên trái,
+
+00:01:48.020 --> 00:01:50.045
+and green in the upper right quadrant,
+và màu xanh lục ở góc phần tư phía trên bên phải,
+
+00:01:50.045 --> 00:01:54.810
+and becomes activated if there is a place in an image with this feature.
+và được kích hoạt nếu có một địa điểm trong ảnh có tính năng này.
+
+00:01:54.880 --> 00:01:59.120
+Finally, this filter becomes activated when series
+Cuối cùng, bộ lọc này được kích hoạt khi chuỗi
+
+00:01:59.120 --> 00:02:03.080
+of close together vertical lines are detected in an image.
+các đường thẳng đứng gần nhau được phát hiện trong một hình ảnh.
+
+00:02:03.080 --> 00:02:04.790
+As we just learned,
+Như chúng ta vừa học,
+
+00:02:04.790 --> 00:02:08.120
+lots of filters in the early layers of a network recognized
+rất nhiều bộ lọc trong các lớp đầu của mạng được nhận dạng
+
+00:02:08.120 --> 00:02:11.885
+features from only a small area of the visual field of an image,
+
+00:02:11.885 --> 00:02:14.645
+like line orientations and color patterns.
+như hướng dòng và các mẫu màu.
+
+00:02:14.645 --> 00:02:17.235
+No matter what your classification task is,
+Bất kể nhiệm vụ phân loại của bạn là gì,
+
+00:02:17.235 --> 00:02:20.155
+this will be true for all CNNs.
+điều này sẽ đúng cho tất cả CNN.
+
+00:02:20.155 --> 00:02:22.925
+So let's say that a researcher developed
+Vì vậy, giả sử rằng một nhà nghiên cứu đã phát triển
+
+00:02:22.925 --> 00:02:28.115
+a very powerful CNN architecture that has been trained on millions of car images,
+một kiến ​​trúc CNN rất mạnh mẽ đã được đào tạo trên hàng triệu hình ảnh xe hơi,
+
+00:02:28.115 --> 00:02:31.955
+so they could be accurately classified into different types of cars.
+
+00:02:31.955 --> 00:02:34.790
+This CNN model could then be used by
+Mô hình CNN này sau đó có thể được sử dụng bởi
+
+00:02:34.790 --> 00:02:38.180
+another researcher to classify different types of cats.
+một nhà nghiên cứu khác để phân loại các loại mèo khác nhau.
+
+00:02:38.180 --> 00:02:40.235
+You may wonder how that's possible,
+Bạn có thể tự hỏi làm thế nào điều đó có thể,
+
+00:02:40.235 --> 00:02:42.890
+but the reality is CNN architecture and
+nhưng thực tế là kiến ​​trúc CNN và
+
+00:02:42.890 --> 00:02:46.340
+weight are a lot more adaptive than you could probably imagine.
+
+00:02:46.340 --> 00:02:48.490
+The idea behind it is this.
+Ý tưởng đằng sau nó là thế này.
+
+00:02:48.490 --> 00:02:53.180
+The first several layers of filters trained on car images are only going to
+Một số lớp bộ lọc đầu tiên được đào tạo trên hình ảnh xe hơi sẽ chỉ
+
+00:02:53.180 --> 00:02:54.800
+learn how to detect line and
+học cách phát hiện dòng và
+
+00:02:54.800 --> 00:02:58.310
+shape-based features because their visual fields are so small.
+các đối tượng địa lý dựa trên hình dạng vì trường thị giác của chúng rất nhỏ.
+
+00:02:58.310 --> 00:03:01.100
+So what these layers would learn if they were trained on
+Vì vậy, những gì các lớp này sẽ học nếu chúng được đào tạo về
+
+00:03:01.100 --> 00:03:04.470
+cat images would be pretty much the same i.e.
+hình ảnh con mèo sẽ khá giống nhau, tức là
+
+00:03:04.470 --> 00:03:06.615
+line and shape-based features.
+các tính năng dựa trên đường nét và hình dạng.
+
+00:03:06.615 --> 00:03:09.410
+So the researcher can reuse or freeze
+Vì vậy, nhà nghiên cứu có thể sử dụng lại hoặc đóng băng
+
+00:03:09.410 --> 00:03:12.710
+the pre-trained weights of the first few layers and only
+trọng lượng được đào tạo trước của một vài lớp đầu tiên và chỉ
+
+00:03:12.710 --> 00:03:14.600
+need to train filter weights to detect
+
+00:03:14.600 --> 00:03:18.440
+higher order features that are more relevant to our specific use case.
+các tính năng thứ tự cao hơn phù hợp hơn với trường hợp sử dụng cụ thể của chúng tôi.
+
+00:03:18.440 --> 00:03:20.205
+In this case, cats.
+Trong trường hợp này, mèo.
+
+00:03:20.205 --> 00:03:23.180
+We call this process that only makes adjustments of
+Chúng tôi gọi quá trình này chỉ điều chỉnh
+
+00:03:23.180 --> 00:03:26.455
+weights in the last few layers, fine-tuning.
+trọng lượng ở một vài lớp cuối cùng, tinh chỉnh.
+
+00:03:26.455 --> 00:03:29.990
+This process can be used on 2D medical imaging as well.
+Quá trình này cũng có thể được sử dụng trên hình ảnh y tế 2D.
+
+00:03:29.990 --> 00:03:37.110
+For example, fine tuning a pre-trained VGG16 model to detect tumors and chest x-rays
+Ví dụ: tinh chỉnh mô hình VGG16 được đào tạo trước để phát hiện khối u và chụp X-quang ngực
+

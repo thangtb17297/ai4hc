@@ -1,0 +1,108 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.100
+This exercise was pretty tough.
+Bài tập này khá khó khăn.
+
+00:00:02.100 --> 00:00:05.850
+Let's talk through the two different ways that I used otsu's method.
+Hãy nói về hai cách khác nhau mà tôi đã sử dụng phương pháp của otsu.
+
+00:00:05.850 --> 00:00:09.840
+First, I used otsu's method to extract background pixels
+Đầu tiên, tôi sử dụng phương pháp của otsu để trích xuất các pixel nền
+
+00:00:09.840 --> 00:00:14.205
+from all of my images using a threshold intensity value of 50.
+từ tất cả các hình ảnh của tôi sử dụng giá trị cường độ ngưỡng là 50.
+
+00:00:14.205 --> 00:00:19.365
+This allowed me to look at the intensity distributions for breast tissue only,
+Điều này cho phép tôi xem xét sự phân bố cường độ chỉ cho mô vú,
+
+00:00:19.365 --> 00:00:23.280
+in both fatty tissue and in dense tissue.
+trong cả mô mỡ và mô đặc.
+
+00:00:23.280 --> 00:00:28.445
+I then used scipy.stats.mode to identify the mode,
+Sau đó, tôi đã sử dụng scipy.stats.mode để xác định chế độ,
+
+00:00:28.445 --> 00:00:33.575
+in other words, the peak of each type of tissues intensity distribution.
+nói cách khác, đỉnh của phân bố cường độ từng loại mô.
+
+00:00:33.575 --> 00:00:40.820
+Here, fatty tissue had a peak at 140 and dense tissue had a peak at 176.
+Ở đây, mô mỡ có đỉnh là 140 và mô dày đặc có đỉnh là 176.
+
+00:00:40.820 --> 00:00:46.180
+I then looped through all of my fatty images and separated out their background,
+Sau đó, tôi xem qua tất cả các hình ảnh béo của mình và tách ra nền của chúng,
+
+00:00:46.180 --> 00:00:50.435
+again using otsu's method with an intensity threshold of 50.
+lại sử dụng phương pháp của otsu với ngưỡng cường độ là 50.
+
+00:00:50.435 --> 00:00:54.020
+I then calculated how far each images' peak
+Sau đó, tôi tính toán xem đỉnh của mỗi hình ảnh
+
+00:00:54.020 --> 00:00:58.375
+was from the peaks of the fatty and dense tissue distributions.
+là từ các đỉnh của phân bố mô mỡ và mô dày đặc.
+
+00:00:58.375 --> 00:01:01.880
+Finally, I determined which difference was smaller to
+Cuối cùng, tôi đã xác định được sự khác biệt nào nhỏ hơn
+
+00:01:01.880 --> 00:01:05.855
+determine what type of tissue my image was most likely from.
+xác định loại mô mà hình ảnh của tôi có khả năng cao nhất.
+
+00:01:05.855 --> 00:01:09.200
+You can see that this method failed on three images,
+Bạn có thể thấy rằng phương pháp này không thành công trên ba hình ảnh,
+
+00:01:09.200 --> 00:01:12.095
+classifying them as dense instead of fatty.
+phân loại chúng là đặc thay vì béo.
+
+00:01:12.095 --> 00:01:14.915
+This means that for those three images,
+Điều này có nghĩa là đối với ba hình ảnh đó,
+
+00:01:14.915 --> 00:01:18.230
+their intensity peak was closer to 176,
+cường độ cao nhất của chúng là gần 176,
+
+00:01:18.230 --> 00:01:19.895
+the peak of the dense tissue,
+đỉnh của mô dày đặc,
+
+00:01:19.895 --> 00:01:21.405
+than it was to 140,
+hơn là 140,
+
+00:01:21.405 --> 00:01:23.270
+the peak of the fatty tissue.
+đỉnh của mô mỡ.
+
+00:01:23.270 --> 00:01:26.930
+This is a great example of how using a single feature of
+Đây là một ví dụ tuyệt vời về cách sử dụng một tính năng duy nhất của
+
+00:01:26.930 --> 00:01:30.380
+intensity distribution with a simple machine learning tool,
+phân phối cường độ bằng một công cụ học máy đơn giản,
+
+00:01:30.380 --> 00:01:32.465
+can get us decent results.
+có thể mang lại cho chúng tôi kết quả tốt.
+
+00:01:32.465 --> 00:01:37.770
+But this intensity information is not enough to give us perfect performance.
+Nhưng thông tin cường độ này không đủ để cung cấp cho chúng tôi hiệu suất hoàn hảo.
+

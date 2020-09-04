@@ -1,0 +1,146 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.635
+As we mentioned earlier,
+
+00:00:01.635 --> 00:00:06.240
+there are many use cases for which classic Machine Learning is sufficient and reliable.
+có nhiều trường hợp sử dụng mà Học máy cổ điển là đủ và đáng tin cậy.
+
+00:00:06.240 --> 00:00:11.655
+One example is the Otsu's method used to segment and classify tissues.
+Một ví dụ là phương pháp của Otsu được sử dụng để phân đoạn và phân loại các mô.
+
+00:00:11.655 --> 00:00:15.630
+To paint a picture of how good classic Machine Learning could be,
+Để vẽ một bức tranh về việc Học máy cổ điển có thể tốt như thế nào,
+
+00:00:15.630 --> 00:00:18.015
+we'll take a look at Otsu's method.
+chúng ta sẽ xem xét phương pháp của Otsu.
+
+00:00:18.015 --> 00:00:21.820
+It's often used for separating images from their background,
+Nó thường được sử dụng để tách hình ảnh khỏi nền của chúng,
+
+00:00:21.820 --> 00:00:24.765
+a technique called background extraction,
+một kỹ thuật được gọi là trích xuất nền,
+
+00:00:24.765 --> 00:00:28.110
+which is often something we do in medical imaging.
+mà chúng tôi thường làm trong hình ảnh y tế.
+
+00:00:28.110 --> 00:00:31.920
+Remember how much we've done with intensity distributions,
+Hãy nhớ chúng ta đã làm được bao nhiêu với phân bố cường độ,
+
+00:00:31.920 --> 00:00:34.605
+Otsu's method relies on these.
+Phương pháp của Otsu dựa trên những điều này.
+
+00:00:34.605 --> 00:00:39.200
+It takes the intensity distribution of an image and searches it to find
+Nó có sự phân bố cường độ của một hình ảnh và tìm kiếm nó để tìm
+
+00:00:39.200 --> 00:00:42.065
+the intensity threshold along the x-axis
+ngưỡng cường độ dọc theo trục x
+
+00:00:42.065 --> 00:00:45.515
+that minimizes the variance in each of the two classes,
+điều đó giảm thiểu phương sai trong mỗi lớp trong số hai lớp,
+
+00:00:45.515 --> 00:00:48.840
+one class being background and one being foreground.
+một lớp là nền và một lớp là tiền cảnh.
+
+00:00:48.840 --> 00:00:51.379
+Once it discovers that threshold,
+Khi nó phát hiện ra ngưỡng đó,
+
+00:00:51.379 --> 00:00:55.460
+it considers every pixel on one side of that to be background,
+nó coi mọi pixel ở một mặt của đó là nền,
+
+00:00:55.460 --> 00:00:58.300
+and on the other side to be image.
+và ở phía bên kia là hình ảnh.
+
+00:00:58.300 --> 00:01:01.160
+Otsu's method works really well and is
+
+00:01:01.160 --> 00:01:05.225
+an excellent example of Classic Machine Learning for segmentation.
+một ví dụ tuyệt vời về Học máy cổ điển để phân đoạn.
+
+00:01:05.225 --> 00:01:09.815
+Here, since the background and the breast have different intensity profiles,
+Ở đây, vì nền và vú có cấu hình cường độ khác nhau,
+
+00:01:09.815 --> 00:01:12.055
+we can separate them easily.
+chúng ta có thể tách chúng ra một cách dễ dàng.
+
+00:01:12.055 --> 00:01:16.725
+You could extend Otsu's method to classification if you get creative.
+Bạn có thể mở rộng phương pháp của Otsu để phân loại nếu bạn có khả năng sáng tạo.
+
+00:01:16.725 --> 00:01:21.605
+Let's say we have a bunch of images that belong to two different tissue types,
+Giả sử chúng ta có một loạt hình ảnh thuộc hai loại mô khác nhau,
+
+00:01:21.605 --> 00:01:25.505
+one is healthy lung tissue and one is lung tissue from a smoker.
+một là mô phổi khỏe mạnh và một là mô phổi của người hút thuốc.
+
+00:01:25.505 --> 00:01:28.850
+Then let's say we applied Otsu's method just like
+Sau đó, giả sử chúng tôi đã áp dụng phương pháp của Otsu giống như
+
+00:01:28.850 --> 00:01:32.665
+before to remove the background from all images.
+trước để xóa nền khỏi tất cả các hình ảnh.
+
+00:01:32.665 --> 00:01:34.460
+We could then look at
+Sau đó chúng tôi có thể xem xét
+
+00:01:34.460 --> 00:01:38.300
+the intensity distributions for each of the two tissue types without
+sự phân bố cường độ cho mỗi loại trong số hai loại mô không có
+
+00:01:38.300 --> 00:01:44.375
+any background pixels and identify where their intensity peaks or modes are.
+bất kỳ pixel nền nào và xác định vị trí cường độ cao nhất hoặc chế độ của chúng.
+
+00:01:44.375 --> 00:01:46.850
+Finally, for any new image,
+Cuối cùng, đối với bất kỳ hình ảnh mới nào,
+
+00:01:46.850 --> 00:01:49.805
+you could try to classify which type of tissue it was
+bạn có thể cố gắng phân loại đó là loại mô nào
+
+00:01:49.805 --> 00:01:53.705
+based on where its peak or mode of intensity values lies.
+dựa trên giá trị đỉnh hoặc phương thức cường độ của nó nằm ở đâu.
+
+00:01:53.705 --> 00:01:57.755
+In this example, the image would be closest to healthy lungs,
+Trong ví dụ này, hình ảnh sẽ gần với phổi khỏe mạnh nhất,
+
+00:01:57.755 --> 00:01:59.790
+so you would predict healthy.
+vì vậy bạn sẽ dự đoán khỏe mạnh.
+
+00:01:59.790 --> 00:02:02.330
+Stretch yourself and think about this as you
+Hãy căng mình và nghĩ về điều này khi bạn
+
+00:02:02.330 --> 00:02:05.700
+work through the exercise at the end of this lesson.
+thông qua bài tập ở cuối bài học này.
+

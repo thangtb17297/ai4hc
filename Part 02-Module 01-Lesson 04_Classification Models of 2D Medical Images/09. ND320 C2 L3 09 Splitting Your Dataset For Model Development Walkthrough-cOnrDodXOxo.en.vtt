@@ -1,0 +1,312 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.045
+Given a dataset to use in algorithm development,
+Đưa ra một tập dữ liệu để sử dụng trong phát triển thuật toán,
+
+00:00:03.045 --> 00:00:06.600
+it's critical that you understand how much data to use when training
+điều quan trọng là bạn phải hiểu lượng dữ liệu cần sử dụng khi đào tạo
+
+00:00:06.600 --> 00:00:10.950
+your algorithm and how much to leave held out for post-training validation.
+thuật toán của bạn và số tiền còn lại để xác thực sau đào tạo.
+
+00:00:10.950 --> 00:00:13.680
+It's also very important to curate your training
+Quản lý đào tạo của bạn cũng rất quan trọng
+
+00:00:13.680 --> 00:00:16.350
+and validation data in a way that is appropriate to
+và dữ liệu xác thực theo cách phù hợp với
+
+00:00:16.350 --> 00:00:18.780
+your clinical application as this will have
+ứng dụng lâm sàng của bạn vì điều này sẽ có
+
+00:00:18.780 --> 00:00:22.830
+a direct effect on how the algorithm is cleared to be used clinically.
+ảnh hưởng trực tiếp đến cách thuật toán được xóa để sử dụng trong lâm sàng.
+
+00:00:22.830 --> 00:00:26.110
+In the world of medical imaging algorithm development,
+Trong thế giới phát triển thuật toán hình ảnh y tế,
+
+00:00:26.110 --> 00:00:28.650
+you'll often be given a dataset that looks like
+bạn sẽ thường được cung cấp một tập dữ liệu trông giống như
+
+00:00:28.650 --> 00:00:33.205
+this and you'll need to turn it into something that looks more like this.
+cái này và bạn sẽ cần biến nó thành một cái gì đó trông giống thế này hơn.
+
+00:00:33.205 --> 00:00:37.280
+We did a bit of this in lesson 2 and we talked about how to extract
+Chúng tôi đã làm một chút điều này trong bài học 2 và chúng tôi đã nói về cách trích xuất
+
+00:00:37.280 --> 00:00:41.240
+metadata about a dataset from the DICOM header and other sources.
+siêu dữ liệu về tập dữ liệu từ tiêu đề DICOM và các nguồn khác.
+
+00:00:41.240 --> 00:00:45.980
+But there are some steps we need to take after that to prepare us for deep learning.
+Nhưng có một số bước chúng ta cần thực hiện sau đó để chuẩn bị cho quá trình học sâu.
+
+00:00:45.980 --> 00:00:49.310
+Before feeding your data into a deep learning model,
+Trước khi cung cấp dữ liệu của bạn vào mô hình học sâu,
+
+00:00:49.310 --> 00:00:51.590
+you'll need to split it into two sets.
+bạn sẽ cần phải chia nó thành hai bộ.
+
+00:00:51.590 --> 00:00:56.030
+A training set, which is data that your deep learning algorithm will use to
+Tập hợp đào tạo, là dữ liệu mà thuật toán học sâu của bạn sẽ sử dụng để
+
+00:00:56.030 --> 00:01:01.295
+learn the features that differentiate between your classes and a validation set.
+tìm hiểu các tính năng phân biệt giữa các lớp của bạn và tập hợp xác thực.
+
+00:01:01.295 --> 00:01:04.580
+Your algorithm will never use this set for learning.
+Thuật toán của bạn sẽ không bao giờ sử dụng bộ này để học.
+
+00:01:04.580 --> 00:01:07.490
+This is the set that you will use to determine if
+Đây là tập hợp mà bạn sẽ sử dụng để xác định xem
+
+00:01:07.490 --> 00:01:11.605
+your algorithm is actually learning to discriminate between your classes.
+thuật toán của bạn thực sự đang học cách phân biệt giữa các lớp của bạn.
+
+00:01:11.605 --> 00:01:16.025
+We want to maximize the data that our algorithm sees to learn features,
+Chúng tôi muốn tối đa hóa dữ liệu mà thuật toán của chúng tôi nhìn thấy để tìm hiểu các tính năng,
+
+00:01:16.025 --> 00:01:18.935
+while also leaving enough validation held out
+trong khi vẫn để lại đủ xác nhận
+
+00:01:18.935 --> 00:01:22.550
+so that we can confidently determine the algorithm's performance.
+để chúng tôi có thể tự tin xác định hiệu suất của thuật toán.
+
+00:01:22.550 --> 00:01:26.725
+The general rule of thumb is to split your data 80, 20.
+Nguyên tắc chung là chia nhỏ dữ liệu của bạn 80, 20.
+
+00:01:26.725 --> 00:01:31.280
+The data should be split to maximize for prevalence of positive cases.
+Dữ liệu nên được tách ra để tối đa hóa tỷ lệ các trường hợp dương tính.
+
+00:01:31.280 --> 00:01:35.060
+In other words, make sure that 80 per cent of your positive cases end
+Nói cách khác, hãy đảm bảo rằng 80% các trường hợp tích cực của bạn kết thúc
+
+00:01:35.060 --> 00:01:39.200
+up in the training set and 20 per cent end up in the validation set.
+thiết lập trong tập huấn luyện và 20% kết thúc trong tập hợp xác nhận.
+
+00:01:39.200 --> 00:01:44.765
+Note that an image should never be used for both training and validation.
+Lưu ý rằng một hình ảnh không bao giờ được sử dụng cho cả việc đào tạo và xác nhận.
+
+00:01:44.765 --> 00:01:49.235
+The properties of your training and validation set also differ.
+Các thuộc tính của tập hợp đào tạo và xác thực của bạn cũng khác nhau.
+
+00:01:49.235 --> 00:01:51.065
+When we train an algorithm,
+Khi chúng tôi đào tạo một thuật toán,
+
+00:01:51.065 --> 00:01:53.870
+we want the model architecture to see equal numbers of
+chúng tôi muốn kiến ​​trúc mô hình thấy số lượng bằng nhau
+
+00:01:53.870 --> 00:01:57.850
+cases that belong to each class that we're teaching it to distinguish between.
+các trường hợp thuộc về mỗi lớp mà chúng tôi đang dạy nó để phân biệt.
+
+00:01:57.850 --> 00:02:01.520
+Even if one class is really rare in the wild,
+Ngay cả khi một lớp thực sự hiếm trong tự nhiên,
+
+00:02:01.520 --> 00:02:04.220
+we want the model to be able to recognize that just
+chúng tôi muốn mô hình có thể nhận ra rằng
+
+00:02:04.220 --> 00:02:07.330
+as well as I can recognize the common classes.
+cũng như tôi có thể nhận ra các lớp chung.
+
+00:02:07.330 --> 00:02:09.860
+For all other variables in your dataset,
+Đối với tất cả các biến khác trong tập dữ liệu của bạn,
+
+00:02:09.860 --> 00:02:11.120
+such as age, sex,
+chẳng hạn như tuổi, giới tính,
+
+00:02:11.120 --> 00:02:13.400
+and race, your training set should follow
+và đua, tập huấn luyện của bạn phải tuân theo
+
+00:02:13.400 --> 00:02:16.640
+the same distribution as your original file dataset.
+phân phối giống như tập dữ liệu tệp gốc của bạn.
+
+00:02:16.640 --> 00:02:22.460
+So if your original dataset contained individuals banding from ages 10 to 80,
+Vì vậy, nếu tập dữ liệu ban đầu của bạn chứa các cá nhân từ 10 đến 80 tuổi,
+
+00:02:22.460 --> 00:02:25.660
+your training search should also have this full age range.
+tìm kiếm đào tạo của bạn cũng phải có đủ độ tuổi này.
+
+00:02:25.660 --> 00:02:29.240
+Usually however, classification tasks that we are presented
+Tuy nhiên, thông thường, các nhiệm vụ phân loại mà chúng tôi được trình bày
+
+00:02:29.240 --> 00:02:32.870
+with in the real world do not offer balanced classes.
+với trong thế giới thực không cung cấp các lớp học cân bằng.
+
+00:02:32.870 --> 00:02:35.510
+For example, if you're creating an algorithm to
+Ví dụ: nếu bạn đang tạo một thuật toán để
+
+00:02:35.510 --> 00:02:38.545
+classify the presence or absence of a rare disease,
+phân loại sự hiện diện hoặc không có của một bệnh hiếm gặp,
+
+00:02:38.545 --> 00:02:42.205
+most of your real-world scans will be negative cases.
+hầu hết các lần quét trong thế giới thực của bạn sẽ là các trường hợp tiêu cực.
+
+00:02:42.205 --> 00:02:44.780
+To this end, when we validate our model,
+Vì vậy, khi chúng tôi xác thực mô hình của mình,
+
+00:02:44.780 --> 00:02:49.075
+we want our model to see a class imbalance that reflects the real-world.
+chúng tôi muốn mô hình của chúng tôi thấy được sự mất cân bằng giai cấp phản ánh thế giới thực.
+
+00:02:49.075 --> 00:02:51.755
+More on the statistics behind this later.
+Thông tin thêm về số liệu thống kê đằng sau điều này sau.
+
+00:02:51.755 --> 00:02:53.360
+Same with the training set,
+Tương tự với tập huấn luyện,
+
+00:02:53.360 --> 00:02:55.580
+make sure that all of your other variables are
+đảm bảo rằng tất cả các biến khác của bạn
+
+00:02:55.580 --> 00:02:59.425
+distributed the same way that they were in the original dataset.
+được phân phối giống như cách chúng trong tập dữ liệu ban đầu.
+
+00:02:59.425 --> 00:03:03.095
+Let's go through an example together of splitting a dataset.
+Chúng ta hãy cùng nhau xem qua một ví dụ về việc tách một tập dữ liệu.
+
+00:03:03.095 --> 00:03:07.145
+Here, we have a dataset that has 100 samples in it,
+Ở đây, chúng tôi có một tập dữ liệu có 100 mẫu trong đó,
+
+00:03:07.145 --> 00:03:10.210
+30 of which are positive, shown in green.
+30 trong số đó là tích cực, được hiển thị bằng màu xanh lá cây.
+
+00:03:10.210 --> 00:03:13.190
+The first step would be to split our data 80,
+Bước đầu tiên là tách dữ liệu của chúng tôi 80,
+
+00:03:13.190 --> 00:03:16.460
+20 using the positive class as the feature to split on.
+20 bằng cách sử dụng lớp tích cực làm tính năng để tách.
+
+00:03:16.460 --> 00:03:19.160
+In other words, we want to make sure 80 per cent of
+Nói cách khác, chúng tôi muốn đảm bảo 80%
+
+00:03:19.160 --> 00:03:23.885
+the positive cases are in the training set and 20 per cent in the validation.
+các trường hợp tích cực nằm trong tập huấn luyện và 20% trong quá trình xác nhận.
+
+00:03:23.885 --> 00:03:26.660
+Here we end up with 24 positive cases in
+Ở đây, chúng tôi kết thúc với 24 trường hợp tích cực trong
+
+00:03:26.660 --> 00:03:30.335
+our training set and six positive cases in our validation.
+bộ đào tạo của chúng tôi và sáu trường hợp tích cực trong quá trình xác nhận của chúng tôi.
+
+00:03:30.335 --> 00:03:34.820
+See here that our training set though is not balanced for positive and negative.
+Hãy xem ở đây rằng tập hợp đào tạo của chúng tôi mặc dù không cân bằng giữa tích cực và tiêu cực.
+
+00:03:34.820 --> 00:03:38.255
+So our model will see way more negative classes when learning,
+Vì vậy, mô hình của chúng tôi sẽ thấy nhiều lớp tiêu cực hơn khi học,
+
+00:03:38.255 --> 00:03:39.820
+which is not what we want.
+đó không phải là những gì chúng tôi muốn.
+
+00:03:39.820 --> 00:03:42.260
+The next step then would be to discard
+Bước tiếp theo sẽ là loại bỏ
+
+00:03:42.260 --> 00:03:45.830
+negative training cases so that our training set is balanced.
+các trường hợp đào tạo tiêu cực để tập hợp đào tạo của chúng tôi được cân bằng.
+
+00:03:45.830 --> 00:03:49.010
+When you do this, make sure that your negative cases are still
+Khi bạn làm điều này, hãy đảm bảo rằng các trường hợp tiêu cực của bạn vẫn
+
+00:03:49.010 --> 00:03:53.845
+distributed across the population and randomization can help with this.
+được phân phối trên toàn bộ dân số và ngẫu nhiên có thể giúp thực hiện điều này.
+
+00:03:53.845 --> 00:03:57.080
+Keras provides a really great tool for
+Keras cung cấp một công cụ thực sự tuyệt vời để
+
+00:03:57.080 --> 00:04:00.065
+doing this training and validation split automatically.
+thực hiện đào tạo này và phân chia xác thực tự động.
+
+00:04:00.065 --> 00:04:03.580
+They've developed a package called train test split.
+Họ đã phát triển một gói được gọi là phân chia thử nghiệm tàu.
+
+00:04:03.580 --> 00:04:06.845
+It allows you to split with a certain percentage.
+Nó cho phép bạn chia nhỏ với một tỷ lệ nhất định.
+
+00:04:06.845 --> 00:04:10.270
+So here, 20 per cent going into our validation set.
+Vì vậy, ở đây, 20% đi vào bộ xác thực của chúng tôi.
+
+00:04:10.270 --> 00:04:12.500
+It also allows you to choose
+Nó cũng cho phép bạn chọn
+
+00:04:12.500 --> 00:04:15.380
+what class you're splitting on so that you know you're getting
+bạn đang chia lớp nào để bạn biết mình đang học
+
+00:04:15.380 --> 00:04:21.020
+20 percent of positive cases in your validation set and 80 per cent in the training set,
+20% trường hợp tích cực trong tập xác thực của bạn và 80% trong tập huấn luyện,
+
+00:04:21.020 --> 00:04:26.220
+not just splitting the data into two random 80, 20 chunks.
+không chỉ tách dữ liệu thành hai phần ngẫu nhiên 80, 20.
+

@@ -1,0 +1,320 @@
+<!-- udacimak v1.6.6 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Pre-processing for Model Training</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Classification Models of 2D Medical Images</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Models for Classification of 2D Medical Images.html">01. Models for Classification of 2D Medical Images</a>
+    </li>
+    <li class="">
+      <a href="02. Lesson Outline.html">02. Lesson Outline</a>
+    </li>
+    <li class="">
+      <a href="03. Big Picture.html">03. Big Picture</a>
+    </li>
+    <li class="">
+      <a href="04. Intuition about Classification Model Development.html">04. Intuition about Classification Model Development</a>
+    </li>
+    <li class="">
+      <a href="05. Differentiate Between Models.html">05. Differentiate Between Models</a>
+    </li>
+    <li class="">
+      <a href="06. Differentiate Between Models Quizzes.html">06. Differentiate Between Models Quizzes</a>
+    </li>
+    <li class="">
+      <a href="07. Differentiate Between Models Exercise.html">07. Differentiate Between Models Exercise</a>
+    </li>
+    <li class="">
+      <a href="08. Differentiate Between Models Exercise Solution.html">08. Differentiate Between Models Exercise Solution</a>
+    </li>
+    <li class="">
+      <a href="09. Split Dataset for Model Development.html">09. Split Dataset for Model Development</a>
+    </li>
+    <li class="">
+      <a href="10. Split Dataset for Model Development Quizzes.html">10. Split Dataset for Model Development Quizzes</a>
+    </li>
+    <li class="">
+      <a href="11. Split Dataset for Model Development Exercise.html">11. Split Dataset for Model Development Exercise</a>
+    </li>
+    <li class="">
+      <a href="12. Split Dataset for Model Development Exercise Solution.html">12. Split Dataset for Model Development Exercise Solution</a>
+    </li>
+    <li class="">
+      <a href="13. Obtaining a Gold Standard.html">13. Obtaining a Gold Standard</a>
+    </li>
+    <li class="">
+      <a href="14. Obtaining a Gold Standard Quizzes.html">14. Obtaining a Gold Standard Quizzes</a>
+    </li>
+    <li class="">
+      <a href="15. Obtaining a Gold Standard Exercise.html">15. Obtaining a Gold Standard Exercise</a>
+    </li>
+    <li class="">
+      <a href="16. Obtaining a Gold Standard Exercise Solution.html">16. Obtaining a Gold Standard Exercise Solution</a>
+    </li>
+    <li class="">
+      <a href="17. Image Pre-processing for Model Training.html">17. Image Pre-processing for Model Training</a>
+    </li>
+    <li class="">
+      <a href="18. Image Pre-processing for Model Training Quizzes.html">18. Image Pre-processing for Model Training Quizzes</a>
+    </li>
+    <li class="">
+      <a href="19. Image Pre-processing for Model Training Exercise.html">19. Image Pre-processing for Model Training Exercise</a>
+    </li>
+    <li class="">
+      <a href="20. Image Pre-processing for Model Training Exercise Solution.html">20. Image Pre-processing for Model Training Exercise Solution</a>
+    </li>
+    <li class="">
+      <a href="21. Fine-tuning CNNs for Classification.html">21. Fine-tuning CNNs for Classification</a>
+    </li>
+    <li class="">
+      <a href="22. Fine-tuning CNNs for Classification Quizzes.html">22. Fine-tuning CNNs for Classification Quizzes</a>
+    </li>
+    <li class="">
+      <a href="23. Fine-tuning CNNs for Classification Exercise.html">23. Fine-tuning CNNs for Classification Exercise</a>
+    </li>
+    <li class="">
+      <a href="24. Fine-tuning CNNs for Classification Exercise Solution.html">24. Fine-tuning CNNs for Classification Exercise Solution</a>
+    </li>
+    <li class="">
+      <a href="25. Evaluating Your Model.html">25. Evaluating Your Model</a>
+    </li>
+    <li class="">
+      <a href="26. Evaluating Your Model Quizzes.html">26. Evaluating Your Model Quizzes</a>
+    </li>
+    <li class="">
+      <a href="27. Evaluating Your Model Exercise.html">27. Evaluating Your Model Exercise</a>
+    </li>
+    <li class="">
+      <a href="28. Evaluating Your Model Exercise Solution.html">28. Evaluating Your Model Exercise Solution</a>
+    </li>
+    <li class="">
+      <a href="29. Final Review.html">29. Final Review</a>
+    </li>
+    <li class="">
+      <a href="30. Lesson Conclusion.html">30. Lesson Conclusion</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">17. Image Pre-processing for Model Training</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="image-pre-processing-for-model-training">Image Pre-processing for Model Training</h1>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>ND320 C2 L3 13 Image Pre-Processing For Model Training Walkthrough</p></h3>
+  <video controls>
+  <source src="17. ND320 C2 L3 13 Image Pre-Processing For Model Training Walkthrough-B7yst-GFLXY.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="17. ND320 C2 L3 13 Image Pre-Processing For Model Training Walkthrough-B7yst-GFLXY.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/l3-goals.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/l3-augm.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/l3-resize.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="summary">Summary</h2>
+<h4 id="intensity-normalization">Intensity normalization</h4>
+<p>Intensity normalization is good practice and should always be done prior to using data for training. Making all of your intensity values fall within a small range that is close to zero helps the weights on our convolutional filters stay under control </p>
+<p>There are two types of normalization that you can perform. </p>
+<ul>
+<li>zero-meaning: subtract that mean intensity value from every pixel.</li>
+<li>standardization: subtract the mean from each pixel and divide by the image’s standard deviation. </li>
+</ul>
+<h4 id="image-augmentation">Image augmentation</h4>
+<p>Image augmentation allows us to create different versions of the original data. Keras provides <code>ImageDataGenerator</code> package for image augmentation.</p>
+<p><strong>Note:</strong> not all image augmentation method is appropriate for medical imaging. A vertical flip should never be applied. And validation data should NEVER be augmented.</p>
+<h4 id="image-resize">Image resize</h4>
+<p>CNNs have an input layer that specifies the size of the image they can process. Keras <code>flow_from_directory</code> have a <code>target_size</code> parameter to resize image.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="18. Image Pre-processing for Model Training Quizzes.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.6.6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('17. Image Pre-processing for Model Training')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

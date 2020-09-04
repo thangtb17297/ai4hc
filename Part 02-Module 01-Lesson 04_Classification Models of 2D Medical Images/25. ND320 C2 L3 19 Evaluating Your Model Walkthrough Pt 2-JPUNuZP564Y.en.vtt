@@ -1,0 +1,189 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.270
+We just learned that as we pass training data through our model,
+Chúng tôi chỉ biết rằng khi chuyển dữ liệu đào tạo qua mô hình của mình,
+
+00:00:03.270 --> 00:00:07.635
+we evaluate our loss function on both the training and validation sets.
+chúng tôi đánh giá hàm mất mát của chúng tôi trên cả tập hợp đào tạo và xác nhận.
+
+00:00:07.635 --> 00:00:10.860
+So we have a training loss and a validation loss at the end of
+Vì vậy, chúng tôi có một mất mát đào tạo và một mất xác thực ở cuối
+
+00:00:10.860 --> 00:00:14.580
+each epoch that we can use to monitor our model's performance.
+từng kỷ nguyên mà chúng tôi có thể sử dụng để theo dõi hiệu suất của mô hình.
+
+00:00:14.580 --> 00:00:17.595
+But how do we know when enough is enough?
+Nhưng làm thế nào để chúng ta biết khi nào là đủ?
+
+00:00:17.595 --> 00:00:21.330
+Recall that the training loss and validation loss measures to how well
+Nhớ lại rằng sự mất mát đào tạo và mất xác thực đo lường mức độ
+
+00:00:21.330 --> 00:00:25.365
+the CNN performs on training data and validation data respectively.
+CNN thực hiện trên dữ liệu đào tạo và dữ liệu xác nhận tương ứng.
+
+00:00:25.365 --> 00:00:27.930
+Lower loss means higher performance.
+Mất mát thấp hơn có nghĩa là hiệu suất cao hơn.
+
+00:00:27.930 --> 00:00:30.960
+If your algorithm is learning from your training data,
+Nếu thuật toán của bạn đang học hỏi từ dữ liệu đào tạo của bạn,
+
+00:00:30.960 --> 00:00:34.755
+after several epochs, you will see this training loss go down.
+sau một vài kỷ nguyên, bạn sẽ thấy sự mất mát đào tạo này giảm xuống.
+
+00:00:34.755 --> 00:00:38.210
+Since the validation is something that the algorithm has never seen,
+Vì xác thực là thứ mà thuật toán chưa từng thấy,
+
+00:00:38.210 --> 00:00:41.990
+if your algorithm is truly learning about what the real-world looks like,
+nếu thuật toán của bạn thực sự đang tìm hiểu về thế giới thực trông như thế nào,
+
+00:00:41.990 --> 00:00:45.145
+you will also start to see the validation loss go down.
+bạn cũng sẽ bắt đầu thấy mất xác thực giảm xuống.
+
+00:00:45.145 --> 00:00:47.600
+Over many epochs, you will likely see
+Qua nhiều kỷ nguyên, bạn có thể sẽ thấy
+
+00:00:47.600 --> 00:00:50.360
+your training loss continue to decrease as your model
+
+00:00:50.360 --> 00:00:52.820
+learns the features that discriminate classes in
+tìm hiểu các tính năng phân biệt các lớp trong
+
+00:00:52.820 --> 00:00:55.885
+this particular set of images better and better.
+bộ hình ảnh cụ thể này ngày càng tốt hơn.
+
+00:00:55.885 --> 00:00:57.900
+At a certain point however,
+Tuy nhiên, tại một thời điểm nhất định,
+
+00:00:57.900 --> 00:00:59.665
+you will see your loss plateau,
+bạn sẽ thấy bình nguyên mất mát của mình,
+
+00:00:59.665 --> 00:01:02.600
+because your model cannot learn how to discriminate between
+bởi vì mô hình của bạn không thể học cách phân biệt giữa
+
+00:01:02.600 --> 00:01:06.550
+image classes any better with its current architecture and parameters.
+các lớp hình ảnh tốt hơn bất kỳ với kiến ​​trúc và thông số hiện tại của nó.
+
+00:01:06.550 --> 00:01:09.045
+Now, while this may look great,
+Bây giờ, mặc dù điều này có thể trông tuyệt vời,
+
+00:01:09.045 --> 00:01:13.355
+in that our model learned a lot about how to discriminate classes in our training data,
+trong đó mô hình của chúng tôi đã học được rất nhiều về cách phân biệt các lớp trong dữ liệu đào tạo của chúng tôi,
+
+00:01:13.355 --> 00:01:17.900
+what we really care about is how it's performing on our validation data,
+điều chúng tôi thực sự quan tâm là nó hoạt động như thế nào trên dữ liệu xác thực của chúng tôi,
+
+00:01:17.900 --> 00:01:21.655
+or the data that it is not using to update its weights from.
+hoặc dữ liệu mà nó không sử dụng để cập nhật trọng số của nó.
+
+00:01:21.655 --> 00:01:24.975
+Oftentimes, we'll see something that looks like this,
+Thông thường, chúng ta sẽ thấy một cái gì đó giống như thế này,
+
+00:01:24.975 --> 00:01:27.005
+where our validation loss dips,
+
+00:01:27.005 --> 00:01:30.280
+then rises, then dips again and plateaus.
+sau đó tăng lên, sau đó lại giảm xuống và cao nguyên.
+
+00:01:30.280 --> 00:01:32.930
+When we see this happen where our model is
+Khi chúng tôi thấy điều này xảy ra, mô hình của chúng tôi
+
+00:01:32.930 --> 00:01:35.885
+still learning how to better classify our training data,
+vẫn đang học cách phân loại dữ liệu đào tạo của chúng tôi tốt hơn,
+
+00:01:35.885 --> 00:01:39.895
+but not our validation data, it's called Overfitting.
+nhưng không phải dữ liệu xác thực của chúng tôi, nó được gọi là Overfitting.
+
+00:01:39.895 --> 00:01:44.960
+The best validation loss that our model achieved was actually way back here,
+Sự mất xác thực tốt nhất mà mô hình của chúng tôi đạt được thực sự là cách trở lại đây,
+
+00:01:44.960 --> 00:01:46.160
+when it was lowest.
+khi nó ở mức thấp nhất.
+
+00:01:46.160 --> 00:01:49.615
+So technically, that's when our network stopped learning.
+Vì vậy, về mặt kỹ thuật, đó là khi mạng của chúng tôi ngừng học.
+
+00:01:49.615 --> 00:01:52.295
+This would be considered the best epoch
+Đây sẽ được coi là kỷ nguyên tốt nhất
+
+00:01:52.295 --> 00:01:55.615
+for which you might want to stop and save your filter weights.
+mà bạn có thể muốn dừng lại và lưu trọng số bộ lọc của mình.
+
+00:01:55.615 --> 00:02:00.200
+What we really want to see however are smooth loss functions like this,
+Tuy nhiên, những gì chúng tôi thực sự muốn thấy là các hàm mất mát trơn tru như thế này,
+
+00:02:00.200 --> 00:02:03.020
+where we can see loss decreases in both training
+nơi chúng ta có thể thấy sự mất mát giảm trong cả hai khóa đào tạo
+
+00:02:03.020 --> 00:02:06.715
+and validation data over a longer period of time.
+
+00:02:06.715 --> 00:02:11.085
+We can then save our weights at the point that's more stable.
+Sau đó, chúng ta có thể tiết kiệm trọng lượng của mình tại thời điểm ổn định hơn.
+
+00:02:11.085 --> 00:02:12.740
+When we train a model,
+Khi chúng tôi đào tạo một người mẫu,
+
+00:02:12.740 --> 00:02:15.590
+we use a function in Keras called Fit generator,
+chúng tôi sử dụng một hàm trong Keras có tên là Trình tạo Fit,
+
+00:02:15.590 --> 00:02:18.320
+where we give it our training and validation data.
+nơi chúng tôi cung cấp cho nó dữ liệu đào tạo và xác thực của chúng tôi.
+
+00:02:18.320 --> 00:02:22.880
+We can set an output of this training to a variable called history.
+Chúng ta có thể đặt đầu ra của khóa đào tạo này thành một biến được gọi là history.
+
+00:02:22.880 --> 00:02:27.080
+Then we can use the different fields of this history variable to
+Sau đó, chúng tôi có thể sử dụng các trường khác nhau của biến lịch sử này để
+
+00:02:27.080 --> 00:02:31.175
+extract lost values from our training and validation sets over time.
+trích xuất các giá trị bị mất từ ​​tập hợp đào tạo và xác nhận của chúng tôi theo thời gian.
+
+00:02:31.175 --> 00:02:35.660
+This can be helpful for plotting our performance after.
+Điều này có thể hữu ích cho việc lập biểu đồ hiệu suất của chúng tôi sau đó.
+

@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.620
+Congratulations.
+Xin chúc mừng.
+
+00:00:01.620 --> 00:00:04.395
+This was a big lesson and you made it to the end.
+Đây là một bài học lớn và bạn đã làm nó đến cùng.
+
+00:00:04.395 --> 00:00:06.510
+Now let's review what you learned.
+Bây giờ chúng ta hãy xem lại những gì bạn đã học được.
+
+00:00:06.510 --> 00:00:08.040
+In the first section,
+Trong phần đầu tiên,
+
+00:00:08.040 --> 00:00:09.510
+we talked about the history of
+chúng tôi đã nói về lịch sử của
+
+00:00:09.510 --> 00:00:12.855
+classic machine learning and deep learning and their differences.
+học máy cổ điển và học sâu và sự khác biệt của chúng.
+
+00:00:12.855 --> 00:00:14.775
+Then we looked at Otsu's method,
+Sau đó, chúng tôi xem xét phương pháp của Otsu,
+
+00:00:14.775 --> 00:00:17.280
+a classic machine learning algorithm that can be used
+một thuật toán học máy cổ điển có thể được sử dụng
+
+00:00:17.280 --> 00:00:19.980
+to extract background and make classifications.
+để trích xuất nền và thực hiện phân loại.
+
+00:00:19.980 --> 00:00:23.250
+Then we talked about different deep learning architectures.
+Sau đó, chúng tôi nói về các kiến ​​trúc học sâu khác nhau.
+
+00:00:23.250 --> 00:00:24.830
+In the second section,
+Trong phần thứ hai,
+
+00:00:24.830 --> 00:00:26.930
+we covered how to split a data set into
+chúng tôi đã đề cập đến cách tách tập dữ liệu thành
+
+00:00:26.930 --> 00:00:29.870
+a balanced training set that is used to train a model,
+
+00:00:29.870 --> 00:00:34.670
+and an imbalanced validation set that's used to test model performance in the wild.
+và một tập hợp xác thực không cân bằng được sử dụng để kiểm tra hiệu suất của mô hình trong môi trường hoang dã.
+
+00:00:34.670 --> 00:00:38.660
+Next, we talked about what a gold standard is and different ways to
+Tiếp theo, chúng tôi đã nói về tiêu chuẩn vàng là gì và các cách khác nhau để
+
+00:00:38.660 --> 00:00:43.250
+establish ground truth of the data as gold standards are often unavailable.
+thiết lập sự thật cơ bản của dữ liệu vì các tiêu chuẩn vàng thường không có sẵn.
+
+00:00:43.250 --> 00:00:44.675
+At the end of this section,
+Ở cuối phần này,
+
+00:00:44.675 --> 00:00:49.075
+we introduced the silver standard derived from several radiologists.
+chúng tôi đã giới thiệu tiêu chuẩn bạc lấy từ một số bác sĩ X quang.
+
+00:00:49.075 --> 00:00:50.820
+In the fourth section,
+
+00:00:50.820 --> 00:00:53.825
+we introduced different ways to preprocess images.
+chúng tôi đã giới thiệu các cách khác nhau để xử lý trước hình ảnh.
+
+00:00:53.825 --> 00:00:58.705
+Then we talked about different image augmentation methods to expand our training set.
+Sau đó, chúng tôi nói về các phương pháp nâng cao hình ảnh khác nhau để mở rộng tập huấn luyện của chúng tôi.
+
+00:00:58.705 --> 00:01:00.370
+In the fifth section,
+Trong phần thứ năm,
+
+00:01:00.370 --> 00:01:05.110
+we discussed that CNN filters can detect simple features like lines and shapes.
+chúng tôi đã thảo luận rằng bộ lọc CNN có thể phát hiện các tính năng đơn giản như đường thẳng và hình dạng.
+
+00:01:05.110 --> 00:01:07.850
+Then we discussed how researchers find tuning
+Sau đó, chúng tôi thảo luận về cách các nhà nghiên cứu tìm ra điều chỉnh
+
+00:01:07.850 --> 00:01:13.790
+pre-trained deep learning models such as VGG 16 can do this for specific use cases.
+các mô hình học sâu được đào tạo trước như VGG 16 có thể thực hiện điều này cho các trường hợp sử dụng cụ thể.
+
+00:01:13.790 --> 00:01:15.935
+Finally, in the last section,
+Cuối cùng, trong phần cuối cùng,
+
+00:01:15.935 --> 00:01:19.070
+we talked about how the model is trained and how we monitor
+chúng tôi đã nói về cách mô hình được đào tạo và cách chúng tôi giám sát
+
+00:01:19.070 --> 00:01:22.925
+training and validation loss to decide when to stop training the model.
+
+00:01:22.925 --> 00:01:25.550
+At the end, we talked about overfitting and
+Cuối cùng, chúng tôi đã nói về việc trang bị quá nhiều và
+
+00:01:25.550 --> 00:01:28.085
+how to use different methods such as batch size,
+cách sử dụng các phương pháp khác nhau như kích thước lô,
+
+00:01:28.085 --> 00:01:31.235
+learning rate, and dropout to prevent overfitting.
+tỷ lệ học tập và bỏ học để ngăn chặn tình trạng quá trang bị.
+
+00:01:31.235 --> 00:01:33.050
+I hope you enjoyed this lesson.
+Tôi hy vọng bạn thích bài học này.
+
+00:01:33.050 --> 00:01:37.770
+We are one lesson away from completing the course. See you guys in a bit.
+Chúng ta còn một bài học nữa là hoàn thành khóa học. Hẹn gặp lại các bạn một chút.
+

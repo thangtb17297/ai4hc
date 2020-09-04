@@ -1,0 +1,44 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.175
+So you've probably had some experience building classification models before.
+Vì vậy, bạn có thể đã có một số kinh nghiệm xây dựng mô hình phân loại trước đây.
+
+00:00:05.175 --> 00:00:08.610
+If you're like me, you were first introduced to deep learning for
+Nếu bạn giống tôi, lần đầu tiên bạn được giới thiệu về học sâu cho
+
+00:00:08.610 --> 00:00:12.254
+images using the classic cats versus dogs example.
+hình ảnh sử dụng ví dụ về mèo và chó cổ điển.
+
+00:00:12.254 --> 00:00:16.230
+The big picture with this lesson is to understand how and why
+Bức tranh lớn với bài học này là hiểu cách thức và lý do
+
+00:00:16.230 --> 00:00:22.185
+those exact same CNN deep network architectures are useful for medical images,
+những kiến ​​trúc mạng sâu CNN chính xác đó rất hữu ích cho hình ảnh y tế,
+
+00:00:22.185 --> 00:00:24.750
+but also what the extra work is that you will
+nhưng công việc bổ sung là bạn sẽ
+
+00:00:24.750 --> 00:00:27.555
+need to do to repurpose them for clinical use.
+cần phải làm gì để tái sử dụng chúng để sử dụng trong lâm sàng.
+
+00:00:27.555 --> 00:00:30.810
+The world becomes messier and the stakes become higher when we
+Thế giới trở nên lộn xộn hơn và cổ phần trở nên cao hơn khi chúng ta
+
+00:00:30.810 --> 00:00:34.170
+move from cats and dogs to X-rays and mammograms,
+chuyển từ chó mèo sang chụp X-quang và chụp quang tuyến vú,
+
+00:00:34.170 --> 00:00:38.560
+but we've already laid all the foundation that you need to do this.
+nhưng chúng tôi đã đặt tất cả nền tảng mà bạn cần để làm điều này.
+

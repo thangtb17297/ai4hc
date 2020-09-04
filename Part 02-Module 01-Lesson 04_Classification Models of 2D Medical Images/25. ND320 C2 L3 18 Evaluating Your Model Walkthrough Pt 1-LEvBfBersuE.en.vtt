@@ -1,0 +1,204 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.695
+After you build a model,
+Sau khi bạn xây dựng một mô hình,
+
+00:00:01.695 --> 00:00:02.730
+you'll have to train it.
+bạn sẽ phải đào tạo nó.
+
+00:00:02.730 --> 00:00:05.670
+It's important to know when to stop training so that
+Điều quan trọng là phải biết khi nào nên ngừng đào tạo để
+
+00:00:05.670 --> 00:00:09.240
+your performance is maximized on a hold-out validations set.
+hiệu suất của bạn được tối đa hóa trên một bộ xác thực chờ.
+
+00:00:09.240 --> 00:00:12.510
+Monitoring the performance of the model on both training and
+Giám sát hiệu suất của mô hình trên cả đào tạo và
+
+00:00:12.510 --> 00:00:17.205
+validation sets is informative and plays a role in your FDA submission process.
+bộ xác nhận là thông tin và đóng một vai trò trong quá trình đệ trình FDA của bạn.
+
+00:00:17.205 --> 00:00:20.820
+First, we'll talk about how to actually train our models.
+Đầu tiên, chúng ta sẽ nói về cách thực sự đào tạo các mô hình của chúng tôi.
+
+00:00:20.820 --> 00:00:22.695
+In the previous part of this lesson,
+Trong phần trước của bài học này,
+
+00:00:22.695 --> 00:00:27.390
+we learned about splitting our data into two sets, training and validation.
+chúng tôi đã học về cách tách dữ liệu của mình thành hai bộ, đào tạo và xác thực.
+
+00:00:27.390 --> 00:00:30.495
+Now that we've learned how to build a CNN architecture,
+Bây giờ chúng ta đã học cách xây dựng kiến ​​trúc CNN,
+
+00:00:30.495 --> 00:00:32.610
+we're going to learn how to use these sets to
+chúng ta sẽ học cách sử dụng các bộ này để
+
+00:00:32.610 --> 00:00:35.580
+train our filter weights and evaluate performance.
+đào tạo trọng số bộ lọc của chúng tôi và đánh giá hiệu suất.
+
+00:00:35.580 --> 00:00:38.050
+First, let start with the training set.
+Đầu tiên, hãy bắt đầu với tập huấn luyện.
+
+00:00:38.050 --> 00:00:43.270
+This set of data is going to be fed into your CNN over and over again,
+Tập hợp dữ liệu này sẽ được đưa vào CNN của bạn nhiều lần,
+
+00:00:43.270 --> 00:00:46.520
+while it tries to learn important features of your data.
+trong khi nó cố gắng tìm hiểu các tính năng quan trọng của dữ liệu của bạn.
+
+00:00:46.520 --> 00:00:50.300
+Each time the entire dataset is passed through the CNN,
+Mỗi khi toàn bộ tập dữ liệu được chuyển qua CNN,
+
+00:00:50.300 --> 00:00:52.594
+we call this one epoch.
+chúng tôi gọi đây là một kỷ nguyên.
+
+00:00:52.594 --> 00:00:56.660
+At each epoch, we may decide to apply augmentation to some of
+Tại mỗi kỷ nguyên, chúng tôi có thể quyết định áp dụng tăng cường cho một số
+
+00:00:56.660 --> 00:01:02.920
+our training images so that our CNN doesn't see quite the same images every single time.
+hình ảnh đào tạo của chúng tôi để CNN của chúng tôi không nhìn thấy những hình ảnh hoàn toàn giống nhau mỗi lần.
+
+00:01:02.920 --> 00:01:04.985
+At the end of each epoch,
+Vào cuối mỗi kỷ nguyên,
+
+00:01:04.985 --> 00:01:08.090
+our CNN has something called a loss function to
+CNN của chúng tôi có một cái gì đó được gọi là hàm mất mát để
+
+00:01:08.090 --> 00:01:12.470
+calculate how different it's prediction is from the ground truth of the training image.
+tính toán dự đoán của nó khác với sự thật cơ bản của hình ảnh đào tạo như thế nào.
+
+00:01:12.470 --> 00:01:15.520
+We can call this difference the training loss.
+Chúng ta có thể gọi sự khác biệt này là sự mất mát trong đào tạo.
+
+00:01:15.520 --> 00:01:17.195
+If the loss is small,
+Nếu tổn thất nhỏ,
+
+00:01:17.195 --> 00:01:22.775
+it means the CNN did well in classifying the training images that it saw in our epoch.
+nó có nghĩa là CNN đã làm tốt trong việc phân loại các hình ảnh đào tạo mà nó đã thấy trong kỷ nguyên của chúng ta.
+
+00:01:22.775 --> 00:01:27.380
+The network then uses the training loss to go back and update
+Sau đó, mạng sử dụng mất quá trình đào tạo để quay lại và cập nhật
+
+00:01:27.380 --> 00:01:31.715
+the weights of every single filter in the layers that we want to train.
+trọng số của mỗi bộ lọc trong các lớp mà chúng tôi muốn đào tạo.
+
+00:01:31.715 --> 00:01:34.670
+This technique is called backpropagation.
+Kỹ thuật này được gọi là backpropagation.
+
+00:01:34.670 --> 00:01:39.880
+It updates weights in a way that makes weights more accurate in the next epoch.
+Nó cập nhật trọng lượng theo cách làm cho trọng lượng chính xác hơn trong kỷ nguyên tiếp theo.
+
+00:01:39.880 --> 00:01:42.185
+Once these weights are updated,
+Sau khi các trọng số này được cập nhật,
+
+00:01:42.185 --> 00:01:45.185
+the training data is processed again in a second epoch,
+dữ liệu đào tạo được xử lý lại sau kỷ nguyên thứ hai,
+
+00:01:45.185 --> 00:01:46.895
+and the process repeats.
+và quá trình lặp lại.
+
+00:01:46.895 --> 00:01:50.240
+Choosing how many epochs to train for is important.
+Chọn bao nhiêu kỷ nguyên để đào tạo là rất quan trọng.
+
+00:01:50.240 --> 00:01:54.155
+Training as many epochs as possible is not always useful.
+Việc đào tạo càng nhiều kỷ nguyên càng tốt không phải lúc nào cũng hữu ích.
+
+00:01:54.155 --> 00:01:56.345
+Next, we'll learn how to monitor this loss
+Tiếp theo, chúng ta sẽ học cách theo dõi sự mất mát này
+
+00:01:56.345 --> 00:01:59.300
+over time to know when we should stop training.
+theo thời gian để biết khi nào chúng ta nên ngừng đào tạo.
+
+00:01:59.300 --> 00:02:03.020
+So where does our validation data fit in here?
+Vậy dữ liệu xác thực của chúng tôi phù hợp ở đâu ở đây?
+
+00:02:03.020 --> 00:02:05.060
+At the end of each epoch,
+Vào cuối mỗi kỷ nguyên,
+
+00:02:05.060 --> 00:02:08.660
+we learned that we use a loss function for the training loss that
+chúng tôi đã học được rằng chúng tôi sử dụng một hàm tổn thất cho tổn thất đào tạo
+
+00:02:08.660 --> 00:02:12.675
+measures how the prediction matches the ground truth of training images.
+đo lường cách dự đoán khớp với sự thật trên mặt đất của hình ảnh đào tạo.
+
+00:02:12.675 --> 00:02:17.795
+This training loss was then used to update our filter weights through backpropagation.
+Sau đó, mất tập huấn này được sử dụng để cập nhật trọng số bộ lọc của chúng tôi thông qua nhân giống ngược.
+
+00:02:17.795 --> 00:02:24.245
+Well, we also use that loss function to evaluate the loss on our held-out validation set.
+Chà, chúng tôi cũng sử dụng hàm lỗ đó để đánh giá khoản lỗ trên tập hợp xác thực đã tổ chức của chúng tôi.
+
+00:02:24.245 --> 00:02:27.095
+That is, we calculate a validation loss
+Đó là, chúng tôi tính toán mất xác thực
+
+00:02:27.095 --> 00:02:30.630
+that measures how the prediction matches the validation data.
+đo lường cách dự đoán khớp với dữ liệu xác thực.
+
+00:02:30.630 --> 00:02:33.590
+Same here, a smaller loss indicates that
+Tương tự ở đây, một khoản lỗ nhỏ hơn cho thấy rằng
+
+00:02:33.590 --> 00:02:37.120
+the CNN did while classifying a validation image,
+CNN đã làm trong khi phân loại hình ảnh xác thực,
+
+00:02:37.120 --> 00:02:38.675
+except for at this step,
+ngoại trừ ở bước này,
+
+00:02:38.675 --> 00:02:40.420
+we don't update our weights.
+chúng tôi không cập nhật trọng lượng của chúng tôi.
+
+00:02:40.420 --> 00:02:44.420
+The validation set is just a test of performance of our model,
+Bộ xác thực chỉ là một bài kiểm tra hiệu suất của mô hình của chúng tôi,
+
+00:02:44.420 --> 00:02:47.370
+not teaching it how to be better.
+không dạy nó làm thế nào để tốt hơn.
+

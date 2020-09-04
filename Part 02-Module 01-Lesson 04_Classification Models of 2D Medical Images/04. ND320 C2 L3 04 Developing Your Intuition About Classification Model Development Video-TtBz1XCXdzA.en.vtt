@@ -1,0 +1,41 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.580
+There is quite a lot to consider when we start
+
+00:00:02.580 --> 00:00:05.595
+building deep learning algorithms for the health care system.
+xây dựng các thuật toán học sâu cho hệ thống chăm sóc sức khỏe.
+
+00:00:05.595 --> 00:00:08.850
+The exploratory data analysis that you did in lesson 2
+
+00:00:08.850 --> 00:00:12.795
+gave you a sense of how to explore some key components of your data.
+đã cho bạn biết cách khám phá một số thành phần chính trong dữ liệu của bạn.
+
+00:00:12.795 --> 00:00:17.835
+Now we want to learn how to translate that into an intuition of how to build our models.
+Bây giờ chúng tôi muốn học cách chuyển điều đó thành trực giác về cách xây dựng mô hình của chúng tôi.
+
+00:00:17.835 --> 00:00:21.345
+One of the key intuitions you will start to develop here is
+Một trong những trực giác quan trọng mà bạn sẽ bắt đầu phát triển ở đây là
+
+00:00:21.345 --> 00:00:25.305
+when and if you actually need deep learning for your applications.
+
+00:00:25.305 --> 00:00:27.360
+If you find that you do need deep learning,
+Nếu bạn thấy rằng bạn cần học sâu,
+
+00:00:27.360 --> 00:00:31.590
+you'll also start to develop an intuition about how to efficiently build,
+bạn cũng sẽ bắt đầu phát triển trực giác về cách xây dựng hiệu quả,
+
+00:00:31.590 --> 00:00:37.800
+train, and/or fine-tune CNN architectures for your classification tasks.
+đào tạo và / hoặc tinh chỉnh kiến ​​trúc CNN cho các nhiệm vụ phân loại của bạn.
+

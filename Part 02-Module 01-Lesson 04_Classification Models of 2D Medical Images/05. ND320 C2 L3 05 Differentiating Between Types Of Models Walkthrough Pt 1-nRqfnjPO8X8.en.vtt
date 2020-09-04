@@ -1,0 +1,275 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.810
+I know that everyone is eager to get to the deep learning.
+Tôi biết rằng mọi người đều mong muốn được học sâu.
+
+00:00:03.810 --> 00:00:05.640
+But before we get there,
+Nhưng trước khi chúng ta đến đó,
+
+00:00:05.640 --> 00:00:10.275
+let's try to understand why deep learning and where this field originated.
+chúng ta hãy cố gắng hiểu tại sao học sâu và lĩnh vực này bắt nguồn từ đâu.
+
+00:00:10.275 --> 00:00:14.115
+We'll go back to the old days first of classic machine learning.
+Trước tiên, chúng ta sẽ quay lại những ngày xưa của học máy cổ điển.
+
+00:00:14.115 --> 00:00:16.380
+Remember from lesson one how we have
+Hãy nhớ từ bài học một cách chúng ta có
+
+00:00:16.380 --> 00:00:20.450
+three main types of imaging algorithms for 2D medical images?
+ba loại thuật toán hình ảnh chính cho hình ảnh y tế 2D?
+
+00:00:20.450 --> 00:00:24.030
+There's segmentation, which helps us define outlines around
+
+00:00:24.030 --> 00:00:28.755
+specific findings in an image and measure their size, there's localization,
+những phát hiện cụ thể trong một hình ảnh và đo kích thước của chúng, có bản địa hóa,
+
+00:00:28.755 --> 00:00:31.080
+which identifies the region of an image with
+xác định vùng của hình ảnh với
+
+00:00:31.080 --> 00:00:34.440
+a certain finding and draws a bounding box around it,
+một phát hiện nhất định và vẽ một hộp giới hạn xung quanh nó,
+
+00:00:34.440 --> 00:00:36.695
+and finally, there's classification,
+và cuối cùng, có phân loại,
+
+00:00:36.695 --> 00:00:40.790
+which tells us if something is or is not present in an image.
+cho chúng ta biết nếu một cái gì đó có hoặc không có trong hình ảnh.
+
+00:00:40.790 --> 00:00:44.290
+This actually hasn't changed much with the advent of deep learning,
+Điều này thực sự không thay đổi nhiều với sự ra đời của học sâu,
+
+00:00:44.290 --> 00:00:47.765
+and these are still the main three areas of algorithm types.
+và đây vẫn là ba lĩnh vực chính của các loại thuật toán.
+
+00:00:47.765 --> 00:00:50.240
+The biggest difference between machine learning and
+Sự khác biệt lớn nhất giữa học máy và
+
+00:00:50.240 --> 00:00:53.575
+deep learning is the concept of feature selection.
+học sâu là khái niệm về lựa chọn tính năng.
+
+00:00:53.575 --> 00:00:55.775
+Before deep learning existed,
+Trước khi học sâu tồn tại,
+
+00:00:55.775 --> 00:00:58.580
+algorithm developers had to work very hard to
+các nhà phát triển thuật toán đã phải làm việc rất chăm chỉ để
+
+00:00:58.580 --> 00:01:02.920
+predefine features in an image that were important for their task.
+các tính năng được xác định trước trong một hình ảnh quan trọng đối với nhiệm vụ của họ.
+
+00:01:02.920 --> 00:01:06.184
+These features could come in a multitude of flavors,
+Những tính năng này có thể có vô số hương vị,
+
+00:01:06.184 --> 00:01:08.810
+but it is really considered an art as to how
+nhưng nó thực sự được coi là một nghệ thuật về cách
+
+00:01:08.810 --> 00:01:11.920
+they are crafted and refined for specific tasks,
+
+00:01:11.920 --> 00:01:14.875
+and it takes a lot of time and effort.
+và mất nhiều thời gian và công sức.
+
+00:01:14.875 --> 00:01:20.015
+An example of a feature might be the intensity gradient between adjacent pixels,
+Ví dụ về đối tượng địa lý có thể là độ dốc cường độ giữa các pixel liền kề,
+
+00:01:20.015 --> 00:01:23.630
+which is steeper when there is a tumor versus healthy tissue.
+sẽ dốc hơn khi có khối u so với mô khỏe mạnh.
+
+00:01:23.630 --> 00:01:25.880
+When deep learning came along,
+Khi học sâu ra đời,
+
+00:01:25.880 --> 00:01:30.410
+it was groundbreaking because it worked to discover important features,
+
+00:01:30.410 --> 00:01:34.255
+taking this burden off of the algorithm researchers.
+loại bỏ gánh nặng này của các nhà nghiên cứu thuật toán.
+
+00:01:34.255 --> 00:01:38.045
+Before deep learning, algorithm developers had to spend
+Trước khi học sâu, các nhà phát triển thuật toán phải chi
+
+00:01:38.045 --> 00:01:42.185
+a long time looking at their images and understanding their properties.
+một thời gian dài nhìn vào hình ảnh của họ và hiểu các thuộc tính của họ.
+
+00:01:42.185 --> 00:01:44.840
+During this process, developers would often need
+Trong quá trình này, các nhà phát triển thường cần
+
+00:01:44.840 --> 00:01:48.080
+input from disease experts and radiologists about
+đầu vào từ các chuyên gia bệnh tật và bác sĩ X quang về
+
+00:01:48.080 --> 00:01:51.350
+what particular features of an image they would look at to make
+những tính năng cụ thể của hình ảnh mà họ sẽ xem xét để tạo ra
+
+00:01:51.350 --> 00:01:55.825
+their diagnoses and then translate these into features for machine learning.
+chẩn đoán của họ và sau đó chuyển chúng thành các tính năng cho máy học.
+
+00:01:55.825 --> 00:01:57.860
+Once features are defined,
+Sau khi các tính năng được xác định,
+
+00:01:57.860 --> 00:02:00.335
+they're given to an algorithm, for example,
+chúng được đưa cho một thuật toán, chẳng hạn,
+
+00:02:00.335 --> 00:02:04.024
+a logistic regression or support vector machine algorithm,
+hồi quy logistic hoặc thuật toán máy vector hỗ trợ,
+
+00:02:04.024 --> 00:02:09.220
+to learn how these specific features differentiate between classes of images.
+
+00:02:09.220 --> 00:02:12.500
+In the end, the algorithm returns an output based
+Cuối cùng, thuật toán trả về kết quả dựa trên
+
+00:02:12.500 --> 00:02:15.770
+on the separability of the features that it was exposed to.
+về khả năng phân tách của các tính năng mà nó được tiếp xúc.
+
+00:02:15.770 --> 00:02:20.780
+Note that lots of these algorithms are really powerful and highly accurate,
+Lưu ý rằng rất nhiều thuật toán này thực sự mạnh mẽ và có độ chính xác cao,
+
+00:02:20.780 --> 00:02:23.420
+and there are still many use cases out there for
+và vẫn còn nhiều trường hợp sử dụng cho
+
+00:02:23.420 --> 00:02:26.765
+which classic machine learning is sufficient and reliable.
+học máy cổ điển nào là đủ và đáng tin cậy.
+
+00:02:26.765 --> 00:02:29.540
+With deep learning, the algorithm developer
+Với học sâu, nhà phát triển thuật toán
+
+00:02:29.540 --> 00:02:32.530
+doesn't need to start with the feature selection process.
+không cần phải bắt đầu với quá trình lựa chọn tính năng.
+
+00:02:32.530 --> 00:02:36.320
+They instead start first with the algorithms architecture.
+Thay vào đó, họ bắt đầu với kiến ​​trúc thuật toán.
+
+00:02:36.320 --> 00:02:38.210
+We'll dive more into this later,
+Chúng tôi sẽ đi sâu hơn vào vấn đề này sau,
+
+00:02:38.210 --> 00:02:42.005
+but you've probably had some experience with the CNN architecture,
+nhưng bạn có thể đã có một số kinh nghiệm với kiến ​​trúc CNN,
+
+00:02:42.005 --> 00:02:45.710
+which is most commonly used for classification of images.
+được sử dụng phổ biến nhất để phân loại hình ảnh.
+
+00:02:45.710 --> 00:02:50.780
+What the human eye can detect and then integrate into the brain about images,
+Những gì mắt người có thể phát hiện và sau đó tích hợp vào não về hình ảnh,
+
+00:02:50.780 --> 00:02:53.390
+is not always something that can be translated into
+không phải lúc nào cũng có thể dịch sang
+
+00:02:53.390 --> 00:02:57.055
+a simple feature such as tumors appear brighter.
+một tính năng đơn giản như các khối u xuất hiện sáng hơn.
+
+00:02:57.055 --> 00:03:01.445
+Oftentimes, radiologists are seemingly able to just intuit
+Thông thường, các bác sĩ X quang dường như chỉ có thể đưa vào
+
+00:03:01.445 --> 00:03:03.695
+the appropriate diagnosis in the image
+chẩn đoán thích hợp trong hình ảnh
+
+00:03:03.695 --> 00:03:06.830
+because they have seen tens of thousands of images,
+bởi vì họ đã xem hàng chục nghìn hình ảnh,
+
+00:03:06.830 --> 00:03:11.170
+and defining a set of features that they're looking for is not the full story.
+
+00:03:11.170 --> 00:03:13.175
+When deep learning came along,
+Khi học sâu ra đời,
+
+00:03:13.175 --> 00:03:15.410
+it started to solve this problem for us.
+nó bắt đầu giải quyết vấn đề này cho chúng tôi.
+
+00:03:15.410 --> 00:03:18.830
+Deep learning algorithms discover features in a way
+Các thuật toán học sâu khám phá các tính năng theo cách
+
+00:03:18.830 --> 00:03:23.060
+similar to how a human would discover features by looking at many,
+tương tự như cách một con người khám phá các đặc điểm bằng cách nhìn vào nhiều,
+
+00:03:23.060 --> 00:03:27.605
+many images and learning what makes certain images different from each other.
+nhiều hình ảnh và tìm hiểu điều gì làm cho một số hình ảnh nhất định khác với nhau.
+
+00:03:27.605 --> 00:03:32.270
+This technique proved to be superior to handcrafted features for machine learning,
+
+00:03:32.270 --> 00:03:33.905
+for both cats and dogs,
+cho cả mèo và chó,
+
+00:03:33.905 --> 00:03:36.410
+and x-rays and mammograms.
+và chụp X quang và chụp quang tuyến vú.
+
+00:03:36.410 --> 00:03:39.405
+Finally, like classic machine learning,
+Cuối cùng, giống như học máy cổ điển,
+
+00:03:39.405 --> 00:03:41.915
+our deep learning algorithm returns an output
+
+00:03:41.915 --> 00:03:45.335
+indicating whether or not a finding is present in an image.
+
+00:03:45.335 --> 00:03:49.340
+The performance of deep learning shows to be most powerful when
+Hiệu suất của học tập sâu cho thấy hiệu quả nhất khi
+
+00:03:49.340 --> 00:03:53.195
+we start having to deal with images in which differences are very subtle,
+
+00:03:53.195 --> 00:03:56.520
+which is often the case in medical imaging.
+thường xảy ra trong hình ảnh y tế.
+

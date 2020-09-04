@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+One of the key pieces of fine-tuning is the last layer.
+Một trong những phần quan trọng của việc tinh chỉnh là lớp cuối cùng.
+
+00:00:03.390 --> 00:00:08.350
+In this CNN, the final layer has the dimensions of 1x1x1,000.
+Trong CNN này, lớp cuối cùng có kích thước 1x1x1,000.
+
+00:00:08.660 --> 00:00:15.225
+This means that it has the capability to classify between 1,000 different image classes.
+Điều này có nghĩa là nó có khả năng phân loại giữa 1.000 lớp hình ảnh khác nhau.
+
+00:00:15.225 --> 00:00:17.985
+If we wanted to use this architecture to say,
+Nếu chúng tôi muốn sử dụng kiến ​​trúc này để nói,
+
+00:00:17.985 --> 00:00:22.320
+classify between 10 different types of diseases found on a chest x-ray,
+phân loại giữa 10 loại bệnh khác nhau được tìm thấy trên phim chụp X-quang phổi,
+
+00:00:22.320 --> 00:00:27.480
+we would need to replace this layer with a layer whose dimensions were 1x1x10.
+chúng ta sẽ cần thay thế lớp này bằng một lớp có kích thước là 1x1x10.
+
+00:00:27.480 --> 00:00:31.080
+Besides retraining waves on the last few layers,
+Bên cạnh việc đào tạo lại các làn sóng ở một vài lớp cuối cùng,
+
+00:00:31.080 --> 00:00:32.485
+as we talked about earlier,
+như chúng ta đã nói trước đó,
+
+00:00:32.485 --> 00:00:36.035
+we can also add new layers to train from scratch.
+chúng ta cũng có thể thêm các lớp mới để đào tạo từ đầu.
+
+00:00:36.035 --> 00:00:39.230
+Experimenting with different combinations of these options is
+Thử nghiệm với các kết hợp khác nhau của các tùy chọn này là
+
+00:00:39.230 --> 00:00:43.075
+a lot of trial and error and truly is an art.
+rất nhiều thử và sai và thực sự là một nghệ thuật.
+
+00:00:43.075 --> 00:00:46.790
+There are tons of existing CNN architectures and
+Có rất nhiều kiến ​​trúc CNN hiện có và
+
+00:00:46.790 --> 00:00:50.575
+weights that have been trained and released into the deep learning community.
+trọng số đã được đào tạo và phát hành vào cộng đồng học tập sâu.
+
+00:00:50.575 --> 00:00:55.970
+Nearly every day, incremental improvements to existing architectures are being made and
+Gần như mỗi ngày, các cải tiến gia tăng đối với các kiến ​​trúc hiện có đang được thực hiện và
+
+00:00:55.970 --> 00:00:57.920
+new publications are being written about
+các ấn phẩm mới đang được viết về
+
+00:00:57.920 --> 00:01:02.375
+the accuracy increases scene by different weights and architectures.
+độ chính xác làm tăng cảnh theo các trọng lượng và kiến ​​trúc khác nhau.
+
+00:01:02.375 --> 00:01:07.440
+The architecture that we've been using as an example in these slides is VGG16,
+Kiến trúc mà chúng tôi đang sử dụng làm ví dụ trong các trang trình bày này là VGG16,
+
+00:01:07.440 --> 00:01:09.830
+which was trained on a set of images called
+được đào tạo trên một tập hợp các hình ảnh được gọi là
+
+00:01:09.830 --> 00:01:14.240
+ImageNet that contains over 14 million images.
+ImageNet chứa hơn 14 triệu hình ảnh.
+
+00:01:14.240 --> 00:01:17.165
+The researchers who initially did this,
+Các nhà nghiên cứu ban đầu đã làm điều này,
+
+00:01:17.165 --> 00:01:21.575
+classified all of the images in ImageNet into 1,000 categories,
+đã phân loại tất cả các hình ảnh trong ImageNet thành 1.000 loại,
+
+00:01:21.575 --> 00:01:24.890
+and train the VGG16 architecture to accurately
+và đào tạo kiến ​​trúc VGG16 để
+
+00:01:24.890 --> 00:01:28.745
+classify images between all 1,000 of those categories.
+phân loại hình ảnh giữa tất cả 1.000 loại đó.
+
+00:01:28.745 --> 00:01:31.340
+They then released not only their architecture,
+Sau đó, họ không chỉ phát hành kiến ​​trúc của họ,
+
+00:01:31.340 --> 00:01:35.120
+but also the weights of their model to the general deep learning community.
+mà còn là trọng số của mô hình của họ đối với cộng đồng học sâu nói chung.
+
+00:01:35.120 --> 00:01:38.630
+This was revolutionary, and was one of the first pieces of
+Đây là một cuộc cách mạng và là một trong những phần đầu tiên của
+
+00:01:38.630 --> 00:01:42.790
+work to truly ignite the field of deep learning for image recognition.
+làm việc để thực sự khơi dậy lĩnh vực học sâu để nhận dạng hình ảnh.
+
+00:01:42.790 --> 00:01:47.270
+Now you'll see that it's common practice for researchers interested in all types of
+Bây giờ bạn sẽ thấy rằng việc các nhà nghiên cứu quan tâm đến tất cả các loại
+
+00:01:47.270 --> 00:01:52.100
+imaging to take these pre-trained weights and fine-tune them for their specific use case.
+hình ảnh để lấy những quả cân được đào tạo trước này và tinh chỉnh chúng cho trường hợp sử dụng cụ thể của chúng.
+
+00:01:52.100 --> 00:01:54.110
+That's in fact what we will do in
+Thực tế đó là những gì chúng tôi sẽ làm trong
+
+00:01:54.110 --> 00:01:58.670
+our final course project for classification of disease and chest x-rays.
+dự án khóa học cuối cùng của chúng tôi để phân loại bệnh và chụp X-quang ngực.
+
+00:01:58.670 --> 00:02:02.840
+If we have an existing model architecture like VGG16,
+Nếu chúng ta có một kiến ​​trúc mô hình hiện có như VGG16,
+
+00:02:02.840 --> 00:02:05.140
+and we want to freeze them layers,
+và chúng tôi muốn đóng băng các lớp của chúng,
+
+00:02:05.140 --> 00:02:09.890
+all we need to do is set each layer's trainable parameter to be false.
+tất cả những gì chúng ta cần làm là đặt tham số có thể đào tạo của mỗi lớp là false.
+
+00:02:09.890 --> 00:02:15.260
+Here, I'm setting the first 17 layers to be untrainable or frozen.
+Ở đây, tôi đang thiết lập 17 lớp đầu tiên là không thể kiểm tra hoặc đóng băng.
+
+00:02:15.260 --> 00:02:19.485
+If I want to then add layers that are trainable and are new,
+Nếu tôi muốn sau đó thêm các lớp có thể đào tạo và mới,
+
+00:02:19.485 --> 00:02:21.255
+I would do the following.
+Tôi sẽ làm như sau.
+
+00:02:21.255 --> 00:02:26.045
+I would take a new model and add my frozen VGG model to it.
+Tôi sẽ lấy một mô hình mới và thêm mô hình VGG đông lạnh của tôi vào nó.
+
+00:02:26.045 --> 00:02:30.475
+Then I would just use the add function to add new types of layers.
+Sau đó, tôi sẽ chỉ sử dụng chức năng thêm để thêm các loại lớp mới.
+
+00:02:30.475 --> 00:02:33.495
+Here, I'm adding a dense layer with
+Ở đây, tôi đang thêm một lớp dày đặc với
+
+00:02:33.495 --> 00:02:38.450
+1024 parameters and the value activation function to my new model,
+1024 tham số và chức năng kích hoạt giá trị cho mô hình mới của tôi,
+
+00:02:38.450 --> 00:02:42.600
+following my frozen VGG16 architecture.
+theo kiến ​​trúc VGG16 đã đóng băng của tôi.
+

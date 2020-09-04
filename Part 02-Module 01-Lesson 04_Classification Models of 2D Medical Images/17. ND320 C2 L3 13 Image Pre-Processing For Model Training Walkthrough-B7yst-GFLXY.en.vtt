@@ -1,0 +1,331 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.565
+Before we can train our deep learning models,
+
+00:00:02.565 --> 00:00:05.565
+we need to do a bit of pre-processing on our images.
+
+00:00:05.565 --> 00:00:09.075
+We have laid the groundwork for how we analyze imaging properties,
+
+00:00:09.075 --> 00:00:10.500
+and in this part of the lesson,
+
+00:00:10.500 --> 00:00:14.100
+we'll learn how to apply what we've learned to pre-processing techniques.
+
+00:00:14.100 --> 00:00:17.295
+We'll also learn about something called image augmentation,
+
+00:00:17.295 --> 00:00:20.235
+which is a really powerful tool for deep learning.
+
+00:00:20.235 --> 00:00:23.415
+Image pre-processing has several goals;
+
+00:00:23.415 --> 00:00:25.935
+removing noise from our images.
+
+00:00:25.935 --> 00:00:30.180
+One way to do this is through background extraction using Otsu's method,
+
+00:00:30.180 --> 00:00:31.950
+as we talked about earlier,
+
+00:00:31.950 --> 00:00:38.070
+enforcing some normalization across images so the weights of the CNN are within control,
+
+00:00:38.070 --> 00:00:42.345
+enlarging your data for training by image augmentation,
+
+00:00:42.345 --> 00:00:46.745
+and making your images the right dimensions for your CNN.
+
+00:00:46.745 --> 00:00:50.000
+Intensity normalization is good practice and
+
+00:00:50.000 --> 00:00:53.390
+should always be done prior to using data for training.
+
+00:00:53.390 --> 00:00:56.695
+There are two types of normalization that you can perform.
+
+00:00:56.695 --> 00:01:01.490
+Here I've used Otsu's method to remove all background pixels and I am just
+
+00:01:01.490 --> 00:01:06.920
+looking at the frequency distribution of pixel intensities in the actual breast image.
+
+00:01:06.920 --> 00:01:11.840
+The first type of normalization is just called zero meaning your image.
+
+00:01:11.840 --> 00:01:13.490
+What it means is that you find
+
+00:01:13.490 --> 00:01:18.410
+the mean intensity value of your image and subtract that value from every pixel.
+
+00:01:18.410 --> 00:01:22.435
+See how the distribution is now centered around zero mean?
+
+00:01:22.435 --> 00:01:24.975
+That's why it's called zero meaning.
+
+00:01:24.975 --> 00:01:29.765
+The other type of normalization we can apply is called standardization.
+
+00:01:29.765 --> 00:01:33.875
+With this approach, we not only subtract the mean from each pixel,
+
+00:01:33.875 --> 00:01:37.265
+but we also divide by the images standard deviation.
+
+00:01:37.265 --> 00:01:41.450
+Notice here now that the range of our intensity values follows that of
+
+00:01:41.450 --> 00:01:45.895
+a standard normal distribution, hence, standardization.
+
+00:01:45.895 --> 00:01:49.640
+For deep learning, standardization is the preferred approach,
+
+00:01:49.640 --> 00:01:54.500
+making all of your intensity values fall within a small range that is close to zero,
+
+00:01:54.500 --> 00:01:57.250
+helps the weights of our convolutional filters stand
+
+00:01:57.250 --> 00:02:00.910
+our control and not fly off the handles to infinity.
+
+00:02:00.910 --> 00:02:05.060
+We can't possibly provide our CNN with examples of
+
+00:02:05.060 --> 00:02:08.700
+what every possible image might look like out there in the real world,
+
+00:02:08.700 --> 00:02:11.285
+but the more different types of examples it can see,
+
+00:02:11.285 --> 00:02:13.120
+the more powerful it will be.
+
+00:02:13.120 --> 00:02:17.330
+Image augmentation is a really powerful technique that allows us to
+
+00:02:17.330 --> 00:02:22.220
+create different versions of our original data to try to make up for these examples.
+
+00:02:22.220 --> 00:02:27.685
+Keras provides an amazing package for us to do this called image data generator.
+
+00:02:27.685 --> 00:02:31.925
+Here is an example of implementing Keras' ImageDataGenerator.
+
+00:02:31.925 --> 00:02:36.605
+There are tons of options that we can adjust and play with for image augmentation,
+
+00:02:36.605 --> 00:02:41.050
+and here I'll go over just a few that might be useful for medical imaging.
+
+00:02:41.050 --> 00:02:43.545
+Let's look at horizontal flip.
+
+00:02:43.545 --> 00:02:47.060
+All this is doing is flipping an image from left to right.
+
+00:02:47.060 --> 00:02:50.690
+This is definitely something that I might see in the clinical world,
+
+00:02:50.690 --> 00:02:54.455
+so I'll set it to true for my medical imaging work.
+
+00:02:54.455 --> 00:03:00.110
+Height and width shift range basically allow my image to be stretched up or down.
+
+00:03:00.110 --> 00:03:03.530
+It is usually used within a certain limit because it might
+
+00:03:03.530 --> 00:03:07.735
+mirror seeing larger or skinnier people in my medical images.
+
+00:03:07.735 --> 00:03:13.075
+Rotation range specifies how much I can rotate my image around its center.
+
+00:03:13.075 --> 00:03:17.890
+Note here that there probably is a limit to how much rotation we'd want to use.
+
+00:03:17.890 --> 00:03:19.385
+If we go too far,
+
+00:03:19.385 --> 00:03:20.930
+we'll get sideways images,
+
+00:03:20.930 --> 00:03:24.265
+which we'd probably never see in a clinical setting.
+
+00:03:24.265 --> 00:03:30.635
+Shear range indicates how much we pull the image's top and bottom in opposite directions.
+
+00:03:30.635 --> 00:03:33.725
+Again, this type of augmentation can be used,
+
+00:03:33.725 --> 00:03:36.790
+but probably has a limit for medical imaging.
+
+00:03:36.790 --> 00:03:39.525
+Finally, we have zoom range.
+
+00:03:39.525 --> 00:03:42.850
+This tells us how much we can zoom in to parts of our image.
+
+00:03:42.850 --> 00:03:46.310
+Again, this has limits because we don't want to zoom in
+
+00:03:46.310 --> 00:03:50.015
+so far that the image no longer even looks like a medical image.
+
+00:03:50.015 --> 00:03:52.970
+With all of these, it's up to you to tweak the values
+
+00:03:52.970 --> 00:03:56.380
+for the parameters and decide how much augmentation you want.
+
+00:03:56.380 --> 00:04:00.290
+You may have noticed that I haven't talked about vertical flip.
+
+00:04:00.290 --> 00:04:05.360
+One really important thing to keep in mind is that the goal of image augmentation is to
+
+00:04:05.360 --> 00:04:10.425
+give your network more examples of what an image could look like in the real world.
+
+00:04:10.425 --> 00:04:15.160
+So not every type of augmentation would be appropriate for medical imaging.
+
+00:04:15.160 --> 00:04:19.310
+Vertical flip is one of the augmentations not appropriate here.
+
+00:04:19.310 --> 00:04:22.385
+See how I've set the parameter to be false?
+
+00:04:22.385 --> 00:04:25.100
+That's because setting it to true would create
+
+00:04:25.100 --> 00:04:28.295
+upside-down images in my augmented training set.
+
+00:04:28.295 --> 00:04:32.500
+I'm not going to see upside-down images in the real world of medical imaging,
+
+00:04:32.500 --> 00:04:36.035
+so this isn't a type of augmentation that I should use.
+
+00:04:36.035 --> 00:04:39.360
+One other thing to note is this rescale option.
+
+00:04:39.360 --> 00:04:41.270
+You can use this as an alternative to
+
+00:04:41.270 --> 00:04:44.675
+the intensity normalization methods we described earlier.
+
+00:04:44.675 --> 00:04:50.240
+What this section of the code does is that it takes every pixel and divides it by 255,
+
+00:04:50.240 --> 00:04:53.570
+which is the max intensity value on gray scale images.
+
+00:04:53.570 --> 00:04:57.050
+This has a similar outcome as the standardization technique and
+
+00:04:57.050 --> 00:05:01.010
+that all values of intensity become somewhere between 0 and 1,
+
+00:05:01.010 --> 00:05:04.760
+avoiding our networks filter weights to fly off to infinity.
+
+00:05:04.760 --> 00:05:08.120
+Recall from earlier in this lesson that CNNs have
+
+00:05:08.120 --> 00:05:12.295
+an input layer that specifies the size of the image they can process.
+
+00:05:12.295 --> 00:05:16.520
+The architecture above is from VGG 16 and we see that it
+
+00:05:16.520 --> 00:05:20.920
+takes images that are size 224 by 224 as input.
+
+00:05:20.920 --> 00:05:23.805
+We just saw that Keras provides us a tool called
+
+00:05:23.805 --> 00:05:28.025
+ImageDataGenerator to do a bunch of augmentation on our images.
+
+00:05:28.025 --> 00:05:30.860
+Once we create an ImageDataGenerator that
+
+00:05:30.860 --> 00:05:33.440
+contains the types of augmentation we want to use,
+
+00:05:33.440 --> 00:05:36.440
+Keras also has a handy tool called flow from
+
+00:05:36.440 --> 00:05:40.955
+Directory that allows us to pull images from a directory on our computer,
+
+00:05:40.955 --> 00:05:43.480
+say one that contains all of our training data,
+
+00:05:43.480 --> 00:05:46.330
+and pull sets directly from there to augment.
+
+00:05:46.330 --> 00:05:48.710
+In this flow from directory tool,
+
+00:05:48.710 --> 00:05:50.680
+there's a parameter called target size.
+
+00:05:50.680 --> 00:05:53.810
+It's here that we can specify the dimensions that we want
+
+00:05:53.810 --> 00:05:58.189
+our image to be resized to based on the input layer of our CNN.
+
+00:05:58.189 --> 00:06:02.240
+All of the augmentation we just discussed should only be applied to
+
+00:06:02.240 --> 00:06:06.770
+training data and your validation data should never be augmented.
+
+00:06:06.770 --> 00:06:08.690
+Remember how we didn't create
+
+00:06:08.690 --> 00:06:13.525
+an artificial imbalance of training and validation data in our validation split?
+
+00:06:13.525 --> 00:06:19.840
+It's a similar principle with validation and we never want to augment this dataset.
+
+00:06:19.840 --> 00:06:24.810
+Validation data should still be normalized so intensity values are close to zero,
+
+00:06:24.810 --> 00:06:25.880
+but other than that,
+
+00:06:25.880 --> 00:06:27.215
+it should not be stretched,
+
+00:06:27.215 --> 00:06:30.470
+sheared, zoomed, or any other type of augmentation.
+
+00:06:30.470 --> 00:06:33.470
+Remember, we want our validation data to reflect
+
+00:06:33.470 --> 00:06:37.410
+the real world and only be comprised of real data.
+
