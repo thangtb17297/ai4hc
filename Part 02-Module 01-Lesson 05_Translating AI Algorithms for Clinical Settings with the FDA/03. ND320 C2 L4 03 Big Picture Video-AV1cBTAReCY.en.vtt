@@ -1,0 +1,95 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.320
+Here is what I want you to take away from the final lesson that we have in this course.
+Đây là những gì tôi muốn bạn rút ra từ bài học cuối cùng mà chúng ta có trong khóa học này.
+
+00:00:04.320 --> 00:00:07.740
+You can be an amazing data scientist who can develop
+Bạn có thể là một nhà khoa học dữ liệu tuyệt vời, người có thể phát triển
+
+00:00:07.740 --> 00:00:13.200
+the fanciest architectures of CNNs with great performance on benchmark data sets.
+kiến trúc tuyệt vời nhất của CNN với hiệu suất tuyệt vời trên các tập dữ liệu điểm chuẩn.
+
+00:00:13.200 --> 00:00:16.800
+But if you don't know how your algorithm can fit into
+Nhưng nếu bạn không biết làm thế nào thuật toán của bạn có thể phù hợp với
+
+00:00:16.800 --> 00:00:19.170
+the real clinical setting and be used by
+bối cảnh lâm sàng thực sự và được sử dụng bởi
+
+00:00:19.170 --> 00:00:22.784
+clinicians to help treat real patients with real diseases,
+bác sĩ lâm sàng để giúp điều trị cho những bệnh nhân mắc bệnh thật,
+
+00:00:22.784 --> 00:00:25.530
+your impact is going to be a lot lower.
+tác động của bạn sẽ thấp hơn rất nhiều.
+
+00:00:25.530 --> 00:00:27.510
+You know that age-old saying,
+Bạn biết câu nói lâu đời đó,
+
+00:00:27.510 --> 00:00:29.175
+"If a tree falls in the forest,
+
+00:00:29.175 --> 00:00:30.645
+but no one is there to hear it,
+nhưng không ai ở đó để nghe nó,
+
+00:00:30.645 --> 00:00:32.130
+does it make a sound?"
+nó có phát ra âm thanh không? "
+
+00:00:32.130 --> 00:00:33.915
+You can apply that here.
+Bạn có thể áp dụng điều đó tại đây.
+
+00:00:33.915 --> 00:00:36.645
+If you create an algorithm for medical imaging,
+Nếu bạn tạo một thuật toán cho hình ảnh y tế,
+
+00:00:36.645 --> 00:00:39.945
+but radiologists can't use it, is it impactful?
+nhưng bác sĩ X quang không thể sử dụng nó, nó có ảnh hưởng?
+
+00:00:39.945 --> 00:00:43.400
+For me personally, the steepest learning curve that I had to
+Đối với cá nhân tôi, đường cong học tập dốc nhất mà tôi phải
+
+00:00:43.400 --> 00:00:46.565
+climb when making the transition from academia to industry
+leo lên khi thực hiện chuyển đổi từ hàn lâm sang công nghiệp
+
+00:00:46.565 --> 00:00:49.730
+was learning how the regulatory landscape would change
+đang tìm hiểu về bối cảnh quy định sẽ thay đổi như thế nào
+
+00:00:49.730 --> 00:00:53.695
+my approach to building deep learning algorithms for clinical use.
+cách tiếp cận của tôi để xây dựng các thuật toán học sâu để sử dụng trong lâm sàng.
+
+00:00:53.695 --> 00:00:56.950
+In the various industry roles that I have had in this space,
+Trong các vai trò khác nhau trong ngành mà tôi đã có trong không gian này,
+
+00:00:56.950 --> 00:01:03.410
+I've taken several multi-day courses on all of the nuances of the FDA 510k process.
+Tôi đã tham gia một số khóa học nhiều ngày về tất cả các sắc thái của quy trình FDA 510k.
+
+00:01:03.410 --> 00:01:09.185
+So today is designed to give you a big picture and you should definitely pursue more
+Vì vậy, ngày hôm nay được thiết kế để cung cấp cho bạn một bức tranh lớn và bạn chắc chắn nên theo đuổi nhiều hơn
+
+00:01:09.185 --> 00:01:12.140
+in-depth education on this topic if you end up
+giáo dục chuyên sâu về chủ đề này nếu bạn kết thúc
+
+00:01:12.140 --> 00:01:16.260
+working in an industry role for AI in medical imaging.
+làm việc với vai trò trong ngành đối với AI trong hình ảnh y tế.
+

@@ -1,0 +1,266 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.545
+Let's say you created a CNN to perform binary classification.
+Giả sử bạn đã tạo CNN để thực hiện phân loại nhị phân.
+
+00:00:04.545 --> 00:00:07.815
+For example, if a lung has nodules or not.
+Ví dụ, nếu phổi có nốt hoặc không.
+
+00:00:07.815 --> 00:00:12.119
+The output of the algorithm is actually not one or zero,
+Đầu ra của thuật toán thực sự không phải là một hoặc không,
+
+00:00:12.119 --> 00:00:13.890
+nodules or no nodules.
+nốt sần hoặc không có nốt sần.
+
+00:00:13.890 --> 00:00:17.010
+It actually will output a probability ranging from
+Nó thực sự sẽ tạo ra một xác suất từ
+
+00:00:17.010 --> 00:00:21.105
+0-1 that indicates how likely the image belongs to a class.
+0-1 cho biết khả năng hình ảnh thuộc về một lớp.
+
+00:00:21.105 --> 00:00:24.030
+For example, the algorithm might say there is
+Ví dụ: thuật toán có thể nói rằng có
+
+00:00:24.030 --> 00:00:27.465
+60 percent probability that this image has nodules in it.
+Xác suất 60 phần trăm rằng hình ảnh này có các nốt sần trong đó.
+
+00:00:27.465 --> 00:00:30.920
+But does 60 percent probability make it high enough
+Nhưng xác suất 60% có đủ cao không
+
+00:00:30.920 --> 00:00:34.430
+for us to make the decision that nodules are present in the image?
+để chúng tôi đưa ra quyết định rằng nốt sần có trong hình ảnh không?
+
+00:00:34.430 --> 00:00:39.745
+We will need a cut-off value called threshold to assist us in making that decision.
+
+00:00:39.745 --> 00:00:43.430
+The output of your algorithm will range from 0-1,
+
+00:00:43.430 --> 00:00:45.605
+just like what is shown in this figure.
+giống như những gì được hiển thị trong hình này.
+
+00:00:45.605 --> 00:00:51.380
+A value of one indicates that your model is 100 percent certain that the given image
+Giá trị của một cho biết rằng mô hình của bạn chắc chắn 100% rằng hình ảnh đã cho
+
+00:00:51.380 --> 00:00:53.630
+belongs to a given class and a value of
+
+00:00:53.630 --> 00:00:56.660
+zero indicates that your model is zero percent share.
+0 cho biết rằng mô hình của bạn là 0% chia sẻ.
+
+00:00:56.660 --> 00:00:58.430
+It belongs to that class.
+Nó thuộc về lớp đó.
+
+00:00:58.430 --> 00:01:04.315
+Recall that the CNN model outputs a value of 0.6, somewhere here.
+Nhớ lại rằng mô hình CNN đầu ra giá trị là 0,6, ở đâu đó ở đây.
+
+00:01:04.315 --> 00:01:07.880
+If we choose a cutoff threshold of 0.5,
+Nếu chúng tôi chọn ngưỡng giới hạn là 0,5,
+
+00:01:07.880 --> 00:01:12.905
+where everything that your algorithm returns above 0.5 is considered positive,
+trong đó mọi thứ mà thuật toán của bạn trả về trên 0,5 được coi là tích cực,
+
+00:01:12.905 --> 00:01:18.385
+or in this case having nodules and everything below 0.5 is negative for nodules.
+
+00:01:18.385 --> 00:01:20.835
+With a threshold of 0.5,
+
+00:01:20.835 --> 00:01:23.360
+we would say that this image has nodules since
+chúng tôi sẽ nói rằng hình ảnh này có các nốt sần kể từ
+
+00:01:23.360 --> 00:01:27.100
+0.6 falls in the range of nodules being present.
+
+00:01:27.100 --> 00:01:29.090
+This choice of threshold,
+Sự lựa chọn ngưỡng này,
+
+00:01:29.090 --> 00:01:30.725
+however, can be varied.
+tuy nhiên, có thể được đa dạng.
+
+00:01:30.725 --> 00:01:34.715
+For example, if we choose 0.7 as the cutoff value.
+Ví dụ, nếu chúng ta chọn 0,7 làm giá trị ngưỡng.
+
+00:01:34.715 --> 00:01:41.380
+Now, the output above 0.7 is considered positive and everything below is negative.
+Bây giờ, sản lượng trên 0,7 được coi là tích cực và mọi thứ bên dưới là tiêu cực.
+
+00:01:41.380 --> 00:01:44.600
+In this case, if having the threshold of 0.7,
+Trong trường hợp này, nếu có ngưỡng 0,7,
+
+00:01:44.600 --> 00:01:49.985
+we would end up saying our image has no nodules because 0.6 is below 0.7.
+cuối cùng chúng tôi sẽ nói rằng hình ảnh của chúng tôi không có nốt sần vì 0,6 thấp hơn 0,7.
+
+00:01:49.985 --> 00:01:54.695
+See how the different decisions that you make in threshold make your output different?
+Xem các quyết định khác nhau mà bạn đưa ra trong ngưỡng làm cho đầu ra của bạn khác nhau như thế nào?
+
+00:01:54.695 --> 00:01:57.870
+Depending on the performance metrics that you want to maximize,
+
+00:01:57.870 --> 00:02:00.440
+you want to vary your threshold that is used to
+
+00:02:00.440 --> 00:02:03.760
+make your nodule versus no nodule classification.
+làm cho nốt của bạn so với không phân loại nốt.
+
+00:02:03.760 --> 00:02:07.475
+Let's look at some different examples of how this might play out.
+Hãy xem xét một số ví dụ khác nhau về cách điều này có thể diễn ra.
+
+00:02:07.475 --> 00:02:12.835
+We'll stick with my lung nodule classifier and the 0.5. threshold example.
+Chúng tôi sẽ gắn bó với máy phân loại nốt phổi của tôi và 0,5. ví dụ về ngưỡng.
+
+00:02:12.835 --> 00:02:18.770
+Let's say I have 10 chest X-rays and only four truly have nodules shown in green.
+Giả sử tôi có 10 lần chụp X-quang ngực và chỉ có 4 lần thực sự có nốt màu xanh lá cây.
+
+00:02:18.770 --> 00:02:22.600
+I've ordered them here by the CNN output probability.
+Tôi đã đặt hàng chúng ở đây theo xác suất đầu ra của CNN.
+
+00:02:22.600 --> 00:02:26.710
+Now, I'll apply my default threshold 0.5,
+Bây giờ, tôi sẽ áp dụng ngưỡng mặc định của mình là 0,5,
+
+00:02:26.710 --> 00:02:28.310
+and I end up with
+và tôi kết thúc với
+
+00:02:28.310 --> 00:02:34.590
+four true negative X-rays and one false negative in the no nodules classification.
+bốn tia X âm tính thực sự và một âm tính giả trong phân loại không có nốt.
+
+00:02:34.590 --> 00:02:41.200
+I have two false positives and all three true positives in the nodules classification.
+Tôi có hai lần dương tính giả và cả ba lần dương tính thật trong phân loại nốt sần.
+
+00:02:41.200 --> 00:02:47.300
+My precision ends up being 3 true positives divided by 3 true positives plus
+Độ chính xác của tôi kết thúc là 3 điểm xác thực chia cho 3 điểm xác thực cộng với
+
+00:02:47.300 --> 00:02:50.570
+2 false positives and my recall is
+2 dương tính giả và tôi thu hồi là
+
+00:02:50.570 --> 00:02:55.720
+3 true positives divided by 3 true positives plus 1 false negative.
+3 dương tính đúng chia cho 3 dương tính đúng cộng với 1 âm tính sai.
+
+00:02:55.720 --> 00:02:58.335
+What happens if I change my threshold?
+
+00:02:58.335 --> 00:03:00.405
+Here, I'll increase my threshold.
+
+00:03:00.405 --> 00:03:03.740
+Since maybe this will help me weed out some false positives.
+
+00:03:03.740 --> 00:03:07.340
+I end up with five true negative X-rays now in
+Tôi kết thúc với năm lần chụp X-quang âm tính thực sự
+
+00:03:07.340 --> 00:03:11.740
+the no nodules classification and still one that's a false negative.
+phân loại không có nốt và vẫn là phân loại âm tính giả.
+
+00:03:11.740 --> 00:03:18.200
+Only one false positive X-ray and three true positive in the nodules classification.
+Chỉ có một lần chụp X-quang dương tính giả và ba lần dương tính thật trong phân loại nốt.
+
+00:03:18.200 --> 00:03:24.310
+Now, my precision ends up being 0.75 and my recall actually stays the same.
+Bây giờ, độ chính xác của tôi kết thúc là 0,75 và mức thu hồi của tôi thực sự vẫn giữ nguyên.
+
+00:03:24.310 --> 00:03:29.440
+Do you see how recall and precision values vary when different thresholds are chosen?
+Bạn có thấy giá trị truy lại và độ chính xác khác nhau như thế nào khi các ngưỡng khác nhau được chọn không?
+
+00:03:29.440 --> 00:03:34.460
+Rather than manually calculating all of these different scenarios for your classifier,
+
+00:03:34.460 --> 00:03:37.670
+you can generate something called a precision-recall curve.
+bạn có thể tạo ra một thứ gọi là đường cong nhớ lại độ chính xác
+
+00:03:37.670 --> 00:03:41.705
+Each point along the graph represents a different threshold value.
+Mỗi điểm dọc theo biểu đồ đại diện cho một giá trị ngưỡng khác nhau.
+
+00:03:41.705 --> 00:03:46.460
+So depending on whether you want to maximize precision or maximize recall,
+Vì vậy, tùy thuộc vào việc bạn muốn tối đa hóa độ chính xác hay tối đa hóa khả năng thu hồi,
+
+00:03:46.460 --> 00:03:50.495
+you can choose your threshold more easily with a visual curve like this.
+
+00:03:50.495 --> 00:03:53.090
+Is all of this making you wish that you could just stick
+
+00:03:53.090 --> 00:03:55.525
+with accuracy and have one score?
+với độ chính xác và có một điểm?
+
+00:03:55.525 --> 00:03:57.300
+Well, you can.
+
+00:03:57.300 --> 00:03:59.990
+For binary classification problems,
+Đối với các vấn đề phân loại nhị phân,
+
+00:03:59.990 --> 00:04:02.090
+there's a score called the F1 score,
+
+00:04:02.090 --> 00:04:05.510
+which combines both precision and recall and allows us to
+kết hợp cả độ chính xác và khả năng thu hồi và cho phép chúng tôi
+
+00:04:05.510 --> 00:04:09.595
+better measure a test accuracy when there are class imbalances.
+
+00:04:09.595 --> 00:04:14.200
+Mathematically, it is the harmonic mean of precision and recall.
+Về mặt toán học, nó là trung bình hài hòa của độ chính xác và độ thu hồi.
+
+00:04:14.200 --> 00:04:18.904
+You can often just use the F1 score to indicate your algorithms spinal performance,
+
+00:04:18.904 --> 00:04:22.505
+since it is maximized when precision and recall are balanced,
+vì nó được tối đa hóa khi độ chính xác và thu hồi được cân bằng,
+
+00:04:22.505 --> 00:04:24.260
+which simplifies your life a bit,
+điều này đơn giản hóa cuộc sống của bạn một chút,
+
+00:04:24.260 --> 00:04:28.349
+as it only requires you to report on a single metric.
+vì nó chỉ yêu cầu bạn báo cáo về một số liệu duy nhất.
+

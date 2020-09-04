@@ -1,0 +1,403 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.455
+In the previous lesson,
+Trong bài học trước,
+
+00:00:01.455 --> 00:00:06.180
+we drilled down into performance statistics like specificity and sensitivity.
+chúng tôi đã đi sâu vào thống kê hiệu suất như độ cụ thể và độ nhạy.
+
+00:00:06.180 --> 00:00:10.510
+Here's where they become super important for translation into the real world.
+Đây là nơi chúng trở nên cực kỳ quan trọng đối với việc dịch sang thế giới thực.
+
+00:00:10.510 --> 00:00:15.060
+The way our algorithm performs directly ties to its intended use.
+Cách thuật toán của chúng tôi thực hiện liên quan trực tiếp đến mục đích sử dụng của nó.
+
+00:00:15.060 --> 00:00:21.045
+Imagine I had this clinical dataset with five positive cases for cancer,
+Hãy tưởng tượng tôi có bộ dữ liệu lâm sàng này với năm trường hợp dương tính với ung thư,
+
+00:00:21.045 --> 00:00:24.375
+and 95 negative cases for cancer.
+và 95 trường hợp âm tính với ung thư.
+
+00:00:24.375 --> 00:00:29.295
+Our researcher comes along and tells me that he has an algorithm that looks like this,
+Nhà nghiên cứu của chúng tôi đi cùng và nói với tôi rằng anh ta có một thuật toán trông giống như thế này,
+
+00:00:29.295 --> 00:00:33.895
+that can distinguish between cancer and no cancer with 95 percent accuracy.
+có thể phân biệt giữa ung thư và không ung thư với độ chính xác 95%.
+
+00:00:33.895 --> 00:00:35.735
+Sounds pretty good, right?
+Nghe khá hay, phải không?
+
+00:00:35.735 --> 00:00:37.360
+Well, not really.
+Chà, không hẳn.
+
+00:00:37.360 --> 00:00:40.350
+Because cancer is so rare in my clinical data,
+Bởi vì bệnh ung thư rất hiếm trong dữ liệu lâm sàng của tôi,
+
+00:00:40.350 --> 00:00:42.450
+because my classes are imbalanced.
+bởi vì các lớp học của tôi không cân đối.
+
+00:00:42.450 --> 00:00:48.200
+In fact, this algorithm is predicting that all 100 cases are negative,
+Trên thực tế, thuật toán này dự đoán rằng tất cả 100 trường hợp đều âm tính,
+
+00:00:48.200 --> 00:00:50.960
+to achieve that 95 percent accuracy number.
+để đạt được con số chính xác 95 phần trăm đó.
+
+00:00:50.960 --> 00:00:55.505
+Because in truth, it correctly predicted 95 percent of the image labels.
+Bởi vì trên thực tế, nó đã dự đoán chính xác 95% các nhãn hình ảnh.
+
+00:00:55.505 --> 00:00:56.825
+But to be honest,
+Nhưng phải trung thực,
+
+00:00:56.825 --> 00:00:58.835
+this algorithm is useless.
+thuật toán này là vô ích.
+
+00:00:58.835 --> 00:01:03.905
+We touched on this idea of assessing negative cases separately in Lesson 1.
+Chúng tôi đã đề cập đến ý tưởng đánh giá các trường hợp tiêu cực này riêng biệt trong Bài học 1.
+
+00:01:03.905 --> 00:01:07.040
+Recall then that we learned about specificity.
+Nhớ lại sau đó chúng ta đã học về tính đặc hiệu.
+
+00:01:07.040 --> 00:01:08.990
+This measure looks at the number of
+Thước đo này xem xét số lượng
+
+00:01:08.990 --> 00:01:12.225
+negative cases accurately identified by the algorithm,
+các trường hợp phủ định được thuật toán xác định chính xác,
+
+00:01:12.225 --> 00:01:16.010
+and divides it by all of the negative cases in the dataset,
+và chia nó cho tất cả các trường hợp phủ định trong tập dữ liệu,
+
+00:01:16.010 --> 00:01:21.170
+giving us the proportion of accurately identified negative cases in the dataset.
+cho chúng tôi tỷ lệ các trường hợp tiêu cực được xác định chính xác trong tập dữ liệu.
+
+00:01:21.170 --> 00:01:26.900
+This holds value, but it's not the measure that we most commonly use in clinical tests.
+Điều này có giá trị, nhưng nó không phải là thước đo mà chúng tôi thường sử dụng nhất trong các thử nghiệm lâm sàng.
+
+00:01:26.900 --> 00:01:29.705
+Because normal cases, in other words,
+Bởi vì các trường hợp bình thường, nói cách khác,
+
+00:01:29.705 --> 00:01:34.070
+negative cases, take the majority of all of the cases we see in the real world.
+các trường hợp tiêu cực, chiếm phần lớn tất cả các trường hợp chúng ta thấy trong thế giới thực.
+
+00:01:34.070 --> 00:01:38.570
+So we always have an imbalanced dataset with more negative cases than positive,
+Vì vậy, chúng tôi luôn có một tập dữ liệu không cân bằng với nhiều trường hợp tiêu cực hơn là tích cực,
+
+00:01:38.570 --> 00:01:40.750
+just like in the example we just saw.
+giống như trong ví dụ chúng ta vừa thấy.
+
+00:01:40.750 --> 00:01:44.570
+Just like accuracy, specificity would be really high,
+Cũng giống như độ chính xác, tính cụ thể sẽ thực sự cao,
+
+00:01:44.570 --> 00:01:47.840
+even if the algorithm labels all cases as negative,
+ngay cả khi thuật toán gắn nhãn tất cả các trường hợp là phủ định,
+
+00:01:47.840 --> 00:01:51.955
+since it measures the proportion of accurately identified negative cases.
+vì nó đo lường tỷ lệ các trường hợp tiêu cực được xác định chính xác.
+
+00:01:51.955 --> 00:01:53.960
+It's not that helpful.
+Nó không hữu ích.
+
+00:01:53.960 --> 00:01:56.690
+Another issue with specificity is that it does
+Một vấn đề khác với tính cụ thể là nó
+
+00:01:56.690 --> 00:01:59.435
+not take true positives into account at all,
+không tính đến những mặt tích cực thực sự,
+
+00:01:59.435 --> 00:02:03.685
+which is what we care about when we are trying to identify the disease.
+đó là những gì chúng tôi quan tâm khi chúng tôi đang cố gắng xác định bệnh.
+
+00:02:03.685 --> 00:02:07.120
+We also learned a lot about a measure called sensitivity.
+Chúng tôi cũng đã học được rất nhiều về một biện pháp gọi là độ nhạy.
+
+00:02:07.120 --> 00:02:10.805
+This is more frequently used as a clinical performance metric.
+Điều này thường được sử dụng làm thước đo hiệu suất lâm sàng hơn.
+
+00:02:10.805 --> 00:02:12.170
+Recall from Lesson 1,
+Nhớ lại bài 1,
+
+00:02:12.170 --> 00:02:16.970
+that it is used to calculate the number of positive cases identified by the algorithm,
+nó được sử dụng để tính số trường hợp dương tính được xác định bởi thuật toán,
+
+00:02:16.970 --> 00:02:20.105
+divided by all of the positive cases in the dataset.
+chia cho tất cả các trường hợp tích cực trong tập dữ liệu.
+
+00:02:20.105 --> 00:02:24.970
+This gives us the proportion of accurately identified positive cases in the dataset,
+Điều này cho chúng tôi biết tỷ lệ các trường hợp dương tính được xác định chính xác trong tập dữ liệu,
+
+00:02:24.970 --> 00:02:26.785
+and as we mentioned in Lesson 1,
+và như chúng tôi đã đề cập trong Bài 1,
+
+00:02:26.785 --> 00:02:31.285
+this measure has two other names: the true positive rate and recall.
+biện pháp này có hai tên khác: tỷ lệ dương tính thực sự và thu hồi.
+
+00:02:31.285 --> 00:02:33.855
+Recall is really important, clinically.
+Nhắc lại là thực sự quan trọng, trên lâm sàng.
+
+00:02:33.855 --> 00:02:35.480
+Because in medicine, usually,
+Bởi vì trong y học, thông thường,
+
+00:02:35.480 --> 00:02:38.680
+we care much more about finding disease cases,
+chúng tôi quan tâm nhiều hơn đến việc tìm kiếm các ca bệnh,
+
+00:02:38.680 --> 00:02:40.830
+in other words, positive cases,
+nói cách khác, các trường hợp tích cực,
+
+00:02:40.830 --> 00:02:43.100
+than we care about finding normal cases,
+hơn chúng tôi quan tâm đến việc tìm kiếm các trường hợp bình thường
+
+00:02:43.100 --> 00:02:44.960
+in other words, negative cases.
+nói cách khác là các trường hợp tiêu cực.
+
+00:02:44.960 --> 00:02:48.910
+This metric tells us how often we correctly find a positive case.
+Chỉ số này cho chúng ta biết tần suất chúng ta tìm đúng một trường hợp tích cực.
+
+00:02:48.910 --> 00:02:53.720
+Notice that this metric takes nothing into account about false positives.
+Lưu ý rằng số liệu này không tính đến các trường hợp dương tính giả.
+
+00:02:53.720 --> 00:02:56.495
+So if the algorithm says the case is positive,
+Vì vậy, nếu thuật toán cho biết trường hợp là tích cực,
+
+00:02:56.495 --> 00:02:58.820
+but it's actually negative, we wouldn't know.
+nhưng nó thực sự tiêu cực, chúng tôi sẽ không biết.
+
+00:02:58.820 --> 00:03:03.100
+If our algorithm predicted positive for every image in the dataset,
+Nếu thuật toán của chúng tôi dự đoán tích cực cho mọi hình ảnh trong tập dữ liệu,
+
+00:03:03.100 --> 00:03:05.180
+we'd find all the disease cases,
+chúng tôi sẽ tìm thấy tất cả các trường hợp bệnh,
+
+00:03:05.180 --> 00:03:08.545
+but that would still wouldn't be very useful, would it?
+nhưng điều đó vẫn sẽ không hữu ích lắm phải không?
+
+00:03:08.545 --> 00:03:12.005
+So specificity ignored true positives,
+Vì vậy, tính cụ thể đã bỏ qua những mặt tích cực thực sự,
+
+00:03:12.005 --> 00:03:13.910
+and sensitivity, or recall,
+và độ nhạy, hoặc nhớ lại,
+
+00:03:13.910 --> 00:03:16.355
+didn't take into account false positives.
+đã không tính đến dương tính giả.
+
+00:03:16.355 --> 00:03:19.085
+We stated why we would care about both of those metrics,
+Chúng tôi đã nêu lý do tại sao chúng tôi quan tâm đến cả hai chỉ số đó,
+
+00:03:19.085 --> 00:03:22.690
+which brings us to a third metric, precision.
+đưa chúng ta đến chỉ số thứ ba, độ chính xác.
+
+00:03:22.690 --> 00:03:28.490
+Precision looks at the number of positive cases accurately identified by the algorithm,
+Precision xem xét số lượng các trường hợp khẳng định được xác định chính xác bởi thuật toán,
+
+00:03:28.490 --> 00:03:33.305
+divided by all of the cases identified as positive by the algorithm,
+chia cho tất cả các trường hợp được thuật toán xác định là tích cực,
+
+00:03:33.305 --> 00:03:36.745
+no matter whether they were identified right or wrong.
+không có vấn đề cho dù họ đã được xác định đúng hay sai.
+
+00:03:36.745 --> 00:03:41.280
+You're probably noticing a pattern with all of these statistics having multiple names,
+Bạn có thể nhận thấy một mô hình với tất cả các thống kê này có nhiều tên,
+
+00:03:41.280 --> 00:03:43.580
+and it holds true for precision too.
+và nó cũng đúng với độ chính xác.
+
+00:03:43.580 --> 00:03:47.980
+This metric is commonly referred to as the positive predictive value.
+Số liệu này thường được gọi là giá trị dự đoán dương.
+
+00:03:47.980 --> 00:03:52.520
+We're going to focus on precision and recall for assessing performance clinically.
+Chúng tôi sẽ tập trung vào độ chính xác và thu hồi để đánh giá hiệu suất trên lâm sàng.
+
+00:03:52.520 --> 00:03:55.730
+So let's talk about what these two things are measuring,
+Vì vậy, hãy nói về những gì hai thứ này đang đo lường,
+
+00:03:55.730 --> 00:03:57.400
+and when and why they're useful.
+và khi nào và tại sao chúng hữu ích.
+
+00:03:57.400 --> 00:04:00.545
+As translational scientists, it's our job to think
+Là các nhà khoa học về dịch thuật, công việc của chúng tôi là nghĩ
+
+00:04:00.545 --> 00:04:04.100
+outside of the box about just classifying images as yes or no,
+bên ngoài hộp về việc chỉ phân loại hình ảnh là có hoặc không,
+
+00:04:04.100 --> 00:04:07.850
+and to truly understand the pain points of radiologists and patients,
+và để thực sự hiểu những điểm đau của bác sĩ X quang và bệnh nhân,
+
+00:04:07.850 --> 00:04:09.910
+who will be impacted by our tool.
+ai sẽ bị tác động bởi công cụ của chúng tôi.
+
+00:04:09.910 --> 00:04:13.035
+AI isn't just used for diagnosing diseases,
+AI không chỉ được sử dụng để chẩn đoán bệnh,
+
+00:04:13.035 --> 00:04:16.480
+sometimes it's best used for clinical workflow prioritization.
+đôi khi nó được sử dụng tốt nhất để ưu tiên quy trình làm việc lâm sàng.
+
+00:04:16.480 --> 00:04:19.940
+So precision is a great metric to optimize
+Vì vậy, độ chính xác là một số liệu tuyệt vời để tối ưu hóa
+
+00:04:19.940 --> 00:04:23.690
+for when we care most about confidence in positive results.
+vì khi chúng ta quan tâm nhất đến niềm tin vào kết quả tích cực.
+
+00:04:23.690 --> 00:04:26.780
+A high precision test gives you more confidence that
+Kiểm tra độ chính xác cao giúp bạn tự tin hơn rằng
+
+00:04:26.780 --> 00:04:30.100
+a positive test result is actually positive.
+một kết quả xét nghiệm dương tính thực sự là dương tính.
+
+00:04:30.100 --> 00:04:34.090
+This metric, however, does not take false negatives into account.
+Tuy nhiên, chỉ số này không tính đến các phủ định sai.
+
+00:04:34.090 --> 00:04:38.480
+So a high precision test could still miss a lot of positive cases.
+Vì vậy, một bài kiểm tra độ chính xác cao vẫn có thể bỏ sót rất nhiều trường hợp dương tính.
+
+00:04:38.480 --> 00:04:41.000
+Because of this, high precision tests don't
+Do đó, các bài kiểm tra độ chính xác cao không
+
+00:04:41.000 --> 00:04:44.060
+necessarily make for great standalone diagnostics,
+nhất thiết phải tạo ra chẩn đoán độc lập tuyệt vời,
+
+00:04:44.060 --> 00:04:48.880
+but they're beneficial when you want to confirm a suspected diagnosis.
+nhưng chúng có lợi khi bạn muốn xác nhận chẩn đoán nghi ngờ.
+
+00:04:48.880 --> 00:04:51.005
+Recall, on the other hand,
+Nhớ lại, mặt khác,
+
+00:04:51.005 --> 00:04:54.005
+allows us to confidently rule out disease.
+cho phép chúng tôi tự tin loại trừ bệnh tật.
+
+00:04:54.005 --> 00:04:57.425
+When a test with high recall returns a negative result,
+Khi một thử nghiệm có mức thu hồi cao trả về kết quả âm tính,
+
+00:04:57.425 --> 00:05:01.205
+you can be pretty confident that the result is truly negative.
+bạn có thể khá tự tin rằng kết quả thực sự là tiêu cực.
+
+00:05:01.205 --> 00:05:05.120
+Recall does not take false positives into account though,
+Mặc dù vậy, việc thu hồi không tính đến kết quả dương tính giả,
+
+00:05:05.120 --> 00:05:07.370
+so you may have a really high recall,
+vì vậy bạn có thể có khả năng thu hồi rất cao,
+
+00:05:07.370 --> 00:05:11.260
+but you're still labeling a lot of negative cases as positive.
+nhưng bạn vẫn gắn nhãn rất nhiều trường hợp tiêu cực là tích cực.
+
+00:05:11.260 --> 00:05:14.030
+Because of this, clinical applications for
+
+00:05:14.030 --> 00:05:17.690
+high recall tests are good for things like screening studies,
+các bài kiểm tra nhớ lại cao rất tốt cho những thứ như nghiên cứu sàng lọc,
+
+00:05:17.690 --> 00:05:21.320
+where you really want to make sure if someone doesn't have a disease,
+nơi bạn thực sự muốn chắc chắn rằng ai đó không mắc bệnh,
+
+00:05:21.320 --> 00:05:24.470
+or worklist prioritization where you want to make sure that
+hoặc ưu tiên danh sách công việc mà bạn muốn đảm bảo rằng
+
+00:05:24.470 --> 00:05:28.045
+people without the disease are being deprioritized.
+những người không mắc bệnh đang bị tước đoạt quyền lợi.
+
+00:05:28.045 --> 00:05:33.110
+Optimizing one of these metrics usually comes at the expense of sacrificing the other.
+Việc tối ưu hóa một trong các số liệu này thường đi kèm với việc hy sinh số liệu kia.
+
+00:05:33.110 --> 00:05:35.660
+So let's learn more about that now,
+Vì vậy, chúng ta hãy tìm hiểu thêm về điều đó ngay bây giờ,
+
+00:05:35.660 --> 00:05:38.580
+and what it looks like in a real-world setting.
+và nó trông như thế nào trong bối cảnh thế giới thực.
+

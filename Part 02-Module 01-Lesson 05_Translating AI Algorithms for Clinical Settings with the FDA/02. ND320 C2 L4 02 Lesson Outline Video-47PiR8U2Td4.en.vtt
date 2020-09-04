@@ -1,0 +1,36 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.735
+In today's lesson, we're going to talk a lot about how we take
+Trong bài học hôm nay, chúng ta sẽ nói nhiều về cách chúng ta sử dụng
+
+00:00:03.735 --> 00:00:07.695
+our algorithm to the FDA to get their approval to bring it to market.
+thuật toán của chúng tôi với FDA để được họ chấp thuận đưa nó ra thị trường.
+
+00:00:07.695 --> 00:00:10.140
+We'll start with a high-level overview of
+Chúng tôi sẽ bắt đầu với tổng quan cấp cao về
+
+00:00:10.140 --> 00:00:15.315
+the FDA regulatory process and talk about something called intended use,
+quy trình quản lý của FDA và nói về thứ được gọi là mục đích sử dụng,
+
+00:00:15.315 --> 00:00:21.150
+followed by a discussion on how to identify and disclose algorithmic limitations.
+tiếp theo là thảo luận về cách xác định và tiết lộ các giới hạn của thuật toán.
+
+00:00:21.150 --> 00:00:22.800
+Then, we'll talk about
+Sau đó, chúng ta sẽ nói về
+
+00:00:22.800 --> 00:00:27.315
+how performance statistics that you will want to use when labeling your device.
+cách thống kê hiệu suất mà bạn sẽ muốn sử dụng khi gắn nhãn thiết bị của mình.
+
+00:00:27.315 --> 00:00:32.650
+Finally, we'll talk about how to build an FDA validation plan.
+Cuối cùng, chúng ta sẽ nói về cách xây dựng kế hoạch xác nhận FDA.
+

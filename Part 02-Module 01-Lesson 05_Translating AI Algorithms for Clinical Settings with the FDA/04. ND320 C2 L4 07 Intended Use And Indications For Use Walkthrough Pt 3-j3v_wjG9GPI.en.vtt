@@ -1,0 +1,191 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.175
+Unlike your intended use statement,
+
+00:00:02.175 --> 00:00:05.910
+which is directly tied to your algorithm's risk category in the eyes of
+liên quan trực tiếp đến danh mục rủi ro thuật toán của bạn trước mắt
+
+00:00:05.910 --> 00:00:10.650
+the FDA and states exactly what you would use your algorithm for,
+FDA và tuyên bố chính xác bạn sẽ sử dụng thuật toán của mình để làm gì,
+
+00:00:10.650 --> 00:00:13.425
+the indications for use describe
+các chỉ dẫn sử dụng mô tả
+
+00:00:13.425 --> 00:00:18.360
+precise situations and reasons where and why you would use this device.
+các tình huống và lý do chính xác ở đâu và tại sao bạn sẽ sử dụng thiết bị này.
+
+00:00:18.360 --> 00:00:21.360
+If we go back to our scalpel example,
+Nếu chúng ta quay lại ví dụ về con dao mổ của mình,
+
+00:00:21.360 --> 00:00:26.220
+where we stated an extremely general intended use that got us to class 1,
+nơi chúng tôi đã nêu một mục đích sử dụng cực kỳ chung chung đưa chúng tôi đến lớp 1,
+
+00:00:26.220 --> 00:00:31.010
+we could use the indications for use statement of our FDA submission to
+chúng tôi có thể sử dụng các chỉ dẫn sử dụng tuyên bố về việc đệ trình FDA của chúng tôi
+
+00:00:31.010 --> 00:00:35.645
+encourage physicians to use it for other things like eye surgery,
+khuyến khích các bác sĩ sử dụng nó cho những việc khác như phẫu thuật mắt,
+
+00:00:35.645 --> 00:00:38.720
+which is what we had initially wanted to label it as.
+đó là những gì ban đầu chúng tôi muốn gắn nhãn nó.
+
+00:00:38.720 --> 00:00:42.200
+We could say something like indicated for use as
+
+00:00:42.200 --> 00:00:46.745
+a cutting device during surgical pathology and minor medical procedures.
+một thiết bị cắt trong bệnh lý phẫu thuật và thủ tục y tế nhỏ.
+
+00:00:46.745 --> 00:00:50.315
+If we revisit our mammography algorithm example again,
+Nếu chúng tôi xem lại ví dụ thuật toán chụp nhũ ảnh của mình một lần nữa,
+
+00:00:50.315 --> 00:00:53.420
+where our intended use was to assist the radiologist,
+nơi mục đích sử dụng của chúng tôi là hỗ trợ bác sĩ X quang,
+
+00:00:53.420 --> 00:00:56.915
+some indications for use that we might want to say are;
+một số chỉ dẫn sử dụng mà chúng tôi có thể muốn nói là;
+
+00:00:56.915 --> 00:01:00.725
+indicated for use in screening mammography studies.
+được chỉ định để sử dụng trong các nghiên cứu chụp nhũ ảnh sàng lọc.
+
+00:01:00.725 --> 00:01:05.135
+We might also want to add in what age range or algorithm is indicated for.
+Chúng tôi cũng có thể muốn thêm độ tuổi hoặc thuật toán được chỉ định.
+
+00:01:05.135 --> 00:01:07.670
+Let's say we trained our algorithm on a set of
+Giả sử chúng tôi đã đào tạo thuật toán của mình trên một tập hợp
+
+00:01:07.670 --> 00:01:11.230
+mammograms for women between the ages of 20 and 60.
+chụp nhũ ảnh cho phụ nữ từ 20 đến 60 tuổi.
+
+00:01:11.230 --> 00:01:13.925
+Human anatomy does change over time,
+Giải phẫu người thay đổi theo thời gian,
+
+00:01:13.925 --> 00:01:16.940
+so we don't actually know how well it will perform on,
+vì vậy chúng tôi thực sự không biết nó sẽ hoạt động tốt như thế nào,
+
+00:01:16.940 --> 00:01:22.675
+say, an 80-year-old, and would want to state its intended use for the 20-60 age range.
+ví dụ, một cụ già 80 tuổi và muốn nêu mục đích sử dụng của nó cho độ tuổi 20-60.
+
+00:01:22.675 --> 00:01:24.080
+It may seem obvious,
+Nó có vẻ hiển nhiên,
+
+00:01:24.080 --> 00:01:26.690
+but we would definitely want to state that this was
+nhưng chúng tôi chắc chắn muốn nói rằng đây là
+
+00:01:26.690 --> 00:01:29.875
+intended for mammography in the female population.
+dành cho chụp nhũ ảnh ở phụ nữ.
+
+00:01:29.875 --> 00:01:34.580
+Finally, is there a component of the patient's history we think is important?
+
+00:01:34.580 --> 00:01:36.665
+Depending on the data we trained on,
+Tùy thuộc vào dữ liệu mà chúng tôi đã đào tạo,
+
+00:01:36.665 --> 00:01:40.775
+we may want to exclude women who have had breast cancer in the past.
+
+00:01:40.775 --> 00:01:45.140
+In that case, we would state with no prior history of breast cancer.
+Trong trường hợp đó, chúng tôi sẽ tuyên bố không có tiền sử ung thư vú.
+
+00:01:45.140 --> 00:01:48.485
+If it were to be run on someone who fell in this category,
+
+00:01:48.485 --> 00:01:50.330
+it wouldn't be the end of the world,
+nó sẽ không phải là ngày tận thế,
+
+00:01:50.330 --> 00:01:52.925
+but we're stating explicitly to the end-user,
+
+00:01:52.925 --> 00:01:58.765
+here the radiologist, that it's not really intended to be reliable in this population.
+đây là bác sĩ X quang, rằng nó không thực sự được dự định là đáng tin cậy trong dân số này.
+
+00:01:58.765 --> 00:02:00.555
+Seem confusing?
+
+00:02:00.555 --> 00:02:02.070
+It totally is.
+
+00:02:02.070 --> 00:02:03.950
+When working in the industry, though,
+Tuy nhiên, khi làm việc trong ngành,
+
+00:02:03.950 --> 00:02:05.915
+depending on the size of your company,
+tùy thuộc vào quy mô công ty của bạn,
+
+00:02:05.915 --> 00:02:10.639
+you as the algorithm developer may have to be very involved in this process.
+
+00:02:10.639 --> 00:02:12.410
+I myself once worked at
+Bản thân tôi đã từng làm việc tại
+
+00:02:12.410 --> 00:02:18.215
+a five-person medical imaging AI startup where I was deeply involved in this process.
+một công ty khởi nghiệp về AI hình ảnh y tế gồm 5 người, nơi tôi đã tham gia sâu vào quá trình này.
+
+00:02:18.215 --> 00:02:19.700
+I then transitioned to
+Sau đó tôi chuyển sang
+
+00:02:19.700 --> 00:02:24.020
+a very large technology company with a division in medical imaging,
+một công ty công nghệ rất lớn với bộ phận hình ảnh y tế,
+
+00:02:24.020 --> 00:02:25.460
+where I had a whole team of
+nơi tôi có cả một đội gồm
+
+00:02:25.460 --> 00:02:28.805
+regulatory people helping with the algorithm I was working on.
+những người quản lý giúp đỡ với thuật toán mà tôi đang nghiên cứu.
+
+00:02:28.805 --> 00:02:33.545
+Regardless, the FDA will act as your partner and help you through this process.
+Bất kể điều gì, FDA sẽ đóng vai trò là đối tác của bạn và giúp bạn vượt qua quá trình này.
+
+00:02:33.545 --> 00:02:38.640
+In addition, there are tons of resources out there to help you better understand this.
+Ngoài ra, có rất nhiều tài nguyên sẵn có để giúp bạn hiểu rõ hơn về điều này.
+
+00:02:38.640 --> 00:02:43.460
+This lesson is intended to introduce you to the complexities of the regulatory system,
+Bài học này nhằm giới thiệu cho bạn sự phức tạp của hệ thống quy định,
+
+00:02:43.460 --> 00:02:45.920
+so they can be in the back of your mind as you think
+vì vậy chúng có thể ở trong tâm trí bạn như bạn nghĩ
+
+00:02:45.920 --> 00:02:49.470
+about how your algorithm might be used clinically.
+về cách thuật toán của bạn có thể được sử dụng trong lâm sàng.
+

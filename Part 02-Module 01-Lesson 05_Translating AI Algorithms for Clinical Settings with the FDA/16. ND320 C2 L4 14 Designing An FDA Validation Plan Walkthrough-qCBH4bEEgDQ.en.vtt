@@ -1,0 +1,425 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.350
+In our last lesson,
+
+00:00:01.350 --> 00:00:06.165
+we discussed gold standards against which to evaluate the performance of our algorithms.
+
+00:00:06.165 --> 00:00:08.265
+This is very important for the FDA
+
+00:00:08.265 --> 00:00:10.950
+because typically you want to be able to say that your tool
+bởi vì thông thường bạn muốn có thể nói rằng công cụ của bạn
+
+00:00:10.950 --> 00:00:12.360
+really has been compared to
+thực sự đã được so sánh với
+
+00:00:12.360 --> 00:00:16.365
+the best available tools so that you can say it's adding value.
+các công cụ hiện có tốt nhất để bạn có thể nói rằng nó đang gia tăng giá trị.
+
+00:00:16.365 --> 00:00:18.910
+If it's not better than the gold standard,
+Nếu nó không tốt hơn tiêu chuẩn vàng,
+
+00:00:18.910 --> 00:00:21.660
+big improvements to other aspects can be defended as
+những cải tiến lớn đối với các khía cạnh khác có thể được bảo vệ như
+
+00:00:21.660 --> 00:00:24.720
+making the algorithm better than the existing.
+làm cho thuật toán tốt hơn so với hiện tại.
+
+00:00:24.720 --> 00:00:26.760
+Recall from Lesson 3,
+
+00:00:26.760 --> 00:00:28.530
+we talked a lot about training
+chúng tôi đã nói rất nhiều về đào tạo
+
+00:00:28.530 --> 00:00:31.710
+your algorithm and then validating it with a health outset.
+thuật toán của bạn và sau đó xác thực nó một cách hợp lý.
+
+00:00:31.710 --> 00:00:35.490
+It's common to create algorithms from data that exists publicly,
+Việc tạo thuật toán từ dữ liệu tồn tại công khai là điều phổ biến,
+
+00:00:35.490 --> 00:00:38.470
+which is what you'll actually be doing in your final project.
+đó là những gì bạn sẽ thực sự làm trong dự án cuối cùng của mình.
+
+00:00:38.470 --> 00:00:41.680
+For the final step in submitting to the FDA though,
+Đối với bước cuối cùng trong việc đệ trình lên FDA,
+
+00:00:41.680 --> 00:00:44.750
+you'll need to perform a standalone clinical assessment of
+bạn sẽ cần thực hiện một đánh giá lâm sàng độc lập về
+
+00:00:44.750 --> 00:00:48.740
+your tool that uses an FDA validation set from a real-world
+công cụ của bạn sử dụng bộ xác thực FDA từ thế giới thực
+
+00:00:48.740 --> 00:00:52.280
+setting to prove to the FDA that your algorithm works on
+thiết lập để chứng minh với FDA rằng thuật toán của bạn hoạt động
+
+00:00:52.280 --> 00:00:56.740
+data that looks more similar to what you'd see coming directly from a hospital.
+
+00:00:56.740 --> 00:01:00.440
+You can think of this dataset as production data that
+Bạn có thể coi tập dữ liệu này là dữ liệu sản xuất
+
+00:01:00.440 --> 00:01:04.490
+your algorithm is trying to perform it based on just once,
+thuật toán của bạn đang cố gắng thực hiện nó chỉ dựa trên một lần,
+
+00:01:04.490 --> 00:01:06.460
+now that it's been fully produced.
+bây giờ nó đã được sản xuất đầy đủ.
+
+00:01:06.460 --> 00:01:10.280
+You will run this production through your algorithm only one time after you
+Bạn sẽ chạy quá trình sản xuất này thông qua thuật toán của mình chỉ một lần sau khi bạn
+
+00:01:10.280 --> 00:01:14.860
+fully build the software around it and feel that it has its best performance.
+
+00:01:14.860 --> 00:01:18.350
+These validation plans also sometimes involve
+Các kế hoạch xác nhận này đôi khi cũng liên quan đến
+
+00:01:18.350 --> 00:01:21.320
+deploying your algorithm in a real clinical setting and
+triển khai thuật toán của bạn trong môi trường lâm sàng thực tế và
+
+00:01:21.320 --> 00:01:24.410
+assessing its performance in real time while it runs in
+đánh giá hiệu suất của nó trong thời gian thực khi nó chạy trong
+
+00:01:24.410 --> 00:01:27.895
+the background of clinicians performing their regular workflows.
+nền tảng của các bác sĩ thực hiện quy trình làm việc thường xuyên của họ.
+
+00:01:27.895 --> 00:01:32.435
+This may be especially important if you're claiming that your algorithm saves time.
+Điều này có thể đặc biệt quan trọng nếu bạn tuyên bố rằng thuật toán của bạn tiết kiệm thời gian.
+
+00:01:32.435 --> 00:01:36.830
+For instance, if you are demonstrating that your algorithm can read the same number of
+Ví dụ: nếu bạn đang chứng minh rằng thuật toán của bạn có thể đọc cùng một số
+
+00:01:36.830 --> 00:01:41.645
+scans as a radiologist in half the time with a similar level of accuracy,
+quét như một bác sĩ X quang trong một nửa thời gian với mức độ chính xác tương tự,
+
+00:01:41.645 --> 00:01:45.260
+you'd probably want to show that in a real clinical workflow.
+bạn có thể muốn thể hiện điều đó trong một quy trình làm việc lâm sàng thực tế.
+
+00:01:45.260 --> 00:01:48.980
+You'll need to identify a clinical partner who you can work with to
+Bạn sẽ cần xác định một đối tác lâm sàng mà bạn có thể làm việc cùng
+
+00:01:48.980 --> 00:01:53.035
+gather this FDA validation set for your validation plan.
+thu thập bộ xác nhận FDA này cho kế hoạch xác nhận của bạn.
+
+00:01:53.035 --> 00:01:57.050
+This partner will collect data from a real-world clinical setting that you
+Đối tác này sẽ thu thập dữ liệu từ bối cảnh lâm sàng trong thế giới thực mà bạn
+
+00:01:57.050 --> 00:02:02.000
+describe so that you can see how your algorithm performs under these specifications.
+mô tả để bạn có thể thấy thuật toán của mình hoạt động như thế nào theo các thông số kỹ thuật này.
+
+00:02:02.000 --> 00:02:05.920
+First, you'll want to describe who you want the data from.
+Trước tiên, bạn sẽ muốn mô tả bạn muốn dữ liệu từ ai.
+
+00:02:05.920 --> 00:02:10.190
+For example, if your algorithm is only intended and indicated for
+Ví dụ: nếu thuật toán của bạn chỉ nhằm mục đích và chỉ định cho
+
+00:02:10.190 --> 00:02:14.750
+women between the ages of 20-80 with no prior history of breast cancer,
+phụ nữ trong độ tuổi từ 20-80 không có tiền sử ung thư vú,
+
+00:02:14.750 --> 00:02:19.730
+then you would ask your clinical partner for data from patients who fit this demographic.
+thì bạn sẽ yêu cầu đối tác lâm sàng của mình cung cấp dữ liệu từ những bệnh nhân phù hợp với nhân khẩu học này.
+
+00:02:19.730 --> 00:02:23.590
+You'll also want to specify what types of images you're looking for.
+
+00:02:23.590 --> 00:02:28.025
+If your algorithm is only intended to be used on screening mammography studies,
+Nếu thuật toán của bạn chỉ nhằm mục đích sử dụng để sàng lọc các nghiên cứu chụp nhũ ảnh,
+
+00:02:28.025 --> 00:02:32.180
+which have a different imaging protocol than other types of mammography studies,
+có giao thức hình ảnh khác với các loại nghiên cứu chụp nhũ ảnh khác,
+
+00:02:32.180 --> 00:02:35.630
+then specify this for your data collection as well.
+sau đó chỉ định điều này cho việc thu thập dữ liệu của bạn.
+
+00:02:35.630 --> 00:02:38.720
+Next, you will need to choose a way that you create
+Tiếp theo, bạn sẽ cần chọn một cách mà bạn tạo
+
+00:02:38.720 --> 00:02:43.115
+the ground truth of all of the clinical data that your partner provided you with.
+sự thật cơ bản của tất cả dữ liệu lâm sàng mà đối tác của bạn đã cung cấp cho bạn.
+
+00:02:43.115 --> 00:02:47.650
+The choice of your ground truth ties back once again to your intended use statement.
+Sự lựa chọn về sự thật cơ bản của bạn một lần nữa liên quan đến tuyên bố sử dụng dự định của bạn.
+
+00:02:47.650 --> 00:02:52.040
+Let's look at an algorithm that detects masses on mammography screens.
+Hãy xem xét một thuật toán phát hiện khối lượng trên màn hình chụp nhũ ảnh.
+
+00:02:52.040 --> 00:02:57.260
+If your claim is that your device is intended to determine if a mass is malignant,
+Nếu tuyên bố của bạn là thiết bị của bạn nhằm xác định xem một khối có phải là ác tính hay không,
+
+00:02:57.260 --> 00:03:00.625
+you will need a biopsy to create the ground truth.
+bạn sẽ cần sinh thiết để tạo ra sự thật cơ bản.
+
+00:03:00.625 --> 00:03:03.410
+But if you are making something that's
+Nhưng nếu bạn đang làm một cái gì đó
+
+00:03:03.410 --> 00:03:07.580
+card xed to help identify suspicious findings on imaging,
+thẻ xed để giúp xác định các phát hiện đáng ngờ về hình ảnh,
+
+00:03:07.580 --> 00:03:12.040
+the gold standard for that clinically would just be a radiologist read.
+tiêu chuẩn vàng cho điều đó về mặt lâm sàng chỉ là một bác sĩ X quang đọc.
+
+00:03:12.040 --> 00:03:14.765
+Since you're not creating something that's replacing
+Vì bạn không tạo ra thứ gì đó thay thế
+
+00:03:14.765 --> 00:03:18.130
+the radiologist or intended to be better than the radiologist,
+bác sĩ X quang hoặc dự định giỏi hơn bác sĩ X quang,
+
+00:03:18.130 --> 00:03:20.265
+this is a fine ground truth.
+đây là một sự thật nền tảng tốt.
+
+00:03:20.265 --> 00:03:24.980
+So you can make a case to the FDA that a perfectly reasonable ground truth
+Vì vậy, bạn có thể trình bày với FDA rằng một sự thật hoàn toàn hợp lý
+
+00:03:24.980 --> 00:03:27.080
+is a radiologist labels and that you're going to
+là nhãn hiệu bác sĩ X quang và bạn sẽ
+
+00:03:27.080 --> 00:03:29.815
+compare your algorithm performance to these.
+so sánh hiệu suất thuật toán của bạn với chúng.
+
+00:03:29.815 --> 00:03:31.835
+Even stronger ground truth,
+
+00:03:31.835 --> 00:03:33.545
+if you have the time and money for it,
+nếu bạn có thời gian và tiền bạc cho nó,
+
+00:03:33.545 --> 00:03:36.530
+would be to create that silver standard that we discussed
+sẽ tạo ra tiêu chuẩn bạc mà chúng ta đã thảo luận
+
+00:03:36.530 --> 00:03:40.315
+back in Lesson 3 using multiple radiologists.
+trở lại Bài 3 bằng cách sử dụng nhiều bác sĩ X quang.
+
+00:03:40.315 --> 00:03:42.345
+For your validation plan,
+Đối với kế hoạch xác thực của bạn,
+
+00:03:42.345 --> 00:03:45.380
+you want to tell the FDA what a good score is
+bạn muốn cho FDA biết điểm tốt là gì
+
+00:03:45.380 --> 00:03:48.785
+for your algorithm and have evidence to support your reasoning.
+cho thuật toán của bạn và có bằng chứng để hỗ trợ lý luận của bạn.
+
+00:03:48.785 --> 00:03:51.980
+As a result, we need a performance standard.
+Do đó, chúng tôi cần một tiêu chuẩn hiệu suất.
+
+00:03:51.980 --> 00:03:55.685
+This is a great opportunity to leverage the literature.
+Đây là một cơ hội tuyệt vời để thúc đẩy nền văn học.
+
+00:03:55.685 --> 00:04:01.175
+While you could conduct your own study to see how accurate a bunch of radiologists are,
+Mặc dù bạn có thể tiến hành nghiên cứu của riêng mình để xem mức độ chính xác của một nhóm bác sĩ X quang,
+
+00:04:01.175 --> 00:04:03.380
+you should first see if it's reported somewhere in
+trước tiên bạn nên xem nếu nó được báo cáo ở đâu đó trong
+
+00:04:03.380 --> 00:04:06.310
+the literature as this will be a lot easier.
+văn học vì điều này sẽ dễ dàng hơn rất nhiều.
+
+00:04:06.310 --> 00:04:09.560
+You will come across a bunch of studies that you can
+Bạn sẽ tìm thấy một loạt các nghiên cứu mà bạn có thể
+
+00:04:09.560 --> 00:04:12.715
+use to gather radiologist performance statistics.
+sử dụng để thu thập thống kê hiệu suất của bác sĩ X quang.
+
+00:04:12.715 --> 00:04:15.665
+Let's say that after reading through a bunch of papers,
+Giả sử rằng sau khi đọc qua một loạt bài báo,
+
+00:04:15.665 --> 00:04:19.100
+you find that there is a range of F1 scores and decide that
+bạn thấy rằng có một loạt các điểm F1 và quyết định rằng
+
+00:04:19.100 --> 00:04:23.875
+your algorithm should have at least an F1 score that is the average from these studies.
+thuật toán của bạn phải có ít nhất điểm F1 là điểm trung bình từ các nghiên cứu này.
+
+00:04:23.875 --> 00:04:28.465
+You can use this as evidence of good performance on a device for the FDA.
+
+00:04:28.465 --> 00:04:31.339
+Depending on the use case for your algorithm,
+Tùy thuộc vào trường hợp sử dụng cho thuật toán của bạn,
+
+00:04:31.339 --> 00:04:33.770
+part of your validation plan may need to
+một phần của kế hoạch xác thực của bạn có thể cần
+
+00:04:33.770 --> 00:04:37.190
+include assessing how fast your algorithm can read a study.
+bao gồm đánh giá thuật toán của bạn có thể đọc một nghiên cứu nhanh như thế nào.
+
+00:04:37.190 --> 00:04:39.395
+This becomes a little more complex,
+Điều này trở nên phức tạp hơn một chút,
+
+00:04:39.395 --> 00:04:42.260
+but I wanted to touch on it just for completeness.
+nhưng tôi muốn chạm vào nó chỉ để hoàn thiện.
+
+00:04:42.260 --> 00:04:45.425
+Let's say part of your algorithm's indications for use,
+Giả sử một phần các chỉ dẫn sử dụng thuật toán của bạn,
+
+00:04:45.425 --> 00:04:48.020
+say that it could be used in an emergency setting,
+nói rằng nó có thể được sử dụng trong trường hợp khẩn cấp,
+
+00:04:48.020 --> 00:04:52.865
+like the example we've been using about brain bleeds in workflow prioritization.
+như ví dụ mà chúng tôi đã sử dụng về chảy máu não trong ưu tiên quy trình làm việc.
+
+00:04:52.865 --> 00:04:56.825
+You'll want to demonstrate how fast your algorithm can read an image.
+Bạn sẽ muốn chứng minh thuật toán của bạn có thể đọc một hình ảnh nhanh như thế nào.
+
+00:04:56.825 --> 00:04:59.645
+Again, I don't want to dive too deep into this,
+Một lần nữa, tôi không muốn đi sâu vào vấn đề này,
+
+00:04:59.645 --> 00:05:02.720
+but you may need to show that your algorithm can do this in
+nhưng bạn có thể cần chứng minh rằng thuật toán của bạn có thể thực hiện điều này trong
+
+00:05:02.720 --> 00:05:06.785
+an actual clinical setting to prove not only that it can run fast,
+một thiết lập lâm sàng thực tế để chứng minh không chỉ rằng nó có thể chạy nhanh,
+
+00:05:06.785 --> 00:05:10.435
+but it can run fast on a hospital's actual infrastructure.
+nhưng nó có thể chạy nhanh trên cơ sở hạ tầng thực tế của bệnh viện.
+
+00:05:10.435 --> 00:05:15.350
+If your algorithm depends on such software to actually return a timely answer,
+Nếu thuật toán của bạn phụ thuộc vào phần mềm như vậy để thực sự trả lại câu trả lời kịp thời,
+
+00:05:15.350 --> 00:05:18.350
+then this would fall into your algorithmic limitations as
+thì điều này sẽ rơi vào giới hạn thuật toán của bạn như
+
+00:05:18.350 --> 00:05:21.965
+well as indications for use sections that we talked about earlier.
+cũng như các chỉ dẫn cho các phần sử dụng mà chúng ta đã nói trước đó.
+
+00:05:21.965 --> 00:05:26.195
+You also may need a third party to verify that your algorithm returned
+Bạn cũng có thể cần một bên thứ ba để xác minh rằng thuật toán của bạn đã trả về
+
+00:05:26.195 --> 00:05:30.875
+accurate results in the specified amount of time if this is part of your labeling.
+kết quả chính xác trong khoảng thời gian được chỉ định nếu đây là một phần của việc ghi nhãn của bạn.
+
+00:05:30.875 --> 00:05:33.560
+Let's recap and put everything together that we
+Hãy tóm tắt và kết hợp mọi thứ lại với nhau
+
+00:05:33.560 --> 00:05:36.575
+just learned about a validation plan for the FDA.
+vừa mới biết về một kế hoạch xác nhận cho FDA.
+
+00:05:36.575 --> 00:05:38.510
+First, you'll need to define
+Đầu tiên, bạn cần xác định
+
+00:05:38.510 --> 00:05:41.000
+an FDA validation dataset that you can
+một tập dữ liệu xác thực của FDA mà bạn có thể
+
+00:05:41.000 --> 00:05:44.255
+obtain from your clinical partner to test your algorithm.
+lấy từ đối tác lâm sàng của bạn để kiểm tra thuật toán của bạn.
+
+00:05:44.255 --> 00:05:47.090
+Next, you'll need to gather ground truth labels
+
+00:05:47.090 --> 00:05:50.780
+likely from a radiologist or a group of radiologists.
+có thể là từ một bác sĩ X quang hoặc một nhóm bác sĩ X quang.
+
+00:05:50.780 --> 00:05:53.840
+Next, you'll need to define a performance standard for
+Tiếp theo, bạn sẽ cần xác định tiêu chuẩn hiệu suất cho
+
+00:05:53.840 --> 00:05:58.325
+your algorithm that you can use backing up with literature references.
+thuật toán của bạn mà bạn có thể sử dụng sao lưu với các tài liệu tham khảo.
+
+00:05:58.325 --> 00:06:01.670
+Finally, run your algorithm on the data to prove that it meets
+Cuối cùng, chạy thuật toán của bạn trên dữ liệu để chứng minh rằng nó đáp ứng
+
+00:06:01.670 --> 00:06:05.470
+the performance standard and you'll be all set to submit to the FDA.
+tiêu chuẩn hiệu suất và tất cả bạn sẽ được thiết lập để đệ trình lên FDA.
+
+00:06:05.470 --> 00:06:07.880
+Hopefully, your device or algorithm will be
+
+00:06:07.880 --> 00:06:11.520
+approved and ready for use to make some impact.
+đã được phê duyệt và sẵn sàng sử dụng để tạo ra một số tác động.
+

@@ -1,0 +1,87 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.320
+Great job, you made it to the final exercise of the course.
+Rất tốt, bạn đã đến được bài tập cuối cùng của khóa học.
+
+00:00:04.320 --> 00:00:06.510
+Let's talk about the differences in creating
+Hãy nói về sự khác biệt trong việc tạo
+
+00:00:06.510 --> 00:00:10.245
+a validation plan for both algorithm A and algorithm B.
+một kế hoạch xác thực cho cả thuật toán A và thuật toán B.
+
+00:00:10.245 --> 00:00:12.390
+So for both algorithms,
+Vì vậy, đối với cả hai thuật toán,
+
+00:00:12.390 --> 00:00:16.560
+I would want to collect a validation data set for my clinical pattern that was made up
+Tôi muốn thu thập tập dữ liệu xác thực cho mô hình lâm sàng của tôi đã được tạo thành
+
+00:00:16.560 --> 00:00:21.085
+of screening mammography studies from women between the ages of 40 and 80.
+của các nghiên cứu chụp nhũ ảnh tầm soát từ phụ nữ trong độ tuổi từ 40 đến 80.
+
+00:00:21.085 --> 00:00:23.505
+To validate algorithm A however,
+Tuy nhiên, để xác thực thuật toán A,
+
+00:00:23.505 --> 00:00:28.020
+I would want to make sure that my data set did not contain any women with implants.
+Tôi muốn đảm bảo rằng tập dữ liệu của tôi không chứa bất kỳ phụ nữ nào được cấy ghép.
+
+00:00:28.020 --> 00:00:31.080
+I would also want to make sure that the distribution of
+Tôi cũng muốn đảm bảo rằng việc phân phối
+
+00:00:31.080 --> 00:00:34.635
+densities in that population reflected the real world.
+mật độ dân số đó phản ánh thế giới thực.
+
+00:00:34.635 --> 00:00:37.500
+For algorithm B, I would just want to make sure that
+Đối với thuật toán B, tôi chỉ muốn đảm bảo rằng
+
+00:00:37.500 --> 00:00:42.615
+my validation data set didn't contain any women with a prior history of breast cancer.
+tập dữ liệu xác thực của tôi không chứa bất kỳ phụ nữ nào có tiền sử ung thư vú.
+
+00:00:42.615 --> 00:00:46.030
+Now, in obtaining my ground truth for each algorithm,
+Bây giờ, khi có được sự thật cơ bản của tôi cho mỗi thuật toán,
+
+00:00:46.030 --> 00:00:47.545
+here's the main difference.
+
+00:00:47.545 --> 00:00:50.300
+The silver standard approach of using
+Cách tiếp cận tiêu chuẩn bạc của việc sử dụng
+
+00:00:50.300 --> 00:00:54.695
+several radiologists to label images is more optimal for algorithm A,
+một số bác sĩ X quang để gắn nhãn hình ảnh là tối ưu hơn cho thuật toán A,
+
+00:00:54.695 --> 00:00:57.620
+because I gave you the hint that it is really hard
+bởi vì tôi đã gợi ý cho bạn rằng nó thực sự khó
+
+00:00:57.620 --> 00:01:00.940
+for radiologists to agree on breast density labeled.
+để bác sĩ X quang đồng ý về mật độ vú được dán nhãn.
+
+00:01:00.940 --> 00:01:05.450
+For algorithm B, a single radiologist's labels would probably be sufficient for
+Đối với thuật toán B, một nhãn của nhà khoa học X quang có thể đủ để
+
+00:01:05.450 --> 00:01:08.030
+a ground truth because I gave you the hint there that
+một sự thật cơ bản bởi vì tôi đã cho bạn gợi ý rằng
+
+00:01:08.030 --> 00:01:11.820
+radiologists are really accurate at that task.
+các bác sĩ X quang thực sự chính xác trong nhiệm vụ đó.
+

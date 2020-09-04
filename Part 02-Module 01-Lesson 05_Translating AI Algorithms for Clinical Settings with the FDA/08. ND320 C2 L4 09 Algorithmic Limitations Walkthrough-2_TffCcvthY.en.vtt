@@ -1,0 +1,350 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.965
+Despite all of your best efforts,
+Dù bạn đã cố gắng hết sức,
+
+00:00:01.965 --> 00:00:03.660
+you will never be able to create
+bạn sẽ không bao giờ có thể tạo ra
+
+00:00:03.660 --> 00:00:07.830
+an all encompassing algorithm that works in every clinical situation.
+
+00:00:07.830 --> 00:00:10.590
+The FDA needs to be explicitly told about
+FDA cần được thông báo rõ ràng về
+
+00:00:10.590 --> 00:00:15.180
+these limitations as part of the guidance documentation to the end user as well.
+những hạn chế này cũng như là một phần của tài liệu hướng dẫn cho người dùng cuối.
+
+00:00:15.180 --> 00:00:17.075
+In the first part of this lesson,
+Trong phần đầu tiên của bài học này,
+
+00:00:17.075 --> 00:00:20.090
+we talked about indications for use of an algorithm,
+
+00:00:20.090 --> 00:00:24.190
+which tells the FDA when and where the algorithm could be used.
+cho FDA biết khi nào và ở đâu thuật toán có thể được sử dụng.
+
+00:00:24.190 --> 00:00:26.015
+To interpret it another way,
+Để giải thích nó theo cách khác,
+
+00:00:26.015 --> 00:00:28.130
+the indication for use in forums,
+dấu hiệu để sử dụng trong các diễn đàn,
+
+00:00:28.130 --> 00:00:30.875
+the FDA of the limitations of the algorithm.
+FDA về những hạn chế của thuật toán.
+
+00:00:30.875 --> 00:00:35.185
+However, we do need to know what the real limitations are.
+Tuy nhiên, chúng ta cần biết những hạn chế thực sự là gì.
+
+00:00:35.185 --> 00:00:38.300
+Remember we mentioned several times about how if
+Hãy nhớ rằng chúng tôi đã đề cập nhiều lần về cách nếu
+
+00:00:38.300 --> 00:00:41.240
+an algorithm was not trained on people over 80,
+một thuật toán không được đào tạo trên những người trên 80 tuổi,
+
+00:00:41.240 --> 00:00:44.710
+then it probably should not be used on people over 80.
+thì có lẽ nó không nên được sử dụng cho những người trên 80 tuổi.
+
+00:00:44.710 --> 00:00:47.869
+Although it is in the indications for youths,
+Mặc dù nó nằm trong chỉ dẫn cho thanh niên,
+
+00:00:47.869 --> 00:00:50.450
+it is more like a limitation because we don't
+nó giống như một giới hạn hơn bởi vì chúng tôi không
+
+00:00:50.450 --> 00:00:53.795
+really know how it would perform on people over 80.
+thực sự biết nó sẽ hoạt động như thế nào đối với những người trên 80 tuổi.
+
+00:00:53.795 --> 00:00:55.565
+If we had the data to train,
+Nếu chúng tôi có dữ liệu để đào tạo,
+
+00:00:55.565 --> 00:00:57.880
+the algorithm might work just fine.
+thuật toán có thể hoạt động tốt.
+
+00:00:57.880 --> 00:01:00.445
+When the FDA talks about limitations,
+Khi FDA nói về những hạn chế,
+
+00:01:00.445 --> 00:01:02.590
+they want to know more about scenarios where
+họ muốn biết thêm về các tình huống trong đó
+
+00:01:02.590 --> 00:01:05.590
+your algorithm is not safe and effective to use.
+thuật toán của bạn không an toàn và hiệu quả để sử dụng.
+
+00:01:05.590 --> 00:01:09.160
+In other words, where we know that our algorithm will fail in
+Nói cách khác, nơi chúng tôi biết rằng thuật toán của chúng tôi sẽ thất bại trong
+
+00:01:09.160 --> 00:01:11.260
+such a way that it could pose potential risks
+một cách mà nó có thể gây ra rủi ro tiềm ẩn
+
+00:01:11.260 --> 00:01:13.985
+to patients if it were used in that setting.
+cho bệnh nhân nếu nó được sử dụng trong môi trường đó.
+
+00:01:13.985 --> 00:01:17.140
+For example, maybe your algorithm does not
+Ví dụ: có thể thuật toán của bạn không
+
+00:01:17.140 --> 00:01:20.135
+perform well if a patient has a history of disease.
+thực hiện tốt nếu bệnh nhân có tiền sử bệnh.
+
+00:01:20.135 --> 00:01:23.960
+In this example, the algorithm's specificity drops a lot.
+Trong ví dụ này, độ đặc hiệu của thuật toán giảm đi rất nhiều.
+
+00:01:23.960 --> 00:01:27.010
+If the patient has a prior history of cancer.
+Nếu bệnh nhân có tiền sử ung thư từ trước.
+
+00:01:27.010 --> 00:01:30.339
+We will want to disclose to the FDA that we know
+Chúng tôi sẽ muốn tiết lộ với FDA rằng chúng tôi biết
+
+00:01:30.339 --> 00:01:33.530
+that our algorithm will not perform well on these individuals.
+rằng thuật toán của chúng tôi sẽ không hoạt động tốt trên những cá nhân này.
+
+00:01:33.530 --> 00:01:36.790
+In turn, the FDA may ask you to list this as
+Đổi lại, FDA có thể yêu cầu bạn liệt kê điều này là
+
+00:01:36.790 --> 00:01:40.670
+something that your algorithm is specifically not indicated for.
+thứ gì đó mà thuật toán của bạn không được chỉ định cụ thể.
+
+00:01:40.670 --> 00:01:43.670
+So in terms of algorithmic limitations,
+Vì vậy, về giới hạn thuật toán,
+
+00:01:43.670 --> 00:01:46.070
+our goal is to notify the FDA of all of
+mục tiêu của chúng tôi là thông báo cho FDA về tất cả
+
+00:01:46.070 --> 00:01:49.760
+the situations where we know our algorithm will fail.
+các tình huống mà chúng tôi biết thuật toán của mình sẽ thất bại.
+
+00:01:49.760 --> 00:01:51.740
+You may be wondering,
+Bạn có thể tự hỏi,
+
+00:01:51.740 --> 00:01:56.945
+how will I know of all the possible situations where my algorithm might fail?
+làm cách nào để biết tất cả các trường hợp có thể xảy ra mà thuật toán của tôi có thể thất bại?
+
+00:01:56.945 --> 00:01:59.885
+You can't test every possible scenario.
+Bạn không thể kiểm tra mọi tình huống có thể xảy ra.
+
+00:01:59.885 --> 00:02:02.840
+Lucky for patients, but maybe not so lucky for you.
+May mắn cho bệnh nhân, nhưng có lẽ không may mắn cho bạn.
+
+00:02:02.840 --> 00:02:07.040
+The FDA will follow you in your algorithm for ever.
+FDA sẽ theo dõi bạn trong thuật toán của bạn mãi mãi.
+
+00:02:07.040 --> 00:02:12.845
+After your algorithm is cleared by the FDA and released out into the clinical world.
+Sau khi thuật toán của bạn được FDA xóa và đưa ra thế giới lâm sàng.
+
+00:02:12.845 --> 00:02:16.460
+The FDA has a system called medical device reporting to
+FDA có một hệ thống được gọi là báo cáo thiết bị y tế cho
+
+00:02:16.460 --> 00:02:18.440
+continuously monitor whether or not
+liên tục theo dõi xem có hay không
+
+00:02:18.440 --> 00:02:21.815
+your algorithm is malfunctioning out there in the world.
+thuật toán của bạn đang bị trục trặc trên thế giới.
+
+00:02:21.815 --> 00:02:26.435
+Anytime one of your end-users discovers a malfunction in your software,
+Bất cứ khi nào một trong những người dùng cuối của bạn phát hiện ra sự cố trong phần mềm của bạn,
+
+00:02:26.435 --> 00:02:28.325
+they report this back to you,
+họ báo cáo lại điều này cho bạn,
+
+00:02:28.325 --> 00:02:33.250
+the manufacturer, and you are required to report it back to the FDA.
+nhà sản xuất và bạn được yêu cầu báo cáo lại cho FDA.
+
+00:02:33.250 --> 00:02:37.955
+Depending on the severity of the malfunction and whether or not it is life threatening,
+Tùy thuộc vào mức độ nghiêm trọng của sự cố và liệu nó có đe dọa đến tính mạng hay không,
+
+00:02:37.955 --> 00:02:42.515
+the FDA will either completely recall your device or archive for you to
+FDA sẽ thu hồi hoàn toàn thiết bị hoặc kho lưu trữ của bạn để bạn
+
+00:02:42.515 --> 00:02:47.680
+update its labeling and explicitly state new limitations that have been encountered.
+cập nhật nhãn của nó và nêu rõ những hạn chế mới đã gặp phải.
+
+00:02:47.680 --> 00:02:52.160
+Now there are other types of limitations besides their algorithm failing
+Bây giờ có những loại hạn chế khác ngoài thuật toán của chúng không thành công
+
+00:02:52.160 --> 00:02:56.515
+in certain patient populations or when other types of diseases that are present.
+trong một số quần thể bệnh nhân nhất định hoặc khi có các loại bệnh khác.
+
+00:02:56.515 --> 00:03:01.745
+There are also computational limitations that your consumer must be made aware of.
+Cũng có những hạn chế về tính toán mà người tiêu dùng của bạn phải biết.
+
+00:03:01.745 --> 00:03:05.485
+Let's return to an example that we've talked about a lot in this course.
+Hãy quay lại một ví dụ mà chúng ta đã nói đến rất nhiều trong khóa học này.
+
+00:03:05.485 --> 00:03:08.540
+Say that you built a CNN that can pretty
+Giả sử rằng bạn đã xây dựng một CNN có thể đẹp
+
+00:03:08.540 --> 00:03:12.350
+accurately identify emergency situation brain bleeds.
+xác định chính xác tình huống khẩn cấp chảy máu não.
+
+00:03:12.350 --> 00:03:15.440
+What you really think it should be used for is in helping in
+Những gì bạn thực sự nghĩ rằng nó nên được sử dụng để giúp đỡ
+
+00:03:15.440 --> 00:03:19.000
+the radiologist workflow to be prioritized.
+quy trình làm việc của bác sĩ X quang được ưu tiên.
+
+00:03:19.000 --> 00:03:24.410
+You'd say it's intended use is to simply assist a radiologist in the diagnosis of brain
+Bạn có thể nói rằng mục đích sử dụng của nó chỉ đơn giản là hỗ trợ bác sĩ X quang chẩn đoán não
+
+00:03:24.410 --> 00:03:27.920
+bleeds.You could then suggest in your indications for
+chảy máu. Sau đó, bạn có thể đề xuất trong các chỉ định của bạn cho
+
+00:03:27.920 --> 00:03:32.125
+use that this could be used for the workflow of re-prioritization.
+sử dụng rằng điều này có thể được sử dụng cho quy trình tái ưu tiên.
+
+00:03:32.125 --> 00:03:36.650
+But what do we know that we need in order for this to work?
+Nhưng chúng ta biết rằng chúng ta cần gì để điều này hoạt động?
+
+00:03:36.650 --> 00:03:39.590
+Well, if we're suggesting that it could be used in
+Chà, nếu chúng tôi gợi ý rằng nó có thể được sử dụng trong
+
+00:03:39.590 --> 00:03:44.030
+an emergency situation then it needs to run fast.
+một tình huống khẩn cấp thì nó cần phải chạy nhanh.
+
+00:03:44.030 --> 00:03:46.840
+What would be required for this type of speed?
+Điều gì sẽ được yêu cầu cho loại tốc độ này?
+
+00:03:46.840 --> 00:03:49.880
+Probably some high-powered processor,
+Có thể là một số bộ xử lý công suất cao,
+
+00:03:49.880 --> 00:03:52.685
+maybe cloud infrastructure or a GPU.
+có thể là cơ sở hạ tầng đám mây hoặc GPU.
+
+00:03:52.685 --> 00:03:57.440
+So you would want to list that one of your algorithmic limitations is that it does not
+Vì vậy, bạn muốn liệt kê rằng một trong những hạn chế thuật toán của bạn là nó không
+
+00:03:57.440 --> 00:04:02.335
+achieve fast performance in the absence of such types of computational infrastructure.
+đạt được hiệu suất nhanh trong trường hợp không có các loại cơ sở hạ tầng tính toán như vậy.
+
+00:04:02.335 --> 00:04:06.500
+This would let your end consumer know that if the device was right for them,
+Điều này sẽ cho người tiêu dùng cuối cùng của bạn biết rằng nếu thiết bị phù hợp với họ,
+
+00:04:06.500 --> 00:04:09.140
+given their hospital infrastructure and what they
+cho cơ sở hạ tầng bệnh viện của họ và những gì họ
+
+00:04:09.140 --> 00:04:12.140
+wanted to do with it.As you might imagine,
+muốn làm với nó. Như bạn có thể tưởng tượng,
+
+00:04:12.140 --> 00:04:16.850
+all of these potential limitations may really limit your algorithms clinical utility.
+tất cả những hạn chế tiềm ẩn này có thể thực sự hạn chế tiện ích lâm sàng của thuật toán của bạn.
+
+00:04:16.850 --> 00:04:21.535
+But in fact, having a device that's very specific may actually be a good thing.
+Nhưng trên thực tế, có một thiết bị rất cụ thể có thể là một điều tốt.
+
+00:04:21.535 --> 00:04:25.789
+Choosing a narrow scope when designing your device is a good strategy,
+Chọn một phạm vi hẹp khi thiết kế thiết bị của bạn là một chiến lược tốt,
+
+00:04:25.789 --> 00:04:30.335
+especially if you can strategically choose something that maximizes market impact.
+đặc biệt nếu bạn có thể chọn thứ gì đó một cách chiến lược để tối đa hóa tác động đến thị trường.
+
+00:04:30.335 --> 00:04:34.940
+For example, if you know that a particular scanner is the most common type of
+Ví dụ: nếu bạn biết rằng một máy quét cụ thể là loại phổ biến nhất
+
+00:04:34.940 --> 00:04:37.550
+mammography device and that most women
+thiết bị chụp nhũ ảnh và hầu hết phụ nữ
+
+00:04:37.550 --> 00:04:41.055
+receiving screening mammography are between 40 and 60,
+nhận chụp nhũ ảnh tầm soát là từ 40 đến 60,
+
+00:04:41.055 --> 00:04:45.995
+then you still may end up with an incredibly useful and marketable algorithm if it is
+thì bạn vẫn có thể kết thúc với một thuật toán cực kỳ hữu ích và có thể bán được nếu nó
+
+00:04:45.995 --> 00:04:51.520
+only labeled for use in women from 40-60 who are scanned by this particular scanner.
+chỉ được dán nhãn để sử dụng cho phụ nữ từ 40-60 được quét bằng máy quét đặc biệt này.
+
+00:04:51.520 --> 00:04:54.890
+You can always expand your devices functionality over
+Bạn luôn có thể mở rộng chức năng thiết bị của mình qua
+
+00:04:54.890 --> 00:04:58.815
+time and work with the FDA to get new expansions approved.
+thời gian và làm việc với FDA để được chấp thuận các bản mở rộng mới.
+
+00:04:58.815 --> 00:05:01.625
+This is a much faster go-to-market strategy
+Đây là một chiến lược tiếp cận thị trường nhanh hơn nhiều
+
+00:05:01.625 --> 00:05:05.340
+than trying to boil the ocean in your first attempt,
+hơn là cố gắng đun sôi đại dương trong lần đầu tiên của bạn,
+

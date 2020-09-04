@@ -1,0 +1,220 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.580
+The FDA will require you to provide
+FDA sẽ yêu cầu bạn cung cấp
+
+00:00:02.580 --> 00:00:04.830
+an intended use statement and an indication
+một tuyên bố sử dụng dự định và một chỉ dẫn
+
+00:00:04.830 --> 00:00:07.484
+for use statement when you submit your algorithm.
+
+00:00:07.484 --> 00:00:13.090
+The intended use statement tells the FDA exactly what your algorithm is used for,
+
+00:00:13.090 --> 00:00:15.485
+not what it could be used for.
+không phải nó có thể được sử dụng để làm gì.
+
+00:00:15.485 --> 00:00:18.545
+For example, the intended use of your algorithm
+
+00:00:18.545 --> 00:00:21.965
+could be to identify if cancer is malignant or benign,
+có thể là để xác định xem ung thư là ác tính hay lành tính,
+
+00:00:21.965 --> 00:00:25.135
+or just identify if there is a suspicious mass.
+
+00:00:25.135 --> 00:00:29.825
+The FDA will use this statement to define the risk and class of your algorithm.
+FDA sẽ sử dụng tuyên bố này để xác định rủi ro và loại thuật toán của bạn.
+
+00:00:29.825 --> 00:00:32.780
+You can then use your indications for use statement to make
+Sau đó, bạn có thể sử dụng câu lệnh chỉ định để sử dụng
+
+00:00:32.780 --> 00:00:37.205
+more specific suggestions about how your algorithm could be used.
+đề xuất cụ thể hơn về cách thuật toán của bạn có thể được sử dụng.
+
+00:00:37.205 --> 00:00:41.615
+We talked in lesson 1 about the three FDA risk categories,
+Chúng ta đã nói trong bài 1 về ba loại rủi ro của FDA,
+
+00:00:41.615 --> 00:00:44.465
+and that they were generally low, medium,
+và chúng nói chung là thấp, trung bình,
+
+00:00:44.465 --> 00:00:49.030
+and high, and which regulatory pathway each of these needed to go down.
+và cao, và con đường quy định nào mà mỗi thứ này cần phải đi xuống.
+
+00:00:49.030 --> 00:00:51.140
+Let's go a little deeper today into
+Hôm nay chúng ta hãy đi sâu hơn một chút về
+
+00:00:51.140 --> 00:00:55.225
+the FDA's actual definitions of these risk categories.
+định nghĩa thực tế của FDA về các loại rủi ro này.
+
+00:00:55.225 --> 00:01:01.040
+The FDA defines class I devices as those not intended for use in
+FDA định nghĩa các thiết bị loại I là những thiết bị không nhằm mục đích sử dụng
+
+00:01:01.040 --> 00:01:03.470
+supporting or sustaining life or of
+hỗ trợ hoặc duy trì cuộc sống hoặc của
+
+00:01:03.470 --> 00:01:06.860
+substantial importance in preventing impairment to human health,
+tầm quan trọng đáng kể trong việc ngăn ngừa suy giảm sức khỏe con người,
+
+00:01:06.860 --> 00:01:11.855
+and they may not present a potential unreasonable risk of illness or injury.
+và chúng có thể không tiềm ẩn nguy cơ bệnh tật hoặc thương tích.
+
+00:01:11.855 --> 00:01:16.969
+These devices are the most common class of devices regulated by the FDA,
+Các thiết bị này là loại thiết bị phổ biến nhất được FDA quy định,
+
+00:01:16.969 --> 00:01:21.320
+constituting 47 percent of approved devices on the market.
+chiếm 47% các thiết bị được phê duyệt trên thị trường.
+
+00:01:21.320 --> 00:01:24.170
+Class 1 devices have minimal contact with
+Thiết bị loại 1 có liên hệ tối thiểu với
+
+00:01:24.170 --> 00:01:27.785
+patients and low impact in patient's overall health.
+
+00:01:27.785 --> 00:01:33.395
+In general, class 1 devices do not come into contact with the patient's internal organs,
+Nói chung, các thiết bị loại 1 không tiếp xúc với các cơ quan nội tạng của bệnh nhân,
+
+00:01:33.395 --> 00:01:36.635
+the central nervous system, or cardiovascular system.
+hệ thống thần kinh trung ương, hoặc hệ thống tim mạch.
+
+00:01:36.635 --> 00:01:41.320
+These devices are subject to the fewest regulatory requirements.
+Các thiết bị này phải tuân theo một số yêu cầu quy định nhất.
+
+00:01:41.320 --> 00:01:46.070
+The FDA defines class II devices as those devices for which
+FDA định nghĩa các thiết bị loại II là những thiết bị mà
+
+00:01:46.070 --> 00:01:48.800
+general controls are insufficient to provide
+kiểm soát chung không đủ để cung cấp
+
+00:01:48.800 --> 00:01:53.005
+a reasonable assurance of the safety and effectiveness of the device.
+đảm bảo hợp lý về tính an toàn và hiệu quả của thiết bị.
+
+00:01:53.005 --> 00:01:58.390
+What does this phrase about "general controls being insufficient," really mean?
+Cụm từ "kiểm soát chung không đủ" này thực sự có nghĩa là gì?
+
+00:01:58.390 --> 00:02:00.199
+According to the FDA,
+Theo FDA,
+
+00:02:00.199 --> 00:02:02.780
+it means that you can't just put extra labeling and
+điều đó có nghĩa là bạn không thể chỉ dán nhãn bổ sung và
+
+00:02:02.780 --> 00:02:06.530
+guidelines on your device to ensure that it's safe and effective.
+hướng dẫn trên thiết bị của bạn để đảm bảo rằng thiết bị an toàn và hiệu quả.
+
+00:02:06.530 --> 00:02:08.630
+You still need to do these things,
+
+00:02:08.630 --> 00:02:12.065
+but you also need to show that your device is something called
+nhưng bạn cũng cần chứng minh rằng thiết bị của bạn được gọi là
+
+00:02:12.065 --> 00:02:16.990
+substantially equivalent to something called a predicate device.
+về cơ bản tương đương với một thứ gọi là thiết bị vị ngữ.
+
+00:02:16.990 --> 00:02:20.570
+This doesn't mean that the devices need to be identical,
+Điều này không có nghĩa là các thiết bị cần phải giống hệt nhau,
+
+00:02:20.570 --> 00:02:23.705
+but they require significant similarities in use,
+nhưng chúng yêu cầu những điểm tương đồng đáng kể trong việc sử dụng,
+
+00:02:23.705 --> 00:02:28.700
+design, materials, labeling, standards, and other characteristics.
+thiết kế, vật liệu, ghi nhãn, tiêu chuẩn và các đặc điểm khác.
+
+00:02:28.700 --> 00:02:33.420
+This substantial equivalence is specific to the 510(k) process,
+Sự tương đương đáng kể này là cụ thể cho quá trình 510 (k),
+
+00:02:33.420 --> 00:02:38.775
+and it is what most AI for medical imaging software algorithms end up going down.
+và đó là thứ mà hầu hết các thuật toán phần mềm hình ảnh AI cho phần mềm hình ảnh y tế sẽ đi xuống.
+
+00:02:38.775 --> 00:02:43.040
+Class II medical devices are more complicated than class I,
+
+00:02:43.040 --> 00:02:45.770
+and present a higher category of risk because they are
+và đưa ra một loại rủi ro cao hơn vì chúng
+
+00:02:45.770 --> 00:02:49.100
+more likely to come into sustained contact with a patient.
+nhiều khả năng tiếp xúc lâu dài với bệnh nhân.
+
+00:02:49.100 --> 00:02:52.130
+This can include devices which come into contact with
+
+00:02:52.130 --> 00:02:55.265
+a patient's cardiovascular system or internal organs,
+hệ thống tim mạch hoặc các cơ quan nội tạng của bệnh nhân,
+
+00:02:55.265 --> 00:02:57.635
+as well as diagnostic tools.
+cũng như các công cụ chẩn đoán.
+
+00:02:57.635 --> 00:03:03.860
+The FDA defines class III devices as those that usually sustain or support life,
+FDA định nghĩa các thiết bị cấp III là những thiết bị thường duy trì hoặc hỗ trợ sự sống,
+
+00:03:03.860 --> 00:03:09.095
+are implanted or present a potential unreasonable risk of illness or injury.
+được cấy ghép hoặc tiềm ẩn nguy cơ bệnh tật hoặc thương tích không hợp lý.
+
+00:03:09.095 --> 00:03:15.080
+Just 10 percent of the devices regulated by the US FDA fall into class III.
+Chỉ 10% các thiết bị được FDA Hoa Kỳ quản lý thuộc loại III.
+
+00:03:15.080 --> 00:03:18.769
+This classification is generally extended to permanent implants,
+Phân loại này thường được mở rộng cho cấy ghép vĩnh viễn,
+
+00:03:18.769 --> 00:03:22.084
+smart medical devices, and life support systems.
+thiết bị y tế thông minh và hệ thống hỗ trợ sự sống.
+
+00:03:22.084 --> 00:03:27.740
+A device that may have initially been put into class II may be bumped up to class III if
+Một thiết bị ban đầu có thể được xếp vào loại II có thể được nâng lên loại III nếu
+
+00:03:27.740 --> 00:03:29.720
+the manufacturer can't demonstrate
+nhà sản xuất không thể chứng minh
+
+00:03:29.720 --> 00:03:34.590
+substantial equivalence to a predicate during the FDA process.
+tương đương đáng kể với một vị từ trong quá trình FDA.
+

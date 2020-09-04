@@ -1,0 +1,365 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.834
+When you bring your algorithm to the FDA,
+Khi bạn đưa thuật toán của mình lên FDA,
+
+00:00:02.834 --> 00:00:07.635
+your intended use statement will tie directly to these risk categories.
+tuyên bố mục đích sử dụng của bạn sẽ liên kết trực tiếp với các loại rủi ro này.
+
+00:00:07.635 --> 00:00:10.815
+Let's take a non-algorithm example first.
+
+00:00:10.815 --> 00:00:13.350
+This is a classic example right off of
+Đây là một ví dụ cổ điển về
+
+00:00:13.350 --> 00:00:17.385
+the FDA's website that's used by many experts in the industry.
+trang web của FDA được nhiều chuyên gia trong ngành sử dụng.
+
+00:00:17.385 --> 00:00:20.325
+Let's say you developed a new scalpel,
+Giả sử bạn đã phát triển một con dao mổ mới,
+
+00:00:20.325 --> 00:00:22.080
+but there's nothing special about it.
+nhưng không có gì đặc biệt về nó.
+
+00:00:22.080 --> 00:00:25.905
+It's just a run-of-the-mill reusable surgical scalpel.
+Nó chỉ là một con dao mổ tái sử dụng hàng loạt.
+
+00:00:25.905 --> 00:00:28.920
+If you were to label it with the general labels of
+Nếu bạn gắn nhãn nó với các nhãn chung của
+
+00:00:28.920 --> 00:00:32.325
+being intended to use to cut through tissue,
+được dự định sử dụng để cắt qua mô,
+
+00:00:32.325 --> 00:00:37.675
+this would actually be a Class 1 device and would be exempt from the FDA process.
+đây thực sự sẽ là thiết bị Loại 1 và sẽ được miễn trừ khỏi quy trình của FDA.
+
+00:00:37.675 --> 00:00:42.400
+All it needs is labeling around its hazards and some guidelines for using it.
+Tất cả những gì nó cần là dán nhãn xung quanh các mối nguy hiểm của nó và một số hướng dẫn sử dụng nó.
+
+00:00:42.400 --> 00:00:46.790
+But since it's not labeled as some things supporting, or sustaining life,
+Nhưng vì nó không được dán nhãn là một số thứ hỗ trợ hoặc duy trì sự sống,
+
+00:00:46.790 --> 00:00:50.765
+or of substantial importance in preventing impairment to human health,
+hoặc có tầm quan trọng đáng kể trong việc ngăn ngừa sự suy giảm sức khỏe con người,
+
+00:00:50.765 --> 00:00:52.660
+it can be considered Class 1.
+nó có thể được coi là Class 1.
+
+00:00:52.660 --> 00:00:57.200
+Now, imagine you took that exact same scalpel and label
+Bây giờ, hãy tưởng tượng bạn lấy con dao và nhãn chính xác đó
+
+00:00:57.200 --> 00:01:01.954
+it as being intended for use in optimal logic settings and eye surgery.
+nó được thiết kế để sử dụng trong các thiết lập logic tối ưu và phẫu thuật mắt.
+
+00:01:01.954 --> 00:01:06.500
+Then it immediately becomes a Class 3 device since that usually
+Sau đó, nó ngay lập tức trở thành thiết bị Loại 3 vì nó thường
+
+00:01:06.500 --> 00:01:11.780
+sustains or supports life and presents potential unreasonable risk of illness or injury.
+duy trì hoặc hỗ trợ cuộc sống và tiềm ẩn nguy cơ bệnh tật hoặc thương tích không hợp lý.
+
+00:01:11.780 --> 00:01:14.195
+Seems confusing, doesn't it?
+Có vẻ khó hiểu, phải không?
+
+00:01:14.195 --> 00:01:18.595
+How can one device have two very different risk categories?
+Làm thế nào một thiết bị có thể có hai loại rủi ro rất khác nhau?
+
+00:01:18.595 --> 00:01:24.545
+Also, why would someone manufacturing the scalpel use this example of intended use,
+Ngoài ra, tại sao ai đó sản xuất dao mổ lại sử dụng ví dụ về mục đích sử dụng này,
+
+00:01:24.545 --> 00:01:28.625
+knowing that it would send them down a much more difficult regulatory path?
+biết rằng nó sẽ khiến họ phải tuân theo một con đường quản lý khó khăn hơn nhiều?
+
+00:01:28.625 --> 00:01:31.550
+There are lots of these types of nuances with
+Có rất nhiều loại sắc thái với
+
+00:01:31.550 --> 00:01:35.735
+the regulatory process and we could spend an entire course discussing them.
+quy trình quản lý và chúng tôi có thể dành toàn bộ khóa học để thảo luận về chúng.
+
+00:01:35.735 --> 00:01:39.080
+What's important for you to know is that how you say
+Điều quan trọng bạn cần biết là cách bạn nói
+
+00:01:39.080 --> 00:01:43.460
+your device or for you algorithm is intended to be used,
+thiết bị của bạn hoặc cho bạn thuật toán được thiết kế để sử dụng,
+
+00:01:43.460 --> 00:01:46.640
+is critically important when dealing with the FDA.
+là cực kỳ quan trọng khi giao dịch với FDA.
+
+00:01:46.640 --> 00:01:49.190
+Let's talk about an example more
+Hãy nói về một ví dụ nhiều hơn
+
+00:01:49.190 --> 00:01:52.700
+directly tied to what we've learned in this course so far.
+liên quan trực tiếp đến những gì chúng tôi đã học được trong khóa học này cho đến nay.
+
+00:01:52.700 --> 00:01:56.510
+Suppose we developed a CNN that could classify
+
+00:01:56.510 --> 00:02:00.940
+whether or not a screening mammogram has a malignant tumor in it.
+chụp X-quang tuyến vú tầm soát có khối u ác tính hay không.
+
+00:02:00.940 --> 00:02:04.340
+If we stated it's intended use was for
+Nếu chúng tôi nói rằng mục đích sử dụng là
+
+00:02:04.340 --> 00:02:07.550
+the identification of breast cancer from mammography,
+
+00:02:07.550 --> 00:02:09.770
+what class do you think it would be?
+bạn nghĩ nó sẽ là lớp nào?
+
+00:02:09.770 --> 00:02:11.840
+Let's think about risk.
+Hãy nghĩ về rủi ro.
+
+00:02:11.840 --> 00:02:16.010
+Class 3 risk states that a device would fall into this category if it
+
+00:02:16.010 --> 00:02:20.405
+presents a potential unreasonable risk of illness or injury.
+tiềm ẩn nguy cơ bệnh tật hoặc thương tích.
+
+00:02:20.405 --> 00:02:22.465
+Do you think this is the case?
+
+00:02:22.465 --> 00:02:28.190
+Ask yourself this, what would happen if your algorithm missed a diagnosis of cancer?
+Hãy tự hỏi bản thân điều này, điều gì sẽ xảy ra nếu thuật toán của bạn bỏ sót chẩn đoán ung thư?
+
+00:02:28.190 --> 00:02:31.340
+The patient could die because they didn't start treatment.
+
+00:02:31.340 --> 00:02:36.205
+So given this, your device would likely be labeled as Class 3.
+
+00:02:36.205 --> 00:02:39.500
+The next question you might ask yourself is,
+Câu hỏi tiếp theo bạn có thể tự hỏi là,
+
+00:02:39.500 --> 00:02:44.545
+is there already a device on the market that does this that the FDA has approved?
+Có thiết bị nào trên thị trường làm được điều này mà FDA đã phê duyệt không?
+
+00:02:44.545 --> 00:02:47.030
+In other words, a predicate device?
+Nói cách khác, một thiết bị vị ngữ?
+
+00:02:47.030 --> 00:02:51.800
+If the FDA has already approved a device that has the same intended use
+Nếu FDA đã chấp thuận một thiết bị có cùng mục đích sử dụng
+
+00:02:51.800 --> 00:02:56.675
+as yours and you can demonstrate that your device is substantially equivalent,
+là của bạn và bạn có thể chứng minh rằng thiết bị của bạn về cơ bản là tương đương,
+
+00:02:56.675 --> 00:03:00.650
+then you may be able to go down the 510(k) regulatory path,
+thì bạn có thể đi xuống con đường quy định 510 (k),
+
+00:03:00.650 --> 00:03:03.055
+which is far less burdensome.
+
+00:03:03.055 --> 00:03:08.135
+If, however, you are unable to identify a predicate device on the market,
+Tuy nhiên, nếu bạn không thể xác định một thiết bị vị ngữ trên thị trường,
+
+00:03:08.135 --> 00:03:12.500
+your algorithm would have to seek pre-market approval or a PMA,
+thuật toán của bạn sẽ phải tìm kiếm sự chấp thuận trước thị trường hoặc PMA,
+
+00:03:12.500 --> 00:03:15.670
+which is far more burdensome and takes a lot longer.
+nặng nề hơn và mất nhiều thời gian hơn.
+
+00:03:15.670 --> 00:03:19.100
+You may be surprised to know that in 2020,
+Bạn có thể ngạc nhiên khi biết rằng vào năm 2020,
+
+00:03:19.100 --> 00:03:22.730
+there is no such predicate device that exist on the market.
+không có thiết bị vị ngữ như vậy tồn tại trên thị trường.
+
+00:03:22.730 --> 00:03:26.990
+So you would have to take the PMA route with an algorithm like this.
+Vì vậy, bạn sẽ phải đi theo lộ trình PMA với một thuật toán như thế này.
+
+00:03:26.990 --> 00:03:30.130
+Now, let's change our intended use statement.
+Bây giờ, chúng ta hãy thay đổi tuyên bố sử dụng dự định của chúng ta.
+
+00:03:30.130 --> 00:03:33.860
+We'll instead say that our algorithm is intended to assist
+Thay vào đó, chúng tôi sẽ nói rằng thuật toán của chúng tôi nhằm hỗ trợ
+
+00:03:33.860 --> 00:03:38.795
+the radiologist in the detection of breast abnormalities on mammogram.
+bác sĩ X quang trong việc phát hiện các bất thường ở vú trên chụp quang tuyến vú.
+
+00:03:38.795 --> 00:03:42.610
+The key words here are assisting the radiologist.
+Các từ chính ở đây là hỗ trợ bác sĩ X quang.
+
+00:03:42.610 --> 00:03:45.875
+In this case, it states that the burden of diagnosis
+Trong trường hợp này, nó nói rằng gánh nặng chẩn đoán
+
+00:03:45.875 --> 00:03:49.280
+is still on the radiologist at the end of the day,
+vẫn đang ở bác sĩ X quang vào cuối ngày,
+
+00:03:49.280 --> 00:03:53.035
+and that your algorithm is merely assisting their diagnosis.
+và thuật toán của bạn chỉ hỗ trợ chẩn đoán của họ.
+
+00:03:53.035 --> 00:03:56.015
+Perhaps this is by creating a bounding box
+Có lẽ đây là bằng cách tạo một hộp giới hạn
+
+00:03:56.015 --> 00:03:58.940
+around the suspicious areas to draw their eye to them,
+xung quanh các khu vực đáng ngờ để thu hút sự chú ý của họ,
+
+00:03:58.940 --> 00:04:01.280
+which may reduce the amount of time that they need to
+điều này có thể làm giảm lượng thời gian mà họ cần
+
+00:04:01.280 --> 00:04:04.315
+spend reading a study to find an abnormality.
+dành để đọc một nghiên cứu để tìm ra điều bất thường.
+
+00:04:04.315 --> 00:04:07.595
+This is something that's referred to in the industry as
+Đây là thứ được gọi trong ngành là
+
+00:04:07.595 --> 00:04:11.600
+Computer-Assisted Diagnosis or CADx.
+Chẩn đoán có sự hỗ trợ của máy tính hoặc CADx.
+
+00:04:11.600 --> 00:04:14.750
+If we go back to the Class 3 risk statement,
+Nếu chúng ta quay lại báo cáo rủi ro loại 3,
+
+00:04:14.750 --> 00:04:16.920
+do we still think that this is true?
+chúng ta vẫn nghĩ rằng điều này là đúng?
+
+00:04:16.920 --> 00:04:21.200
+If your algorithm puts the patient at any additional risk of injury,
+Nếu thuật toán của bạn khiến bệnh nhân có thêm bất kỳ nguy cơ chấn thương nào,
+
+00:04:21.200 --> 00:04:24.130
+it is, but I don't think that's the case here.
+đúng là như vậy, nhưng tôi không nghĩ đó là trường hợp ở đây.
+
+00:04:24.130 --> 00:04:27.905
+Of course, there's always the risk that the radiologists could be wrong,
+
+00:04:27.905 --> 00:04:30.050
+but that's a risk that already exists in
+nhưng đó là một rủi ro đã tồn tại trong
+
+00:04:30.050 --> 00:04:33.980
+the current medical imaging setting and is not due to your algorithm.
+
+00:04:33.980 --> 00:04:37.075
+So we can say it's probably not true.
+Vì vậy, chúng tôi có thể nói nó có lẽ không đúng.
+
+00:04:37.075 --> 00:04:39.480
+But now what? Is it Class 1,
+Nhưng bây giờ thì sao? Có phải là lớp 1 không,
+
+00:04:39.480 --> 00:04:40.905
+or is it Class 2?
+hay là Class 2?
+
+00:04:40.905 --> 00:04:45.545
+In theory, the radiologist is doing nothing different than they normally do.
+Về lý thuyết, bác sĩ X quang không làm gì khác so với họ thường làm.
+
+00:04:45.545 --> 00:04:47.980
+So this would be low-risk, right?
+Vì vậy, điều này sẽ là rủi ro thấp, phải không?
+
+00:04:47.980 --> 00:04:50.175
+Actually wrong.
+Thực ra là sai.
+
+00:04:50.175 --> 00:04:53.600
+The FDA assumes that with technologies like this,
+FDA giả định rằng với những công nghệ như thế này,
+
+00:04:53.600 --> 00:04:56.600
+the radiologists will probably end up relying on
+
+00:04:56.600 --> 00:04:59.810
+the software even though it's not labeled that way.
+phần mềm mặc dù nó không được dán nhãn theo cách đó.
+
+00:04:59.810 --> 00:05:02.420
+In that case, they could end up relying on
+Trong trường hợp đó, cuối cùng họ có thể dựa vào
+
+00:05:02.420 --> 00:05:05.720
+the software too much and miss a suspicious binding,
+phần mềm quá nhiều và bỏ lỡ một ràng buộc đáng ngờ,
+
+00:05:05.720 --> 00:05:08.560
+because the algorithm didn't think that there was one.
+bởi vì thuật toán không nghĩ rằng có một.
+
+00:05:08.560 --> 00:05:14.605
+So historically, CADx devices had been considered Class 3 by the FDA.
+Vì vậy, trong lịch sử, các thiết bị CADx đã được FDA coi là Loại 3.
+
+00:05:14.605 --> 00:05:18.334
+However, with the boom of AI in medical imaging,
+Tuy nhiên, với sự bùng nổ của AI trong hình ảnh y tế,
+
+00:05:18.334 --> 00:05:22.280
+the FDA has started to change their tune over the past couple of years,
+FDA đã bắt đầu thay đổi giai đoạn của họ trong vài năm qua,
+
+00:05:22.280 --> 00:05:25.850
+and has started to classify a CADx devices as Class 2.
+và đã bắt đầu phân loại thiết bị CADx là Loại 2.
+
+00:05:25.850 --> 00:05:29.675
+But this still means that without a predicate device,
+Nhưng điều này vẫn có nghĩa là không có thiết bị vị ngữ,
+
+00:05:29.675 --> 00:05:33.660
+your algorithm would have to go down the PMA pathway.
+thuật toán của bạn sẽ phải đi theo con đường PMA.
+

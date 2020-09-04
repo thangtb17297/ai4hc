@@ -1,0 +1,96 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.335
+Amazing work.
+Công việc tuyệt vời.
+
+00:00:01.335 --> 00:00:05.385
+You made it to the end of the course and you're ready to tackle your final project.
+Bạn đã hoàn thành khóa học và sẵn sàng giải quyết dự án cuối cùng của mình.
+
+00:00:05.385 --> 00:00:08.475
+First, let's recap together what we learned today.
+Trước tiên, chúng ta hãy cùng nhau tóm tắt lại những gì chúng ta đã học được ngày hôm nay.
+
+00:00:08.475 --> 00:00:11.850
+We first learned about the FDA's risk categories and
+Lần đầu tiên chúng tôi tìm hiểu về các loại rủi ro của FDA và
+
+00:00:11.850 --> 00:00:16.230
+how these help in framing your intended use and indications for use statements.
+những trợ giúp này như thế nào trong việc định hình mục đích sử dụng của bạn và chỉ dẫn cho các tuyên bố sử dụng.
+
+00:00:16.230 --> 00:00:18.930
+We then discussed algorithmic limitations and
+Sau đó, chúng tôi thảo luận về các giới hạn thuật toán và
+
+00:00:18.930 --> 00:00:23.490
+how the FDA monitors new limitations that arise after your device is released.
+cách FDA giám sát các giới hạn mới phát sinh sau khi thiết bị của bạn được phát hành.
+
+00:00:23.490 --> 00:00:25.440
+Next, we discussed precision,
+Tiếp theo, chúng tôi thảo luận về độ chính xác,
+
+00:00:25.440 --> 00:00:27.330
+recall and their trade-offs.
+thu hồi và đánh đổi của chúng.
+
+00:00:27.330 --> 00:00:31.260
+Finally, we talked about how to create a validation plan for the FDA.
+Cuối cùng, chúng tôi đã nói về cách tạo một kế hoạch xác nhận cho FDA.
+
+00:00:31.260 --> 00:00:33.255
+As I said at the beginning of this lesson,
+Như tôi đã nói ở đầu bài học này,
+
+00:00:33.255 --> 00:00:35.940
+the material here is some of the most challenging,
+tài liệu ở đây là một trong những thách thức nhất,
+
+00:00:35.940 --> 00:00:38.490
+but also some of the most important to learn for
+nhưng cũng có một số điều quan trọng nhất để học
+
+00:00:38.490 --> 00:00:42.085
+data scientists who really want to be translational scientists.
+các nhà khoa học dữ liệu thực sự muốn trở thành nhà khoa học dịch thuật.
+
+00:00:42.085 --> 00:00:45.815
+What you learned here about the FDA and the regulatory process
+Những gì bạn học được ở đây về FDA và quy trình quản lý
+
+00:00:45.815 --> 00:00:49.430
+should really reshape the way that you approach deep learning,
+thực sự nên định hình lại cách bạn tiếp cận học sâu,
+
+00:00:49.430 --> 00:00:53.885
+if your intention is to create tools for real people to use in the wild.
+nếu ý định của bạn là tạo ra các công cụ để người thật sử dụng trong tự nhiên.
+
+00:00:53.885 --> 00:00:58.330
+I really appreciate everybody coming on this journey with me through this whole course.
+Tôi thực sự đánh giá cao tất cả mọi người đến trong cuộc hành trình này với tôi trong suốt khóa học này.
+
+00:00:58.330 --> 00:01:01.895
+I know everyone started from a different place with a different background,
+Tôi biết mọi người đều bắt đầu từ một nơi khác với nền tảng khác,
+
+00:01:01.895 --> 00:01:04.430
+but I hope that you all have a really,
+nhưng tôi hy vọng rằng tất cả các bạn đều có
+
+00:01:04.430 --> 00:01:07.730
+really good understanding now of AI for 2D imaging.
+hiện đã hiểu rất rõ về AI cho hình ảnh 2D.
+
+00:01:07.730 --> 00:01:10.505
+I'm really excited to see what your final projects are,
+Tôi thực sự vui mừng được biết những dự án cuối cùng của bạn là gì,
+
+00:01:10.505 --> 00:01:13.770
+so thanks again for joining me. Bye.
+vì vậy cảm ơn một lần nữa vì đã tham gia cùng tôi. Tạm biệt.
+
